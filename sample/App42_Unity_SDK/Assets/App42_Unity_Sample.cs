@@ -10,7 +10,7 @@ using com.shephertz.app42.paas.sdk.csharp.user;
 public class App42_Unity_Sample : MonoBehaviour
 {
 
-    public string txt_pass, txt_email, txt_name, log;
+    public string txt_user,txt_pass, txt_email, txt_name, log;
 	 
     public static bool Validator(object sender, X509Certificate certificate, X509Chain chain,
                                       SslPolicyErrors sslPolicyErrors)
@@ -30,10 +30,10 @@ public class App42_Unity_Sample : MonoBehaviour
 
     void OnGUI()
     {
-		string txt_user="UserName";
-		string txt_pass="Password";
-		string txt_email="EmailId";
-		string txt_name="UserName";
+		GUI.Label(new Rect(260, 10, 200, 20),"Username");
+		GUI.Label(new Rect(260, 40, 200, 20),"Password");
+		GUI.Label(new Rect(260, 70, 200, 20),"Email");
+		GUI.Label(new Rect(610, 10, 200, 20),"Username");
         txt_user = GUI.TextField(new Rect(50, 10, 200, 20), txt_user);
         txt_pass = GUI.TextField(new Rect(50, 40, 200, 20), txt_pass);
         txt_email = GUI.TextField(new Rect(50, 70, 200, 20), txt_email);
