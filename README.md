@@ -13,7 +13,7 @@ and you are all set!
 3. If you are already registered, login to [AppHQ] (http://apphq.shephertz.com/register/app42Login) console and create an app from App Manager Tab
 4. [Download](https://github.com/shephertz/App42_Unity3D_SDK/archive/master.zip) the unity 3d sdk .
 5. open the project in unity .
-6. Double click on the project sample code will open..
+6. Double click on the project sample code will open.
 7. Initailize your apiKey and secretKey in ServiceAPI
 8. Save the project and run on unity.
 
