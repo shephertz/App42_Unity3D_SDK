@@ -10,12 +10,12 @@ and you are all set!
 
 1. [Register] (https://apphq.shephertz.com/register) with App42 platform
 2. Create an app once you are on Quick start page after registration.
-3. If you are already registered, login to [AppHQ] (http://apphq.shephertz.com/app42Login) console and create an app from App Manager Tab
-4. Download the unity 3d sdk .
-5. open the project in unity and add assest into it.
-6. Double click on the project(script) sample code will open..
+3. If you are already registered, login to [AppHQ] (http://apphq.shephertz.com/register/app42Login) console and create an app from App Manager Tab
+4. [Download](https://github.com/shephertz/App42_Unity3D_SDK/archive/master.zip) the unity 3d sdk .
+5. open the project in unity .
+6. Double click on the project sample code will open..
 7. Initailize your apiKey and secretKey in ServiceAPI
-8. Save the project and run on utity.
+8. Save the project and run on unity.
 
 
 # Design Details:
@@ -32,19 +32,19 @@ __Initialize Services:__
 __Create user:__
 
 This is done to create user and its parameters are :
-1. UserName
-2. Password
-3. EmailId
+1. userName
+2. password
+3. emailId
 
 ```
             User user = userService.CreateUser(userName, password, emailId);
          
 ```
 
-__Create user:__
+__Get user:__
 
 This is done to get user and its parameter is :
-1. UserName
+1. userName
 
 ```
             User response = userService.GetUser(userName);
