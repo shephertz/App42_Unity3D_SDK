@@ -12,8 +12,8 @@ and you are all set!
 2. Create an app once you are on Quick start page after registration.
 3. If you are already registered, login to [AppHQ] (http://apphq.shephertz.com/register/app42Login) console and create an app from App Manager Tab
 4. [Download](https://github.com/shephertz/App42_Unity3D_SDK/archive/master.zip) the unity 3d sdk .
-5. open the project in unity .
-6. Double click on the project sample code will open.
+5. Open the App42_Unity_Sample.exe from assets folder. it contains your App42_Unity_Api.dll & App42_Unity_Sample.cs.
+6. Double click on the App42_Unity_Sample.cs code will open.
 7. Initailize your apiKey and secretKey in ServiceAPI
 8. Save the project and run on unity.
 
@@ -23,10 +23,8 @@ and you are all set!
 __Initialize Services:__
 
 ```
-
-            ServiceAPI sp = new ServiceAPI("YOUR_API_KEY", "YOUR_SECRET_KEY");
-            UserService userService = sp.BuildUserService();
-
+ServiceAPI sp = new ServiceAPI("YOUR_API_KEY", "YOUR_SECRET_KEY");
+UserService userService = sp.BuildUserService();
 ```
 
 __Create user:__
@@ -37,7 +35,7 @@ This is done to create user and its parameters are :
 3. emailId
 
 ```
-            User user = userService.CreateUser(userName, password, emailId);
+User user = userService.CreateUser(userName, password, emailId);
          
 ```
 
@@ -47,7 +45,7 @@ This is done to get user and its parameter is :
 1. userName
 
 ```
-            User response = userService.GetUser(userName);
+User response = userService.GetUser(userName);
          
 ```
 
@@ -56,10 +54,10 @@ __Get input from user:__
 This is done to create the text area and get the input from user.
 
 ```
-           txt_user = GUI.TextField(new Rect(50, 10, 200, 20), txt_user);
-           txt_pass = GUI.TextField(new Rect(50, 40, 200, 20), txt_pass);
-           txt_email = GUI.TextField(new Rect(50, 70, 200, 20), txt_email);
-           txt_name = GUI.TextField(new Rect(400, 10, 200, 20), txt_name);
+txt_user = GUI.TextField(new Rect(50, 10, 200, 20), txt_user);
+txt_pass = GUI.TextField(new Rect(50, 40, 200, 20), txt_pass);
+txt_email = GUI.TextField(new Rect(50, 70, 200, 20), txt_email);
+txt_name = GUI.TextField(new Rect(400, 10, 200, 20), txt_name);
 ```
 
 
@@ -68,10 +66,10 @@ __create label:__
 This is done to create the label which shows what value has to enter in text field.
 
 ```
-           GUI.Label(new Rect(260, 10, 200, 20),"Username");
-   	   GUI.Label(new Rect(260, 40, 200, 20),"Password");
-	   GUI.Label(new Rect(260, 70, 200, 20),"Email");
-           GUI.Label(new Rect(610, 10, 200, 20),"Username");
+GUI.Label(new Rect(260, 10, 200, 20),"Username");
+GUI.Label(new Rect(260, 40, 200, 20),"Password");
+GUI.Label(new Rect(260, 70, 200, 20),"Email");
+GUI.Label(new Rect(610, 10, 200, 20),"Username");
       
 ```
 
