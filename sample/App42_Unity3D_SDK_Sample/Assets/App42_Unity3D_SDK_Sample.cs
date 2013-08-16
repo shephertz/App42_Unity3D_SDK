@@ -7,7 +7,7 @@ using com.shephertz.app42.paas.sdk.csharp;
 using com.shephertz.app42.paas.sdk.csharp.user;
 
 
-public class App42_Unity_Sample : MonoBehaviour
+public class App42_Unity3D_SDK_Sample : MonoBehaviour
 {
 	
     static ServiceAPI sp = new ServiceAPI("YOUR_API_KEY", "YOUR_SECRET_KEY");
