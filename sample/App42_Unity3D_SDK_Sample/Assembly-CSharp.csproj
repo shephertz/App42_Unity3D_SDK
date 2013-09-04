@@ -18,7 +18,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_2;UNITY_4_1;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_2;UNITY_4_1;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -44,9 +44,33 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\App42_Unity3D_SDK_Sample.cs" />
- <Reference Include="App42_CSHARP_SDK_1.5">
- <HintPath>Assets\App42_CSHARP_SDK_1.5.dll</HintPath>
+     <Compile Include="Assets\BuddyResponse.cs" />
+     <Compile Include="Assets\BuddyTest.cs" />
+     <Compile Include="Assets\Constant.cs" />
+     <Compile Include="Assets\CustomCodeResponse.cs" />
+     <Compile Include="Assets\CustomCodeTest.cs" />
+     <Compile Include="Assets\EmailResponse.cs" />
+     <Compile Include="Assets\EmailTest.cs" />
+     <Compile Include="Assets\LogResponse.cs" />
+     <Compile Include="Assets\LogTest.cs" />
+     <Compile Include="Assets\PushNotificationResponse.cs" />
+     <Compile Include="Assets\PushNotificationTest.cs" />
+     <Compile Include="Assets\ReviewResponse.cs" />
+     <Compile Include="Assets\ReviewTest.cs" />
+     <Compile Include="Assets\RewardResponse.cs" />
+     <Compile Include="Assets\RewardTest.cs" />
+     <Compile Include="Assets\ScoreBoardResponse.cs" />
+     <Compile Include="Assets\ScoreBoardTest.cs" />
+     <Compile Include="Assets\SessionResponse.cs" />
+     <Compile Include="Assets\SessionTest.cs" />
+     <Compile Include="Assets\SocialResponse.cs" />
+     <Compile Include="Assets\SocialTest.cs" />
+     <Compile Include="Assets\StorageResponse.cs" />
+     <Compile Include="Assets\StorageTest.cs" />
+     <Compile Include="Assets\UserResponse.cs" />
+     <Compile Include="Assets\UserTest.cs" />
+ <Reference Include="App42_Unity_SDK_1.6">
+ <HintPath>Assets\App42_Unity_SDK_1.6.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
