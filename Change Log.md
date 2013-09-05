@@ -1,5 +1,5 @@
-* [Release Version 1.6]()
-* [Release Version 1.5]()
+* [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
+* [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
 
 ## Version 1.6
 
