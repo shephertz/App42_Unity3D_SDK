@@ -20,22 +20,22 @@ public class SocialTest : MonoBehaviour {
 	//===========================================================================================
 	
 	//============================DECLARING VARIABLES==============================================================================================================================================================
-	public string userName = "Aks"+ DateTime.Now.Ticks;             //faceBook,twitter,linkedIn
-	public string status = "Hi I M Using App42 Social For Unity3D";//faceBook,twitter,linkedIn
+	public string userName = "<Name of the user>";             //faceBook,twitter,linkedIn
+	public string status = "<Status that has to update on wall>";//faceBook,twitter,linkedIn
 	
-	public string appId = "";                         //faceBook
-	public string appSecret = "";                    //faceBook
-	public string fbAccessToken = "448838959-CAAG0kEdZAftwBAM2KXj1vXMJ1RU95ymmKlAdOltuGiEdq4HZCO0QXd8xO2BmCjj16EvKp79XzrW98fmeloIChKzQPgVdzHZBXxVfLBL2Fb2fL7ZCQa2CT8tnwpkkbsPSzR0LqNgZAZCaNL0PLLIbUNVG1PE9W7UaQZD";
+	public string appId = "<facebook_app_id>";                         //faceBook
+	public string appSecret = "<facebook_app_secret>";                    //faceBook
+	public string fbAccessToken = "<facebook_access_token>";
 	
-	public string consumerKey = "6lFvyAd515aKrFDwL8DA";                                //twitter
-	public string consumerSecret = "uFQ4QBr1fxcTthcB7bE5yvnaq8Jv3EUD4bAQRk8vNs";      //twitter
-	public string accessToken = "448838959-m67CV2QqqizC6tKwS88R8K7YxTts54HPmUv4EfJC";//twitter
-	public string accessTokenSecret = "mgyFruxAopBkJdQAOS3zSBqn8SqjkRpgw8oJJZKV9vg";//twitter
+	public string consumerKey = "<twitter_consumer_key>";                                //twitter
+	public string consumerSecret = "<twitter_consumer_secret>";      //twitter
+	public string accessToken = "<twitter_access_token>";//twitter
+	public string accessTokenSecret = "<twitter_access_token_secret>";//twitter
 	
-	public string linkedinApiKey = "gdsxb5wr6bow";         //LinkedIn
-	public string linkedinSecretKey = "YQ345Y4AqI2WSMjp";           //LinkedIn
-	public string linkedinAccessToken = "56a813dd-5b61-48f4-8cd6-cb49b40081f6";//LinkedIn
-	public string linkedinAccessTokenSecret = "7d81cb5b-d9ee-4ebb-8750-2f822ebd8aa2";//LinkedIn	
+	public string linkedinApiKey = "<linkedin_api_key>";         //LinkedIn
+	public string linkedinSecretKey = "<linkedin_secret_key>";           //LinkedIn
+	public string linkedinAccessToken = "<linkedin_access_token>";//LinkedIn
+	public string linkedinAccessTokenSecret = "<linkedin_access_token_secret>";//LinkedIn	
 	
 	public string success;
 	//============================DECLARATION ENDS HERE=============================================================================================================================================================
