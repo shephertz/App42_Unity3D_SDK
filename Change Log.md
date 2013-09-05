@@ -10,16 +10,25 @@
 **The following feature have been pushed to the latest :**
 
 ```
-Cross platform support like Web player, iOS , Android etc.
+Cross platform support Web player, iOS , Android.
 ```
 
 **This release contains the following bug fix:**
 
+**CustomCode Service**
+
 ```
-None
+RunJavaCode
 ```
 
-Note : - If your are moving from **Release 1.5** to **Release 1.6** following services are not available :- 
+**Storage Service**
+
+```
+UpdateDocumentByKeyValue
+UpdateDocumentByDocId
+```
+
+Note : - **Release 1.6** does not contain the following services in Asnc mode:- 
 
 ```
 Cart/Catalogue Service
