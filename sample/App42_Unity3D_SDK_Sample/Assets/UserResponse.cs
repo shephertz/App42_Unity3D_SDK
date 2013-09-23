@@ -17,7 +17,6 @@ namespace AssemblyCSharp
                 {
                     User userObj = (User)user;
 					result = userObj.ToString();
-            
                     Debug.Log ("UserName : " + userObj.GetUserName());
                     Debug.Log ("EmailId : " + userObj.GetEmail());
                     User.Profile profileObj = (User.Profile)userObj.GetProfile();

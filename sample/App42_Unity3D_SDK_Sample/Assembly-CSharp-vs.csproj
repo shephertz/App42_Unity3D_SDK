@@ -44,6 +44,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AchievementResponse.cs" />
+     <Compile Include="Assets\AchievementTest.cs" />
      <Compile Include="Assets\BuddyResponse.cs" />
      <Compile Include="Assets\BuddyTest.cs" />
      <Compile Include="Assets\Constant.cs" />
@@ -69,8 +71,8 @@
      <Compile Include="Assets\StorageTest.cs" />
      <Compile Include="Assets\UserResponse.cs" />
      <Compile Include="Assets\UserTest.cs" />
- <Reference Include="App42_Unity_SDK_1.6">
- <HintPath>Assets\App42_Unity_SDK_1.6.dll</HintPath>
+ <Reference Include="App42_Unity_SDK_1.7">
+ <HintPath>Assets\App42_Unity_SDK_1.7.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

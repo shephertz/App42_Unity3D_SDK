@@ -11,15 +11,20 @@ using AssemblyCSharp;
 
 public class PushNotificationTest : MonoBehaviour
 {
-	Constant cons = new Constant ();
-	ServiceAPI sp = null;
-	PushNotificationService pushNotificationService = null; // Initializing PushNotification Service.
+	//=====================================================================================================
+	Constant cons = new Constant ();                                    // Making cons Object For Using Constant.
+	PushNotificationResponse callBack = new PushNotificationResponse();// Making callBack Object for PushNotificationResponse.
+    ServiceAPI sp = null;                                             // Initializing Service API.
+	PushNotificationService pushNotificationService = null;          // Initializing PushNotification Service.
+	//=====================================================================================================
+	
+	//=======================================================================================
 	public string password = "password";
 	public int max = 2;
 	public int offSet = 1;
 	public string success, box;
-	PushNotificationResponse callBack = new PushNotificationResponse();
-
+	//=======================================================================================
+	
 	public static bool Validator (object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
 	{
 		return true;
@@ -56,7 +61,7 @@ public class PushNotificationTest : MonoBehaviour
 		//=========================================================================	
 		if (GUI.Button (new Rect (260, 200, 200, 30), "Store Device Token")) {
 			pushNotificationService = sp.BuildPushNotificationService (); // Initializing PushNotification Service.
-			pushNotificationService.StoreDeviceToken (cons.userName, cons.deviceId, cons.deviceToken, callBack);
+			pushNotificationService.StoreDeviceToken (cons.userName, cons.deviceToken, "<Enter_your-device_type>", callBack);
 		}
 		
 		//=========================================================================	
@@ -86,13 +91,13 @@ public class PushNotificationTest : MonoBehaviour
 		//=========================================================================	
 		if (GUI.Button (new Rect (260, 250, 200, 30), "Send PushMessage ToAll ByType")) {
 			pushNotificationService = sp.BuildPushNotificationService (); // Initializing PushNotification Service.
-			pushNotificationService.SendPushMessageToAllByType (cons.message, "ANDROID", callBack);
+			pushNotificationService.SendPushMessageToAllByType (cons.message, "<Enter_your-device_type>", callBack);
 		}
 		
 		//===================================###################=========================================	
 		if (GUI.Button (new Rect (470, 250, 200, 30), "Unsubscribe Device To Channel")) {
 			pushNotificationService = sp.BuildPushNotificationService (); // Initializing PushNotification Service.
-			pushNotificationService.UnsubscribeDeviceToChannel (cons.userName, cons.channelName, cons.deviceId, callBack);
+			pushNotificationService.UnsubscribeDeviceToChannel (cons.userName, cons.channelName, cons.deviceToken, callBack);
 		}
 		
 		//===================================###################=========================================	
@@ -104,7 +109,21 @@ public class PushNotificationTest : MonoBehaviour
 		//===================================###################=========================================	
 		if (GUI.Button (new Rect (890, 250, 240, 30), "Subscribe Channel With DeviceToken")) {
 			pushNotificationService = sp.BuildPushNotificationService (); // Initializing PushNotification Service.
-			pushNotificationService.SubscribeToChannel (cons.channelName, cons.userName,cons.deviceToken,"ANDROID", callBack);
+			pushNotificationService.SubscribeToChannel (cons.userName, cons.channelName, cons.deviceToken,"<Enter_your-device_type>", callBack);
+		}
+		//===================================###################=========================================	
+		if (GUI.Button (new Rect (50, 300, 200, 30), "Delete Device Token")) {
+			pushNotificationService = sp.BuildPushNotificationService (); // Initializing PushNotification Service.
+			pushNotificationService.DeleteDeviceToken(cons.userName, cons.deviceToken, callBack);
+		}	
+		
+		//===================================###################=========================================	
+		if (GUI.Button (new Rect (260, 300, 240, 30), "Send PushMessage ToGroup")) {
+			pushNotificationService = sp.BuildPushNotificationService (); // Initializing PushNotification Service.
+			IList<String> userList = new List<String>();
+			userList.Add(cons.userName);
+			userList.Add(cons.userName1);
+			pushNotificationService.SendPushMessageToGroup(cons.message, userList, callBack);
 		}
 	}
 }

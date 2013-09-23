@@ -27,7 +27,7 @@ public class CustomCodeTest : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		ServicePointManager.ServerCertificateValidationCallback = Validator;
-		sp = new ServiceAPI(cons.customApiKey,cons.customSecretKey);
+		sp = new ServiceAPI(cons.apiKey,cons.secretKey);
     }
 	
 	// Update is called once per frame
