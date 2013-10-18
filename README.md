@@ -74,4 +74,4 @@ GUI.Label(new Rect(610, 10, 200, 20),"Username");
 ```
 
 
-Visit our [Unity Developer home page](https://github.com/shephertz/App42_Unity3D_SDK/wiki/Unity-Home) to learn more about App42 Unity SDK and using our App42 SDK.
+Visit our [Unity Developer home page](http://api.shephertz.com/app42-dev/unity3d-backend-apis.php) to learn more about App42 Unity SDK and using our App42 SDK.
