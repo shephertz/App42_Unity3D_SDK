@@ -71,8 +71,8 @@
      <Compile Include="Assets\StorageTest.cs" />
      <Compile Include="Assets\UserResponse.cs" />
      <Compile Include="Assets\UserTest.cs" />
- <Reference Include="App42_Unity_SDK_1.7.2">
- <HintPath>Assets\App42_Unity_SDK_1.7.2.dll</HintPath>
+ <Reference Include="App42_Unity_SDK_1.8">
+ <HintPath>Assets\App42_Unity_SDK_1.8.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
