@@ -1,7 +1,7 @@
 App42_BPaaS_Unity3D_SDK
 ========================
 
-App42 BPaaS Cloud API Client SDK JAR files for Unity3D 
+App42 BPaaS Cloud API Client SDK files for Unity3D 
 
 - Download the App42 BPaaS UNITY3D SDK
 - Unzip the file and open **App42 Unity3D Sample** project.
