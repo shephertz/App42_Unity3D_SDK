@@ -1,4 +1,4 @@
-App42 BPaaS Unity3D SDK
+App42_BPaaS_Unity3D_SDK
 ========================
 
 App42 BPaaS Cloud API Client SDK JAR files for Unity3D 
