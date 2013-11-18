@@ -12,10 +12,10 @@ and you are all set!
 2. Create an app once you are on Quick start page after registration.
 3. If you are already registered, login to [AppHQ] (http://apphq.shephertz.com/register/app42Login) console and create an app from App Manager Tab
 4. [Download](https://github.com/shephertz/App42_Unity3D_SDK/archive/master.zip) the unity 3d sdk .
-5. Open the App42_Unity_Sample.unity from  **/sample/App42_Unity_Sample/Assets/** folder. it contains your App42_Unity_SDK_x.x.dll & App42_Unity_Sample.cs.
-6. App42_Unity_Sample.cs contain your sample code.
+5. Open the App42_Unity_Sample.unity from  **/sample/App42_Unity_Sample/Assets/** folder. it contains your App42_Unity_SDK_x.x.dll & Constant.cs.
+6. Constant.cs contain your sample code.
 7. Pass your apiKey and secretKey.
-8. Save the source code and run on unity.
+8. Save the source code and run the unity script.
 
 
 # Design Details:
