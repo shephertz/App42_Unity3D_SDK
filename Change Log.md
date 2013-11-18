@@ -13,6 +13,14 @@
 AB Testing Service
 ```
 
+**The following features have been pushed to the services :**
+
+**SCOREBOARD SERVICE**
+
+```
+GetTopNRankersFromFacebook
+```
+
 **This release contains the following bug fix:**
 
 ```
