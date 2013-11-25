@@ -4,66 +4,57 @@ namespace AssemblyCSharp
 {
 	public class Constant 
 	{
-		public string apiKey  ="223c91f16cec32abf64c6dea5ab3e894151e9c5b72a10a03814afd7e3b27173f";						// API key that you have receieved after the success of app creation from AppHQ
-		public string secretKey ="622dd65d3d7afd03f07cf70d9a35b189754959d7366cbcf036c6704d7cf60001";					// SECRET key that you have receieved after the success of app creation from AppHQ
-		public string customApiKey  ="72e2bfc3eb51c60a8764ed3705510625baaa46691b111c9ffc7335a52003bf17";						// API key that you have receieved after the success of app creation from AppHQ
-		public string customSecretKey ="ef92ccf8d71cb30272a66f0469b225969a8115e4de37f94f5fec0d708ee0e929";					// SECRET key that you have receieved after the success of app creation from AppHQ
-		public string gameName ="testUnity";					// Name of the game which you can create from AppHQ console by clicking 
-																	// Business Service -> Game Service -> Game -> Add Game
+		public string apiKey  ="<Your_API_KEY>";						// API key that you have receieved after the success of app creation from AppHQ
+		public string secretKey ="<Your_SECRET_KEY>";					// SECRET key that you have receieved after the success of app creation from AppHQ
+		public string gameName ="<Your_Game_Name>";						// Name of the game which you can create from AppHQ console by clicking 
+																		// Business Service -> Game Service -> Game -> Add Game
+		public string description  = "<Enter_the_description>";			// Enter your description
 		public string userName  = "<Name of the User>"; 				// Name of the user for which you have to save score or create user etc. 
 		public string userName1  = "<Name of the User>";				// Name of the user for which you have to save score or create user etc.
-		public string sessionId  = "<Session Id of the User>";   					// Session id of the user for which you have to have invalidate his session 
-		public string emailId  = "EmailId of The User";    		// EmailId for the user creation
-		public string updateEmailId   ="<Id that has to be upadated>"; // EmailId for the updation
+		public string sessionId  = "<Session Id of the User>";   		// Session id of the user for which you have to have invalidate his session 
+		public string emailId  = "<EmailId of The User>";    			// EmailId for the user creation
+		public string updateEmailId   ="<Id that has to be upadated>";  // EmailId which has to be updated in user profile.
 		
-		
-		//*************** Reward Service Credentials ************************//
-		public string dbName="<dbName>";   							// Name of the database for which you have to add json document
-		public string docId  = "<Object id of the User>";	 							// Object id of the json doc for which you have to fetch json doc, udate , delete etc..
-		public string scoreId = "<Scoreid of the User>";							// Score id of the user for which you have to edit score , fetch user score etc..
+		public string dbName="<Enter_Your_DbName>";   					// Name of the database for which you have to add json document
+		public string docId  = "<Object id of the User>";	 			// Object id of the json doc for which you have to fetch json doc,
+																		// update , delete etc..
+		public string scoreId = "<Scoreid of the User>";				// Score id of the user for which you have to edit score , fetch user score etc..
 		public string json = "{\"AppName\":\"devApp\",\"AppId\":\"123hg4bdb\"}"; 			// Json string which you want to save in insert json document
-		public string key = "AppName"; 								// Key of json doc for fetch the doc details,update doc etc..
-		public string val = "devApp"; 							// Value of json doc for fetch the doc details , updated doc etc..
-		public string newJson = "{'AppName':'RealeaseApp'}"; 		// json string which you want to update from existing doc.
-		public string channelName  = "channelName"; 				
-		public string description  = "description here";
+		public string key = "<Enter_The_Key>"; 							// Key of json doc for fetch the doc details,update doc etc..
+		public string val = "<Enter_The_Value>"; 						// Value of json doc for fetch the doc details , updated doc etc..
+		public string newJson = "{'AppName':'RealeaseApp'}"; 			// json string which you want to update from existing doc.
 		
-		public string deviceId  = "<Device Id>"; 				
-		public string message  = "Phote"; 				
-		public string deviceToken  = "Device Token"; 				
-		public string albumName  = "albumName"; 				
-		public string photoName  = "photoName"; 				
-		public string itemId  = "itemId"; 		
+		public string channelName  = "<Enter_the_channel_name>"; 		// Enter your ChannelName which you have to subscribe for PushNotification		
 		
-		//*************** Review service Credentials ************************//
+		public string deviceId  = "<Enter_the_deviceId>"; 				// Enter your DeviceId for which you have to send messages etc.
+		public string message  = "<Enter_the_message>"; 				// Enter your message which you wan't to send.
+		public string deviceToken  = "<Enter_the_deviceToken>"; 
 		
-		public string reviewId  = "reviewId"; 
+		public string itemId  = "<Enter_the_itemId>"; 					// Enter the id or the item for which you wan't to create review of fetching details.
+		public string reviewId  = "<Enter_the_reviewId>"; 				// Enter the review id for which you wan't to fetch the details.
 		
-		//*************** Exception Service Credentials ************************//
-		
-		public string emailHost = "smtp.gmail.com";
-		public Int64 emailPort = 465;
-		public string mailId = "ronitsharma0010@gmail.com";
-		public string emailPassword = "himanshu010";
-		public bool isSSL = true;
-		public string sendTo = "akshay.mishra@shephertz.co.in";
-		public string sendSubject = "Tesing Unity Web Browser";
-		public string sendMsg = "Himanshu is testing App42 Email Service For Unity";
 		public int max = 5;
 		public int rating = 3;
 		public int offSet = 1;
-		public string customServiceName = "monitor";
-		
-		
-		//*************** Reward Service Credentials ************************//
-		public string rewardName  = "Golden";				// Name of the reward for your game.
-		public string attributeName = "JohnsValley";
-		public string attributeValue = "Editor";
+		public string customServiceName = "<Enter_Service_Name>";		// Enter your service Name for which you want to run your custom code.
+		public string rewardName  = "<Enter_Reward_Name>";				// Name of the reward for your game.
+		public string attributeName = "<Enter_Attribute_Name>";			// Name of the attribute
+		public string attributeValue = "<Enter_Attribute_Value>";
 		public bool isCreate = false;
+		public string module = "<Enter_Your_Module>";					// Name of the module for which you create log
+		public string eventName = "<Enter_Event_Name>";	
 		
-		//*************** Log Service Credentials ************************//
-		public string module = "LogModule";
-		public string eventName = "LogEvent";	
+		public string emailHost = "<Enter_the_email_host>";
+		public Int64 emailPort = 465;
+		public string mailId = "<Enter_Your_EmailId>";					// Email id of the user which you want to configure with App42
+		public string emailPassword = "<Enter_email_password>";			// Enter your email password which you have configure with App42	
+		public bool isSSL = true;
+		public string sendTo = "<Enter_Receiver_EMailId>";
+		public string sendSubject = "<Enter_Email_Subject>";
+		public string sendMsg = "Thanks for register.";				  // Enter the message which you want to send.
+		
+		public string achievementName = "<Your_Achievement_Name>";    // Name of the achievement you want to create or earn.
+	
 	}  
 }
 
