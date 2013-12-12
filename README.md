@@ -26,7 +26,7 @@ void Start ()
 2. Create an app once you are on Quick start page after registration.
 3. If you are already registered, login to [AppHQ] (http://apphq.shephertz.com/register/app42Login) console and create an app from App Manager Tab.
 4. [Download](https://github.com/shephertz/App42_Unity3D_SDK/archive/master.zip)  __App42 Unity3D SDK__ and unzip it on your local machine.
-5. Open the App42_Unity3D_Sample.unity from  `../sample/App42_Unity3D_Sample/Assets/scenes/` folder. Or you can simply import the __App42_Unity3D_Sample__ project in your Unity Editor.
+5. Open the __App42_Unity3D_Sample.unity__ from  `../sample/App42_Unity3D_Sample/Assets/scenes/` folder. Or you can simply import the __App42_Unity3D_Sample__ project in your Unity Editor.
 6. In your Unity Editor project tab, salect Assets it contains __App42_Unity3D_SDK_x.x.dll__, then select scripts folder it contains __Constant.cs__.
 7. Open __Constant.cs__ file and just copy the __api-Key__ and __secret-Key__ that you have recieved in step 2 or 3 from AppHq console and paste it in Constant.cs file as shown below : 
 
