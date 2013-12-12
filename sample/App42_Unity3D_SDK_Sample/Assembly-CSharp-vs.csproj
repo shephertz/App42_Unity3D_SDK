@@ -12,13 +12,14 @@
 	<AssemblyName>Assembly-CSharp</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
 	<DebugSymbols>true</DebugSymbols>
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_2;UNITY_4_1;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_0;UNITY_4_3;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -36,43 +37,44 @@
 	<Reference Include="System" />
     <Reference Include="System.XML" />
 	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AchievementResponse.cs" />
-     <Compile Include="Assets\AchievementTest.cs" />
-     <Compile Include="Assets\BuddyResponse.cs" />
-     <Compile Include="Assets\BuddyTest.cs" />
-     <Compile Include="Assets\Constant.cs" />
-     <Compile Include="Assets\CustomCodeResponse.cs" />
-     <Compile Include="Assets\CustomCodeTest.cs" />
-     <Compile Include="Assets\EmailResponse.cs" />
-     <Compile Include="Assets\EmailTest.cs" />
-     <Compile Include="Assets\LogResponse.cs" />
-     <Compile Include="Assets\LogTest.cs" />
-     <Compile Include="Assets\PushNotificationResponse.cs" />
-     <Compile Include="Assets\PushNotificationTest.cs" />
-     <Compile Include="Assets\ReviewResponse.cs" />
-     <Compile Include="Assets\ReviewTest.cs" />
-     <Compile Include="Assets\RewardResponse.cs" />
-     <Compile Include="Assets\RewardTest.cs" />
-     <Compile Include="Assets\ScoreBoardResponse.cs" />
-     <Compile Include="Assets\ScoreBoardTest.cs" />
-     <Compile Include="Assets\SessionResponse.cs" />
-     <Compile Include="Assets\SessionTest.cs" />
-     <Compile Include="Assets\SocialResponse.cs" />
-     <Compile Include="Assets\SocialTest.cs" />
-     <Compile Include="Assets\StorageResponse.cs" />
-     <Compile Include="Assets\StorageTest.cs" />
-     <Compile Include="Assets\UserResponse.cs" />
-     <Compile Include="Assets\UserTest.cs" />
- <Reference Include="App42_Unity3D_SDK_1.9.2">
- <HintPath>Assets\App42_Unity3D_SDK_1.9.2.dll</HintPath>
+     <Compile Include="Assets\scripts\AchievementResponse.cs" />
+     <Compile Include="Assets\scripts\AchievementTest.cs" />
+     <Compile Include="Assets\scripts\BuddyResponse.cs" />
+     <Compile Include="Assets\scripts\BuddyTest.cs" />
+     <Compile Include="Assets\scripts\Constant.cs" />
+     <Compile Include="Assets\scripts\CustomCodeResponse.cs" />
+     <Compile Include="Assets\scripts\CustomCodeTest.cs" />
+     <Compile Include="Assets\scripts\EmailResponse.cs" />
+     <Compile Include="Assets\scripts\EmailTest.cs" />
+     <Compile Include="Assets\scripts\LogResponse.cs" />
+     <Compile Include="Assets\scripts\LogTest.cs" />
+     <Compile Include="Assets\scripts\PushNotificationResponse.cs" />
+     <Compile Include="Assets\scripts\PushNotificationTest.cs" />
+     <Compile Include="Assets\scripts\ReviewResponse.cs" />
+     <Compile Include="Assets\scripts\ReviewTest.cs" />
+     <Compile Include="Assets\scripts\RewardResponse.cs" />
+     <Compile Include="Assets\scripts\RewardTest.cs" />
+     <Compile Include="Assets\scripts\ScoreBoardResponse.cs" />
+     <Compile Include="Assets\scripts\ScoreBoardTest.cs" />
+     <Compile Include="Assets\scripts\SessionResponse.cs" />
+     <Compile Include="Assets\scripts\SessionTest.cs" />
+     <Compile Include="Assets\scripts\SocialResponse.cs" />
+     <Compile Include="Assets\scripts\SocialTest.cs" />
+     <Compile Include="Assets\scripts\StorageResponse.cs" />
+     <Compile Include="Assets\scripts\StorageTest.cs" />
+     <Compile Include="Assets\scripts\UserResponse.cs" />
+     <Compile Include="Assets\scripts\UserTest.cs" />
+ <Reference Include="App42_Unity3D_SDK_1.9.1">
+ <HintPath>Assets\App42_Unity3D_SDK_1.9.1.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
