@@ -3,75 +3,41 @@ App42 Unity SDK
 
 [![OverView](http://www.shephertz.com/images/logo/app42_cloud.png)](http://api.shephertz.com/)
 
-For App42 Unity3D library , You simply need to download latest version of Unity SDK which contain the App42_Unity_Api.x.x.x.dll and import it as an Asset into your Unity project 
-and you are all set!
+App42 Unity SDK can be used to add backend to Unity application which can run on different platforms like Android/iOS/Windows phone/Web browser etc. App42 Unity SDK consists of seperate dll to be used for building on Windows Phone and is available under __App42-Unity3D-SDK-WP8__ folder of downloaded zip. However for rest of the platform it is available inside __App42-Unity3D-SDK__ folder. 
+
+__Note:__ If you are building an app for WP8, then you have to use our App42_Unity3D_SDK_WP8_x.x.dll.
+If you want to test your script in UNITY_EDITOR, then use a X509Certificates validator like this :-
+```
+#if UNITY_EDITOR
+public static bool Validator (object sender, System.Security.Cryptography.X509Certificates.X509Certificate certificate, System.Security.Cryptography.X509Certificates.X509Chain chain, System.Net.Security.SslPolicyErrors sslPolicyErrors)
+         {return true;}
+#endif
+void Start ()
+{
+#if UNITY_EDITOR
+   ServicePointManager.ServerCertificateValidationCallback = Validator;
+#endif
+}
+```
 
 # Steps to use sample : 
 
-1. [Register] (https://apphq.shephertz.com/register) with App42 platform
+1. [Register] (https://apphq.shephertz.com/register) with App42 platform.
 2. Create an app once you are on Quick start page after registration.
-3. If you are already registered, login to [AppHQ] (http://apphq.shephertz.com/register/app42Login) console and create an app from App Manager Tab
-4. [Download](https://github.com/shephertz/App42_Unity3D_SDK/archive/master.zip) the unity 3d sdk .
-5. Open the App42_Unity_Sample.unity from  **/sample/App42_Unity_Sample/Assets/** folder. it contains your App42_Unity_SDK_x.x.dll & Constant.cs.
-6. Constant.cs contain your sample code.
-7. Pass your apiKey and secretKey.
-8. Save the source code and run the unity script.
-
-
-# Design Details:
-
-__Initialize Services:__
+3. If you are already registered, login to [AppHQ] (http://apphq.shephertz.com/register/app42Login) console and create an app from App Manager Tab.
+4. [Download](https://github.com/shephertz/App42_Unity3D_SDK/archive/master.zip)  __App42 Unity3D SDK__ and unzip it on your local machine.
+5. Open the App42_Unity3D_Sample.unity from  `../sample/App42_Unity3D_Sample/Assets/scenes/` folder. Or you can simply import the __App42_Unity3D_Sample__ project in your Unity Editor.
+6. In your Unity Editor project tab, salect Assets it contains __App42_Unity3D_SDK_x.x.dll__, then select scripts folder it contains __Constant.cs__.
+7. Open __Constant.cs__ file and just copy the __api-Key__ and __secret-Key__ that you have recieved in step 2 or 3 from AppHq console and paste it in Constant.cs file as shown below : 
 
 ```
-ServiceAPI sp = new ServiceAPI("YOUR_API_KEY", "YOUR_SECRET_KEY");
-UserService userService = sp.BuildUserService();
+public string apiKey  = "<YOUR_API_KEY>";
+public string secretKey = "<YOUR_SECRET_KEY>";
 ```
 
-__Create user:__
+8 . Constant.cs file contains all the constants used in scripts (e.g username, email, password, gamename, dbname etc.) edit the variables as your requirements.
 
-This is done to create user and its parameters are :
-1. userName
-2. password
-3. emailId
-
-```
-User user = userService.CreateUser(userName, password, emailId);
-         
-```
-
-__Get user:__
-
-This is done to get user and its parameter is :
-1. userName
-
-```
-User response = userService.GetUser(userName);
-         
-```
-
-__Get input from user:__
-
-This is done to create the text area and get the input from user.
-
-```
-txt_user = GUI.TextField(new Rect(50, 10, 200, 20), txt_user);
-txt_pass = GUI.TextField(new Rect(50, 40, 200, 20), txt_pass);
-txt_email = GUI.TextField(new Rect(50, 70, 200, 20), txt_email);
-txt_name = GUI.TextField(new Rect(400, 10, 200, 20), txt_name);
-```
-
-
-__create label:__
-
-This is done to create the label which shows what value has to enter in text field.
-
-```
-GUI.Label(new Rect(260, 10, 200, 20),"Username");
-GUI.Label(new Rect(260, 40, 200, 20),"Password");
-GUI.Label(new Rect(260, 70, 200, 20),"Email");
-GUI.Label(new Rect(610, 10, 200, 20),"Username");
-      
-```
+9 . Save the source code and go to unity editor, select hierarchy, then select main camera, select any script which you wish to run lets say StorageTest(Script), click run.
 
 
 Visit our [Unity Developer home page](http://api.shephertz.com/app42-dev/unity3d-backend-apis.php) to learn more about App42 Unity SDK and using our App42 SDK.
