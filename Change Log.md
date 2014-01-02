@@ -1,4 +1,22 @@
 * [Release Version 2.0](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-20)
+* [Release Version 2.0.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-201)
+
+## Version 2.0.1
+
+**Release Date:** 2-1-2014
+
+**Release Version:** 2.0.1
+
+**The following features have been added to the SDK :**
+--
+None
+--
+
+**This release contains the following bug fix:**
+
+```
+Unhandle Network Exception
+```
 
 ## Version 2.0
 
