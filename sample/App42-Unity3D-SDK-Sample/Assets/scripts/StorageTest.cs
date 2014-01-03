@@ -179,6 +179,9 @@ public class StorageTest : MonoBehaviour
 						Query q2 = QueryBuilder.Build ("AppId", "123hg4bdb", Operator.LIKE);
 						Query q3 = QueryBuilder.CompoundOperator (q1, Operator.OR, q2);
 						storageService.FindDocumentsByQuery (cons.dbName, collectionName, q3, callBack);
+				}if (GUI.Button (new Rect (470, 350, 200, 30), "SaveOrUpdateDocument")) {
+						storageService = sp.BuildStorageService (); // Initializing Storage Service.
+						storageService.SaveOrUpdateDocumentByKeyValue(cons.dbName, collectionName, cons.key,cons.val,cons.newJson, callBack);
 				}
 		}
 }
