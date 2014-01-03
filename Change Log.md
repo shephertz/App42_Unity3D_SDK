@@ -1,11 +1,11 @@
 * [Release Version 2.0](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-20)
-* [Release Version 2.0.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-201)
+* [Release Version 2.0.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-202)
 
-## Version 2.0.1
+## Version 2.0.2
 
-**Release Date:** 2-1-2014
+**Release Date:** 3-1-2014
 
-**Release Version:** 2.0.1
+**Release Version:** 2.0.2
 
 **The following features have been added to the SDK :**
 --
