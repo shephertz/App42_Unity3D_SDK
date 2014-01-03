@@ -1,8 +1,8 @@
 * [Release Version 2.0.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-202)
 * [Release Version 2.0](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-20)
-* [Release Version 1.9](https://github.com/shephertz/App42_Unity3D_SDK/blob/1.x/Change%20Log.md#version-19)
-* [Release Version 1.8](https://github.com/shephertz/App42_Unity3D_SDK/blob/1.x/Change%20Log.md#version-18)
-* [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/1.x/Change%20Log.md#version-15)
+* [Release Version 1.9](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-19)
+* [Release Version 1.8](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-18)
+* [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
 
 
 ## Version 2.0.2
