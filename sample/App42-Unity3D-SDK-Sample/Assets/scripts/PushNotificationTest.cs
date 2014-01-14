@@ -123,5 +123,10 @@ public class PushNotificationTest : MonoBehaviour
 			userList.Add(cons.userName1);
 			pushNotificationService.SendPushMessageToGroup(cons.message, userList, callBack);
 		}
+		if (GUI.Button (new Rect (520, 300, 200, 30), "Schedule Message To User")) {
+			pushNotificationService = sp.BuildPushNotificationService (); // Initializing PushNotification Service.
+			DateTime expiryTime =DateTime.UtcNow.AddDays(1);
+			pushNotificationService.ScheduleMessageToUser (cons.userName, cons.message,expiryTime, callBack);
+		}
 	}
 }
