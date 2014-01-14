@@ -1,3 +1,4 @@
+* [Release Version 2.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-21)
 * [Release Version 2.0.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-202)
 * [Release Version 2.0](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-20)
 * [Release Version 1.9](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-19)
@@ -8,6 +9,24 @@
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
 
 
+## Version 2.1
+
+**Release Date:** 14-1-2014
+
+**Release Version:** 2.1
+
+**The following features have been added to the SDK :**
+
+```
+Schedule Message To User
+```
+
+**This release contains the following bug fix:**
+
+```
+None
+```
+
 ## Version 2.0.2
 
 **Release Date:** 3-1-2014
@@ -15,9 +34,10 @@
 **Release Version:** 2.0.2
 
 **The following features have been added to the SDK :**
---
+
+```
 None
---
+```
 
 **This release contains the following bug fix:**
 
@@ -32,10 +52,9 @@ Unhandle Network Exception
 **Release Version:** 2.0
 
 **The following features have been added to the SDK :**
---
+```
 * __Windows Phone 8 Support__
-
---
+```
 
 **This release contains the following bug fix:**
 
