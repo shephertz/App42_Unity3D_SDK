@@ -1,3 +1,4 @@
+* [Release Version 2.1.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-211)
 * [Release Version 2.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-21)
 * [Release Version 2.0.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-202)
 * [Release Version 2.0](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-20)
@@ -8,6 +9,17 @@
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
 
+## Version 2.1.1
+
+**Release Date:** 29-1-2014
+
+**Release Version:** 2.1.1
+
+**This release contains the following bug fix:**
+
+```
+1. Get Total Records BugFix.
+```
 
 ## Version 2.1
 
