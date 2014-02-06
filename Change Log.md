@@ -22,7 +22,8 @@
 **STORAGE SERVICE**
 ```
 1.Inlist Support for storage query.
-2.UpdateDocumentByQuery.
+2.SaveOrUpdateDocumentByKeyValue.
+3.UpdateDocumentByQuery.
 ```
 
 **PHOTO SERVICE**
