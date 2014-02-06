@@ -16,10 +16,41 @@
 
 **Release Version:** 2.2
 
-**The following features have been added to the SDK :**
 
+**The following features have been pushed to the services :**
+
+**STORAGE SERVICE**
 ```
-Inlist Support for storage query.
+1.Inlist Support for storage query.
+2.UpdateDocumentByQuery.
+```
+
+**PHOTO SERVICE**
+```
+1.UpdatePhoto.
+```
+
+**PUSH NOTIFICATION SERVICE**
+```
+1.SendMessageToInactiveUsers.
+```
+
+**REVIEW SERVICE**
+```
+1.DeleteReviewByReviewId.
+2.DeleteCommentByCommentId.
+```
+
+**SCOREBOARD SERVICE**
+```
+1.GetTopNTargetRankers.
+```
+
+**BUDDY SERVICE**
+```
+1.Unfriend.
+2.DeleteMessageById.
+3.DeleteMessageByIds.
 ```
 
 **This release contains the following bug fix:**
@@ -46,10 +77,12 @@ None.
 
 **Release Version:** 2.1
 
-**The following features have been added to the SDK :**
+**The following features have been pushed to the services :**
+
+**PUSH NOTIFICATION SERVICE**
 
 ```
-Schedule Message To User
+1.Schedule Message To User
 ```
 
 **This release contains the following bug fix:**
