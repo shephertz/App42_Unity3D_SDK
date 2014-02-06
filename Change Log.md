@@ -25,7 +25,7 @@ Inlist Support for storage query.
 **This release contains the following bug fix:**
 
 ```
-1. Get Total Records BugFix.
+None.
 ```
 
 ## Version 2.1.1
