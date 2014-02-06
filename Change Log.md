@@ -1,3 +1,4 @@
+* [Release Version 2.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-22)
 * [Release Version 2.1.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-211)
 * [Release Version 2.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-21)
 * [Release Version 2.0.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-202)
@@ -8,6 +9,24 @@
 * [Release Version 1.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-17)
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
+
+## Version 2.2
+
+**Release Date:** 06-02-2014
+
+**Release Version:** 2.2
+
+**The following features have been added to the SDK :**
+
+```
+Inlist Support for storage query.
+```
+
+**This release contains the following bug fix:**
+
+```
+1. Get Total Records BugFix.
+```
 
 ## Version 2.1.1
 
