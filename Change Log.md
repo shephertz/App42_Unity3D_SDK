@@ -33,7 +33,8 @@
 
 **PUSH NOTIFICATION SERVICE**
 ```
-1.SendMessageToInactiveUsers.
+1.SendMessageToInActiveUsers.
+2.ScheduleMessageToUser.
 ```
 
 **REVIEW SERVICE**
