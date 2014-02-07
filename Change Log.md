@@ -51,6 +51,7 @@ MetaInfo in UserService (GetUser, GetUsersByRole, GetUserByEmailId) and ScoreBoa
 **SCOREBOARD SERVICE**
 ```
 1.GetTopNTargetRankers.
+2.GetTopNRankersFromFacebook(including rankers in specified date range).
 ```
 
 **BUDDY SERVICE**
