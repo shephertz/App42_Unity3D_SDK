@@ -1,3 +1,4 @@
+* [Release Version 2.2.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-222)
 * [Release Version 2.2.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-221)
 * [Release Version 2.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-22)
 * [Release Version 2.1.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-211)
@@ -10,6 +11,18 @@
 * [Release Version 1.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-17)
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
+
+## Version 2.2.2
+
+**Release Date:** 17-02-2014
+
+**Release Version:** 2.2.2
+
+**This release contains the following bug fix:**
+
+```
+1. Installation Id bug fix for WP8.
+```
 
 ## Version 2.2.1
 
