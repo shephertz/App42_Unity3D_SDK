@@ -116,12 +116,6 @@ public class UserTest : MonoBehaviour
 		}
 		
 		//===================================###################=========================================	
-		if (GUI.Button (new Rect (470, 300, 200, 30), "ResetUserPassword")) {
-			userService = sp.BuildUserService (); // Initializing UserService.
-			userService.ResetUserPassword (cons.userName, password, callBack);
-		}
-		
-		//===================================###################=========================================	
 		if (GUI.Button (new Rect (680, 300, 200, 30), "ResetUserPassword")) {
 			userService = sp.BuildUserService (); // Initializing UserService.
 			userService.ResetUserPassword (cons.userName, callBack);
