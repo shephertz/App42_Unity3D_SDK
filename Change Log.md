@@ -1,3 +1,4 @@
+* [Release Version 2.4](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-24)
 * [Release Version 2.3.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-231)
 * [Release Version 2.3](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-23)
 * [Release Version 2.2.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-222)
@@ -13,6 +14,61 @@
 * [Release Version 1.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-17)
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
+
+## Version 2.4
+
+**Release Date:** 26-03-2014
+
+**Release Version:** 2.4
+
+**The following features have been changed :**
+
+```
+If you are upgrading from previous version of App42_Unity3D_SDK and have used SetQuery method on any service, you have to set App42API.SetDbName instead of passing it in method parameter.
+
+**OlD Code Snippet:
+SetQuery("dbName","collectionName","query");
+
+**New Code Snippet :
+App42API.SetDbName("dbName");
+SetQuery("collectionName","query");
+```
+
+**The following features have been pushed to the services :**
+
+**STORAGE SERVICE**
+
+```
+1.AddOrUpdateKeys.
+2.AddAttachmentToDocs.
+3.InsertJSONDocument(With Attached File).
+```
+
+**User SERVICE**
+
+```
+1.AddJSONObject(Add Extra Information while creating user).
+2.CreateUserWithProfile.
+3.GetUsersByGroup.
+```
+
+**PUSH NOTIFICATION SERVICE**
+```
+1.UnSubscribeDevice.
+2.ReSubscribeDevice.
+```
+
+**SCOREBOARD SERVICE**
+```
+1.AddJSONObject(Add Extra Information of user while saving score).
+```
+
+**This release contains the following bug fix:**
+
+```
+None.
+```
+
 
 ## Version 2.3.1
 
