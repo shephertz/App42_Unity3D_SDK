@@ -1,3 +1,4 @@
+* [Release Version 2.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-25)
 * [Release Version 2.4.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-241)
 * [Release Version 2.4](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-24)
 * [Release Version 2.3.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-231)
@@ -15,6 +16,26 @@
 * [Release Version 1.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-17)
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
+
+## Version 2.5
+
+**Release Date:** 04-04-2014
+
+**Release Version:** 2.5
+
+
+**The following features have been pushed to the services :**
+
+**SCOREBOARD SERVICE**
+```
+1.GetUsersWithScoreRange.
+```
+
+**This release contains the following bug fix:**
+
+```
+None.
+```
 
 ## Version 2.4.1
 
