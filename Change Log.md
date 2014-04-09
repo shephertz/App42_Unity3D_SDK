@@ -1,3 +1,4 @@
+* [Release Version 2.5.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-251)
 * [Release Version 2.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-25)
 * [Release Version 2.4.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-241)
 * [Release Version 2.4](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-24)
@@ -16,6 +17,19 @@
 * [Release Version 1.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-17)
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
+
+## Version 2.5.1
+
+**Release Date:** 09-04-2014
+
+**Release Version:** 2.5.1
+
+
+**This release contains the following bug fix:**
+
+```
+Map Reduce Bug Fix.
+```
 
 ## Version 2.5
 
