@@ -41,7 +41,7 @@
 **This release contains the following bug fix:**
 
 ```
-1. No Network Bug Fix.
+1. No Network Bug Fix For Unity_WP8.
 2. Debug.Log Removed.
 3. Exception Message Changed For Unity_WP8.
 ```
