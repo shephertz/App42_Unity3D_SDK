@@ -30,7 +30,7 @@
 
 **SOCIAL SERVICE**
 ```
-1. DoFBAuthAndGetToken.  // Not Available in Unity_WP8.
+1. DoFBOAuthAndGetToken.  // Not Available in Unity_WP8.
 ```
 
 **New feature Added :**
