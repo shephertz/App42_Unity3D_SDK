@@ -1,3 +1,4 @@
+* [Release Version 2.6.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-261)
 * [Release Version 2.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-26)
 * [Release Version 2.5.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-251)
 * [Release Version 2.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-25)
@@ -18,6 +19,27 @@
 * [Release Version 1.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-17)
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
+
+## Version 2.6.1
+
+**Release Date:** 25-04-2014
+
+**Release Version:** 2.6.1
+
+
+**The following features have been pushed to the services :**
+
+**SOCIAL SERVICE**
+```
+1. DoFBOAuthAndGetToken Is Now Available in Unity_WP8.
+```
+
+**This release contains the following bug fix:**
+
+```
+1. CallBack Threading issue for Unity_WP8 Fixed. 
+```
+
 
 ## Version 2.6
 
