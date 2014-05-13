@@ -1,3 +1,4 @@
+* [Release Version 2.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-27)
 * [Release Version 2.6.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-261)
 * [Release Version 2.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-26)
 * [Release Version 2.5.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-251)
@@ -19,6 +20,46 @@
 * [Release Version 1.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-17)
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
+
+## Version 2.7
+
+**Release Date:** 13-05-2014
+
+**Release Version:** 2.7
+
+
+**The following features have been changed :**
+
+```
+If you are upgrading from previous version of App42_Unity3D_SDK and have used GetRecordCount() method on storage service, you have to change its return type as long instead of string, because the return type of this method is changed.
+
+**OlD Code Snippet:
+string recordCount = storageResponse.GetRecordCount();
+
+**New Code Snippet :
+long recordCount = storageResponse.GetRecordCount();
+```
+
+**The following features have been pushed to the services :**
+
+**PUSH NOTIFICATION SERVICE**
+```
+1. DeleteAllDevices.
+2. SendPushMessageToDevice.
+3. UpdatePushBadgeforDevice.
+4. UpdatePushBadgeforUser.
+```
+
+**STORAGE SERVICE**
+```
+1. GetCountByQuery.
+```
+
+**This release contains the following bug fix:**
+
+```
+None.
+```
 
 ## Version 2.6.1
 
