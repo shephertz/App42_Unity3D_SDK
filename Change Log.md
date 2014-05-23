@@ -1,3 +1,4 @@
+* [Release Version 2.7.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-271)
 * [Release Version 2.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-27)
 * [Release Version 2.6.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-261)
 * [Release Version 2.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-26)
@@ -20,6 +21,19 @@
 * [Release Version 1.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-17)
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
+
+## Version 2.7.1
+
+**Release Date:** 23-05-2014
+
+**Release Version:** 2.7.1
+
+**This release contains the following bug fix:**
+
+```
+InvalidClassCastException issue solved in WP8.
+```
+
 
 ## Version 2.7
 
