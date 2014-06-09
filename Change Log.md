@@ -1,3 +1,4 @@
+* [Release Version 2.8](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-28)
 * [Release Version 2.7.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-272)
 * [Release Version 2.7.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-271)
 * [Release Version 2.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-27)
@@ -22,6 +23,28 @@
 * [Release Version 1.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-17)
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
+
+## Version 2.8
+
+**Release Date:** 09-06-2014
+
+**Release Version:** 2.8
+
+
+**The following features have been pushed to the services :**
+
+**AVATAR SERVICE**
+```
+1. DeleteAllAvatars.
+2. DeleteAvatarByName.
+3. UpdateAvatar.
+```
+
+**This release contains the following bug fix:**
+
+```
+None.
+```
 
 ## Version 2.7.2
 
