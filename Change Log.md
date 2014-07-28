@@ -1,3 +1,4 @@
+* [Release Version 2.9.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-291)
 * [Release Version 2.9](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-29)
 * [Release Version 2.8](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-28)
 * [Release Version 2.7.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-272)
@@ -24,6 +25,19 @@
 * [Release Version 1.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-17)
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
+
+## Version 2.9.1
+
+**Release Date:** 28-07-2014
+
+**Release Version:** 2.9.1
+
+**This release contains the following bug fix:**
+
+```
+1. Simple JSON Bug Fix.
+2. Blank value is allowed in Dictionary in storage service.
+```
 
 
 ## Version 2.9
