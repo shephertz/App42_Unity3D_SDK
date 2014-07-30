@@ -1,9 +1,9 @@
-App42 Unity SDK
-===============
+App42 Unity3D SDK
+=================
 
 [![OverView](http://www.shephertz.com/images/logo/app42_cloud.png)](http://api.shephertz.com/)
 
-App42 Unity SDK can be used to add backend to Unity application which can run on different platforms like Android/iOS/Windows phone/Web browser etc. App42 Unity SDK consists of seperate dll to be used for building on Windows Phone and is available under __x.x/App42-Unity3D-SDK-WP8__ folder of downloaded zip. However for rest of the platform it is available inside __x.x/App42-Unity3D-SDK__ folder. 
+App42 Unity3D SDK can be used to add backend to Unity3D application which can run on different platforms like Android/iOS/Windows phone/Web browser etc. App42 Unity3D SDK consists of seperate dll to be used for building on Windows Phone and is available under __x.x/App42-Unity3D-SDK-WP8__ folder of downloaded zip. However for rest of the platform it is available inside __x.x/App42-Unity3D-SDK__ folder. 
 
 __Note:__ If you are building an app for WP8, then you have to use our App42_Unity3D_SDK_WP8_x.x.dll.
 If you want to test your script in UNITY_EDITOR, then use a X509Certificates validator like this :-
