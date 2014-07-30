@@ -1,0 +1,1036 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service@{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service}}
+}
+
+
+Recommendation engine which provides reommendation based on customer id, item id and the preference of the customer for a particular Item. Recommendations can be fetched based on User Similarity which finds similarity based on Users and Item Similarity which finds similarity based on Items. The Recommendation Engine currently supports two types of Similarity Algorithms i.\+e. Euclidean\+Distance\+Similarity and Pearson\+Correlation\+Similarity. By default when similarity is not specified Pearson\+Correlation\+Similarity is used e.\+g. in the method item\+Based(\+String preference\+File\+Name, Double   user\+Id, int  how\+Many), it uses Pearson\+Correlation\+Similarity. In the method item\+Based\+By\+Similarity(\+String similarity, String preference\+File\+Name, Double   user\+Id, int  how\+Many) one can specify which similarity algorithm has to be used e.\+g. Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E or Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N. Preference file can be loaded using the method load\+Preference\+File(\+String file\+Name, String preference\+File\+Path, String description) in csv format. This prefernce file has to be uploaded once which can be a batch process The csv format for the file is given below. customer\+Id, item\+Id, preference e.\+g. 1,101,5.\+0 1,102,3.\+0 1,103,2.\+5 2,101,2.\+0 2,102,2.\+5 2,103,5.\+0 2,104,2.\+0 3,101,2.\+5 3,104,4.\+0 3,105,4.\+5 3,107,5.\+0 4,101,5.\+0 4,103,3.\+0 4,104,4.\+5 4,106,4.\+0 5,101,4.\+0 5,102,3.\+0 5,103,2.\+0 5,104,4.\+0 5,105,3.\+5 5,106,4.\+0 The customer Id and item id can be any alphanumaric character(s) and preference values can be in any range. If app developers have used the Review Service. The Recommendation Engine can be used in conjunction with Review. In this case a C\+S\+V preference file need not be uploaded. The customer\+Id, item\+Id and preference will be taken from Review where customer\+Id is mapped with user\+Name, item\+Id is mapped with item\+Id and preference with rating. The methods for recommendations based on Reviews are part of the Review service  
+
+
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a4eeed436c30ebfbe60f0bb6aff0c86f7}{Recommender\+Service} (String api\+Key, String secret\+Key)
+\begin{DoxyCompactList}\small\item\em The costructor for the Service \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a9e10138be4f13442c98883034ebf58ab}{Load\+Preference\+File} (String preference\+File\+Path)
+\begin{DoxyCompactList}\small\item\em Uploads peference file on the cloud. The preference file should be in C\+S\+V format. This prefernce file has to be uploaded once which can be a batch process. New versions of preference file either can be uploaded in a different name or the older one has to be removed and the uploaded in the same name. The csv format for the file is given below. customer\+Id, item\+Id, preference e.\+g. 1,101,5.\+0 1,102,3.\+0 1,103,2.\+5 \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_ac5e576c88aff43741a4989dfd151c442}{Load\+Preference\+File} (String preference\+File\+Path, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Uploads peference file on the cloudin async mode. The preference file should be in C\+S\+V format. This prefernce file has to be uploaded once which can be a batch process. New versions of preference file either can be uploaded in a different name or the older one has to be removed and the uploaded in the same name. The csv format for the file is given below. customer\+Id, item\+Id, preference e.\+g. 1,101,5.\+0 1,102,3.\+0 1,103,2.\+5 \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_af3fc9730c070a18a358104dc38c0a796}{Load\+Preference\+File} (Stream stream)
+\begin{DoxyCompactList}\small\item\em Uploads peference file on the cloud. The preference file should be in C\+S\+V format. This prefernce file has to be uploaded once which can be a batch process. New versions of preference file either can be uploaded in a different name or the older one has to be removed and the uploaded in the same name. The csv format for the file is given below. customer\+Id, item\+Id, preference e.\+g. 1,101,5.\+0 1,102,3.\+0 1,103,2.\+5 \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a2d0508028c5942b096df8bdded08e1c2}{Load\+Preference\+File} (Stream stream, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Uploads peference file on the cloud in async mode. The preference file should be in C\+S\+V format. This prefernce file has to be uploaded once which can be a batch process. New versions of preference file either can be uploaded in a different name or the older one has to be removed and the uploaded in the same name. The csv format for the file is given below. customer\+Id, item\+Id, preference e.\+g. 1,101,5.\+0 1,102,3.\+0 1,103,2.\+5 \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender}{Recommender} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a37d714f5bb5bfe6a55bb785cc3aa81b4}{User\+Based\+Neighborhood} (Int64 user\+Id, int size, int how\+Many)
+\begin{DoxyCompactList}\small\item\em User based recommendations based on Neighborhood. Recommendations are found based on similar users in the Neighborhood of the given user. The size of the neighborhood can be found. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a75239f3c8a6715f1d56d52edc983a865}{User\+Based\+Neighborhood} (Int64 user\+Id, int size, int how\+Many, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em User based recommendations based on Neighborhood in async mode. Recommendations are found based on similar users in the Neighborhood of the given user. The size of the neighborhood can be found. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender}{Recommender} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a9bd13c805df69a08cd1d6ae88b38e1dd}{User\+Based\+Threshold} (Int64 user\+Id, Double threshold, int how\+Many)
+\begin{DoxyCompactList}\small\item\em User based neighborhood recommendations based on Threshold. Recommendations are found based on Threshold where thereshold represents similarity threshold where user are atleast that similar. Threshold values can vary from -\/1 to 1 \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a51a869cee99b7f02dd401028bf72cb21}{User\+Based\+Threshold} (Int64 user\+Id, Double threshold, int how\+Many, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em User based neighborhood recommendations based on Threshold in async mode. Recommendations are found based on Threshold where thereshold represents similarity threshold where user are atleast that similar. Threshold values can vary from -\/1 to 1 \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender}{Recommender} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_ab470b785839abe646cbb94bfda19fbe4}{User\+Based\+Neighborhood\+By\+Similarity} (String recommender\+Similarity, Int64 user\+Id, int size, int how\+Many)
+\begin{DoxyCompactList}\small\item\em User based recommendations based on Neighborhood and Similarity. Recommendations and found based on the similar users in the Neighborhood with the specified Similarity Algorithm. Algorithim can be specified using the constants Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E and Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a00fc349ff37faad3ffa1cf6ccfe26110}{User\+Based\+Neighborhood\+By\+Similarity} (String recommender\+Similarity, Int64 user\+Id, int size, int how\+Many, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em User based recommendations based on Neighborhood and Similarity in async mode. Recommendations and found based on the similar users in the Neighborhood with the specified Similarity Algorithm. Algorithim can be specified using the constants Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E and Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender}{Recommender} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_ab8e4b4f3695039c97c791cc147863bde}{User\+Based\+Threshold\+By\+Similarity} (String recommender\+Similarity, Int64 user\+Id, Double threshold, int how\+Many)
+\begin{DoxyCompactList}\small\item\em User based neighborood recommendations based on Threshold. Recommendations are found based on Threshold where thereshold represents similarity threshold where user are atleast that similar. Threshold values can vary from -\/1 to 1 \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a7edf7b15b9b93118cf7e4ef6ad9492d2}{User\+Based\+Threshold\+By\+Similarity} (String recommender\+Similarity, Int64 user\+Id, Double threshold, int how\+Many, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em User based neighborood recommendations based on Threshold in async mode. Recommendations are found based on Threshold where thereshold represents similarity threshold where user are atleast that similar. Threshold values can vary from -\/1 to 1 \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender}{Recommender} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a9d834f44d8f1c5f7c61f57be7029d744}{Item\+Based} (Int64 user\+Id, int how\+Many)
+\begin{DoxyCompactList}\small\item\em Item based recommendations. Recommendations and found based item similarity of the given user. The size of the neighborhood can be found. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a7cfb2ed11b0d3161f30c36f9bb56da34}{Item\+Based} (Int64 user\+Id, int how\+Many, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Item based recommendations in async mode. Recommendations and found based item similarity of the given user. The size of the neighborhood can be found. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender}{Recommender} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a947e83b0770dfa2412bf469ec1a1f972}{Slope\+One} (Int64 user\+Id, int how\+Many)
+\begin{DoxyCompactList}\small\item\em Recommendations based on Slope\+One Algorithm \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a8ba78258d149a048b227af14bc625b0a}{Slope\+One} (Int64 user\+Id, int how\+Many, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Recommendations based on Slope\+One Algorithm in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender}{Recommender} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_afad344582b10048c307945ae0c817db5}{User\+Based\+Threshold\+For\+All} (Double threshold, int how\+Many)
+\begin{DoxyCompactList}\small\item\em User based neighborood recommendations based on Threshold for all Users. Recommendations are found based on Threshold where thereshold represents similarity threshold where user are atleast that similar. Threshold values can vary from -\/1 to 1 \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a82def03aa4a4cc01994c853de5d2c8c6}{User\+Based\+Threshold\+For\+All} (Double threshold, int how\+Many, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em User based neighborood recommendations based on Threshold for all Users in async mode. Recommendations are found based on Threshold where thereshold represents similarity threshold where user are atleast that similar. Threshold values can vary from -\/1 to 1 \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender}{Recommender} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a075770897fad454c82d0f3e216c510d0}{User\+Based\+Neighborhood\+By\+Similarity\+For\+All} (String recommender\+Similarity, int size, int how\+Many)
+\begin{DoxyCompactList}\small\item\em User based recommendations based on Neighborhood and Similarity for all Users. Recommendations and found based similar users in the Neighborhood with the specified Similarity Algorithm. Algorithim can be specified using the constants Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E and Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_ae4366496053a6fd1d1598764f87d5914}{User\+Based\+Neighborhood\+By\+Similarity\+For\+All} (String recommender\+Similarity, int size, int how\+Many, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em User based recommendations based on Neighborhood and Similarity for all Users in async mode. Recommendations and found based similar users in the Neighborhood with the specified Similarity Algorithm. Algorithim can be specified using the constants Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E and Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender}{Recommender} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a30c32d22fdf9b318658e1b7baa0b4e28}{User\+Based\+Threshold\+By\+Similarity\+For\+All} (String recommender\+Similarity, Double threshold, int how\+Many)
+\begin{DoxyCompactList}\small\item\em User based neighborood recommendations based on Threshold for All. Recommendations are found based on Threshold where thereshold represents similarity threshold where user are atleast that similar. Threshold values can vary from -\/1 to 1 \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_aca375e86c9f19b3fb95c2b7c09f655d8}{User\+Based\+Threshold\+By\+Similarity\+For\+All} (String recommender\+Similarity, Double threshold, int how\+Many, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em User based neighborood recommendations based on Threshold for All in async mode. Recommendations are found based on Threshold where thereshold represents similarity threshold where user are atleast that similar. Threshold values can vary from -\/1 to 1 \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender}{Recommender} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_ae395c91941bbf95536f789f5dfceff84}{Item\+Based\+For\+All} (int how\+Many)
+\begin{DoxyCompactList}\small\item\em Item based recommendations for all Users. Recommendations and found based item similarity of the given user. The size of the neighborhood can be found. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a2e16f73958f49b19e5ba7e22ba5c6fbe}{Item\+Based\+For\+All} (int how\+Many, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Item based recommendations for all Users in async mode. Recommendations and found based item similarity of the given user. The size of the neighborhood can be found. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender}{Recommender} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_ae0bd71917cc7ab624e52e95261063618}{Item\+Based\+By\+Similarity\+For\+All} (String recommender\+Similarity, int how\+Many)
+\begin{DoxyCompactList}\small\item\em Item based recommendations for all Users. Recommendations and found based one item similarity. Similarity algorithm can be specified. of the given user. The size of the neighborhood can be found. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a7c9023f1666c0b8867e3523412afebc6}{Item\+Based\+By\+Similarity\+For\+All} (String recommender\+Similarity, int how\+Many, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Item based recommendations for all Users in async mode. Recommendations and found based one item similarity. Similarity algorithm can be specified. of the given user. The size of the neighborhood can be found. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender}{Recommender} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a386cb107f29fa4e7267d8e8aac930bc5}{Slope\+One\+For\+All} (int how\+Many)
+\begin{DoxyCompactList}\small\item\em Recommendations based on Slope\+One Algorithm for all Users \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_accdb059c7aa7aa46aeaf7bc64bcccca4}{Slope\+One\+For\+All} (int how\+Many, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Recommendations based on Slope\+One Algorithm for all Users in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender}{Recommender} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_ad3f6e01a661b02eefced4fba0ff9e69f}{Item\+Based\+By\+Similarity} (String recommender\+Similarity, Int64 user\+Id, int how\+Many)
+\begin{DoxyCompactList}\small\item\em Item based recommendations. Recommendations and found based one item similarity. Similarity algorithm can be specified. of the given user. The size of the neighborhood can be found. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_aa53cc73860f4883ee155d482c0ebdfb8}{Item\+Based\+By\+Similarity} (String recommender\+Similarity, Int64 user\+Id, int how\+Many, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Item based recommendations in async mode. Recommendations and found based one item similarity. Similarity algorithm can be specified. of the given user. The size of the neighborhood can be found. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a7675bc9bc9d9aa9c4be4731c30e3c11c}{Add\+Or\+Update\+Preference} (I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_preference_data}{Preference\+Data} $>$ preference\+Data\+List)
+\begin{DoxyCompactList}\small\item\em Add Or Update Preference \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_aa393d34d170bee174da9b903146913d4}{Add\+Or\+Update\+Preference} (I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_preference_data}{Preference\+Data} $>$ preference\+Data\+List, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Add Or Update Preference in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender}{Recommender} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a8f76416b6a81a00ac30308dea2af44e7}{User\+Based\+Neighborhood\+For\+All} (int size, int how\+Many)
+\begin{DoxyCompactList}\small\item\em User based recommendations based on Neighborhood for All Users. Recommendations and found based similar users in the Neighborhood of the given user. The size of the neighborhood can be found. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a04ae0d9c9777fc74cea2ebd2bd665f24}{User\+Based\+Neighborhood\+For\+All} (int size, int how\+Many, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em User based recommendations based on Neighborhood for All Users in async mode. Recommendations and found based similar users in the Neighborhood of the given user. The size of the neighborhood can be found. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_afa3df0a82ea8620a849a82182344be21}{Delete\+All\+Preferences} ()
+\begin{DoxyCompactList}\small\item\em Delete existing preference file. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a0ea93559566728a3f5b705bfaed04ac9}{Delete\+All\+Preferences} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Delete existing preference file in async mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Recommendation engine which provides reommendation based on customer id, item id and the preference of the customer for a particular Item. Recommendations can be fetched based on User Similarity which finds similarity based on Users and Item Similarity which finds similarity based on Items. The Recommendation Engine currently supports two types of Similarity Algorithms i.\+e. Euclidean\+Distance\+Similarity and Pearson\+Correlation\+Similarity. By default when similarity is not specified Pearson\+Correlation\+Similarity is used e.\+g. in the method item\+Based(\+String preference\+File\+Name, Double   user\+Id, int  how\+Many), it uses Pearson\+Correlation\+Similarity. In the method item\+Based\+By\+Similarity(\+String similarity, String preference\+File\+Name, Double   user\+Id, int  how\+Many) one can specify which similarity algorithm has to be used e.\+g. Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E or Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N. Preference file can be loaded using the method load\+Preference\+File(\+String file\+Name, String preference\+File\+Path, String description) in csv format. This prefernce file has to be uploaded once which can be a batch process The csv format for the file is given below. customer\+Id, item\+Id, preference e.\+g. 1,101,5.\+0 1,102,3.\+0 1,103,2.\+5 2,101,2.\+0 2,102,2.\+5 2,103,5.\+0 2,104,2.\+0 3,101,2.\+5 3,104,4.\+0 3,105,4.\+5 3,107,5.\+0 4,101,5.\+0 4,103,3.\+0 4,104,4.\+5 4,106,4.\+0 5,101,4.\+0 5,102,3.\+0 5,103,2.\+0 5,104,4.\+0 5,105,3.\+5 5,106,4.\+0 The customer Id and item id can be any alphanumaric character(s) and preference values can be in any range. If app developers have used the Review Service. The Recommendation Engine can be used in conjunction with Review. In this case a C\+S\+V preference file need not be uploaded. The customer\+Id, item\+Id and preference will be taken from Review where customer\+Id is mapped with user\+Name, item\+Id is mapped with item\+Id and preference with rating. The methods for recommendations based on Reviews are part of the Review service 
+
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service}{Review\+Service} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service}{Recommender} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service}{Recommender\+Service} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a4eeed436c30ebfbe60f0bb6aff0c86f7}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!Recommender\+Service@{Recommender\+Service}}
+\index{Recommender\+Service@{Recommender\+Service}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{Recommender\+Service}]{\setlength{\rightskip}{0pt plus 5cm}com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+Recommender\+Service (
+\begin{DoxyParamCaption}
+\item[{String}]{api\+Key, }
+\item[{String}]{secret\+Key}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a4eeed436c30ebfbe60f0bb6aff0c86f7}
+
+
+The costructor for the Service 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & api Key\\
+\hline
+{\em secret\+Key} & secret Key\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a7675bc9bc9d9aa9c4be4731c30e3c11c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!Add\+Or\+Update\+Preference@{Add\+Or\+Update\+Preference}}
+\index{Add\+Or\+Update\+Preference@{Add\+Or\+Update\+Preference}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{Add\+Or\+Update\+Preference}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+Add\+Or\+Update\+Preference (
+\begin{DoxyParamCaption}
+\item[{I\+List$<$ {\bf Preference\+Data} $>$}]{preference\+Data\+List}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a7675bc9bc9d9aa9c4be4731c30e3c11c}
+
+
+Add Or Update Preference 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preference\+Data\+List} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response}
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_aa393d34d170bee174da9b903146913d4}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!Add\+Or\+Update\+Preference@{Add\+Or\+Update\+Preference}}
+\index{Add\+Or\+Update\+Preference@{Add\+Or\+Update\+Preference}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{Add\+Or\+Update\+Preference}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+Add\+Or\+Update\+Preference (
+\begin{DoxyParamCaption}
+\item[{I\+List$<$ {\bf Preference\+Data} $>$}]{preference\+Data\+List, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_aa393d34d170bee174da9b903146913d4}
+
+
+Add Or Update Preference in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preference\+Data\+List} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_afa3df0a82ea8620a849a82182344be21}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!Delete\+All\+Preferences@{Delete\+All\+Preferences}}
+\index{Delete\+All\+Preferences@{Delete\+All\+Preferences}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{Delete\+All\+Preferences}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+Delete\+All\+Preferences (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_afa3df0a82ea8620a849a82182344be21}
+
+
+Delete existing preference file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+File name which has been removed
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a0ea93559566728a3f5b705bfaed04ac9}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!Delete\+All\+Preferences@{Delete\+All\+Preferences}}
+\index{Delete\+All\+Preferences@{Delete\+All\+Preferences}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{Delete\+All\+Preferences}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+Delete\+All\+Preferences (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a0ea93559566728a3f5b705bfaed04ac9}
+
+
+Delete existing preference file in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a9d834f44d8f1c5f7c61f57be7029d744}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!Item\+Based@{Item\+Based}}
+\index{Item\+Based@{Item\+Based}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{Item\+Based}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Recommender} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+Item\+Based (
+\begin{DoxyParamCaption}
+\item[{Int64}]{user\+Id, }
+\item[{int}]{how\+Many}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a9d834f44d8f1c5f7c61f57be7029d744}
+
+
+Item based recommendations. Recommendations and found based item similarity of the given user. The size of the neighborhood can be found. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em user\+Id} & The user Id for whom recommendations have to be found\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Recommendations
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a7cfb2ed11b0d3161f30c36f9bb56da34}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!Item\+Based@{Item\+Based}}
+\index{Item\+Based@{Item\+Based}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{Item\+Based}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+Item\+Based (
+\begin{DoxyParamCaption}
+\item[{Int64}]{user\+Id, }
+\item[{int}]{how\+Many, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a7cfb2ed11b0d3161f30c36f9bb56da34}
+
+
+Item based recommendations in async mode. Recommendations and found based item similarity of the given user. The size of the neighborhood can be found. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em user\+Id} & The user Id for whom recommendations have to be found\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_ad3f6e01a661b02eefced4fba0ff9e69f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!Item\+Based\+By\+Similarity@{Item\+Based\+By\+Similarity}}
+\index{Item\+Based\+By\+Similarity@{Item\+Based\+By\+Similarity}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{Item\+Based\+By\+Similarity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Recommender} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+Item\+Based\+By\+Similarity (
+\begin{DoxyParamCaption}
+\item[{String}]{recommender\+Similarity, }
+\item[{Int64}]{user\+Id, }
+\item[{int}]{how\+Many}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_ad3f6e01a661b02eefced4fba0ff9e69f}
+
+
+Item based recommendations. Recommendations and found based one item similarity. Similarity algorithm can be specified. of the given user. The size of the neighborhood can be found. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em recommender\+Similarity} & Similarity algorithm e.\+g. Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E and Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N\\
+\hline
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em user\+Id} & The user Id for whom recommendations have to be found\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Recommendations
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_aa53cc73860f4883ee155d482c0ebdfb8}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!Item\+Based\+By\+Similarity@{Item\+Based\+By\+Similarity}}
+\index{Item\+Based\+By\+Similarity@{Item\+Based\+By\+Similarity}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{Item\+Based\+By\+Similarity}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+Item\+Based\+By\+Similarity (
+\begin{DoxyParamCaption}
+\item[{String}]{recommender\+Similarity, }
+\item[{Int64}]{user\+Id, }
+\item[{int}]{how\+Many, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_aa53cc73860f4883ee155d482c0ebdfb8}
+
+
+Item based recommendations in async mode. Recommendations and found based one item similarity. Similarity algorithm can be specified. of the given user. The size of the neighborhood can be found. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em recommender\+Similarity} & Similarity algorithm e.\+g. Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E and Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N\\
+\hline
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em user\+Id} & The user Id for whom recommendations have to be found\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_ae0bd71917cc7ab624e52e95261063618}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!Item\+Based\+By\+Similarity\+For\+All@{Item\+Based\+By\+Similarity\+For\+All}}
+\index{Item\+Based\+By\+Similarity\+For\+All@{Item\+Based\+By\+Similarity\+For\+All}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{Item\+Based\+By\+Similarity\+For\+All}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Recommender} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+Item\+Based\+By\+Similarity\+For\+All (
+\begin{DoxyParamCaption}
+\item[{String}]{recommender\+Similarity, }
+\item[{int}]{how\+Many}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_ae0bd71917cc7ab624e52e95261063618}
+
+
+Item based recommendations for all Users. Recommendations and found based one item similarity. Similarity algorithm can be specified. of the given user. The size of the neighborhood can be found. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em recommender\+Similarity} & Similarity algorithm e.\+g. Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E and Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N \\
+\hline
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Recommendations for all Users
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a7c9023f1666c0b8867e3523412afebc6}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!Item\+Based\+By\+Similarity\+For\+All@{Item\+Based\+By\+Similarity\+For\+All}}
+\index{Item\+Based\+By\+Similarity\+For\+All@{Item\+Based\+By\+Similarity\+For\+All}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{Item\+Based\+By\+Similarity\+For\+All}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+Item\+Based\+By\+Similarity\+For\+All (
+\begin{DoxyParamCaption}
+\item[{String}]{recommender\+Similarity, }
+\item[{int}]{how\+Many, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a7c9023f1666c0b8867e3523412afebc6}
+
+
+Item based recommendations for all Users in async mode. Recommendations and found based one item similarity. Similarity algorithm can be specified. of the given user. The size of the neighborhood can be found. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em recommender\+Similarity} & Similarity algorithm e.\+g. Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E and Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N \\
+\hline
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_ae395c91941bbf95536f789f5dfceff84}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!Item\+Based\+For\+All@{Item\+Based\+For\+All}}
+\index{Item\+Based\+For\+All@{Item\+Based\+For\+All}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{Item\+Based\+For\+All}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Recommender} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+Item\+Based\+For\+All (
+\begin{DoxyParamCaption}
+\item[{int}]{how\+Many}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_ae395c91941bbf95536f789f5dfceff84}
+
+
+Item based recommendations for all Users. Recommendations and found based item similarity of the given user. The size of the neighborhood can be found. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Recommendations for all Users
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a2e16f73958f49b19e5ba7e22ba5c6fbe}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!Item\+Based\+For\+All@{Item\+Based\+For\+All}}
+\index{Item\+Based\+For\+All@{Item\+Based\+For\+All}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{Item\+Based\+For\+All}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+Item\+Based\+For\+All (
+\begin{DoxyParamCaption}
+\item[{int}]{how\+Many, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a2e16f73958f49b19e5ba7e22ba5c6fbe}
+
+
+Item based recommendations for all Users in async mode. Recommendations and found based item similarity of the given user. The size of the neighborhood can be found. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a9e10138be4f13442c98883034ebf58ab}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!Load\+Preference\+File@{Load\+Preference\+File}}
+\index{Load\+Preference\+File@{Load\+Preference\+File}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{Load\+Preference\+File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+Load\+Preference\+File (
+\begin{DoxyParamCaption}
+\item[{String}]{preference\+File\+Path}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a9e10138be4f13442c98883034ebf58ab}
+
+
+Uploads peference file on the cloud. The preference file should be in C\+S\+V format. This prefernce file has to be uploaded once which can be a batch process. New versions of preference file either can be uploaded in a different name or the older one has to be removed and the uploaded in the same name. The csv format for the file is given below. customer\+Id, item\+Id, preference e.\+g. 1,101,5.\+0 1,102,3.\+0 1,103,2.\+5 
+
+2,101,2.\+0 2,102,2.\+5 2,103,5.\+0 2,104,2.\+0
+
+3,101,2.\+5 3,104,4.\+0 3,105,4.\+5 3,107,5.\+0
+
+4,101,5.\+0 4,103,3.\+0 4,104,4.\+5 4,106,4.\+0
+
+5,101,4.\+0 5,102,3.\+0 5,103,2.\+0 5,104,4.\+0 5,105,3.\+5 5,106,4.\+0 The customer Id and item id can be any alphanumaric character(s) and preference values can be in any range. If the recommendations have to be done based on Reviews then this file need not be uploaded. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em preference\+File\+Path} & Path of the preference file to be loaded\\
+\hline
+{\em description} & Description of the preference file to be loaded\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the uploaded preference file details.
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_ac5e576c88aff43741a4989dfd151c442}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!Load\+Preference\+File@{Load\+Preference\+File}}
+\index{Load\+Preference\+File@{Load\+Preference\+File}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{Load\+Preference\+File}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+Load\+Preference\+File (
+\begin{DoxyParamCaption}
+\item[{String}]{preference\+File\+Path, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_ac5e576c88aff43741a4989dfd151c442}
+
+
+Uploads peference file on the cloudin async mode. The preference file should be in C\+S\+V format. This prefernce file has to be uploaded once which can be a batch process. New versions of preference file either can be uploaded in a different name or the older one has to be removed and the uploaded in the same name. The csv format for the file is given below. customer\+Id, item\+Id, preference e.\+g. 1,101,5.\+0 1,102,3.\+0 1,103,2.\+5 
+
+2,101,2.\+0 2,102,2.\+5 2,103,5.\+0 2,104,2.\+0
+
+3,101,2.\+5 3,104,4.\+0 3,105,4.\+5 3,107,5.\+0
+
+4,101,5.\+0 4,103,3.\+0 4,104,4.\+5 4,106,4.\+0
+
+5,101,4.\+0 5,102,3.\+0 5,103,2.\+0 5,104,4.\+0 5,105,3.\+5 5,106,4.\+0 The customer Id and item id can be any alphanumaric character(s) and preference values can be in any range. If the recommendations have to be done based on Reviews then this file need not be uploaded. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em preference\+File\+Path} & Path of the preference file to be loaded\\
+\hline
+{\em description} & Description of the preference file to be loaded\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_af3fc9730c070a18a358104dc38c0a796}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!Load\+Preference\+File@{Load\+Preference\+File}}
+\index{Load\+Preference\+File@{Load\+Preference\+File}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{Load\+Preference\+File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+Load\+Preference\+File (
+\begin{DoxyParamCaption}
+\item[{Stream}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_af3fc9730c070a18a358104dc38c0a796}
+
+
+Uploads peference file on the cloud. The preference file should be in C\+S\+V format. This prefernce file has to be uploaded once which can be a batch process. New versions of preference file either can be uploaded in a different name or the older one has to be removed and the uploaded in the same name. The csv format for the file is given below. customer\+Id, item\+Id, preference e.\+g. 1,101,5.\+0 1,102,3.\+0 1,103,2.\+5 
+
+2,101,2.\+0 2,102,2.\+5 2,103,5.\+0 2,104,2.\+0
+
+3,101,2.\+5 3,104,4.\+0 3,105,4.\+5 3,107,5.\+0
+
+4,101,5.\+0 4,103,3.\+0 4,104,4.\+5 4,106,4.\+0
+
+5,101,4.\+0 5,102,3.\+0 5,103,2.\+0 5,104,4.\+0 5,105,3.\+5 5,106,4.\+0 The customer Id and item id can be any alphanumaric character(s) and preference values can be in any range. If the recommendations have to be done based on Reviews then this file need not be uploaded. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em preference\+File\+Path} & Path of the preference file to be loaded\\
+\hline
+{\em description} & Description of the preference file to be loaded\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the uploaded preference file details.
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a2d0508028c5942b096df8bdded08e1c2}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!Load\+Preference\+File@{Load\+Preference\+File}}
+\index{Load\+Preference\+File@{Load\+Preference\+File}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{Load\+Preference\+File}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+Load\+Preference\+File (
+\begin{DoxyParamCaption}
+\item[{Stream}]{stream, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a2d0508028c5942b096df8bdded08e1c2}
+
+
+Uploads peference file on the cloud in async mode. The preference file should be in C\+S\+V format. This prefernce file has to be uploaded once which can be a batch process. New versions of preference file either can be uploaded in a different name or the older one has to be removed and the uploaded in the same name. The csv format for the file is given below. customer\+Id, item\+Id, preference e.\+g. 1,101,5.\+0 1,102,3.\+0 1,103,2.\+5 
+
+2,101,2.\+0 2,102,2.\+5 2,103,5.\+0 2,104,2.\+0
+
+3,101,2.\+5 3,104,4.\+0 3,105,4.\+5 3,107,5.\+0
+
+4,101,5.\+0 4,103,3.\+0 4,104,4.\+5 4,106,4.\+0
+
+5,101,4.\+0 5,102,3.\+0 5,103,2.\+0 5,104,4.\+0 5,105,3.\+5 5,106,4.\+0 The customer Id and item id can be any alphanumaric character(s) and preference values can be in any range. If the recommendations have to be done based on Reviews then this file need not be uploaded. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em preference\+File\+Path} & Path of the preference file to be loaded\\
+\hline
+{\em description} & Description of the preference file to be loaded\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a947e83b0770dfa2412bf469ec1a1f972}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!Slope\+One@{Slope\+One}}
+\index{Slope\+One@{Slope\+One}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{Slope\+One}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Recommender} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+Slope\+One (
+\begin{DoxyParamCaption}
+\item[{Int64}]{user\+Id, }
+\item[{int}]{how\+Many}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a947e83b0770dfa2412bf469ec1a1f972}
+
+
+Recommendations based on Slope\+One Algorithm 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em user\+Id} & The user Id for whom recommendations have to be found\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Recommendations
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a8ba78258d149a048b227af14bc625b0a}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!Slope\+One@{Slope\+One}}
+\index{Slope\+One@{Slope\+One}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{Slope\+One}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+Slope\+One (
+\begin{DoxyParamCaption}
+\item[{Int64}]{user\+Id, }
+\item[{int}]{how\+Many, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a8ba78258d149a048b227af14bc625b0a}
+
+
+Recommendations based on Slope\+One Algorithm in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em user\+Id} & The user Id for whom recommendations have to be found\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a386cb107f29fa4e7267d8e8aac930bc5}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!Slope\+One\+For\+All@{Slope\+One\+For\+All}}
+\index{Slope\+One\+For\+All@{Slope\+One\+For\+All}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{Slope\+One\+For\+All}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Recommender} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+Slope\+One\+For\+All (
+\begin{DoxyParamCaption}
+\item[{int}]{how\+Many}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a386cb107f29fa4e7267d8e8aac930bc5}
+
+
+Recommendations based on Slope\+One Algorithm for all Users 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Recommendations for all Users
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_accdb059c7aa7aa46aeaf7bc64bcccca4}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!Slope\+One\+For\+All@{Slope\+One\+For\+All}}
+\index{Slope\+One\+For\+All@{Slope\+One\+For\+All}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{Slope\+One\+For\+All}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+Slope\+One\+For\+All (
+\begin{DoxyParamCaption}
+\item[{int}]{how\+Many, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_accdb059c7aa7aa46aeaf7bc64bcccca4}
+
+
+Recommendations based on Slope\+One Algorithm for all Users in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a37d714f5bb5bfe6a55bb785cc3aa81b4}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!User\+Based\+Neighborhood@{User\+Based\+Neighborhood}}
+\index{User\+Based\+Neighborhood@{User\+Based\+Neighborhood}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{User\+Based\+Neighborhood}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Recommender} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+User\+Based\+Neighborhood (
+\begin{DoxyParamCaption}
+\item[{Int64}]{user\+Id, }
+\item[{int}]{size, }
+\item[{int}]{how\+Many}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a37d714f5bb5bfe6a55bb785cc3aa81b4}
+
+
+User based recommendations based on Neighborhood. Recommendations are found based on similar users in the Neighborhood of the given user. The size of the neighborhood can be found. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em user\+Id} & The user Id for whom recommendations have to be found\\
+\hline
+{\em size} & Size of the Neighborhood\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Recommendations
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a75239f3c8a6715f1d56d52edc983a865}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!User\+Based\+Neighborhood@{User\+Based\+Neighborhood}}
+\index{User\+Based\+Neighborhood@{User\+Based\+Neighborhood}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{User\+Based\+Neighborhood}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+User\+Based\+Neighborhood (
+\begin{DoxyParamCaption}
+\item[{Int64}]{user\+Id, }
+\item[{int}]{size, }
+\item[{int}]{how\+Many, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a75239f3c8a6715f1d56d52edc983a865}
+
+
+User based recommendations based on Neighborhood in async mode. Recommendations are found based on similar users in the Neighborhood of the given user. The size of the neighborhood can be found. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em user\+Id} & The user Id for whom recommendations have to be found\\
+\hline
+{\em size} & Size of the Neighborhood\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_ab470b785839abe646cbb94bfda19fbe4}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!User\+Based\+Neighborhood\+By\+Similarity@{User\+Based\+Neighborhood\+By\+Similarity}}
+\index{User\+Based\+Neighborhood\+By\+Similarity@{User\+Based\+Neighborhood\+By\+Similarity}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{User\+Based\+Neighborhood\+By\+Similarity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Recommender} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+User\+Based\+Neighborhood\+By\+Similarity (
+\begin{DoxyParamCaption}
+\item[{String}]{recommender\+Similarity, }
+\item[{Int64}]{user\+Id, }
+\item[{int}]{size, }
+\item[{int}]{how\+Many}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_ab470b785839abe646cbb94bfda19fbe4}
+
+
+User based recommendations based on Neighborhood and Similarity. Recommendations and found based on the similar users in the Neighborhood with the specified Similarity Algorithm. Algorithim can be specified using the constants Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E and Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N 
+
+
+\begin{DoxyParams}{Parameters}
+{\em recommender\+Similarity} & Similarity algorithm e.\+g. Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E and Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N\\
+\hline
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em user\+Id} & The user Id for whom recommendations have to be found\\
+\hline
+{\em size} & Size of the Neighborhood\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Recommendations
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a00fc349ff37faad3ffa1cf6ccfe26110}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!User\+Based\+Neighborhood\+By\+Similarity@{User\+Based\+Neighborhood\+By\+Similarity}}
+\index{User\+Based\+Neighborhood\+By\+Similarity@{User\+Based\+Neighborhood\+By\+Similarity}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{User\+Based\+Neighborhood\+By\+Similarity}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+User\+Based\+Neighborhood\+By\+Similarity (
+\begin{DoxyParamCaption}
+\item[{String}]{recommender\+Similarity, }
+\item[{Int64}]{user\+Id, }
+\item[{int}]{size, }
+\item[{int}]{how\+Many, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a00fc349ff37faad3ffa1cf6ccfe26110}
+
+
+User based recommendations based on Neighborhood and Similarity in async mode. Recommendations and found based on the similar users in the Neighborhood with the specified Similarity Algorithm. Algorithim can be specified using the constants Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E and Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N 
+
+
+\begin{DoxyParams}{Parameters}
+{\em recommender\+Similarity} & Similarity algorithm e.\+g. Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E and Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N\\
+\hline
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em user\+Id} & The user Id for whom recommendations have to be found\\
+\hline
+{\em size} & Size of the Neighborhood\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a075770897fad454c82d0f3e216c510d0}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!User\+Based\+Neighborhood\+By\+Similarity\+For\+All@{User\+Based\+Neighborhood\+By\+Similarity\+For\+All}}
+\index{User\+Based\+Neighborhood\+By\+Similarity\+For\+All@{User\+Based\+Neighborhood\+By\+Similarity\+For\+All}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{User\+Based\+Neighborhood\+By\+Similarity\+For\+All}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Recommender} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+User\+Based\+Neighborhood\+By\+Similarity\+For\+All (
+\begin{DoxyParamCaption}
+\item[{String}]{recommender\+Similarity, }
+\item[{int}]{size, }
+\item[{int}]{how\+Many}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a075770897fad454c82d0f3e216c510d0}
+
+
+User based recommendations based on Neighborhood and Similarity for all Users. Recommendations and found based similar users in the Neighborhood with the specified Similarity Algorithm. Algorithim can be specified using the constants Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E and Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N 
+
+
+\begin{DoxyParams}{Parameters}
+{\em recommender\+Similarity} & Similarity algorithm e.\+g. Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E and Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N\\
+\hline
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em size} & Size of the Neighborhood\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Recommendations for all Users
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_ae4366496053a6fd1d1598764f87d5914}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!User\+Based\+Neighborhood\+By\+Similarity\+For\+All@{User\+Based\+Neighborhood\+By\+Similarity\+For\+All}}
+\index{User\+Based\+Neighborhood\+By\+Similarity\+For\+All@{User\+Based\+Neighborhood\+By\+Similarity\+For\+All}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{User\+Based\+Neighborhood\+By\+Similarity\+For\+All}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+User\+Based\+Neighborhood\+By\+Similarity\+For\+All (
+\begin{DoxyParamCaption}
+\item[{String}]{recommender\+Similarity, }
+\item[{int}]{size, }
+\item[{int}]{how\+Many, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_ae4366496053a6fd1d1598764f87d5914}
+
+
+User based recommendations based on Neighborhood and Similarity for all Users in async mode. Recommendations and found based similar users in the Neighborhood with the specified Similarity Algorithm. Algorithim can be specified using the constants Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E and Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N 
+
+
+\begin{DoxyParams}{Parameters}
+{\em recommender\+Similarity} & Similarity algorithm e.\+g. Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E and Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N\\
+\hline
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em size} & Size of the Neighborhood\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a8f76416b6a81a00ac30308dea2af44e7}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!User\+Based\+Neighborhood\+For\+All@{User\+Based\+Neighborhood\+For\+All}}
+\index{User\+Based\+Neighborhood\+For\+All@{User\+Based\+Neighborhood\+For\+All}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{User\+Based\+Neighborhood\+For\+All}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Recommender} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+User\+Based\+Neighborhood\+For\+All (
+\begin{DoxyParamCaption}
+\item[{int}]{size, }
+\item[{int}]{how\+Many}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a8f76416b6a81a00ac30308dea2af44e7}
+
+
+User based recommendations based on Neighborhood for All Users. Recommendations and found based similar users in the Neighborhood of the given user. The size of the neighborhood can be found. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em size} & Size of the Neighborhood\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Recommendations for All users
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a04ae0d9c9777fc74cea2ebd2bd665f24}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!User\+Based\+Neighborhood\+For\+All@{User\+Based\+Neighborhood\+For\+All}}
+\index{User\+Based\+Neighborhood\+For\+All@{User\+Based\+Neighborhood\+For\+All}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{User\+Based\+Neighborhood\+For\+All}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+User\+Based\+Neighborhood\+For\+All (
+\begin{DoxyParamCaption}
+\item[{int}]{size, }
+\item[{int}]{how\+Many, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a04ae0d9c9777fc74cea2ebd2bd665f24}
+
+
+User based recommendations based on Neighborhood for All Users in async mode. Recommendations and found based similar users in the Neighborhood of the given user. The size of the neighborhood can be found. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em size} & Size of the Neighborhood\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a9bd13c805df69a08cd1d6ae88b38e1dd}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!User\+Based\+Threshold@{User\+Based\+Threshold}}
+\index{User\+Based\+Threshold@{User\+Based\+Threshold}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{User\+Based\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Recommender} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+User\+Based\+Threshold (
+\begin{DoxyParamCaption}
+\item[{Int64}]{user\+Id, }
+\item[{Double}]{threshold, }
+\item[{int}]{how\+Many}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a9bd13c805df69a08cd1d6ae88b38e1dd}
+
+
+User based neighborhood recommendations based on Threshold. Recommendations are found based on Threshold where thereshold represents similarity threshold where user are atleast that similar. Threshold values can vary from -\/1 to 1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em user\+Id} & The user Id for whom recommendations have to be found\\
+\hline
+{\em threshold} & Threshold size. Values can vary from -\/1 to 1\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Recommendations
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a51a869cee99b7f02dd401028bf72cb21}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!User\+Based\+Threshold@{User\+Based\+Threshold}}
+\index{User\+Based\+Threshold@{User\+Based\+Threshold}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{User\+Based\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+User\+Based\+Threshold (
+\begin{DoxyParamCaption}
+\item[{Int64}]{user\+Id, }
+\item[{Double}]{threshold, }
+\item[{int}]{how\+Many, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a51a869cee99b7f02dd401028bf72cb21}
+
+
+User based neighborhood recommendations based on Threshold in async mode. Recommendations are found based on Threshold where thereshold represents similarity threshold where user are atleast that similar. Threshold values can vary from -\/1 to 1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em user\+Id} & The user Id for whom recommendations have to be found\\
+\hline
+{\em threshold} & Threshold size. Values can vary from -\/1 to 1\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_ab8e4b4f3695039c97c791cc147863bde}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!User\+Based\+Threshold\+By\+Similarity@{User\+Based\+Threshold\+By\+Similarity}}
+\index{User\+Based\+Threshold\+By\+Similarity@{User\+Based\+Threshold\+By\+Similarity}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{User\+Based\+Threshold\+By\+Similarity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Recommender} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+User\+Based\+Threshold\+By\+Similarity (
+\begin{DoxyParamCaption}
+\item[{String}]{recommender\+Similarity, }
+\item[{Int64}]{user\+Id, }
+\item[{Double}]{threshold, }
+\item[{int}]{how\+Many}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_ab8e4b4f3695039c97c791cc147863bde}
+
+
+User based neighborood recommendations based on Threshold. Recommendations are found based on Threshold where thereshold represents similarity threshold where user are atleast that similar. Threshold values can vary from -\/1 to 1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em recommender\+Similarity} & Similarity algorithm e.\+g. Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E and Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N\\
+\hline
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em user\+Id} & The user Id for whom recommendations have to be found\\
+\hline
+{\em threshold} & Threshold size. Values can vary from -\/1 to 1\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Recommendations
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a7edf7b15b9b93118cf7e4ef6ad9492d2}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!User\+Based\+Threshold\+By\+Similarity@{User\+Based\+Threshold\+By\+Similarity}}
+\index{User\+Based\+Threshold\+By\+Similarity@{User\+Based\+Threshold\+By\+Similarity}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{User\+Based\+Threshold\+By\+Similarity}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+User\+Based\+Threshold\+By\+Similarity (
+\begin{DoxyParamCaption}
+\item[{String}]{recommender\+Similarity, }
+\item[{Int64}]{user\+Id, }
+\item[{Double}]{threshold, }
+\item[{int}]{how\+Many, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a7edf7b15b9b93118cf7e4ef6ad9492d2}
+
+
+User based neighborood recommendations based on Threshold in async mode. Recommendations are found based on Threshold where thereshold represents similarity threshold where user are atleast that similar. Threshold values can vary from -\/1 to 1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em recommender\+Similarity} & Similarity algorithm e.\+g. Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E and Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N\\
+\hline
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em user\+Id} & The user Id for whom recommendations have to be found\\
+\hline
+{\em threshold} & Threshold size. Values can vary from -\/1 to 1\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a30c32d22fdf9b318658e1b7baa0b4e28}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!User\+Based\+Threshold\+By\+Similarity\+For\+All@{User\+Based\+Threshold\+By\+Similarity\+For\+All}}
+\index{User\+Based\+Threshold\+By\+Similarity\+For\+All@{User\+Based\+Threshold\+By\+Similarity\+For\+All}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{User\+Based\+Threshold\+By\+Similarity\+For\+All}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Recommender} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+User\+Based\+Threshold\+By\+Similarity\+For\+All (
+\begin{DoxyParamCaption}
+\item[{String}]{recommender\+Similarity, }
+\item[{Double}]{threshold, }
+\item[{int}]{how\+Many}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a30c32d22fdf9b318658e1b7baa0b4e28}
+
+
+User based neighborood recommendations based on Threshold for All. Recommendations are found based on Threshold where thereshold represents similarity threshold where user are atleast that similar. Threshold values can vary from -\/1 to 1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em recommender\+Similarity} & Similarity algorithm e.\+g. Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E and Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N\\
+\hline
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em threshold} & Threshold size. Values can vary from -\/1 to 1\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Recommendations for All
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_aca375e86c9f19b3fb95c2b7c09f655d8}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!User\+Based\+Threshold\+By\+Similarity\+For\+All@{User\+Based\+Threshold\+By\+Similarity\+For\+All}}
+\index{User\+Based\+Threshold\+By\+Similarity\+For\+All@{User\+Based\+Threshold\+By\+Similarity\+For\+All}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{User\+Based\+Threshold\+By\+Similarity\+For\+All}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+User\+Based\+Threshold\+By\+Similarity\+For\+All (
+\begin{DoxyParamCaption}
+\item[{String}]{recommender\+Similarity, }
+\item[{Double}]{threshold, }
+\item[{int}]{how\+Many, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_aca375e86c9f19b3fb95c2b7c09f655d8}
+
+
+User based neighborood recommendations based on Threshold for All in async mode. Recommendations are found based on Threshold where thereshold represents similarity threshold where user are atleast that similar. Threshold values can vary from -\/1 to 1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em recommender\+Similarity} & Similarity algorithm e.\+g. Recommender.\+E\+U\+C\+L\+I\+D\+E\+A\+N\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E and Recommender.\+P\+E\+A\+R\+S\+O\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+T\+I\+O\+N\\
+\hline
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em threshold} & Threshold size. Values can vary from -\/1 to 1\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_afad344582b10048c307945ae0c817db5}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!User\+Based\+Threshold\+For\+All@{User\+Based\+Threshold\+For\+All}}
+\index{User\+Based\+Threshold\+For\+All@{User\+Based\+Threshold\+For\+All}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{User\+Based\+Threshold\+For\+All}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Recommender} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+User\+Based\+Threshold\+For\+All (
+\begin{DoxyParamCaption}
+\item[{Double}]{threshold, }
+\item[{int}]{how\+Many}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_afad344582b10048c307945ae0c817db5}
+
+
+User based neighborood recommendations based on Threshold for all Users. Recommendations are found based on Threshold where thereshold represents similarity threshold where user are atleast that similar. Threshold values can vary from -\/1 to 1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em threshold} & Threshold size. Values can vary from -\/1 to 1\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Recommendations for all Users
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a82def03aa4a4cc01994c853de5d2c8c6}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}!User\+Based\+Threshold\+For\+All@{User\+Based\+Threshold\+For\+All}}
+\index{User\+Based\+Threshold\+For\+All@{User\+Based\+Threshold\+For\+All}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::recommend\+::\+Recommender\+Service}}
+\subsubsection[{User\+Based\+Threshold\+For\+All}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+recommend.\+Recommender\+Service.\+User\+Based\+Threshold\+For\+All (
+\begin{DoxyParamCaption}
+\item[{Double}]{threshold, }
+\item[{int}]{how\+Many, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1recommend_1_1_recommender_service_a82def03aa4a4cc01994c853de5d2c8c6}
+
+
+User based neighborood recommendations based on Threshold for all Users in async mode. Recommendations are found based on Threshold where thereshold represents similarity threshold where user are atleast that similar. Threshold values can vary from -\/1 to 1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preference\+File\+Name} & Name of the Prefeence File based on which recommendations have to be found\\
+\hline
+{\em threshold} & Threshold size. Values can vary from -\/1 to 1\\
+\hline
+{\em how\+Many} & Specifies that how many recommendations have to be found\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}

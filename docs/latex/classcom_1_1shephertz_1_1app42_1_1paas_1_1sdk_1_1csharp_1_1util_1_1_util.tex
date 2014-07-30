@@ -1,0 +1,399 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+util.\+Util Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+util.\+Util@{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+util.\+Util}}
+}
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+util.\+Util\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_ac87c59bf72f72e1a79112a2a224197af}{I\+Enumerator {\bfseries Wait\+For\+Request} (String uri, byte\mbox{[}$\,$\mbox{]} body, Hashtable headers, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_ac87c59bf72f72e1a79112a2a224197af}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_aa8276e9328e83dc28163392615c8e25f}{Compute\+Hmac} (string input, byte\mbox{[}$\,$\mbox{]} key)
+\begin{DoxyCompactList}\small\item\em Encoding and decoding of the queries are done using the Hmac Algorithm. \end{DoxyCompactList}\item 
+static String \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_ae131ccc6c77e96007fef9e9db2511224}{Sign} (String secret\+Key, Dictionary$<$ String, String $>$ params\+List)
+\begin{DoxyCompactList}\small\item\em It signs the request that has to be sent in the Hmac format. \end{DoxyCompactList}\item 
+static String \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a37cb1b8c121d7dbc5d684073a70bd837}{Get\+U\+T\+C\+Formatted\+Timestamp} ()
+\begin{DoxyCompactList}\small\item\em Finds the current time \end{DoxyCompactList}\item 
+static String \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a0f6ab0e8c8f4130629102e7355701696}{Get\+U\+T\+C\+Formatted\+Timestamp} (Date\+Time dt)
+\begin{DoxyCompactList}\small\item\em Finds the particular time for a particular date \end{DoxyCompactList}\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a4ae19c2396d5ca66ac75c283d3ee1253}{static string {\bfseries Upper\+Case\+Url\+Encode} (string s)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a4ae19c2396d5ca66ac75c283d3ee1253}
+
+\item 
+static String \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_aee68725831fc40f65b5bdb689bb060c3}{extract\+File\+Extension} (String file\+Name)
+\begin{DoxyCompactList}\small\item\em Taking extension out \end{DoxyCompactList}\item 
+static void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a86e3d4c6614e9f2554d3db6c795a2343}{Validate\+Max} (int max)
+\begin{DoxyCompactList}\small\item\em To check whether the max value is greater than zero or not. \end{DoxyCompactList}\item 
+static void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a54f423333022dafb52b15c7289129ae6}{Validate\+How\+Many} (int how\+Many)
+\begin{DoxyCompactList}\small\item\em To check whether the value of how many is less than 1000 or not. \end{DoxyCompactList}\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a6160e6f03e658b613333aaf87256fa36}{static void {\bfseries Multi\+Part\+Request} (string file\+Reference\+Name, String file\+Path, Dictionary$<$ string, string $>$ query\+Params, Dictionary$<$ string, string $>$ post\+Params, Dictionary$<$ string, string $>$ header\+Params, string url\+Post, string accept\+Type, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a6160e6f03e658b613333aaf87256fa36}
+
+\item 
+static string \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a32655a413e38208817940c7d5b7113a1}{Multi\+Part\+Request} (string file\+Reference\+Name, String file\+Path, Dictionary$<$ string, string $>$ query\+Params, Dictionary$<$ string, string $>$ post\+Params, Dictionary$<$ string, string $>$ header\+Params, string url\+Post, string accept\+Type)
+\begin{DoxyCompactList}\small\item\em Multipart request for all the methods \end{DoxyCompactList}\item 
+static string \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_aeefeaa92e258f3e4a8e19921c23fb514}{Multi\+Part\+Request} (string file\+Reference\+Name, Stream file\+Stream, string name, Dictionary$<$ string, string $>$ query\+Params, Dictionary$<$ string, string $>$ post\+Params, Dictionary$<$ string, string $>$ header\+Params, string url\+Post, string accept\+Type)
+\begin{DoxyCompactList}\small\item\em Multipart request via Stream for all the methods \end{DoxyCompactList}\item 
+static void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_ad7cb6f5a951d53e4ecc37b1f09d26321}{Throw\+Exception\+If\+Email\+Not\+Valid} (object obj, String name)
+\begin{DoxyCompactList}\small\item\em An exception to check whether the email entered is valid or not. \end{DoxyCompactList}\item 
+static void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a28c41e9017db6a5dd163be3fc3122fd3}{Throw\+Exception\+If\+Not\+Valid\+Extension} (String file\+Name, String name)
+\begin{DoxyCompactList}\small\item\em An exception to check if the file has valid extension or not \end{DoxyCompactList}\item 
+static void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a6021b3e8ac131dff48c525ec5c8f278f}{Throw\+Exception\+If\+Not\+Valid\+Image\+Extension} (String file\+Name, String name)
+\begin{DoxyCompactList}\small\item\em To check if the image has a valid extension or not. \end{DoxyCompactList}\item 
+static byte\mbox{[}$\,$\mbox{]} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a65e3cba9c6e8c388e0fe7e9dbd2a0d59}{Read\+To\+End} (System.\+I\+O.\+Stream stream)
+\begin{DoxyCompactList}\small\item\em Reads to end. \end{DoxyCompactList}\item 
+static String \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_ad4ff86883fb671951af758bed1aecddb}{Build\+Query\+String} (Dictionary$<$ String, String $>$ query\+Params)
+\begin{DoxyCompactList}\small\item\em Builds the query string. \end{DoxyCompactList}\item 
+static void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a74ba9227ec104b5c9dd0db508041c6db}{Throw\+Exception\+If\+Null} (object obj, string name)
+\begin{DoxyCompactList}\small\item\em Throws the exception if null. \end{DoxyCompactList}\item 
+static void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_ae2b017609dcaec3093c4168e40c23ff1}{Throw\+Exception\+If\+Long\+Value\+Is\+Negative\+Or\+Equal\+To\+Zero} (long obj, String name)
+\begin{DoxyCompactList}\small\item\em Throws the exception if long value is negative or equal to zero. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_ad4ff86883fb671951af758bed1aecddb}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}!Build\+Query\+String@{Build\+Query\+String}}
+\index{Build\+Query\+String@{Build\+Query\+String}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}}
+\subsubsection[{Build\+Query\+String}]{\setlength{\rightskip}{0pt plus 5cm}static String com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+util.\+Util.\+Build\+Query\+String (
+\begin{DoxyParamCaption}
+\item[{Dictionary$<$ String, String $>$}]{query\+Params}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_ad4ff86883fb671951af758bed1aecddb}
+
+
+Builds the query string. 
+
+\begin{DoxyReturn}{Returns}
+The query string.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Params} & Query parameters.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_aa8276e9328e83dc28163392615c8e25f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}!Compute\+Hmac@{Compute\+Hmac}}
+\index{Compute\+Hmac@{Compute\+Hmac}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}}
+\subsubsection[{Compute\+Hmac}]{\setlength{\rightskip}{0pt plus 5cm}static string com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+util.\+Util.\+Compute\+Hmac (
+\begin{DoxyParamCaption}
+\item[{string}]{input, }
+\item[{byte\mbox{[}$\,$\mbox{]}}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_aa8276e9328e83dc28163392615c8e25f}
+
+
+Encoding and decoding of the queries are done using the Hmac Algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & \\
+\hline
+{\em key} & \\
+\hline
+\end{DoxyParams}
+Invalid\+Key\+Exception
+
+No\+Such\+Algorithm\+Exception
+
+Illegal\+State\+Exception
+
+Unsupported\+Encoding\+Exception\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_aee68725831fc40f65b5bdb689bb060c3}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}!extract\+File\+Extension@{extract\+File\+Extension}}
+\index{extract\+File\+Extension@{extract\+File\+Extension}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}}
+\subsubsection[{extract\+File\+Extension}]{\setlength{\rightskip}{0pt plus 5cm}static String com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+util.\+Util.\+extract\+File\+Extension (
+\begin{DoxyParamCaption}
+\item[{String}]{file\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_aee68725831fc40f65b5bdb689bb060c3}
+
+
+Taking extension out 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+extension
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a37cb1b8c121d7dbc5d684073a70bd837}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}!Get\+U\+T\+C\+Formatted\+Timestamp@{Get\+U\+T\+C\+Formatted\+Timestamp}}
+\index{Get\+U\+T\+C\+Formatted\+Timestamp@{Get\+U\+T\+C\+Formatted\+Timestamp}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}}
+\subsubsection[{Get\+U\+T\+C\+Formatted\+Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}static String com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+util.\+Util.\+Get\+U\+T\+C\+Formatted\+Timestamp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a37cb1b8c121d7dbc5d684073a70bd837}
+
+
+Finds the current time 
+
+\begin{DoxyReturn}{Returns}
+Time format
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a0f6ab0e8c8f4130629102e7355701696}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}!Get\+U\+T\+C\+Formatted\+Timestamp@{Get\+U\+T\+C\+Formatted\+Timestamp}}
+\index{Get\+U\+T\+C\+Formatted\+Timestamp@{Get\+U\+T\+C\+Formatted\+Timestamp}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}}
+\subsubsection[{Get\+U\+T\+C\+Formatted\+Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}static String com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+util.\+Util.\+Get\+U\+T\+C\+Formatted\+Timestamp (
+\begin{DoxyParamCaption}
+\item[{Date\+Time}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a0f6ab0e8c8f4130629102e7355701696}
+
+
+Finds the particular time for a particular date 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Time format
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a32655a413e38208817940c7d5b7113a1}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}!Multi\+Part\+Request@{Multi\+Part\+Request}}
+\index{Multi\+Part\+Request@{Multi\+Part\+Request}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}}
+\subsubsection[{Multi\+Part\+Request}]{\setlength{\rightskip}{0pt plus 5cm}static string com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+util.\+Util.\+Multi\+Part\+Request (
+\begin{DoxyParamCaption}
+\item[{string}]{file\+Reference\+Name, }
+\item[{String}]{file\+Path, }
+\item[{Dictionary$<$ string, string $>$}]{query\+Params, }
+\item[{Dictionary$<$ string, string $>$}]{post\+Params, }
+\item[{Dictionary$<$ string, string $>$}]{header\+Params, }
+\item[{string}]{url\+Post, }
+\item[{string}]{accept\+Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a32655a413e38208817940c7d5b7113a1}
+
+
+Multipart request for all the methods 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Reference\+Name} & \\
+\hline
+{\em file\+Path} & \\
+\hline
+{\em query\+Params} & \\
+\hline
+{\em post\+Params} & \\
+\hline
+{\em url\+Post} & \\
+\hline
+{\em accept\+Type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+Exception\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_aeefeaa92e258f3e4a8e19921c23fb514}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}!Multi\+Part\+Request@{Multi\+Part\+Request}}
+\index{Multi\+Part\+Request@{Multi\+Part\+Request}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}}
+\subsubsection[{Multi\+Part\+Request}]{\setlength{\rightskip}{0pt plus 5cm}static string com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+util.\+Util.\+Multi\+Part\+Request (
+\begin{DoxyParamCaption}
+\item[{string}]{file\+Reference\+Name, }
+\item[{Stream}]{file\+Stream, }
+\item[{string}]{name, }
+\item[{Dictionary$<$ string, string $>$}]{query\+Params, }
+\item[{Dictionary$<$ string, string $>$}]{post\+Params, }
+\item[{Dictionary$<$ string, string $>$}]{header\+Params, }
+\item[{string}]{url\+Post, }
+\item[{string}]{accept\+Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_aeefeaa92e258f3e4a8e19921c23fb514}
+
+
+Multipart request via Stream for all the methods 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Reference\+Name} & \\
+\hline
+{\em file\+Stream} & \\
+\hline
+{\em name} & \\
+\hline
+{\em query\+Params} & \\
+\hline
+{\em post\+Params} & \\
+\hline
+{\em url\+Post} & \\
+\hline
+{\em accept\+Type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+Exception\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a65e3cba9c6e8c388e0fe7e9dbd2a0d59}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}!Read\+To\+End@{Read\+To\+End}}
+\index{Read\+To\+End@{Read\+To\+End}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}}
+\subsubsection[{Read\+To\+End}]{\setlength{\rightskip}{0pt plus 5cm}static byte \mbox{[}$\,$\mbox{]} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+util.\+Util.\+Read\+To\+End (
+\begin{DoxyParamCaption}
+\item[{System.\+I\+O.\+Stream}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a65e3cba9c6e8c388e0fe7e9dbd2a0d59}
+
+
+Reads to end. 
+
+\begin{DoxyReturn}{Returns}
+The to end.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & Stream.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_ae131ccc6c77e96007fef9e9db2511224}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}!Sign@{Sign}}
+\index{Sign@{Sign}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}}
+\subsubsection[{Sign}]{\setlength{\rightskip}{0pt plus 5cm}static String com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+util.\+Util.\+Sign (
+\begin{DoxyParamCaption}
+\item[{String}]{secret\+Key, }
+\item[{Dictionary$<$ String, String $>$}]{params\+List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_ae131ccc6c77e96007fef9e9db2511224}
+
+
+It signs the request that has to be sent in the Hmac format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em secret\+Key} & \\
+\hline
+{\em params\+List} & \\
+\hline
+\end{DoxyParams}
+Invalid\+Key\+Exception
+
+No\+Such\+Algorithm\+Exception
+
+Illegal\+State\+Exception
+
+Unsupported\+Encoding\+Exception\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_ad7cb6f5a951d53e4ecc37b1f09d26321}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}!Throw\+Exception\+If\+Email\+Not\+Valid@{Throw\+Exception\+If\+Email\+Not\+Valid}}
+\index{Throw\+Exception\+If\+Email\+Not\+Valid@{Throw\+Exception\+If\+Email\+Not\+Valid}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}}
+\subsubsection[{Throw\+Exception\+If\+Email\+Not\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}static void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+util.\+Util.\+Throw\+Exception\+If\+Email\+Not\+Valid (
+\begin{DoxyParamCaption}
+\item[{object}]{obj, }
+\item[{String}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_ad7cb6f5a951d53e4ecc37b1f09d26321}
+
+
+An exception to check whether the email entered is valid or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_ae2b017609dcaec3093c4168e40c23ff1}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}!Throw\+Exception\+If\+Long\+Value\+Is\+Negative\+Or\+Equal\+To\+Zero@{Throw\+Exception\+If\+Long\+Value\+Is\+Negative\+Or\+Equal\+To\+Zero}}
+\index{Throw\+Exception\+If\+Long\+Value\+Is\+Negative\+Or\+Equal\+To\+Zero@{Throw\+Exception\+If\+Long\+Value\+Is\+Negative\+Or\+Equal\+To\+Zero}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}}
+\subsubsection[{Throw\+Exception\+If\+Long\+Value\+Is\+Negative\+Or\+Equal\+To\+Zero}]{\setlength{\rightskip}{0pt plus 5cm}static void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+util.\+Util.\+Throw\+Exception\+If\+Long\+Value\+Is\+Negative\+Or\+Equal\+To\+Zero (
+\begin{DoxyParamCaption}
+\item[{long}]{obj, }
+\item[{String}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_ae2b017609dcaec3093c4168e40c23ff1}
+
+
+Throws the exception if long value is negative or equal to zero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Object.\\
+\hline
+{\em name} & Name.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a28c41e9017db6a5dd163be3fc3122fd3}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}!Throw\+Exception\+If\+Not\+Valid\+Extension@{Throw\+Exception\+If\+Not\+Valid\+Extension}}
+\index{Throw\+Exception\+If\+Not\+Valid\+Extension@{Throw\+Exception\+If\+Not\+Valid\+Extension}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}}
+\subsubsection[{Throw\+Exception\+If\+Not\+Valid\+Extension}]{\setlength{\rightskip}{0pt plus 5cm}static void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+util.\+Util.\+Throw\+Exception\+If\+Not\+Valid\+Extension (
+\begin{DoxyParamCaption}
+\item[{String}]{file\+Name, }
+\item[{String}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a28c41e9017db6a5dd163be3fc3122fd3}
+
+
+An exception to check if the file has valid extension or not 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & \\
+\hline
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a6021b3e8ac131dff48c525ec5c8f278f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}!Throw\+Exception\+If\+Not\+Valid\+Image\+Extension@{Throw\+Exception\+If\+Not\+Valid\+Image\+Extension}}
+\index{Throw\+Exception\+If\+Not\+Valid\+Image\+Extension@{Throw\+Exception\+If\+Not\+Valid\+Image\+Extension}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}}
+\subsubsection[{Throw\+Exception\+If\+Not\+Valid\+Image\+Extension}]{\setlength{\rightskip}{0pt plus 5cm}static void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+util.\+Util.\+Throw\+Exception\+If\+Not\+Valid\+Image\+Extension (
+\begin{DoxyParamCaption}
+\item[{String}]{file\+Name, }
+\item[{String}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a6021b3e8ac131dff48c525ec5c8f278f}
+
+
+To check if the image has a valid extension or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & \\
+\hline
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a74ba9227ec104b5c9dd0db508041c6db}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}!Throw\+Exception\+If\+Null@{Throw\+Exception\+If\+Null}}
+\index{Throw\+Exception\+If\+Null@{Throw\+Exception\+If\+Null}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}}
+\subsubsection[{Throw\+Exception\+If\+Null}]{\setlength{\rightskip}{0pt plus 5cm}static void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+util.\+Util.\+Throw\+Exception\+If\+Null (
+\begin{DoxyParamCaption}
+\item[{object}]{obj, }
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a74ba9227ec104b5c9dd0db508041c6db}
+
+
+Throws the exception if null. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Object.\\
+\hline
+{\em name} & Name.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a54f423333022dafb52b15c7289129ae6}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}!Validate\+How\+Many@{Validate\+How\+Many}}
+\index{Validate\+How\+Many@{Validate\+How\+Many}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}}
+\subsubsection[{Validate\+How\+Many}]{\setlength{\rightskip}{0pt plus 5cm}static void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+util.\+Util.\+Validate\+How\+Many (
+\begin{DoxyParamCaption}
+\item[{int}]{how\+Many}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a54f423333022dafb52b15c7289129ae6}
+
+
+To check whether the value of how many is less than 1000 or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em how\+Many} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a86e3d4c6614e9f2554d3db6c795a2343}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}!Validate\+Max@{Validate\+Max}}
+\index{Validate\+Max@{Validate\+Max}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::util\+::\+Util}}
+\subsubsection[{Validate\+Max}]{\setlength{\rightskip}{0pt plus 5cm}static void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+util.\+Util.\+Validate\+Max (
+\begin{DoxyParamCaption}
+\item[{int}]{max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1util_1_1_util_a86e3d4c6614e9f2554d3db6c795a2343}
+
+
+To check whether the max value is greater than zero or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & \\
+\hline
+\end{DoxyParams}

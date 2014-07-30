@@ -1,0 +1,637 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service@{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service}}
+}
+
+
+Define a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} e.\+g. Sword, Energy etc. Is needed for \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} Points The Game service allows Game, User, Score and Score\+Board Management on the Cloud. The service allows Game Developer to create a Game and then do in Game Scoring using the Score service. It also allows to maintain a Scoreboard across game sessions using the Score\+Board service. One can query for average or highest score for user for a Game and highest and average score across users for a Game. It also gives ranking of the user against other users for a particular game. The \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} and Reward\+Points allows the Game Developer to assign rewards to a user and redeem the rewards. E.\+g. One can give Swords or Energy etc. The services Game, Score, Score\+Board, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward}, Reward\+Points can be used in Conjunction for complete Game Scoring and \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} Management.  
+
+
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a0f355270f4fef36ca6fa896b39aacd68}{Reward\+Service} (String api\+Key, String secret\+Key)
+\begin{DoxyCompactList}\small\item\em this is a constructor that takes \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_affaa3378981a478d880f99559a431a5a}{Create\+Reward} (String reward\+Name, String reward\+Description)
+\begin{DoxyCompactList}\small\item\em Creates \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward}. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} can be Sword, Energy etc. When \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} Points have to be added the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} name created using this method has to be specified. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_ac47ad8fb0b1f5c3217396e96e90ec95c}{Create\+Reward} (String reward\+Name, String reward\+Description, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Creates \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} in async mode. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} can be Sword, Energy etc. When \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} Points have to be added the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} name created using this method has to be specified. \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_af9cfc59a83738e3c6b3913283ad58fe6}{Get\+All\+Rewards} ()
+\begin{DoxyCompactList}\small\item\em Fetches all the Rewards \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_af92d906c9e7611d70021a7b873ecc3c0}{Get\+All\+Rewards} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetches all the Rewards in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_ada38a51d38c8f65a6c814970e70f7986}{Get\+Reward\+By\+Name} (String reward\+Name)
+\begin{DoxyCompactList}\small\item\em Retrieves the reward for the specified name \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a707f9d5351a1d5b7a22de4214d8dd49c}{Get\+Reward\+By\+Name} (String reward\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Retrieves the reward for the specified name in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a762563ec1d31424184737d56f7b14f90}{Earn\+Rewards} (String game\+Name, String game\+User\+Name, String reward\+Name, Double reward\+Points)
+\begin{DoxyCompactList}\small\item\em Adds the reward points to an users account. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} Points can be earned by the user which can be redeemed later. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_aed72ee3635921da662b8ffe7dd207fda}{Earn\+Rewards} (String game\+Name, String game\+User\+Name, String reward\+Name, Double reward\+Points, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Adds the reward points to an users account in async mode. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} Points can be earned by the user which can be redeemed later. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a4289f36ada5dfc5d962e133da988632b}{Redeem\+Rewards} (String game\+Name, String game\+User\+Name, String reward\+Name, Double reward\+Points)
+\begin{DoxyCompactList}\small\item\em Deducts the rewardpoints from the earned rewards by a user. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a40b85bc8eec385b36e53ce2a407fd92e}{Redeem\+Rewards} (String game\+Name, String game\+User\+Name, String reward\+Name, Double reward\+Points, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Deducts the rewardpoints from the earned rewards by a user in async mode. \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a8ec3949aa7cefcfa0d37331a8304a037}{Get\+Game\+Reward\+Points\+For\+User} (String game\+Name, String user\+Name)
+\begin{DoxyCompactList}\small\item\em Fetches the reward points for a particular user \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a4ad8172abe5b9f5c524b16286c6763bc}{Get\+Game\+Reward\+Points\+For\+User} (String game\+Name, String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetches the reward points for a particular user in async mode \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_ac93befb73a09fa2f89cff69519596e43}{Get\+All\+Rewards} (int max, int offset)
+\begin{DoxyCompactList}\small\item\em Fetches all the Rewards by paging. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a21f06ebb90d4b6c137e9f1811e232d71}{Get\+All\+Rewards} (int max, int offset, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetches all the Rewards by paging in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_aeec97f7643c714d03d29174b2ef58bb0}{Get\+All\+Rewards\+Count} ()
+\begin{DoxyCompactList}\small\item\em Fetches all the Rewards \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a2d417c569de33f733bdad69fe8a64d8e}{Get\+All\+Rewards\+Count} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetches all the Rewards in async mode \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_ab0c3d1dbeef1b33c07aee1add812d707}{Get\+Top\+N\+Reward\+Earners} (String game\+Name, String reward\+Name, int max)
+\begin{DoxyCompactList}\small\item\em This function provides a list of specified number of top reward earners for a specific game. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a3d03aee8b12ab79056a77e6917c5177a}{Get\+Top\+N\+Reward\+Earners} (String game\+Name, String reward\+Name, int max, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em This function provides a list of specified number of top reward earners for a specific game in async mode. \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a84938bcb7196ede478ba921bdbbeeeea}{Get\+All\+Rewards\+By\+User} (String user\+Name, String reward\+Name)
+\begin{DoxyCompactList}\small\item\em This function returns you the details of all the specific rewards earned by the specified user. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a87cebe91cbcd68538e51bfc3c148b41a}{Get\+All\+Rewards\+By\+User} (String user\+Name, String reward\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em This function returns you the details of all the specific rewards earned by the specified user in async mode. \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_ae6be1491b5f8b480941cdafa8d43038b}{Get\+Top\+N\+Reward\+Earners\+By\+Group} (String game\+Name, String reward\+Name, I\+List$<$ String $>$ user\+List)
+\begin{DoxyCompactList}\small\item\em This function returns you a list of group wise users who earned the top rewards in the specified game . \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a07c2718835a6f33b3680860957ffb73f}{Get\+Top\+N\+Reward\+Earners\+By\+Group} (String game\+Name, String reward\+Name, I\+List$<$ String $>$ user\+List, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em This function returns you a list of group wise users who earned the top rewards in the specified game in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a731260c6e3cabcd1bb95273d11fb4ee0}{Get\+User\+Ranking\+On\+Reward} (String game\+Name, String reward\+Name, String user\+Name)
+\begin{DoxyCompactList}\small\item\em Get User Ranking On \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a7151fc1a0de525052ea3abe9f80048a8}{Get\+User\+Ranking\+On\+Reward} (String game\+Name, String reward\+Name, String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Get User Ranking On \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} in async mode \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Define a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} e.\+g. Sword, Energy etc. Is needed for \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} Points The Game service allows Game, User, Score and Score\+Board Management on the Cloud. The service allows Game Developer to create a Game and then do in Game Scoring using the Score service. It also allows to maintain a Scoreboard across game sessions using the Score\+Board service. One can query for average or highest score for user for a Game and highest and average score across users for a Game. It also gives ranking of the user against other users for a particular game. The \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} and Reward\+Points allows the Game Developer to assign rewards to a user and redeem the rewards. E.\+g. One can give Swords or Energy etc. The services Game, Score, Score\+Board, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward}, Reward\+Points can be used in Conjunction for complete Game Scoring and \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} Management. 
+
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service}{Game, Reward\+Point, Score, Score\+Board} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a0f355270f4fef36ca6fa896b39aacd68}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Reward\+Service@{Reward\+Service}}
+\index{Reward\+Service@{Reward\+Service}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Reward\+Service}]{\setlength{\rightskip}{0pt plus 5cm}com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Reward\+Service (
+\begin{DoxyParamCaption}
+\item[{String}]{api\+Key, }
+\item[{String}]{secret\+Key}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a0f355270f4fef36ca6fa896b39aacd68}
+
+
+this is a constructor that takes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & api\+Key\\
+\hline
+{\em secret\+Key} & secret\+Key\\
+\hline
+{\em base\+U\+R\+L} & base\+U\+R\+L\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_affaa3378981a478d880f99559a431a5a}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Create\+Reward@{Create\+Reward}}
+\index{Create\+Reward@{Create\+Reward}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Create\+Reward}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reward} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Create\+Reward (
+\begin{DoxyParamCaption}
+\item[{String}]{reward\+Name, }
+\item[{String}]{reward\+Description}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_affaa3378981a478d880f99559a431a5a}
+
+
+Creates \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward}. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} can be Sword, Energy etc. When \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} Points have to be added the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} name created using this method has to be specified. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reward\+Name} & The reward that has to be created\\
+\hline
+{\em reward\+Description} & The description of the reward to be created\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} object containing the reward that has been created
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_ac47ad8fb0b1f5c3217396e96e90ec95c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Create\+Reward@{Create\+Reward}}
+\index{Create\+Reward@{Create\+Reward}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Create\+Reward}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Create\+Reward (
+\begin{DoxyParamCaption}
+\item[{String}]{reward\+Name, }
+\item[{String}]{reward\+Description, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_ac47ad8fb0b1f5c3217396e96e90ec95c}
+
+
+Creates \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} in async mode. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} can be Sword, Energy etc. When \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} Points have to be added the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} name created using this method has to be specified. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reward\+Name} & The reward that has to be created\\
+\hline
+{\em reward\+Description} & The description of the reward to be created\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a762563ec1d31424184737d56f7b14f90}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Earn\+Rewards@{Earn\+Rewards}}
+\index{Earn\+Rewards@{Earn\+Rewards}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Earn\+Rewards}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reward} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Earn\+Rewards (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name, }
+\item[{String}]{game\+User\+Name, }
+\item[{String}]{reward\+Name, }
+\item[{Double}]{reward\+Points}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a762563ec1d31424184737d56f7b14f90}
+
+
+Adds the reward points to an users account. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} Points can be earned by the user which can be redeemed later. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & Name of the game for which reward points have to be added\\
+\hline
+{\em game\+User\+Name} & The user for whom reward points have to be added\\
+\hline
+{\em reward\+Name} & The rewards for which reward points have to be added\\
+\hline
+{\em reward\+Points} & The points that have to be added\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} object containing the rewardpoints that has been added
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_aed72ee3635921da662b8ffe7dd207fda}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Earn\+Rewards@{Earn\+Rewards}}
+\index{Earn\+Rewards@{Earn\+Rewards}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Earn\+Rewards}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Earn\+Rewards (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name, }
+\item[{String}]{game\+User\+Name, }
+\item[{String}]{reward\+Name, }
+\item[{Double}]{reward\+Points, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_aed72ee3635921da662b8ffe7dd207fda}
+
+
+Adds the reward points to an users account in async mode. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} Points can be earned by the user which can be redeemed later. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & Name of the game for which reward points have to be added\\
+\hline
+{\em game\+User\+Name} & The user for whom reward points have to be added\\
+\hline
+{\em reward\+Name} & The rewards for which reward points have to be added\\
+\hline
+{\em reward\+Points} & The points that have to be added\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_af9cfc59a83738e3c6b3913283ad58fe6}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Get\+All\+Rewards@{Get\+All\+Rewards}}
+\index{Get\+All\+Rewards@{Get\+All\+Rewards}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+All\+Rewards}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Reward}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Get\+All\+Rewards (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_af9cfc59a83738e3c6b3913283ad58fe6}
+
+
+Fetches all the Rewards 
+
+\begin{DoxyReturn}{Returns}
+I\+List of \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} objects containing all the rewards of the App
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_af92d906c9e7611d70021a7b873ecc3c0}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Get\+All\+Rewards@{Get\+All\+Rewards}}
+\index{Get\+All\+Rewards@{Get\+All\+Rewards}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+All\+Rewards}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Get\+All\+Rewards (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_af92d906c9e7611d70021a7b873ecc3c0}
+
+
+Fetches all the Rewards in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_ac93befb73a09fa2f89cff69519596e43}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Get\+All\+Rewards@{Get\+All\+Rewards}}
+\index{Get\+All\+Rewards@{Get\+All\+Rewards}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+All\+Rewards}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Reward}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Get\+All\+Rewards (
+\begin{DoxyParamCaption}
+\item[{int}]{max, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_ac93befb73a09fa2f89cff69519596e43}
+
+
+Fetches all the Rewards by paging. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+List of \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} objects containing all the rewards of the App
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a21f06ebb90d4b6c137e9f1811e232d71}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Get\+All\+Rewards@{Get\+All\+Rewards}}
+\index{Get\+All\+Rewards@{Get\+All\+Rewards}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+All\+Rewards}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Get\+All\+Rewards (
+\begin{DoxyParamCaption}
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a21f06ebb90d4b6c137e9f1811e232d71}
+
+
+Fetches all the Rewards by paging in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a84938bcb7196ede478ba921bdbbeeeea}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Get\+All\+Rewards\+By\+User@{Get\+All\+Rewards\+By\+User}}
+\index{Get\+All\+Rewards\+By\+User@{Get\+All\+Rewards\+By\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+All\+Rewards\+By\+User}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Reward}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Get\+All\+Rewards\+By\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{reward\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a84938bcb7196ede478ba921bdbbeeeea}
+
+
+This function returns you the details of all the specific rewards earned by the specified user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the user whose rewards are to be fetched\\
+\hline
+{\em reward\+Name} & Name of the reward for which details are to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+List of \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a87cebe91cbcd68538e51bfc3c148b41a}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Get\+All\+Rewards\+By\+User@{Get\+All\+Rewards\+By\+User}}
+\index{Get\+All\+Rewards\+By\+User@{Get\+All\+Rewards\+By\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+All\+Rewards\+By\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Get\+All\+Rewards\+By\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{reward\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a87cebe91cbcd68538e51bfc3c148b41a}
+
+
+This function returns you the details of all the specific rewards earned by the specified user in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the user whose rewards are to be fetched\\
+\hline
+{\em reward\+Name} & Name of the reward for which details are to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_aeec97f7643c714d03d29174b2ef58bb0}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Get\+All\+Rewards\+Count@{Get\+All\+Rewards\+Count}}
+\index{Get\+All\+Rewards\+Count@{Get\+All\+Rewards\+Count}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+All\+Rewards\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Get\+All\+Rewards\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_aeec97f7643c714d03d29174b2ef58bb0}
+
+
+Fetches all the Rewards 
+
+\begin{DoxyReturn}{Returns}
+I\+List of \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} objects containing all the rewards of the App
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a2d417c569de33f733bdad69fe8a64d8e}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Get\+All\+Rewards\+Count@{Get\+All\+Rewards\+Count}}
+\index{Get\+All\+Rewards\+Count@{Get\+All\+Rewards\+Count}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+All\+Rewards\+Count}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Get\+All\+Rewards\+Count (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a2d417c569de33f733bdad69fe8a64d8e}
+
+
+Fetches all the Rewards in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a8ec3949aa7cefcfa0d37331a8304a037}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Get\+Game\+Reward\+Points\+For\+User@{Get\+Game\+Reward\+Points\+For\+User}}
+\index{Get\+Game\+Reward\+Points\+For\+User@{Get\+Game\+Reward\+Points\+For\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+Game\+Reward\+Points\+For\+User}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Reward}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Get\+Game\+Reward\+Points\+For\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name, }
+\item[{String}]{user\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a8ec3949aa7cefcfa0d37331a8304a037}
+
+
+Fetches the reward points for a particular user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & Name of the game for which reward points have to be fetched\\
+\hline
+{\em user\+Name} & The user for whom reward points have to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} object containing the reward points for the specified user
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a4ad8172abe5b9f5c524b16286c6763bc}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Get\+Game\+Reward\+Points\+For\+User@{Get\+Game\+Reward\+Points\+For\+User}}
+\index{Get\+Game\+Reward\+Points\+For\+User@{Get\+Game\+Reward\+Points\+For\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+Game\+Reward\+Points\+For\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Get\+Game\+Reward\+Points\+For\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name, }
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a4ad8172abe5b9f5c524b16286c6763bc}
+
+
+Fetches the reward points for a particular user in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & Name of the game for which reward points have to be fetched\\
+\hline
+{\em user\+Name} & The user for whom reward points have to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_ada38a51d38c8f65a6c814970e70f7986}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Get\+Reward\+By\+Name@{Get\+Reward\+By\+Name}}
+\index{Get\+Reward\+By\+Name@{Get\+Reward\+By\+Name}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+Reward\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reward} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Get\+Reward\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{String}]{reward\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_ada38a51d38c8f65a6c814970e70f7986}
+
+
+Retrieves the reward for the specified name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reward\+Name} & Name of the reward that has to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} object containing the reward based on the reward\+Name
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a707f9d5351a1d5b7a22de4214d8dd49c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Get\+Reward\+By\+Name@{Get\+Reward\+By\+Name}}
+\index{Get\+Reward\+By\+Name@{Get\+Reward\+By\+Name}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+Reward\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Get\+Reward\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{String}]{reward\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a707f9d5351a1d5b7a22de4214d8dd49c}
+
+
+Retrieves the reward for the specified name in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reward\+Name} & Name of the reward that has to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_ab0c3d1dbeef1b33c07aee1add812d707}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Get\+Top\+N\+Reward\+Earners@{Get\+Top\+N\+Reward\+Earners}}
+\index{Get\+Top\+N\+Reward\+Earners@{Get\+Top\+N\+Reward\+Earners}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+Top\+N\+Reward\+Earners}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Reward}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Get\+Top\+N\+Reward\+Earners (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name, }
+\item[{String}]{reward\+Name, }
+\item[{int}]{max}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_ab0c3d1dbeef1b33c07aee1add812d707}
+
+
+This function provides a list of specified number of top reward earners for a specific game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & Name of the game for which reward earners are to be fetched\\
+\hline
+{\em reward\+Name} & Name of the reward for which list of earners is to be fetched\\
+\hline
+{\em max} & Specifies the number of top earners to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+List of \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a3d03aee8b12ab79056a77e6917c5177a}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Get\+Top\+N\+Reward\+Earners@{Get\+Top\+N\+Reward\+Earners}}
+\index{Get\+Top\+N\+Reward\+Earners@{Get\+Top\+N\+Reward\+Earners}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+Top\+N\+Reward\+Earners}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Get\+Top\+N\+Reward\+Earners (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name, }
+\item[{String}]{reward\+Name, }
+\item[{int}]{max, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a3d03aee8b12ab79056a77e6917c5177a}
+
+
+This function provides a list of specified number of top reward earners for a specific game in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & Name of the game for which reward earners are to be fetched\\
+\hline
+{\em reward\+Name} & Name of the reward for which list of earners is to be fetched\\
+\hline
+{\em max} & Specifies the number of top earners to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_ae6be1491b5f8b480941cdafa8d43038b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Get\+Top\+N\+Reward\+Earners\+By\+Group@{Get\+Top\+N\+Reward\+Earners\+By\+Group}}
+\index{Get\+Top\+N\+Reward\+Earners\+By\+Group@{Get\+Top\+N\+Reward\+Earners\+By\+Group}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+Top\+N\+Reward\+Earners\+By\+Group}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Reward}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Get\+Top\+N\+Reward\+Earners\+By\+Group (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name, }
+\item[{String}]{reward\+Name, }
+\item[{I\+List$<$ String $>$}]{user\+List}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_ae6be1491b5f8b480941cdafa8d43038b}
+
+
+This function returns you a list of group wise users who earned the top rewards in the specified game . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & Name of the game for which top reward earners are to be fetched\\
+\hline
+{\em reward\+Name} & Name of the reward for which top earners are to be listed\\
+\hline
+{\em user\+List} & List of group wise users earning specified rewards\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+List of \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a07c2718835a6f33b3680860957ffb73f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Get\+Top\+N\+Reward\+Earners\+By\+Group@{Get\+Top\+N\+Reward\+Earners\+By\+Group}}
+\index{Get\+Top\+N\+Reward\+Earners\+By\+Group@{Get\+Top\+N\+Reward\+Earners\+By\+Group}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+Top\+N\+Reward\+Earners\+By\+Group}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Get\+Top\+N\+Reward\+Earners\+By\+Group (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name, }
+\item[{String}]{reward\+Name, }
+\item[{I\+List$<$ String $>$}]{user\+List, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a07c2718835a6f33b3680860957ffb73f}
+
+
+This function returns you a list of group wise users who earned the top rewards in the specified game in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & Name of the game for which top reward earners are to be fetched\\
+\hline
+{\em reward\+Name} & Name of the reward for which top earners are to be listed\\
+\hline
+{\em user\+List} & List of group wise users earning specified rewards\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a731260c6e3cabcd1bb95273d11fb4ee0}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Get\+User\+Ranking\+On\+Reward@{Get\+User\+Ranking\+On\+Reward}}
+\index{Get\+User\+Ranking\+On\+Reward@{Get\+User\+Ranking\+On\+Reward}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+User\+Ranking\+On\+Reward}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reward} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Get\+User\+Ranking\+On\+Reward (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name, }
+\item[{String}]{reward\+Name, }
+\item[{String}]{user\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a731260c6e3cabcd1bb95273d11fb4ee0}
+
+
+Get User Ranking On \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & \\
+\hline
+{\em reward\+Name} & \\
+\hline
+{\em user\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reward Object
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a7151fc1a0de525052ea3abe9f80048a8}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Get\+User\+Ranking\+On\+Reward@{Get\+User\+Ranking\+On\+Reward}}
+\index{Get\+User\+Ranking\+On\+Reward@{Get\+User\+Ranking\+On\+Reward}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+User\+Ranking\+On\+Reward}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Get\+User\+Ranking\+On\+Reward (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name, }
+\item[{String}]{reward\+Name, }
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a7151fc1a0de525052ea3abe9f80048a8}
+
+
+Get User Ranking On \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & \\
+\hline
+{\em reward\+Name} & \\
+\hline
+{\em user\+Name} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a4289f36ada5dfc5d962e133da988632b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Redeem\+Rewards@{Redeem\+Rewards}}
+\index{Redeem\+Rewards@{Redeem\+Rewards}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Redeem\+Rewards}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reward} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Redeem\+Rewards (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name, }
+\item[{String}]{game\+User\+Name, }
+\item[{String}]{reward\+Name, }
+\item[{Double}]{reward\+Points}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a4289f36ada5dfc5d962e133da988632b}
+
+
+Deducts the rewardpoints from the earned rewards by a user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & Name of the game for which reward points have to be deducted\\
+\hline
+{\em game\+User\+Name} & The user for whom reward points have to be deducted\\
+\hline
+{\em reward\+Name} & The rewards for which reward points have to be deducted\\
+\hline
+{\em reward\+Points} & The points that have to be deducted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward}{Reward} object containing the rewardpoints that has been deducted
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a40b85bc8eec385b36e53ce2a407fd92e}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}!Redeem\+Rewards@{Redeem\+Rewards}}
+\index{Redeem\+Rewards@{Redeem\+Rewards}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Redeem\+Rewards}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+reward.\+Reward\+Service.\+Redeem\+Rewards (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name, }
+\item[{String}]{game\+User\+Name, }
+\item[{String}]{reward\+Name, }
+\item[{Double}]{reward\+Points, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1reward_1_1_reward_service_a40b85bc8eec385b36e53ce2a407fd92e}
+
+
+Deducts the rewardpoints from the earned rewards by a user in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & Name of the game for which reward points have to be deducted\\
+\hline
+{\em game\+User\+Name} & The user for whom reward points have to be deducted\\
+\hline
+{\em reward\+Name} & The rewards for which reward points have to be deducted\\
+\hline
+{\em reward\+Points} & The points that have to be deducted\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}

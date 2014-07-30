@@ -1,0 +1,1125 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service@{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service}}
+}
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a3e08dbc011dd0579847bf354bfb13458}{Buddy\+Service} (String api\+Key, String secret\+Key)
+\begin{DoxyCompactList}\small\item\em This is a constructor that takes \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a6e664761a1e75091be06d82e32973071}{Send\+Friend\+Request} (String user\+Name, String buddy\+Name, String message)
+\begin{DoxyCompactList}\small\item\em Send friend request allow you to send the buddy request to the user. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a8a4602596db2801529205ba19751b062}{Send\+Friend\+Request} (String user\+Name, String buddy\+Name, String message, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Send friend request allow you to send the buddy request to the user in async mode. \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a01b63bc32b9ddb188b17bae4ecba36e5}{Get\+Friend\+Request} (String user\+Name)
+\begin{DoxyCompactList}\small\item\em Fetch the friend request of the user. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_aef6f7e3f557ed27ca720ed6a9ec1fb51}{Get\+Friend\+Request} (String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch the friend request of the user in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ac87657a236fde2437de03606a1ca9af9}{Accept\+Friend\+Request} (String user\+Name, String buddy\+Name)
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a49d3221bc877731c493f9d7940d5244c}{Accept\+Friend\+Request} (String user\+Name, String buddy\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Accept Friend Request in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a72c7541c29e46574ee57ba95507d514f}{Reject\+Friend\+Request} (String user\+Name, String buddy\+Name)
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a2a46cd98f5d5e989d8beac76c6c767fe}{Reject\+Friend\+Request} (String user\+Name, String buddy\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Reject Friend Request in async mode \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a92267bd1c358a3374c2fc6751346ff93}{Get\+All\+Friends} (String user\+Name)
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_aacb368a741699c2c193967c18aa7e0bf}{Get\+All\+Friends} (String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Get All Friends in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a69b6c23235623f91fe814074488db480}{Create\+Group\+By\+User} (String user\+Name, String group\+Name)
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a04e4f9e3063a27d2cde5bd898d2b9624}{Create\+Group\+By\+User} (String user\+Name, String group\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Create Group By User in async mode \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_abbe05303995b5d6d158282936f8a2fb7}{Add\+Friend\+To\+Group} (String user\+Name, String group\+Name, I\+List$<$ String $>$ friends)
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a7cc281ef7f208f8b6a774d58f34ea7e5}{Add\+Friend\+To\+Group} (String user\+Name, String group\+Name, I\+List$<$ String $>$ friends, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Add Friend To Group in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a0f71a394f985702f0965831345059b30}{Block\+User} (String user\+Name, String buddy\+Name)
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ac32bdbae3fa9a63c7e9fb9a1a0a04179}{Block\+User} (String user\+Name, String buddy\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Block User in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a718b43febe9d7b26ecdfcc21a8db2e3c}{Unblock\+User} (String user\+Name, String buddy\+Name)
+\begin{DoxyCompactList}\small\item\em Unblock User \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_abf1e14352963d117b2f7ee90110d07c3}{Unblock\+User} (String user\+Name, String buddy\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Unblock User in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a74810a34fb73f69154d6aae718afb062}{Block\+Friend\+Request} (String user\+Name, String buddy\+Name)
+\begin{DoxyCompactList}\small\item\em Block Friend Request \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a67f1c42f2b0506ed93d79a137d8b0ab0}{Block\+Friend\+Request} (String user\+Name, String buddy\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Block Friend Request in async mode \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a86a903ebc994b047f99dcc5f03946f28}{Get\+All\+Groups} (String user\+Name)
+\begin{DoxyCompactList}\small\item\em Get All Groups \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_af4660d5c1554d866714094ab32560c5a}{Get\+All\+Groups} (String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Get All Groups in async mode \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a508cc16b9e40e80b9b74a93e68110494}{Get\+All\+Friends\+In\+Group} (String user\+Name, String owner\+Name, String group\+Name)
+\begin{DoxyCompactList}\small\item\em Get All Friends In Group \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ad39f3803aa7ffeb3a2885201822e13a8}{Get\+All\+Friends\+In\+Group} (String user\+Name, String owner\+Name, String group\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Get All Friends In Group in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a1c8a141acfaf3c333a23f22858c062e5}{Checked\+In\+Geo\+Location} (String user\+Name, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_point}{Geo\+Point} point)
+\begin{DoxyCompactList}\small\item\em Checked In Geo Location \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a97eb71d786795e36ff552d3bf184de83}{Checked\+In\+Geo\+Location} (String user\+Name, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_point}{Geo\+Point} point, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Checked In Geo Location in async mode \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a12eb228d92d28788b47dc96703c72416}{Get\+Friends\+By\+Location} (String user\+Name, Double latitude, Double longitude, Double max\+Distance, int max)
+\begin{DoxyCompactList}\small\item\em Get Friends By Location \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ac8c3dc5c2ed5a02389848c0685fa2b4e}{Get\+Friends\+By\+Location} (String user\+Name, Double latitude, Double longitude, Double max\+Distance, int max, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Get Friends By Location in async mode \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a4a0bb8efcd45650ac9ed9da33f7f80ba}{Send\+Message\+To\+Group} (String user\+Name, String owner\+Name, String group\+Name, String message)
+\begin{DoxyCompactList}\small\item\em Send the message to the group. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ab2842c1eb67e6023675a5c15f85d372d}{Send\+Message\+To\+Group} (String user\+Name, String owner\+Name, String group\+Name, String message, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Send the message to the group in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a70c8484c16a335859923369c68b7e9e3}{Send\+Message\+To\+Friend} (String user\+Name, String buddy\+Name, String message)
+\begin{DoxyCompactList}\small\item\em Send Message To Friend \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a1add6b1768bb5d1e559d920d4b95cc32}{Send\+Message\+To\+Friend} (String user\+Name, String buddy\+Name, String message, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Send Message To Friend in async mode \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_aea4d38b296404a749c44180672913ff9}{Send\+Message\+To\+Friends} (String user\+Name, String message)
+\begin{DoxyCompactList}\small\item\em Send Message To Friends \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_aa70a3b64ae00e0ab188873d3ccd0ba28}{Send\+Message\+To\+Friends} (String user\+Name, String message, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Send Message To Friends in async mode \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a84f44f883a7faf05c00aa324852223be}{Get\+All\+Messages} (String user\+Name)
+\begin{DoxyCompactList}\small\item\em Get All Messages \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a35b8447a9e8489d3b18897ce720f5f0b}{Get\+All\+Messages} (String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Get All Messages in async mode \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ae708e496b377faee289aa328b769d893}{Get\+All\+Messages\+From\+Buddy} (String user\+Name, String buddy\+Name)
+\begin{DoxyCompactList}\small\item\em Get All Messages From \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_af0dd01d74bcafd587c6de484fa2cde9e}{Get\+All\+Messages\+From\+Buddy} (String user\+Name, String buddy\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Get All Messages From \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} in async mode \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_adaa8a222a491650fe1c7615909818682}{Get\+All\+Messages\+From\+Group} (String user\+Name, String group\+Owner, String group\+Name)
+\begin{DoxyCompactList}\small\item\em Get All Messages From Group \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a62b1a0cf73486286c0dc50e2148c9ba9}{Get\+All\+Messages\+From\+Group} (String user\+Name, String group\+Owner, String group\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Get All Messages From Group in async mode \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ab593136d3164b790a0741350a126758d}{Un\+Friend} (String user\+Name, String buddy\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Unfriend the friend. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a0bfaab3c05ba09a488715e960901a70f}{Delete\+Message\+By\+Id} (String user\+Name, String message\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Deletes the message by identifier. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ad184145b7057db2fc41964f34760da19}{Delete\+Message\+By\+Ids} (String user\+Name, I\+List$<$ String $>$ message\+Ids, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Deletes the message by identifiers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a3e08dbc011dd0579847bf354bfb13458}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Buddy\+Service@{Buddy\+Service}}
+\index{Buddy\+Service@{Buddy\+Service}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Buddy\+Service}]{\setlength{\rightskip}{0pt plus 5cm}com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Buddy\+Service (
+\begin{DoxyParamCaption}
+\item[{String}]{api\+Key, }
+\item[{String}]{secret\+Key}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a3e08dbc011dd0579847bf354bfb13458}
+
+
+This is a constructor that takes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & \\
+\hline
+{\em secret\+Key} & \\
+\hline
+{\em base\+U\+R\+L} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ac87657a236fde2437de03606a1ca9af9}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Accept\+Friend\+Request@{Accept\+Friend\+Request}}
+\index{Accept\+Friend\+Request@{Accept\+Friend\+Request}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Accept\+Friend\+Request}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Buddy} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Accept\+Friend\+Request (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{buddy\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ac87657a236fde2437de03606a1ca9af9}
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & user\+Name\\
+\hline
+{\em buddy\+Name} & Friend's Name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a49d3221bc877731c493f9d7940d5244c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Accept\+Friend\+Request@{Accept\+Friend\+Request}}
+\index{Accept\+Friend\+Request@{Accept\+Friend\+Request}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Accept\+Friend\+Request}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Accept\+Friend\+Request (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{buddy\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a49d3221bc877731c493f9d7940d5244c}
+
+
+Accept Friend Request in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & user\+Name\\
+\hline
+{\em buddy\+Name} & Friend's Name\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_abbe05303995b5d6d158282936f8a2fb7}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Add\+Friend\+To\+Group@{Add\+Friend\+To\+Group}}
+\index{Add\+Friend\+To\+Group@{Add\+Friend\+To\+Group}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Add\+Friend\+To\+Group}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Buddy}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Add\+Friend\+To\+Group (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{group\+Name, }
+\item[{I\+List$<$ String $>$}]{friends}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_abbe05303995b5d6d158282936f8a2fb7}
+
+
+
+
+Add Friend To Group 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em group\+Name} & \\
+\hline
+{\em friends} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a7cc281ef7f208f8b6a774d58f34ea7e5}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Add\+Friend\+To\+Group@{Add\+Friend\+To\+Group}}
+\index{Add\+Friend\+To\+Group@{Add\+Friend\+To\+Group}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Add\+Friend\+To\+Group}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Add\+Friend\+To\+Group (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{group\+Name, }
+\item[{I\+List$<$ String $>$}]{friends, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a7cc281ef7f208f8b6a774d58f34ea7e5}
+
+
+Add Friend To Group in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em group\+Name} & \\
+\hline
+{\em friends} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a74810a34fb73f69154d6aae718afb062}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Block\+Friend\+Request@{Block\+Friend\+Request}}
+\index{Block\+Friend\+Request@{Block\+Friend\+Request}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Block\+Friend\+Request}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Buddy} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Block\+Friend\+Request (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{buddy\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a74810a34fb73f69154d6aae718afb062}
+
+
+Block Friend Request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em buddy\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a67f1c42f2b0506ed93d79a137d8b0ab0}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Block\+Friend\+Request@{Block\+Friend\+Request}}
+\index{Block\+Friend\+Request@{Block\+Friend\+Request}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Block\+Friend\+Request}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Block\+Friend\+Request (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{buddy\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a67f1c42f2b0506ed93d79a137d8b0ab0}
+
+
+Block Friend Request in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em buddy\+Name} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a0f71a394f985702f0965831345059b30}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Block\+User@{Block\+User}}
+\index{Block\+User@{Block\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Block\+User}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Buddy} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Block\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{buddy\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a0f71a394f985702f0965831345059b30}
+
+
+
+
+Block User 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em buddy\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ac32bdbae3fa9a63c7e9fb9a1a0a04179}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Block\+User@{Block\+User}}
+\index{Block\+User@{Block\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Block\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Block\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{buddy\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ac32bdbae3fa9a63c7e9fb9a1a0a04179}
+
+
+Block User in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em buddy\+Name} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a1c8a141acfaf3c333a23f22858c062e5}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Checked\+In\+Geo\+Location@{Checked\+In\+Geo\+Location}}
+\index{Checked\+In\+Geo\+Location@{Checked\+In\+Geo\+Location}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Checked\+In\+Geo\+Location}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Buddy} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Checked\+In\+Geo\+Location (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{{\bf Geo\+Point}}]{point}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a1c8a141acfaf3c333a23f22858c062e5}
+
+
+Checked In Geo Location 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em point} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a97eb71d786795e36ff552d3bf184de83}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Checked\+In\+Geo\+Location@{Checked\+In\+Geo\+Location}}
+\index{Checked\+In\+Geo\+Location@{Checked\+In\+Geo\+Location}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Checked\+In\+Geo\+Location}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Checked\+In\+Geo\+Location (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{{\bf Geo\+Point}}]{point, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a97eb71d786795e36ff552d3bf184de83}
+
+
+Checked In Geo Location in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em point} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a69b6c23235623f91fe814074488db480}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Create\+Group\+By\+User@{Create\+Group\+By\+User}}
+\index{Create\+Group\+By\+User@{Create\+Group\+By\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Create\+Group\+By\+User}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Buddy} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Create\+Group\+By\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{group\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a69b6c23235623f91fe814074488db480}
+
+
+
+
+Create Group By User 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em group\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a04e4f9e3063a27d2cde5bd898d2b9624}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Create\+Group\+By\+User@{Create\+Group\+By\+User}}
+\index{Create\+Group\+By\+User@{Create\+Group\+By\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Create\+Group\+By\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Create\+Group\+By\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{group\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a04e4f9e3063a27d2cde5bd898d2b9624}
+
+
+Create Group By User in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em group\+Name} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a0bfaab3c05ba09a488715e960901a70f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Delete\+Message\+By\+Id@{Delete\+Message\+By\+Id}}
+\index{Delete\+Message\+By\+Id@{Delete\+Message\+By\+Id}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Delete\+Message\+By\+Id}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Delete\+Message\+By\+Id (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{message\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a0bfaab3c05ba09a488715e960901a70f}
+
+
+Deletes the message by identifier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & User name.\\
+\hline
+{\em message\+Id} & Message identifier.\\
+\hline
+{\em call\+Back} & Call back.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ad184145b7057db2fc41964f34760da19}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Delete\+Message\+By\+Ids@{Delete\+Message\+By\+Ids}}
+\index{Delete\+Message\+By\+Ids@{Delete\+Message\+By\+Ids}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Delete\+Message\+By\+Ids}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Delete\+Message\+By\+Ids (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{I\+List$<$ String $>$}]{message\+Ids, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ad184145b7057db2fc41964f34760da19}
+
+
+Deletes the message by identifiers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & User name.\\
+\hline
+{\em message\+Ids} & Message identifiers.\\
+\hline
+{\em call\+Back} & Call back.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a92267bd1c358a3374c2fc6751346ff93}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Get\+All\+Friends@{Get\+All\+Friends}}
+\index{Get\+All\+Friends@{Get\+All\+Friends}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Get\+All\+Friends}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Buddy}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Get\+All\+Friends (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a92267bd1c358a3374c2fc6751346ff93}
+
+
+
+
+Get All Friends 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_aacb368a741699c2c193967c18aa7e0bf}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Get\+All\+Friends@{Get\+All\+Friends}}
+\index{Get\+All\+Friends@{Get\+All\+Friends}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Get\+All\+Friends}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Get\+All\+Friends (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_aacb368a741699c2c193967c18aa7e0bf}
+
+
+Get All Friends in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a508cc16b9e40e80b9b74a93e68110494}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Get\+All\+Friends\+In\+Group@{Get\+All\+Friends\+In\+Group}}
+\index{Get\+All\+Friends\+In\+Group@{Get\+All\+Friends\+In\+Group}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Get\+All\+Friends\+In\+Group}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Buddy}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Get\+All\+Friends\+In\+Group (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{owner\+Name, }
+\item[{String}]{group\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a508cc16b9e40e80b9b74a93e68110494}
+
+
+Get All Friends In Group 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em owner\+Name} & \\
+\hline
+{\em group\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ad39f3803aa7ffeb3a2885201822e13a8}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Get\+All\+Friends\+In\+Group@{Get\+All\+Friends\+In\+Group}}
+\index{Get\+All\+Friends\+In\+Group@{Get\+All\+Friends\+In\+Group}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Get\+All\+Friends\+In\+Group}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Get\+All\+Friends\+In\+Group (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{owner\+Name, }
+\item[{String}]{group\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ad39f3803aa7ffeb3a2885201822e13a8}
+
+
+Get All Friends In Group in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em owner\+Name} & \\
+\hline
+{\em group\+Name} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a86a903ebc994b047f99dcc5f03946f28}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Get\+All\+Groups@{Get\+All\+Groups}}
+\index{Get\+All\+Groups@{Get\+All\+Groups}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Get\+All\+Groups}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Buddy}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Get\+All\+Groups (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a86a903ebc994b047f99dcc5f03946f28}
+
+
+Get All Groups 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_af4660d5c1554d866714094ab32560c5a}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Get\+All\+Groups@{Get\+All\+Groups}}
+\index{Get\+All\+Groups@{Get\+All\+Groups}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Get\+All\+Groups}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Get\+All\+Groups (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_af4660d5c1554d866714094ab32560c5a}
+
+
+Get All Groups in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a84f44f883a7faf05c00aa324852223be}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Get\+All\+Messages@{Get\+All\+Messages}}
+\index{Get\+All\+Messages@{Get\+All\+Messages}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Get\+All\+Messages}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Buddy}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Get\+All\+Messages (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a84f44f883a7faf05c00aa324852223be}
+
+
+Get All Messages 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a35b8447a9e8489d3b18897ce720f5f0b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Get\+All\+Messages@{Get\+All\+Messages}}
+\index{Get\+All\+Messages@{Get\+All\+Messages}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Get\+All\+Messages}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Get\+All\+Messages (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a35b8447a9e8489d3b18897ce720f5f0b}
+
+
+Get All Messages in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ae708e496b377faee289aa328b769d893}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Get\+All\+Messages\+From\+Buddy@{Get\+All\+Messages\+From\+Buddy}}
+\index{Get\+All\+Messages\+From\+Buddy@{Get\+All\+Messages\+From\+Buddy}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Get\+All\+Messages\+From\+Buddy}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Buddy}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Get\+All\+Messages\+From\+Buddy (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{buddy\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ae708e496b377faee289aa328b769d893}
+
+
+Get All Messages From \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em buddy\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_af0dd01d74bcafd587c6de484fa2cde9e}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Get\+All\+Messages\+From\+Buddy@{Get\+All\+Messages\+From\+Buddy}}
+\index{Get\+All\+Messages\+From\+Buddy@{Get\+All\+Messages\+From\+Buddy}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Get\+All\+Messages\+From\+Buddy}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Get\+All\+Messages\+From\+Buddy (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{buddy\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_af0dd01d74bcafd587c6de484fa2cde9e}
+
+
+Get All Messages From \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em buddy\+Name} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_adaa8a222a491650fe1c7615909818682}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Get\+All\+Messages\+From\+Group@{Get\+All\+Messages\+From\+Group}}
+\index{Get\+All\+Messages\+From\+Group@{Get\+All\+Messages\+From\+Group}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Get\+All\+Messages\+From\+Group}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Buddy}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Get\+All\+Messages\+From\+Group (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{group\+Owner, }
+\item[{String}]{group\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_adaa8a222a491650fe1c7615909818682}
+
+
+Get All Messages From Group 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em group\+Owner} & \\
+\hline
+{\em group\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a62b1a0cf73486286c0dc50e2148c9ba9}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Get\+All\+Messages\+From\+Group@{Get\+All\+Messages\+From\+Group}}
+\index{Get\+All\+Messages\+From\+Group@{Get\+All\+Messages\+From\+Group}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Get\+All\+Messages\+From\+Group}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Get\+All\+Messages\+From\+Group (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{group\+Owner, }
+\item[{String}]{group\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a62b1a0cf73486286c0dc50e2148c9ba9}
+
+
+Get All Messages From Group in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em group\+Owner} & \\
+\hline
+{\em group\+Name} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a01b63bc32b9ddb188b17bae4ecba36e5}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Get\+Friend\+Request@{Get\+Friend\+Request}}
+\index{Get\+Friend\+Request@{Get\+Friend\+Request}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Get\+Friend\+Request}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Buddy}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Get\+Friend\+Request (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a01b63bc32b9ddb188b17bae4ecba36e5}
+
+
+Fetch the friend request of the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of user for which request has to be fetched.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} Object
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_aef6f7e3f557ed27ca720ed6a9ec1fb51}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Get\+Friend\+Request@{Get\+Friend\+Request}}
+\index{Get\+Friend\+Request@{Get\+Friend\+Request}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Get\+Friend\+Request}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Get\+Friend\+Request (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_aef6f7e3f557ed27ca720ed6a9ec1fb51}
+
+
+Fetch the friend request of the user in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of user for which request has to be fetched.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a12eb228d92d28788b47dc96703c72416}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Get\+Friends\+By\+Location@{Get\+Friends\+By\+Location}}
+\index{Get\+Friends\+By\+Location@{Get\+Friends\+By\+Location}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Get\+Friends\+By\+Location}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Buddy}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Get\+Friends\+By\+Location (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{Double}]{latitude, }
+\item[{Double}]{longitude, }
+\item[{Double}]{max\+Distance, }
+\item[{int}]{max}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a12eb228d92d28788b47dc96703c72416}
+
+
+Get Friends By Location 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em latitude} & \\
+\hline
+{\em longitude} & \\
+\hline
+{\em max\+Distance} & \\
+\hline
+{\em max} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ac8c3dc5c2ed5a02389848c0685fa2b4e}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Get\+Friends\+By\+Location@{Get\+Friends\+By\+Location}}
+\index{Get\+Friends\+By\+Location@{Get\+Friends\+By\+Location}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Get\+Friends\+By\+Location}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Get\+Friends\+By\+Location (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{Double}]{latitude, }
+\item[{Double}]{longitude, }
+\item[{Double}]{max\+Distance, }
+\item[{int}]{max, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ac8c3dc5c2ed5a02389848c0685fa2b4e}
+
+
+Get Friends By Location in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em latitude} & \\
+\hline
+{\em longitude} & \\
+\hline
+{\em max\+Distance} & \\
+\hline
+{\em max} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a72c7541c29e46574ee57ba95507d514f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Reject\+Friend\+Request@{Reject\+Friend\+Request}}
+\index{Reject\+Friend\+Request@{Reject\+Friend\+Request}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Reject\+Friend\+Request}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Buddy} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Reject\+Friend\+Request (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{buddy\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a72c7541c29e46574ee57ba95507d514f}
+
+
+
+
+Reject Friend Request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em buddy\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} object
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a2a46cd98f5d5e989d8beac76c6c767fe}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Reject\+Friend\+Request@{Reject\+Friend\+Request}}
+\index{Reject\+Friend\+Request@{Reject\+Friend\+Request}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Reject\+Friend\+Request}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Reject\+Friend\+Request (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{buddy\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a2a46cd98f5d5e989d8beac76c6c767fe}
+
+
+Reject Friend Request in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em buddy\+Name} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a6e664761a1e75091be06d82e32973071}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Send\+Friend\+Request@{Send\+Friend\+Request}}
+\index{Send\+Friend\+Request@{Send\+Friend\+Request}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Send\+Friend\+Request}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Buddy} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Send\+Friend\+Request (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{buddy\+Name, }
+\item[{String}]{message}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a6e664761a1e75091be06d82e32973071}
+
+
+Send friend request allow you to send the buddy request to the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the user who wanted to send the request to the buddy\\
+\hline
+{\em buddy\+Name} & Name of buddy for whom you sending the request.\\
+\hline
+{\em message} & Message to the user.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} Object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a8a4602596db2801529205ba19751b062}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Send\+Friend\+Request@{Send\+Friend\+Request}}
+\index{Send\+Friend\+Request@{Send\+Friend\+Request}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Send\+Friend\+Request}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Send\+Friend\+Request (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{buddy\+Name, }
+\item[{String}]{message, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a8a4602596db2801529205ba19751b062}
+
+
+Send friend request allow you to send the buddy request to the user in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the user who wanted to send the request to the buddy\\
+\hline
+{\em buddy\+Name} & Name of buddy for whom you sending the request.\\
+\hline
+{\em message} & Message to the user.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a70c8484c16a335859923369c68b7e9e3}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Send\+Message\+To\+Friend@{Send\+Message\+To\+Friend}}
+\index{Send\+Message\+To\+Friend@{Send\+Message\+To\+Friend}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Send\+Message\+To\+Friend}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Buddy} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Send\+Message\+To\+Friend (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{buddy\+Name, }
+\item[{String}]{message}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a70c8484c16a335859923369c68b7e9e3}
+
+
+Send Message To Friend 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em buddy\+Name} & \\
+\hline
+{\em message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a1add6b1768bb5d1e559d920d4b95cc32}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Send\+Message\+To\+Friend@{Send\+Message\+To\+Friend}}
+\index{Send\+Message\+To\+Friend@{Send\+Message\+To\+Friend}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Send\+Message\+To\+Friend}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Send\+Message\+To\+Friend (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{buddy\+Name, }
+\item[{String}]{message, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a1add6b1768bb5d1e559d920d4b95cc32}
+
+
+Send Message To Friend in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em buddy\+Name} & \\
+\hline
+{\em message} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_aea4d38b296404a749c44180672913ff9}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Send\+Message\+To\+Friends@{Send\+Message\+To\+Friends}}
+\index{Send\+Message\+To\+Friends@{Send\+Message\+To\+Friends}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Send\+Message\+To\+Friends}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Buddy}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Send\+Message\+To\+Friends (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{message}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_aea4d38b296404a749c44180672913ff9}
+
+
+Send Message To Friends 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_aa70a3b64ae00e0ab188873d3ccd0ba28}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Send\+Message\+To\+Friends@{Send\+Message\+To\+Friends}}
+\index{Send\+Message\+To\+Friends@{Send\+Message\+To\+Friends}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Send\+Message\+To\+Friends}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Send\+Message\+To\+Friends (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{message, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_aa70a3b64ae00e0ab188873d3ccd0ba28}
+
+
+Send Message To Friends in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em message} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a4a0bb8efcd45650ac9ed9da33f7f80ba}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Send\+Message\+To\+Group@{Send\+Message\+To\+Group}}
+\index{Send\+Message\+To\+Group@{Send\+Message\+To\+Group}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Send\+Message\+To\+Group}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Buddy}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Send\+Message\+To\+Group (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{owner\+Name, }
+\item[{String}]{group\+Name, }
+\item[{String}]{message}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a4a0bb8efcd45650ac9ed9da33f7f80ba}
+
+
+Send the message to the group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the user who wan't to send the message.\\
+\hline
+{\em owner\+Name} & Name of the user who created the group for which are going to send the message\\
+\hline
+{\em group\+Name} & Name of the group which is created by the owner\+User.\\
+\hline
+{\em message} & Message for the receiver.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} Object
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ab2842c1eb67e6023675a5c15f85d372d}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Send\+Message\+To\+Group@{Send\+Message\+To\+Group}}
+\index{Send\+Message\+To\+Group@{Send\+Message\+To\+Group}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Send\+Message\+To\+Group}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Send\+Message\+To\+Group (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{owner\+Name, }
+\item[{String}]{group\+Name, }
+\item[{String}]{message, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ab2842c1eb67e6023675a5c15f85d372d}
+
+
+Send the message to the group in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the user who wan't to send the message.\\
+\hline
+{\em owner\+Name} & Name of the user who created the group for which are going to send the message\\
+\hline
+{\em group\+Name} & Name of the group which is created by the owner\+User.\\
+\hline
+{\em message} & Message for the receiver.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a718b43febe9d7b26ecdfcc21a8db2e3c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Unblock\+User@{Unblock\+User}}
+\index{Unblock\+User@{Unblock\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Unblock\+User}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Buddy} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Unblock\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{buddy\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_a718b43febe9d7b26ecdfcc21a8db2e3c}
+
+
+Unblock User 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em buddy\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_abf1e14352963d117b2f7ee90110d07c3}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Unblock\+User@{Unblock\+User}}
+\index{Unblock\+User@{Unblock\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Unblock\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Unblock\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{buddy\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_abf1e14352963d117b2f7ee90110d07c3}
+
+
+Unblock User in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em buddy\+Name} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ab593136d3164b790a0741350a126758d}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}!Un\+Friend@{Un\+Friend}}
+\index{Un\+Friend@{Un\+Friend}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::buddy\+::\+Buddy\+Service}}
+\subsubsection[{Un\+Friend}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+buddy.\+Buddy\+Service.\+Un\+Friend (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{buddy\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy_service_ab593136d3164b790a0741350a126758d}
+
+
+Unfriend the friend. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & User name.\\
+\hline
+{\em buddy\+Name} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1buddy_1_1_buddy}{Buddy} name.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}

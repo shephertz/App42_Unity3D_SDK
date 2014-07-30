@@ -1,0 +1,1043 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service@{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service}}
+}
+
+
+The service is for pushing the notifications to any device using G\+C\+M(\+Google Cloud Messaging). You have to upload your apikey that you received while registering for G\+C\+M and you have to store your device token with particular username. This service allows you the feature of sending message to particular channel, particular user or to all your users.\+For sending message to any channel, you have to create the channel and send the message to channel. The users which have subscribed to that channel will receive all the notification for that channel. For sending message to particular user, you have to pass username and message. Notification will sent to the device of registered user. The most important feature you can send your message to all your device whether it is iphone, android or blackberry.  
+
+
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a06144dc28d512359fab311c55a99eca7}{Push\+Notification\+Service} (String api\+Key, String secret\+Key)
+\begin{DoxyCompactList}\small\item\em This is a constructor that takes \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a87e90c3aacce141546c64b2196bafdf3}{Store\+Device\+Token} (String Username, String device\+Token, String device\+Type)
+\begin{DoxyCompactList}\small\item\em Stores your device token on server with particular username \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a05fc8805d6444b133b2f438b0f2f148b}{Store\+Device\+Token} (String Username, String device\+Token, String device\+Type, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Stores your device token on server with particular username in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ac4c152f02c8cb52265bb0be96245b4d9}{Create\+Channel\+For\+App} (String channel, String description)
+\begin{DoxyCompactList}\small\item\em Create Channel for app on which user can subscribe and get the notification for that channel \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ae29ebbc598fa0d5625478256876ed358}{Create\+Channel\+For\+App} (String channel, String description, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Create Channel for app on which user can subscribe and get the notification for that channel in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a83aa74a46ec76ed4d5e4f0758735c737}{Subscribe\+To\+Channel} (String channel, String user\+Name)
+\begin{DoxyCompactList}\small\item\em Subscribe to the channel \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a0b0567504d3eb05435dd9f0b0041e9f9}{Subscribe\+To\+Channel} (String channel, String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Subscribe to the channel in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_acad01bd18ed5119130c7fd6dccd7c984}{Unsubscribe\+From\+Channel} (String channel, String user\+Name)
+\begin{DoxyCompactList}\small\item\em Unsubscribe from particular channel \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_af6d4dadcc3764ea538f7325d5b5bb9bb}{Unsubscribe\+From\+Channel} (String channel, String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Unsubscribe from particular channel in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_af5676989bbb59ea1db8d457072159b58}{Send\+Push\+Message\+To\+Channel} (String channel, String message)
+\begin{DoxyCompactList}\small\item\em send push message to channel containing string \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a28ea0a4d4d3450dfecda9f8a8ef63fd1}{Send\+Push\+Message\+To\+Channel} (String channel, String message, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em send push message to channel containing string in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a2b26755984381e9a9848da1ebdc0678e}{Send\+Push\+Message\+To\+All} (String message)
+\begin{DoxyCompactList}\small\item\em Send push message to all your users \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a11d85de074a615f0d4135e458f640b7d}{Send\+Push\+Message\+To\+All} (String message, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Send push message to all your users in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a9ad8dce6020be3ff55b6a664f288f280}{Send\+Push\+Message\+To\+All\+By\+Type} (String message, String type)
+\begin{DoxyCompactList}\small\item\em Send push message to all your users \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a1584a7b60a3392bf178adc644d75e254}{Send\+Push\+Message\+To\+All\+By\+Type} (String message, String type, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Send push message to all your users in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a54b8613256d70bbe18ff5c362c209c7c}{Send\+Push\+Message\+To\+User} (String username, String message)
+\begin{DoxyCompactList}\small\item\em Send Push Message To paticular user in string format \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a1fed9e42beef5c038ed4ee1c30687366}{Send\+Push\+Message\+To\+User} (String username, String message, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Send Push Message To paticular user in string format in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ad652d8c0bbcd2736f09b5c91ae6ad19f}{Unsubscribe\+Device\+To\+Channel} (String user\+Name, String channel\+Name, String device\+Token)
+\begin{DoxyCompactList}\small\item\em Unsubscribe Device To Channel \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a5c171adf825185879e1d7ddef7867fe8}{Unsubscribe\+Device\+To\+Channel} (String user\+Name, String channel\+Name, String device\+Token, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Unsubscribe Device To Channel in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a94a2f09f7e043b80401f41fc564cb097}{Subscribe\+To\+Channel} (String user\+Name, String channel\+Name, String device\+Token, String device\+Type)
+\begin{DoxyCompactList}\small\item\em Subscribe To Channel \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a4f6c02bbb620177b7418571ce2f5305f}{Subscribe\+To\+Channel} (String user\+Name, String channel\+Name, String device\+Token, String device\+Type, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Subscribe To Channel in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ad471149d818d99bb0eca9b550edfbcec}{Delete\+Device\+Token} (String user\+Name, String device\+Token)
+\begin{DoxyCompactList}\small\item\em Unsubscribe your device form push-\/notification service. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a77699e05b9e14c1225aa8c377bbd86e9}{Delete\+Device\+Token} (String user\+Name, String device\+Token, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Unsubscribe your device form push-\/notification service in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_acf16725b2a41cc1933f29b972b3c60f6}{Send\+Push\+Message\+To\+Group} (String message, I\+List$<$ String $>$ user\+List)
+\begin{DoxyCompactList}\small\item\em Send push message to list of specific users. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a454d05a656a2c194131e38218bea3581}{Send\+Push\+Message\+To\+Group} (String message, I\+List$<$ String $>$ user\+List, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Send push message to list of specific users In Async Mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ae3cad912fa6816cbdd131b7966c91298}{Send\+Push\+To\+Target\+Users} (String message, String db\+Name, String collection\+Name, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} query)
+\begin{DoxyCompactList}\small\item\em Send Push Message To target user using storage query. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a390915a649b3772d009f7b09f0feb789}{Send\+Push\+To\+Target\+Users} (String message, String db\+Name, String collection\+Name, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} query, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Send Push Message To target user using storage query. This method fetches user\+Name from target db\+Name and collection\+Name using passed query and sends push notification to them. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ae8b5487f00f77d31a472a34632bf8850}{Send\+Message\+To\+In\+Active\+Users} (Date\+Time start\+Date, Date\+Time end\+Date, String message, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Sends the message to in active users. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ad75505c06e0aa28a06bb6e9d0e34c830}{Schedule\+Message\+To\+User} (String username, String message, Date\+Time expiry\+Date, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Schedules the message to user. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a0fd7f26f061810dc063014fc819186d7}{Un\+Subscribe\+Device} (String user\+Name, String device\+Token, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Unsubscribes the device. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ac9ec9e18d0f5839ceb54ccf341740489}{Re\+Subscribe\+Device} (String user\+Name, String device\+Token, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Res the subscribe device. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_af01fcdc01a191bf71cac20ca577ed7f9}{Delete\+All\+Devices} (String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Deletes all devices. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a72a0d889b2daa513d51762770ac33f0a}{Send\+Push\+Message\+To\+Device} (String username, String device\+Id, String message, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Sends the push message to device. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a84c4b14728fdced582417a5a2ad96bb3}{Update\+Push\+Badgefor\+Device} (String user\+Name, String device\+Token, int badges, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em This method is used to update push badge count of a particular device registered by the user . \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a5640b095c350c28a9d5e786e60bffb7c}{Update\+Push\+Badgefor\+User} (String user\+Name, int badges, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em This method is used to update push badge count of all the devices that a user procures. In this case, we are assuming that the user has multiple devices registered under his name. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a457a4474fdb4718c823ad58908baa20e}{Clear\+All\+Badge\+Count} (String user\+Name, String device\+Token, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em This method is used to reset push badge count to {\bfseries 0} of a particular device registered by the user . \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a3c7157cea66979eab6222c605598ba95}{Delete\+Channel} (String channel\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Delete a particular channel from app. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a7fa0a30e5904d6e31790cce98039119f}{Get\+Channel\+Users\+Count} (String channel\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Gets the count of the users who are subscribed on a particular channel. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a805782a29e900015f633c272c1a23907}{Get\+Channel\+Users} (String channel\+Name, int max, int offset, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Gets the users list for a particular channel by paging. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_adad6ac39fa7784ca4025b91a5b3add0f}{Get\+User\+Subscribed\+Channels\+Count} (String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Gets the count of all the subscribed channels of a particular user. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_aceae1b45112dae8709b3c24406462489}{Get\+User\+Subscribed\+Channels} (String user\+Name, int max, int offset, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Gets the list of subscribed channels for a particular user by paging. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The service is for pushing the notifications to any device using G\+C\+M(\+Google Cloud Messaging). You have to upload your apikey that you received while registering for G\+C\+M and you have to store your device token with particular username. This service allows you the feature of sending message to particular channel, particular user or to all your users.\+For sending message to any channel, you have to create the channel and send the message to channel. The users which have subscribed to that channel will receive all the notification for that channel. For sending message to particular user, you have to pass username and message. Notification will sent to the device of registered user. The most important feature you can send your message to all your device whether it is iphone, android or blackberry. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a06144dc28d512359fab311c55a99eca7}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Push\+Notification\+Service@{Push\+Notification\+Service}}
+\index{Push\+Notification\+Service@{Push\+Notification\+Service}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Push\+Notification\+Service}]{\setlength{\rightskip}{0pt plus 5cm}com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Push\+Notification\+Service (
+\begin{DoxyParamCaption}
+\item[{String}]{api\+Key, }
+\item[{String}]{secret\+Key}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a06144dc28d512359fab311c55a99eca7}
+
+
+This is a constructor that takes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & \\
+\hline
+{\em secret\+Key} & \\
+\hline
+{\em base\+U\+R\+L} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a457a4474fdb4718c823ad58908baa20e}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Clear\+All\+Badge\+Count@{Clear\+All\+Badge\+Count}}
+\index{Clear\+All\+Badge\+Count@{Clear\+All\+Badge\+Count}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Clear\+All\+Badge\+Count}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Clear\+All\+Badge\+Count (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{device\+Token, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a457a4474fdb4718c823ad58908baa20e}
+
+
+This method is used to reset push badge count to {\bfseries 0} of a particular device registered by the user . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the user which you want to clear the badge count.\\
+\hline
+{\em device\+Token} & Device token which you want to clear the badge count.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ac4c152f02c8cb52265bb0be96245b4d9}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Create\+Channel\+For\+App@{Create\+Channel\+For\+App}}
+\index{Create\+Channel\+For\+App@{Create\+Channel\+For\+App}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Create\+Channel\+For\+App}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Push\+Notification} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Create\+Channel\+For\+App (
+\begin{DoxyParamCaption}
+\item[{String}]{channel, }
+\item[{String}]{description}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ac4c152f02c8cb52265bb0be96245b4d9}
+
+
+Create Channel for app on which user can subscribe and get the notification for that channel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & Channel name which you want to create\\
+\hline
+{\em description} & Description for that channel\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} Object
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ae29ebbc598fa0d5625478256876ed358}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Create\+Channel\+For\+App@{Create\+Channel\+For\+App}}
+\index{Create\+Channel\+For\+App@{Create\+Channel\+For\+App}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Create\+Channel\+For\+App}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Create\+Channel\+For\+App (
+\begin{DoxyParamCaption}
+\item[{String}]{channel, }
+\item[{String}]{description, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ae29ebbc598fa0d5625478256876ed358}
+
+
+Create Channel for app on which user can subscribe and get the notification for that channel in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & Channel name which you want to create\\
+\hline
+{\em description} & Description for that channel\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_af01fcdc01a191bf71cac20ca577ed7f9}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Delete\+All\+Devices@{Delete\+All\+Devices}}
+\index{Delete\+All\+Devices@{Delete\+All\+Devices}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Delete\+All\+Devices}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Delete\+All\+Devices (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_af01fcdc01a191bf71cac20ca577ed7f9}
+
+
+Deletes all devices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & User name.\\
+\hline
+{\em call\+Back} & Call back.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a3c7157cea66979eab6222c605598ba95}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Delete\+Channel@{Delete\+Channel}}
+\index{Delete\+Channel@{Delete\+Channel}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Delete\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Delete\+Channel (
+\begin{DoxyParamCaption}
+\item[{String}]{channel\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a3c7157cea66979eab6222c605598ba95}
+
+
+Delete a particular channel from app. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Name} & Name of the channel which you want to delete.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ad471149d818d99bb0eca9b550edfbcec}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Delete\+Device\+Token@{Delete\+Device\+Token}}
+\index{Delete\+Device\+Token@{Delete\+Device\+Token}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Delete\+Device\+Token}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Delete\+Device\+Token (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{device\+Token}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ad471149d818d99bb0eca9b550edfbcec}
+
+
+Unsubscribe your device form push-\/notification service. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of user whose device token has to delete.\\
+\hline
+{\em device\+Token} & device token which has to be deleted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} Object
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a77699e05b9e14c1225aa8c377bbd86e9}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Delete\+Device\+Token@{Delete\+Device\+Token}}
+\index{Delete\+Device\+Token@{Delete\+Device\+Token}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Delete\+Device\+Token}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Delete\+Device\+Token (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{device\+Token, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a77699e05b9e14c1225aa8c377bbd86e9}
+
+
+Unsubscribe your device form push-\/notification service in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of user whose device token has to delete.\\
+\hline
+{\em device\+Token} & device token which has to be deleted\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a805782a29e900015f633c272c1a23907}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Get\+Channel\+Users@{Get\+Channel\+Users}}
+\index{Get\+Channel\+Users@{Get\+Channel\+Users}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Get\+Channel\+Users}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Get\+Channel\+Users (
+\begin{DoxyParamCaption}
+\item[{String}]{channel\+Name, }
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a805782a29e900015f633c272c1a23907}
+
+
+Gets the users list for a particular channel by paging. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Name} & Name of channel for which you want to get users.\\
+\hline
+{\em max} & Maximum number of users to be fetched.\\
+\hline
+{\em offset} & From where the users are to be fetched.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a7fa0a30e5904d6e31790cce98039119f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Get\+Channel\+Users\+Count@{Get\+Channel\+Users\+Count}}
+\index{Get\+Channel\+Users\+Count@{Get\+Channel\+Users\+Count}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Get\+Channel\+Users\+Count}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Get\+Channel\+Users\+Count (
+\begin{DoxyParamCaption}
+\item[{String}]{channel\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a7fa0a30e5904d6e31790cce98039119f}
+
+
+Gets the count of the users who are subscribed on a particular channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Name} & Name of channel for which you want to get the count.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_aceae1b45112dae8709b3c24406462489}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Get\+User\+Subscribed\+Channels@{Get\+User\+Subscribed\+Channels}}
+\index{Get\+User\+Subscribed\+Channels@{Get\+User\+Subscribed\+Channels}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Get\+User\+Subscribed\+Channels}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Get\+User\+Subscribed\+Channels (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_aceae1b45112dae8709b3c24406462489}
+
+
+Gets the list of subscribed channels for a particular user by paging. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the user for which you want to get the subscribed channels.\\
+\hline
+{\em max} & Maximum number of channels to be fetched.\\
+\hline
+{\em offset} & From where the channels are to be fetched.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_adad6ac39fa7784ca4025b91a5b3add0f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Get\+User\+Subscribed\+Channels\+Count@{Get\+User\+Subscribed\+Channels\+Count}}
+\index{Get\+User\+Subscribed\+Channels\+Count@{Get\+User\+Subscribed\+Channels\+Count}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Get\+User\+Subscribed\+Channels\+Count}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Get\+User\+Subscribed\+Channels\+Count (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_adad6ac39fa7784ca4025b91a5b3add0f}
+
+
+Gets the count of all the subscribed channels of a particular user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the user for which you want to get a count of the subscribed channels.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ac9ec9e18d0f5839ceb54ccf341740489}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Re\+Subscribe\+Device@{Re\+Subscribe\+Device}}
+\index{Re\+Subscribe\+Device@{Re\+Subscribe\+Device}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Re\+Subscribe\+Device}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Re\+Subscribe\+Device (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{device\+Token, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ac9ec9e18d0f5839ceb54ccf341740489}
+
+
+Res the subscribe device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & User name.\\
+\hline
+{\em device\+Token} & Device token.\\
+\hline
+{\em call\+Back} & Call back.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ad75505c06e0aa28a06bb6e9d0e34c830}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Schedule\+Message\+To\+User@{Schedule\+Message\+To\+User}}
+\index{Schedule\+Message\+To\+User@{Schedule\+Message\+To\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Schedule\+Message\+To\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Schedule\+Message\+To\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{username, }
+\item[{String}]{message, }
+\item[{Date\+Time}]{expiry\+Date, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ad75505c06e0aa28a06bb6e9d0e34c830}
+
+
+Schedules the message to user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & Username.\\
+\hline
+{\em message} & Message.\\
+\hline
+{\em expiry\+Date} & Expiry date.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result.\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ae8b5487f00f77d31a472a34632bf8850}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Send\+Message\+To\+In\+Active\+Users@{Send\+Message\+To\+In\+Active\+Users}}
+\index{Send\+Message\+To\+In\+Active\+Users@{Send\+Message\+To\+In\+Active\+Users}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Send\+Message\+To\+In\+Active\+Users}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Send\+Message\+To\+In\+Active\+Users (
+\begin{DoxyParamCaption}
+\item[{Date\+Time}]{start\+Date, }
+\item[{Date\+Time}]{end\+Date, }
+\item[{String}]{message, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ae8b5487f00f77d31a472a34632bf8850}
+
+
+Sends the message to in active users. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Date} & Start date.\\
+\hline
+{\em end\+Date} & End date.\\
+\hline
+{\em message} & Message.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result.\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a2b26755984381e9a9848da1ebdc0678e}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Send\+Push\+Message\+To\+All@{Send\+Push\+Message\+To\+All}}
+\index{Send\+Push\+Message\+To\+All@{Send\+Push\+Message\+To\+All}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Send\+Push\+Message\+To\+All}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Push\+Notification} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Send\+Push\+Message\+To\+All (
+\begin{DoxyParamCaption}
+\item[{String}]{message}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a2b26755984381e9a9848da1ebdc0678e}
+
+
+Send push message to all your users 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & push message\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} Object
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a11d85de074a615f0d4135e458f640b7d}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Send\+Push\+Message\+To\+All@{Send\+Push\+Message\+To\+All}}
+\index{Send\+Push\+Message\+To\+All@{Send\+Push\+Message\+To\+All}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Send\+Push\+Message\+To\+All}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Send\+Push\+Message\+To\+All (
+\begin{DoxyParamCaption}
+\item[{String}]{message, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a11d85de074a615f0d4135e458f640b7d}
+
+
+Send push message to all your users in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & push message\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a9ad8dce6020be3ff55b6a664f288f280}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Send\+Push\+Message\+To\+All\+By\+Type@{Send\+Push\+Message\+To\+All\+By\+Type}}
+\index{Send\+Push\+Message\+To\+All\+By\+Type@{Send\+Push\+Message\+To\+All\+By\+Type}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Send\+Push\+Message\+To\+All\+By\+Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Push\+Notification} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Send\+Push\+Message\+To\+All\+By\+Type (
+\begin{DoxyParamCaption}
+\item[{String}]{message, }
+\item[{String}]{type}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a9ad8dce6020be3ff55b6a664f288f280}
+
+
+Send push message to all your users 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & push message\\
+\hline
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} Object
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a1584a7b60a3392bf178adc644d75e254}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Send\+Push\+Message\+To\+All\+By\+Type@{Send\+Push\+Message\+To\+All\+By\+Type}}
+\index{Send\+Push\+Message\+To\+All\+By\+Type@{Send\+Push\+Message\+To\+All\+By\+Type}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Send\+Push\+Message\+To\+All\+By\+Type}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Send\+Push\+Message\+To\+All\+By\+Type (
+\begin{DoxyParamCaption}
+\item[{String}]{message, }
+\item[{String}]{type, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a1584a7b60a3392bf178adc644d75e254}
+
+
+Send push message to all your users in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & push message\\
+\hline
+{\em type} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_af5676989bbb59ea1db8d457072159b58}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Send\+Push\+Message\+To\+Channel@{Send\+Push\+Message\+To\+Channel}}
+\index{Send\+Push\+Message\+To\+Channel@{Send\+Push\+Message\+To\+Channel}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Send\+Push\+Message\+To\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Push\+Notification} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Send\+Push\+Message\+To\+Channel (
+\begin{DoxyParamCaption}
+\item[{String}]{channel, }
+\item[{String}]{message}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_af5676989bbb59ea1db8d457072159b58}
+
+
+send push message to channel containing string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & Channel name which you want to send the message\\
+\hline
+{\em message} & Push message in string format\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} Object
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a28ea0a4d4d3450dfecda9f8a8ef63fd1}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Send\+Push\+Message\+To\+Channel@{Send\+Push\+Message\+To\+Channel}}
+\index{Send\+Push\+Message\+To\+Channel@{Send\+Push\+Message\+To\+Channel}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Send\+Push\+Message\+To\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Send\+Push\+Message\+To\+Channel (
+\begin{DoxyParamCaption}
+\item[{String}]{channel, }
+\item[{String}]{message, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a28ea0a4d4d3450dfecda9f8a8ef63fd1}
+
+
+send push message to channel containing string in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & Channel name which you want to send the message\\
+\hline
+{\em message} & Push message in string format\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a72a0d889b2daa513d51762770ac33f0a}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Send\+Push\+Message\+To\+Device@{Send\+Push\+Message\+To\+Device}}
+\index{Send\+Push\+Message\+To\+Device@{Send\+Push\+Message\+To\+Device}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Send\+Push\+Message\+To\+Device}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Send\+Push\+Message\+To\+Device (
+\begin{DoxyParamCaption}
+\item[{String}]{username, }
+\item[{String}]{device\+Id, }
+\item[{String}]{message, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a72a0d889b2daa513d51762770ac33f0a}
+
+
+Sends the push message to device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & Username.\\
+\hline
+{\em device\+Id} & Device identifier.\\
+\hline
+{\em message} & Message.\\
+\hline
+{\em call\+Back} & Call back.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_acf16725b2a41cc1933f29b972b3c60f6}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Send\+Push\+Message\+To\+Group@{Send\+Push\+Message\+To\+Group}}
+\index{Send\+Push\+Message\+To\+Group@{Send\+Push\+Message\+To\+Group}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Send\+Push\+Message\+To\+Group}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Push\+Notification} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Send\+Push\+Message\+To\+Group (
+\begin{DoxyParamCaption}
+\item[{String}]{message, }
+\item[{I\+List$<$ String $>$}]{user\+List}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_acf16725b2a41cc1933f29b972b3c60f6}
+
+
+Send push message to list of specific users. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Message which you have to send.\\
+\hline
+{\em user\+List} & List of the users for which message has to be send.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} object
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a454d05a656a2c194131e38218bea3581}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Send\+Push\+Message\+To\+Group@{Send\+Push\+Message\+To\+Group}}
+\index{Send\+Push\+Message\+To\+Group@{Send\+Push\+Message\+To\+Group}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Send\+Push\+Message\+To\+Group}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Send\+Push\+Message\+To\+Group (
+\begin{DoxyParamCaption}
+\item[{String}]{message, }
+\item[{I\+List$<$ String $>$}]{user\+List, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a454d05a656a2c194131e38218bea3581}
+
+
+Send push message to list of specific users In Async Mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Message which you have to send.\\
+\hline
+{\em user\+List} & List of the users for which message has to be send.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result.\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a54b8613256d70bbe18ff5c362c209c7c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Send\+Push\+Message\+To\+User@{Send\+Push\+Message\+To\+User}}
+\index{Send\+Push\+Message\+To\+User@{Send\+Push\+Message\+To\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Send\+Push\+Message\+To\+User}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Push\+Notification} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Send\+Push\+Message\+To\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{username, }
+\item[{String}]{message}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a54b8613256d70bbe18ff5c362c209c7c}
+
+
+Send Push Message To paticular user in string format 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & Username which you want to send the message\\
+\hline
+{\em message} & Push message\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} Object
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a1fed9e42beef5c038ed4ee1c30687366}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Send\+Push\+Message\+To\+User@{Send\+Push\+Message\+To\+User}}
+\index{Send\+Push\+Message\+To\+User@{Send\+Push\+Message\+To\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Send\+Push\+Message\+To\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Send\+Push\+Message\+To\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{username, }
+\item[{String}]{message, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a1fed9e42beef5c038ed4ee1c30687366}
+
+
+Send Push Message To paticular user in string format in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & Username which you want to send the message\\
+\hline
+{\em message} & Push message\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ae3cad912fa6816cbdd131b7966c91298}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Send\+Push\+To\+Target\+Users@{Send\+Push\+To\+Target\+Users}}
+\index{Send\+Push\+To\+Target\+Users@{Send\+Push\+To\+Target\+Users}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Send\+Push\+To\+Target\+Users}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Push\+Notification} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Send\+Push\+To\+Target\+Users (
+\begin{DoxyParamCaption}
+\item[{String}]{message, }
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{{\bf Query}}]{query}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ae3cad912fa6816cbdd131b7966c91298}
+
+
+Send Push Message To target user using storage query. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Message that you want to send\\
+\hline
+{\em db\+Name} & \\
+\hline
+{\em collection\+Name} & \\
+\hline
+{\em query} & query to fetch target users.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result.\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a390915a649b3772d009f7b09f0feb789}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Send\+Push\+To\+Target\+Users@{Send\+Push\+To\+Target\+Users}}
+\index{Send\+Push\+To\+Target\+Users@{Send\+Push\+To\+Target\+Users}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Send\+Push\+To\+Target\+Users}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Send\+Push\+To\+Target\+Users (
+\begin{DoxyParamCaption}
+\item[{String}]{message, }
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{{\bf Query}}]{query, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a390915a649b3772d009f7b09f0feb789}
+
+
+Send Push Message To target user using storage query. This method fetches user\+Name from target db\+Name and collection\+Name using passed query and sends push notification to them. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Message that you want to send\\
+\hline
+{\em db\+Name} & \\
+\hline
+{\em collection\+Name} & \\
+\hline
+{\em query} & query to fetch target users.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result.\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a87e90c3aacce141546c64b2196bafdf3}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Store\+Device\+Token@{Store\+Device\+Token}}
+\index{Store\+Device\+Token@{Store\+Device\+Token}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Store\+Device\+Token}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Push\+Notification} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Store\+Device\+Token (
+\begin{DoxyParamCaption}
+\item[{String}]{Username, }
+\item[{String}]{device\+Token, }
+\item[{String}]{device\+Type}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a87e90c3aacce141546c64b2196bafdf3}
+
+
+Stores your device token on server with particular username 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Username} & Username with which you want your device to be registered\\
+\hline
+{\em device\+Token} & Device id for android phones\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} Object
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a05fc8805d6444b133b2f438b0f2f148b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Store\+Device\+Token@{Store\+Device\+Token}}
+\index{Store\+Device\+Token@{Store\+Device\+Token}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Store\+Device\+Token}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Store\+Device\+Token (
+\begin{DoxyParamCaption}
+\item[{String}]{Username, }
+\item[{String}]{device\+Token, }
+\item[{String}]{device\+Type, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a05fc8805d6444b133b2f438b0f2f148b}
+
+
+Stores your device token on server with particular username in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Username} & Username with which you want your device to be registered\\
+\hline
+{\em device\+Token} & Device id for android phones\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a83aa74a46ec76ed4d5e4f0758735c737}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Subscribe\+To\+Channel@{Subscribe\+To\+Channel}}
+\index{Subscribe\+To\+Channel@{Subscribe\+To\+Channel}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Subscribe\+To\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Push\+Notification} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Subscribe\+To\+Channel (
+\begin{DoxyParamCaption}
+\item[{String}]{channel, }
+\item[{String}]{user\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a83aa74a46ec76ed4d5e4f0758735c737}
+
+
+Subscribe to the channel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel name which you want to subscribe\\
+\hline
+{\em user\+Name} & Username which want to subscribe\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} Object
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a0b0567504d3eb05435dd9f0b0041e9f9}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Subscribe\+To\+Channel@{Subscribe\+To\+Channel}}
+\index{Subscribe\+To\+Channel@{Subscribe\+To\+Channel}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Subscribe\+To\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Subscribe\+To\+Channel (
+\begin{DoxyParamCaption}
+\item[{String}]{channel, }
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a0b0567504d3eb05435dd9f0b0041e9f9}
+
+
+Subscribe to the channel in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel name which you want to subscribe\\
+\hline
+{\em user\+Name} & Username which want to subscribe\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a94a2f09f7e043b80401f41fc564cb097}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Subscribe\+To\+Channel@{Subscribe\+To\+Channel}}
+\index{Subscribe\+To\+Channel@{Subscribe\+To\+Channel}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Subscribe\+To\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Push\+Notification} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Subscribe\+To\+Channel (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{channel\+Name, }
+\item[{String}]{device\+Token, }
+\item[{String}]{device\+Type}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a94a2f09f7e043b80401f41fc564cb097}
+
+
+Subscribe To Channel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em channel\+Name} & \\
+\hline
+{\em device\+Token} & \\
+\hline
+{\em device\+Type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} object
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a4f6c02bbb620177b7418571ce2f5305f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Subscribe\+To\+Channel@{Subscribe\+To\+Channel}}
+\index{Subscribe\+To\+Channel@{Subscribe\+To\+Channel}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Subscribe\+To\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Subscribe\+To\+Channel (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{channel\+Name, }
+\item[{String}]{device\+Token, }
+\item[{String}]{device\+Type, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a4f6c02bbb620177b7418571ce2f5305f}
+
+
+Subscribe To Channel in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em channel\+Name} & \\
+\hline
+{\em device\+Token} & \\
+\hline
+{\em device\+Type} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a0fd7f26f061810dc063014fc819186d7}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Un\+Subscribe\+Device@{Un\+Subscribe\+Device}}
+\index{Un\+Subscribe\+Device@{Un\+Subscribe\+Device}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Un\+Subscribe\+Device}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Un\+Subscribe\+Device (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{device\+Token, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a0fd7f26f061810dc063014fc819186d7}
+
+
+Unsubscribes the device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & User name.\\
+\hline
+{\em device\+Token} & Device token.\\
+\hline
+{\em call\+Back} & Call back.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ad652d8c0bbcd2736f09b5c91ae6ad19f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Unsubscribe\+Device\+To\+Channel@{Unsubscribe\+Device\+To\+Channel}}
+\index{Unsubscribe\+Device\+To\+Channel@{Unsubscribe\+Device\+To\+Channel}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Unsubscribe\+Device\+To\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Push\+Notification} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Unsubscribe\+Device\+To\+Channel (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{channel\+Name, }
+\item[{String}]{device\+Token}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_ad652d8c0bbcd2736f09b5c91ae6ad19f}
+
+
+Unsubscribe Device To Channel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em channel\+Name} & \\
+\hline
+{\em device\+Token} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} Object
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a5c171adf825185879e1d7ddef7867fe8}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Unsubscribe\+Device\+To\+Channel@{Unsubscribe\+Device\+To\+Channel}}
+\index{Unsubscribe\+Device\+To\+Channel@{Unsubscribe\+Device\+To\+Channel}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Unsubscribe\+Device\+To\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Unsubscribe\+Device\+To\+Channel (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{channel\+Name, }
+\item[{String}]{device\+Token, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a5c171adf825185879e1d7ddef7867fe8}
+
+
+Unsubscribe Device To Channel in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em channel\+Name} & \\
+\hline
+{\em device\+Token} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_acad01bd18ed5119130c7fd6dccd7c984}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Unsubscribe\+From\+Channel@{Unsubscribe\+From\+Channel}}
+\index{Unsubscribe\+From\+Channel@{Unsubscribe\+From\+Channel}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Unsubscribe\+From\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Push\+Notification} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Unsubscribe\+From\+Channel (
+\begin{DoxyParamCaption}
+\item[{String}]{channel, }
+\item[{String}]{user\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_acad01bd18ed5119130c7fd6dccd7c984}
+
+
+Unsubscribe from particular channel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & Channel name which you want to unsubscribe\\
+\hline
+{\em user\+Name} & Username which want to unsubscribe\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification}{Push\+Notification} Object
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_af6d4dadcc3764ea538f7325d5b5bb9bb}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Unsubscribe\+From\+Channel@{Unsubscribe\+From\+Channel}}
+\index{Unsubscribe\+From\+Channel@{Unsubscribe\+From\+Channel}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Unsubscribe\+From\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Unsubscribe\+From\+Channel (
+\begin{DoxyParamCaption}
+\item[{String}]{channel, }
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_af6d4dadcc3764ea538f7325d5b5bb9bb}
+
+
+Unsubscribe from particular channel in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & Channel name which you want to unsubscribe\\
+\hline
+{\em user\+Name} & Username which want to unsubscribe\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a84c4b14728fdced582417a5a2ad96bb3}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Update\+Push\+Badgefor\+Device@{Update\+Push\+Badgefor\+Device}}
+\index{Update\+Push\+Badgefor\+Device@{Update\+Push\+Badgefor\+Device}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Update\+Push\+Badgefor\+Device}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Update\+Push\+Badgefor\+Device (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{device\+Token, }
+\item[{int}]{badges, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a84c4b14728fdced582417a5a2ad96bb3}
+
+
+This method is used to update push badge count of a particular device registered by the user . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the user which you want to update the badge count.\\
+\hline
+{\em device\+Token} & Device token which you want to update the badge count.\\
+\hline
+{\em badges} & Number of badge count you want to update.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a5640b095c350c28a9d5e786e60bffb7c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}!Update\+Push\+Badgefor\+User@{Update\+Push\+Badgefor\+User}}
+\index{Update\+Push\+Badgefor\+User@{Update\+Push\+Badgefor\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::push\+Notification\+::\+Push\+Notification\+Service}}
+\subsubsection[{Update\+Push\+Badgefor\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+push\+Notification.\+Push\+Notification\+Service.\+Update\+Push\+Badgefor\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{int}]{badges, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1push_notification_1_1_push_notification_service_a5640b095c350c28a9d5e786e60bffb7c}
+
+
+This method is used to update push badge count of all the devices that a user procures. In this case, we are assuming that the user has multiple devices registered under his name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the user which you want to update the badge count.\\
+\hline
+{\em badges} & Number of badge count you want to update.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}

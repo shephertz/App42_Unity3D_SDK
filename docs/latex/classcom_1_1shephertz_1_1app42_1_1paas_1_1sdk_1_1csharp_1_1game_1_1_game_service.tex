@@ -1,0 +1,259 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+game.\+Game\+Service Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+game.\+Game\+Service@{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+game.\+Game\+Service}}
+}
+
+
+The \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} service allows \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game}, User, Score and Score\+Board Management on the Cloud. The service allows \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} Developer to create a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} and then do in \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} Scoring using the Score service. It also allows to maintain a Scoreboard across game sessions using the Score\+Board service. One can query for average or highest score for user for a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} and highest and average score across users for a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game}. It also gives ranking of the user against other users for a particular game. The Reward and Reward\+Points allows the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} Developer to assign rewards to a user and redeem the rewards. E.\+g. One can give Swords or Energy etc. The services \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game}, Score, Score\+Board, Reward, Reward\+Points can be used in Conjunction for complete \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} Scoring and Reward Management. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service}{Reward, Reward\+Point, Score, Score\+Board}  
+
+
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+game.\+Game\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_afd2aead39ced753ef2552e8dfbc38764}{Game\+Service} (String api\+Key, String secret\+Key)
+\begin{DoxyCompactList}\small\item\em this is a constructor that takes \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_ae3a6a649bd570bedd152c2dc3fa19f2f}{Create\+Game} (String game\+Name, String game\+Description)
+\begin{DoxyCompactList}\small\item\em Creates game on the cloud \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_a8b17b42126b6e8927a0c377667142bc1}{Create\+Game} (String game\+Name, String game\+Description, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Creates game on the cloud in async mode \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_a44ff8bfd752812bcb22d07797b0776aa}{Get\+All\+Games} ()
+\begin{DoxyCompactList}\small\item\em Fetches all games for the App \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_a3e8d721ec3063222d2afa03d99469d23}{Get\+All\+Games} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetches all games for the App in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_acab68c837376352edeac14ea8429300d}{Get\+Game\+By\+Name} (String game\+Name)
+\begin{DoxyCompactList}\small\item\em Retrieves the game by the specified name \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_ae3f57c12124d11e424f324d2f97c7584}{Get\+Game\+By\+Name} (String game\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Retrieves the game by the specified name in async mode \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_a130fd862e073c6e1c1a190c14450e31c}{Get\+All\+Games} (int max, int offset)
+\begin{DoxyCompactList}\small\item\em Fetches all games for the App by paging. Maximum number of records to be fetched \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_ac52fb41f1a1ecfe8fb93e11387a366ad}{Get\+All\+Games} (int max, int offset, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetches all games for the App by paging in async mode. Maximum number of records to be fetched \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_a6bae897478276fa447ca7bfd05511e28}{Get\+All\+Games\+Count} ()
+\begin{DoxyCompactList}\small\item\em Fetches the count of all games for the App \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_a583f875c075496fd903a7e739d21a254}{Get\+All\+Games\+Count} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetches the count of all games for the App in async mode \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} service allows \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game}, User, Score and Score\+Board Management on the Cloud. The service allows \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} Developer to create a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} and then do in \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} Scoring using the Score service. It also allows to maintain a Scoreboard across game sessions using the Score\+Board service. One can query for average or highest score for user for a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} and highest and average score across users for a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game}. It also gives ranking of the user against other users for a particular game. The Reward and Reward\+Points allows the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} Developer to assign rewards to a user and redeem the rewards. E.\+g. One can give Swords or Energy etc. The services \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game}, Score, Score\+Board, Reward, Reward\+Points can be used in Conjunction for complete \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} Scoring and Reward Management. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service}{Reward, Reward\+Point, Score, Score\+Board} 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_afd2aead39ced753ef2552e8dfbc38764}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}!Game\+Service@{Game\+Service}}
+\index{Game\+Service@{Game\+Service}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}}
+\subsubsection[{Game\+Service}]{\setlength{\rightskip}{0pt plus 5cm}com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+game.\+Game\+Service.\+Game\+Service (
+\begin{DoxyParamCaption}
+\item[{String}]{api\+Key, }
+\item[{String}]{secret\+Key}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_afd2aead39ced753ef2552e8dfbc38764}
+
+
+this is a constructor that takes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & api\+Key\\
+\hline
+{\em secret\+Key} & secret\+Key\\
+\hline
+{\em base\+U\+R\+L} & base\+U\+R\+L\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_ae3a6a649bd570bedd152c2dc3fa19f2f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}!Create\+Game@{Create\+Game}}
+\index{Create\+Game@{Create\+Game}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}}
+\subsubsection[{Create\+Game}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+game.\+Game\+Service.\+Create\+Game (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name, }
+\item[{String}]{game\+Description}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_ae3a6a649bd570bedd152c2dc3fa19f2f}
+
+
+Creates game on the cloud 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & Name of the game that has to be created\\
+\hline
+{\em game\+Description} & Description of the game to be created\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} object containing the game which has been created
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_a8b17b42126b6e8927a0c377667142bc1}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}!Create\+Game@{Create\+Game}}
+\index{Create\+Game@{Create\+Game}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}}
+\subsubsection[{Create\+Game}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+game.\+Game\+Service.\+Create\+Game (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name, }
+\item[{String}]{game\+Description, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_a8b17b42126b6e8927a0c377667142bc1}
+
+
+Creates game on the cloud in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & Name of the game that has to be created\\
+\hline
+{\em game\+Description} & Description of the game to be created\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_a44ff8bfd752812bcb22d07797b0776aa}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}!Get\+All\+Games@{Get\+All\+Games}}
+\index{Get\+All\+Games@{Get\+All\+Games}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}}
+\subsubsection[{Get\+All\+Games}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Game}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+game.\+Game\+Service.\+Get\+All\+Games (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_a44ff8bfd752812bcb22d07797b0776aa}
+
+
+Fetches all games for the App 
+
+\begin{DoxyReturn}{Returns}
+I\+List of \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} object containing all the games for the App
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_a3e8d721ec3063222d2afa03d99469d23}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}!Get\+All\+Games@{Get\+All\+Games}}
+\index{Get\+All\+Games@{Get\+All\+Games}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}}
+\subsubsection[{Get\+All\+Games}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+game.\+Game\+Service.\+Get\+All\+Games (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_a3e8d721ec3063222d2afa03d99469d23}
+
+
+Fetches all games for the App in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_a130fd862e073c6e1c1a190c14450e31c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}!Get\+All\+Games@{Get\+All\+Games}}
+\index{Get\+All\+Games@{Get\+All\+Games}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}}
+\subsubsection[{Get\+All\+Games}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Game}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+game.\+Game\+Service.\+Get\+All\+Games (
+\begin{DoxyParamCaption}
+\item[{int}]{max, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_a130fd862e073c6e1c1a190c14450e31c}
+
+
+Fetches all games for the App by paging. Maximum number of records to be fetched 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+List of \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} object containing all the games for the App
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_ac52fb41f1a1ecfe8fb93e11387a366ad}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}!Get\+All\+Games@{Get\+All\+Games}}
+\index{Get\+All\+Games@{Get\+All\+Games}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}}
+\subsubsection[{Get\+All\+Games}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+game.\+Game\+Service.\+Get\+All\+Games (
+\begin{DoxyParamCaption}
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_ac52fb41f1a1ecfe8fb93e11387a366ad}
+
+
+Fetches all games for the App by paging in async mode. Maximum number of records to be fetched 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_a6bae897478276fa447ca7bfd05511e28}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}!Get\+All\+Games\+Count@{Get\+All\+Games\+Count}}
+\index{Get\+All\+Games\+Count@{Get\+All\+Games\+Count}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}}
+\subsubsection[{Get\+All\+Games\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+game.\+Game\+Service.\+Get\+All\+Games\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_a6bae897478276fa447ca7bfd05511e28}
+
+
+Fetches the count of all games for the App 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} object containing count of all the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} for the App
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_a583f875c075496fd903a7e739d21a254}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}!Get\+All\+Games\+Count@{Get\+All\+Games\+Count}}
+\index{Get\+All\+Games\+Count@{Get\+All\+Games\+Count}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}}
+\subsubsection[{Get\+All\+Games\+Count}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+game.\+Game\+Service.\+Get\+All\+Games\+Count (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_a583f875c075496fd903a7e739d21a254}
+
+
+Fetches the count of all games for the App in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_acab68c837376352edeac14ea8429300d}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}!Get\+Game\+By\+Name@{Get\+Game\+By\+Name}}
+\index{Get\+Game\+By\+Name@{Get\+Game\+By\+Name}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}}
+\subsubsection[{Get\+Game\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+game.\+Game\+Service.\+Get\+Game\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_acab68c837376352edeac14ea8429300d}
+
+
+Retrieves the game by the specified name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & Name of the game that has to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game}{Game} object containing the game which has been created
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_ae3f57c12124d11e424f324d2f97c7584}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}!Get\+Game\+By\+Name@{Get\+Game\+By\+Name}}
+\index{Get\+Game\+By\+Name@{Get\+Game\+By\+Name}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::game\+::\+Game\+Service}}
+\subsubsection[{Get\+Game\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+game.\+Game\+Service.\+Get\+Game\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1game_1_1_game_service_ae3f57c12124d11e424f324d2f97c7584}
+
+
+Retrieves the game by the specified name in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & Name of the game that has to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}

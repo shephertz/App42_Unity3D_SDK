@@ -1,0 +1,555 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service@{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service}}
+}
+
+
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} Spatial Service on cloud provides the storage, retrieval, querying and updation of geo data. One can store the geo data by unique handler on the cloud and can apply search, update and query on it. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} spatial query includes finding nearby/\+In circle target point from given point using geo points stored on the cloud.  
+
+
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_aecff3e5eca6aaa2a1563976ec2645045}{Geo\+Service} (String api\+Key, String secret\+Key)
+\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a784d23fd7625983661edfc33746da8fe}{Create\+Geo\+Points} (String geo\+Storage\+Name, I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_point}{Geo\+Point} $>$ geo\+Points\+List)
+\begin{DoxyCompactList}\small\item\em Stores the geopints with unique handler on the cloud. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} point data contains lat, Double and marker of the point. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a7a77a5fe51599784dc51ad40c7f0075c}{Create\+Geo\+Points} (String geo\+Storage\+Name, I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_point}{Geo\+Point} $>$ geo\+Points\+List, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Stores the geopints with unique handler on the cloud in async mode. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} point data contains lat, Double and marker of the point. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_aa954313e4c8b15822da9566fdfeab681}{Get\+Near\+By\+Point} (String storage\+Name, Double lat, Double lng, int result\+Limit)
+\begin{DoxyCompactList}\small\item\em Search the near by point from specified source point. Points to be searched should already be stored on cloud using unique storage name handler. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_ab7110e080306922cc589d7c8451874aa}{Get\+Near\+By\+Point} (String storage\+Name, Double lat, Double lng, int result\+Limit, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Search the near by point from specified source point in async mode. Points to be searched should already be stored on cloud using unique storage name handler. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a678117e4463bddada386741ff4a87d2f}{Get\+Near\+By\+Points\+By\+Max\+Distance} (String storage\+Name, Double lat, Double lng, Double distance\+In\+K\+M)
+\begin{DoxyCompactList}\small\item\em Search the near by point in given range(\+In K\+M) from specified source point. Points to be searched should already be stored on cloud using unique storage name handler. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_aa7efc8336dabcd57f921793ebff2311f}{Get\+Near\+By\+Points\+By\+Max\+Distance} (String storage\+Name, Double lat, Double lng, Double distance\+In\+K\+M, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Search the near by point in given range(\+In K\+M) from specified source point in async mode. Points to be searched should already be stored on cloud using unique storage name handler. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a039fa0eeb236e8dca7c74853283ea33b}{Get\+Points\+With\+In\+Circle} (String storage\+Name, Double lat, Double lng, Double radius\+In\+K\+M, int result\+Limit)
+\begin{DoxyCompactList}\small\item\em Search the near by point from specified source point with in specified radius. Points to be searched should already be stored on cloud using unique storage name handler. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a96c3fcc1bd6a04dd24c93ac8807623fb}{Get\+Points\+With\+In\+Circle} (String storage\+Name, Double lat, Double lng, Double radius\+In\+K\+M, int result\+Limit, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Search the near by point from specified source point with in specified radius in async mode. Points to be searched should already be stored on cloud using unique storage name handler. \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_ae7c86f9fb8fa292f395a113d58bbc932}{Get\+All\+Storage} ()
+\begin{DoxyCompactList}\small\item\em Fetch the name of all storage stored on the cloud. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a65141988baf3d180c2436334917610de}{Get\+All\+Storage} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch the name of all storage stored on the cloud in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_acf8edcd86b50604ce5f432d73c69eb0b}{Delete\+Storage} (String storage\+Name)
+\begin{DoxyCompactList}\small\item\em Delete the specifed \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} Storage from Cloud. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a3feb298ae3cbcd5586280a74d6b14cb1}{Delete\+Storage} (String storage\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Delete the specifed \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} Storage from Cloud in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_adce848a6043c48d3cbcee19d918db9d9}{Get\+All\+Points} (String storage\+Name)
+\begin{DoxyCompactList}\small\item\em Get All Point from storage. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a8e0896b51a7d76036c70bae9dea4209f}{Get\+All\+Points} (String storage\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Get All Point from storage in async mode. \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a44ae6ffe3aded31a56a5cebe4262dd64}{Get\+All\+Storage\+By\+Paging} (int max, int offset)
+\begin{DoxyCompactList}\small\item\em Get All Storage By Paging \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a844c848f50614cb22cf922d15c9e2717}{Get\+All\+Storage\+By\+Paging} (int max, int offset, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Get All Storage By Paging in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a9ce835c9ee0e861c305de603aea7f6af}{Delete\+Geo\+Points} (String geo\+Storage\+Name, I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_point}{Geo\+Point} $>$ geo\+Points\+List)
+\begin{DoxyCompactList}\small\item\em Delete \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} Points \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_ae7f5a8bc3981704036870f0543d24dc9}{Delete\+Geo\+Points} (String geo\+Storage\+Name, I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_point}{Geo\+Point} $>$ geo\+Points\+List, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Delete \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} Points in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a544689ee5a4c35e4b6b7774fff07a114}{Get\+All\+Points\+By\+Paging} (String storage\+Name, int max, int offset)
+\begin{DoxyCompactList}\small\item\em Get All Points By Paging \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a2d6ee76570bf5130462ad696c92ba34b}{Get\+All\+Points\+By\+Paging} (String storage\+Name, int max, int offset, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Get All Points By Paging in async mode \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} Spatial Service on cloud provides the storage, retrieval, querying and updation of geo data. One can store the geo data by unique handler on the cloud and can apply search, update and query on it. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} spatial query includes finding nearby/\+In circle target point from given point using geo points stored on the cloud. 
+
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service}{Geo} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_aecff3e5eca6aaa2a1563976ec2645045}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}!Geo\+Service@{Geo\+Service}}
+\index{Geo\+Service@{Geo\+Service}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}}
+\subsubsection[{Geo\+Service}]{\setlength{\rightskip}{0pt plus 5cm}com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service.\+Geo\+Service (
+\begin{DoxyParamCaption}
+\item[{String}]{api\+Key, }
+\item[{String}]{secret\+Key}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_aecff3e5eca6aaa2a1563976ec2645045}
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & \\
+\hline
+{\em secret\+Key} & \\
+\hline
+{\em base\+U\+R\+L} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a784d23fd7625983661edfc33746da8fe}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}!Create\+Geo\+Points@{Create\+Geo\+Points}}
+\index{Create\+Geo\+Points@{Create\+Geo\+Points}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}}
+\subsubsection[{Create\+Geo\+Points}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Geo} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service.\+Create\+Geo\+Points (
+\begin{DoxyParamCaption}
+\item[{String}]{geo\+Storage\+Name, }
+\item[{I\+List$<$ {\bf Geo\+Point} $>$}]{geo\+Points\+List}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a784d23fd7625983661edfc33746da8fe}
+
+
+Stores the geopints with unique handler on the cloud. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} point data contains lat, Double and marker of the point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em geo\+Storage\+Name} & Unique handler for storage name\\
+\hline
+{\em geo\+Points\+List} & List of \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} Points to be saved\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} object containing I\+List of \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} Points that have been saved
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a7a77a5fe51599784dc51ad40c7f0075c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}!Create\+Geo\+Points@{Create\+Geo\+Points}}
+\index{Create\+Geo\+Points@{Create\+Geo\+Points}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}}
+\subsubsection[{Create\+Geo\+Points}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service.\+Create\+Geo\+Points (
+\begin{DoxyParamCaption}
+\item[{String}]{geo\+Storage\+Name, }
+\item[{I\+List$<$ {\bf Geo\+Point} $>$}]{geo\+Points\+List, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a7a77a5fe51599784dc51ad40c7f0075c}
+
+
+Stores the geopints with unique handler on the cloud in async mode. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} point data contains lat, Double and marker of the point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em geo\+Storage\+Name} & Unique handler for storage name\\
+\hline
+{\em geo\+Points\+List} & List of \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} Points to be saved\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a9ce835c9ee0e861c305de603aea7f6af}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}!Delete\+Geo\+Points@{Delete\+Geo\+Points}}
+\index{Delete\+Geo\+Points@{Delete\+Geo\+Points}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}}
+\subsubsection[{Delete\+Geo\+Points}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Geo} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service.\+Delete\+Geo\+Points (
+\begin{DoxyParamCaption}
+\item[{String}]{geo\+Storage\+Name, }
+\item[{I\+List$<$ {\bf Geo\+Point} $>$}]{geo\+Points\+List}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a9ce835c9ee0e861c305de603aea7f6af}
+
+
+Delete \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} Points 
+
+
+\begin{DoxyParams}{Parameters}
+{\em geo\+Storage\+Name} & \\
+\hline
+{\em geo\+Points\+List} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} object
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_ae7f5a8bc3981704036870f0543d24dc9}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}!Delete\+Geo\+Points@{Delete\+Geo\+Points}}
+\index{Delete\+Geo\+Points@{Delete\+Geo\+Points}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}}
+\subsubsection[{Delete\+Geo\+Points}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service.\+Delete\+Geo\+Points (
+\begin{DoxyParamCaption}
+\item[{String}]{geo\+Storage\+Name, }
+\item[{I\+List$<$ {\bf Geo\+Point} $>$}]{geo\+Points\+List, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_ae7f5a8bc3981704036870f0543d24dc9}
+
+
+Delete \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} Points in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em geo\+Storage\+Name} & \\
+\hline
+{\em geo\+Points\+List} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_acf8edcd86b50604ce5f432d73c69eb0b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}!Delete\+Storage@{Delete\+Storage}}
+\index{Delete\+Storage@{Delete\+Storage}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}}
+\subsubsection[{Delete\+Storage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service.\+Delete\+Storage (
+\begin{DoxyParamCaption}
+\item[{String}]{storage\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_acf8edcd86b50604ce5f432d73c69eb0b}
+
+
+Delete the specifed \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} Storage from Cloud. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em storage\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} object containing the name of the storage that has been deleted
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a3feb298ae3cbcd5586280a74d6b14cb1}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}!Delete\+Storage@{Delete\+Storage}}
+\index{Delete\+Storage@{Delete\+Storage}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}}
+\subsubsection[{Delete\+Storage}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service.\+Delete\+Storage (
+\begin{DoxyParamCaption}
+\item[{String}]{storage\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a3feb298ae3cbcd5586280a74d6b14cb1}
+
+
+Delete the specifed \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} Storage from Cloud in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em storage\+Name} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_adce848a6043c48d3cbcee19d918db9d9}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}!Get\+All\+Points@{Get\+All\+Points}}
+\index{Get\+All\+Points@{Get\+All\+Points}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}}
+\subsubsection[{Get\+All\+Points}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Geo} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service.\+Get\+All\+Points (
+\begin{DoxyParamCaption}
+\item[{String}]{storage\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_adce848a6043c48d3cbcee19d918db9d9}
+
+
+Get All Point from storage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em storage\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} object containing all the stored \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} Points for the specified storage
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a8e0896b51a7d76036c70bae9dea4209f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}!Get\+All\+Points@{Get\+All\+Points}}
+\index{Get\+All\+Points@{Get\+All\+Points}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}}
+\subsubsection[{Get\+All\+Points}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service.\+Get\+All\+Points (
+\begin{DoxyParamCaption}
+\item[{String}]{storage\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a8e0896b51a7d76036c70bae9dea4209f}
+
+
+Get All Point from storage in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em storage\+Name} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a544689ee5a4c35e4b6b7774fff07a114}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}!Get\+All\+Points\+By\+Paging@{Get\+All\+Points\+By\+Paging}}
+\index{Get\+All\+Points\+By\+Paging@{Get\+All\+Points\+By\+Paging}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}}
+\subsubsection[{Get\+All\+Points\+By\+Paging}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Geo} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service.\+Get\+All\+Points\+By\+Paging (
+\begin{DoxyParamCaption}
+\item[{String}]{storage\+Name, }
+\item[{int}]{max, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a544689ee5a4c35e4b6b7774fff07a114}
+
+
+Get All Points By Paging 
+
+
+\begin{DoxyParams}{Parameters}
+{\em storage\+Name} & \\
+\hline
+{\em max} & \\
+\hline
+{\em offset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a2d6ee76570bf5130462ad696c92ba34b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}!Get\+All\+Points\+By\+Paging@{Get\+All\+Points\+By\+Paging}}
+\index{Get\+All\+Points\+By\+Paging@{Get\+All\+Points\+By\+Paging}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}}
+\subsubsection[{Get\+All\+Points\+By\+Paging}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service.\+Get\+All\+Points\+By\+Paging (
+\begin{DoxyParamCaption}
+\item[{String}]{storage\+Name, }
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a2d6ee76570bf5130462ad696c92ba34b}
+
+
+Get All Points By Paging in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em storage\+Name} & \\
+\hline
+{\em max} & \\
+\hline
+{\em offset} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_ae7c86f9fb8fa292f395a113d58bbc932}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}!Get\+All\+Storage@{Get\+All\+Storage}}
+\index{Get\+All\+Storage@{Get\+All\+Storage}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}}
+\subsubsection[{Get\+All\+Storage}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Geo}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service.\+Get\+All\+Storage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_ae7c86f9fb8fa292f395a113d58bbc932}
+
+
+Fetch the name of all storage stored on the cloud. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} object containing I\+List of all the storage created
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a65141988baf3d180c2436334917610de}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}!Get\+All\+Storage@{Get\+All\+Storage}}
+\index{Get\+All\+Storage@{Get\+All\+Storage}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}}
+\subsubsection[{Get\+All\+Storage}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service.\+Get\+All\+Storage (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a65141988baf3d180c2436334917610de}
+
+
+Fetch the name of all storage stored on the cloud in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a44ae6ffe3aded31a56a5cebe4262dd64}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}!Get\+All\+Storage\+By\+Paging@{Get\+All\+Storage\+By\+Paging}}
+\index{Get\+All\+Storage\+By\+Paging@{Get\+All\+Storage\+By\+Paging}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}}
+\subsubsection[{Get\+All\+Storage\+By\+Paging}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Geo}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service.\+Get\+All\+Storage\+By\+Paging (
+\begin{DoxyParamCaption}
+\item[{int}]{max, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a44ae6ffe3aded31a56a5cebe4262dd64}
+
+
+Get All Storage By Paging 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & \\
+\hline
+{\em offset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a844c848f50614cb22cf922d15c9e2717}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}!Get\+All\+Storage\+By\+Paging@{Get\+All\+Storage\+By\+Paging}}
+\index{Get\+All\+Storage\+By\+Paging@{Get\+All\+Storage\+By\+Paging}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}}
+\subsubsection[{Get\+All\+Storage\+By\+Paging}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service.\+Get\+All\+Storage\+By\+Paging (
+\begin{DoxyParamCaption}
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a844c848f50614cb22cf922d15c9e2717}
+
+
+Get All Storage By Paging in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & \\
+\hline
+{\em offset} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_aa954313e4c8b15822da9566fdfeab681}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}!Get\+Near\+By\+Point@{Get\+Near\+By\+Point}}
+\index{Get\+Near\+By\+Point@{Get\+Near\+By\+Point}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}}
+\subsubsection[{Get\+Near\+By\+Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Geo} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service.\+Get\+Near\+By\+Point (
+\begin{DoxyParamCaption}
+\item[{String}]{storage\+Name, }
+\item[{Double}]{lat, }
+\item[{Double}]{lng, }
+\item[{int}]{result\+Limit}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_aa954313e4c8b15822da9566fdfeab681}
+
+
+Search the near by point from specified source point. Points to be searched should already be stored on cloud using unique storage name handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em storage\+Name} & Unique handler for storage name\\
+\hline
+{\em lat} & Lattitude of source point\\
+\hline
+{\em lng} & Longitude of source point\\
+\hline
+{\em result\+Limit} & Maximum number of results to be retrieved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} object containing the target points in ascending order of distance from source point.
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_ab7110e080306922cc589d7c8451874aa}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}!Get\+Near\+By\+Point@{Get\+Near\+By\+Point}}
+\index{Get\+Near\+By\+Point@{Get\+Near\+By\+Point}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}}
+\subsubsection[{Get\+Near\+By\+Point}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service.\+Get\+Near\+By\+Point (
+\begin{DoxyParamCaption}
+\item[{String}]{storage\+Name, }
+\item[{Double}]{lat, }
+\item[{Double}]{lng, }
+\item[{int}]{result\+Limit, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_ab7110e080306922cc589d7c8451874aa}
+
+
+Search the near by point from specified source point in async mode. Points to be searched should already be stored on cloud using unique storage name handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em storage\+Name} & Unique handler for storage name\\
+\hline
+{\em lat} & Lattitude of source point\\
+\hline
+{\em lng} & Longitude of source point\\
+\hline
+{\em result\+Limit} & Maximum number of results to be retrieved \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a678117e4463bddada386741ff4a87d2f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}!Get\+Near\+By\+Points\+By\+Max\+Distance@{Get\+Near\+By\+Points\+By\+Max\+Distance}}
+\index{Get\+Near\+By\+Points\+By\+Max\+Distance@{Get\+Near\+By\+Points\+By\+Max\+Distance}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}}
+\subsubsection[{Get\+Near\+By\+Points\+By\+Max\+Distance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Geo} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service.\+Get\+Near\+By\+Points\+By\+Max\+Distance (
+\begin{DoxyParamCaption}
+\item[{String}]{storage\+Name, }
+\item[{Double}]{lat, }
+\item[{Double}]{lng, }
+\item[{Double}]{distance\+In\+K\+M}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a678117e4463bddada386741ff4a87d2f}
+
+
+Search the near by point in given range(\+In K\+M) from specified source point. Points to be searched should already be stored on cloud using unique storage name handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em storage\+Name} & Unique handler for storage name\\
+\hline
+{\em lat} & Latitude of source point\\
+\hline
+{\em lng} & Longitude of source point\\
+\hline
+{\em distance\+In\+K\+M} & Range in K\+M \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the target points in ascending order of distance from source point.
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_aa7efc8336dabcd57f921793ebff2311f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}!Get\+Near\+By\+Points\+By\+Max\+Distance@{Get\+Near\+By\+Points\+By\+Max\+Distance}}
+\index{Get\+Near\+By\+Points\+By\+Max\+Distance@{Get\+Near\+By\+Points\+By\+Max\+Distance}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}}
+\subsubsection[{Get\+Near\+By\+Points\+By\+Max\+Distance}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service.\+Get\+Near\+By\+Points\+By\+Max\+Distance (
+\begin{DoxyParamCaption}
+\item[{String}]{storage\+Name, }
+\item[{Double}]{lat, }
+\item[{Double}]{lng, }
+\item[{Double}]{distance\+In\+K\+M, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_aa7efc8336dabcd57f921793ebff2311f}
+
+
+Search the near by point in given range(\+In K\+M) from specified source point in async mode. Points to be searched should already be stored on cloud using unique storage name handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em storage\+Name} & Unique handler for storage name\\
+\hline
+{\em lat} & Latitude of source point\\
+\hline
+{\em lng} & Longitude of source point\\
+\hline
+{\em distance\+In\+K\+M} & Range in K\+M \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a039fa0eeb236e8dca7c74853283ea33b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}!Get\+Points\+With\+In\+Circle@{Get\+Points\+With\+In\+Circle}}
+\index{Get\+Points\+With\+In\+Circle@{Get\+Points\+With\+In\+Circle}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}}
+\subsubsection[{Get\+Points\+With\+In\+Circle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Geo} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service.\+Get\+Points\+With\+In\+Circle (
+\begin{DoxyParamCaption}
+\item[{String}]{storage\+Name, }
+\item[{Double}]{lat, }
+\item[{Double}]{lng, }
+\item[{Double}]{radius\+In\+K\+M, }
+\item[{int}]{result\+Limit}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a039fa0eeb236e8dca7c74853283ea33b}
+
+
+Search the near by point from specified source point with in specified radius. Points to be searched should already be stored on cloud using unique storage name handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em storage\+Name} & Unique handler for storage name\\
+\hline
+{\em lat} & Lattitude of source point\\
+\hline
+{\em lng} & Longitude of source point\\
+\hline
+{\em radius\+In\+K\+M} & Radius in K\+M\\
+\hline
+{\em result\+Limit} & Maximum number of results to be retrieved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo}{Geo} object containing the target points in ascending order of distance from source point.
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a96c3fcc1bd6a04dd24c93ac8807623fb}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}!Get\+Points\+With\+In\+Circle@{Get\+Points\+With\+In\+Circle}}
+\index{Get\+Points\+With\+In\+Circle@{Get\+Points\+With\+In\+Circle}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::geo\+::\+Geo\+Service}}
+\subsubsection[{Get\+Points\+With\+In\+Circle}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+geo.\+Geo\+Service.\+Get\+Points\+With\+In\+Circle (
+\begin{DoxyParamCaption}
+\item[{String}]{storage\+Name, }
+\item[{Double}]{lat, }
+\item[{Double}]{lng, }
+\item[{Double}]{radius\+In\+K\+M, }
+\item[{int}]{result\+Limit, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1geo_1_1_geo_service_a96c3fcc1bd6a04dd24c93ac8807623fb}
+
+
+Search the near by point from specified source point with in specified radius in async mode. Points to be searched should already be stored on cloud using unique storage name handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em storage\+Name} & Unique handler for storage name\\
+\hline
+{\em lat} & Lattitude of source point\\
+\hline
+{\em lng} & Longitude of source point\\
+\hline
+{\em radius\+In\+K\+M} & Radius in K\+M\\
+\hline
+{\em result\+Limit} & Maximum number of results to be retrieved \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}

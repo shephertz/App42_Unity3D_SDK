@@ -1,0 +1,93 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_security_exception}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+App42\+Security\+Exception Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_security_exception}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+App42\+Security\+Exception@{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+App42\+Security\+Exception}}
+}
+
+
+Security Exception thrown when the A\+P\+I-\/\+K\+E\+Y, S\+E\+C\+R\+E\+T-\/\+K\+E\+Y, Signature is incorrect or the client is not authorized to make the call. This maps to the 401 Http error code.  
+
+
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+App42\+Security\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_security_exception}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_security_exception_aee3dc15d6c820bf29fd52816b4ec7bf2}{{\bfseries App42\+Security\+Exception} (string message)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_security_exception_aee3dc15d6c820bf29fd52816b4ec7bf2}
+
+\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_security_exception_a73c421ad61ec6b251e64b8203f4e2e4d}{{\bfseries App42\+Security\+Exception} (string message, int http\+Error\+Code, int app\+Error\+Code)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_security_exception_a73c421ad61ec6b251e64b8203f4e2e4d}
+
+\item 
+new void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_security_exception_aa640034a9fdf2f99f442210f5bb7d8ed}{Set\+Http\+Error\+Code} (int http\+Error\+Code)
+\begin{DoxyCompactList}\small\item\em Sets the Http\+Error\+Code for the Exception \end{DoxyCompactList}\item 
+new int \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_security_exception_a85ed4d7736cb56dc3c945b3ad674fd3b}{Get\+Http\+Error\+Code} ()
+\begin{DoxyCompactList}\small\item\em Gets the Http\+Error\+Code for the Exception e.\+g. 404, 500, 401 etc. \end{DoxyCompactList}\item 
+new void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_security_exception_a4cb1a5836476a50c6716e627501f7271}{Set\+App\+Error\+Code} (int app\+Error\+Code)
+\begin{DoxyCompactList}\small\item\em Sets the App\+Error\+Code for the Exception \end{DoxyCompactList}\item 
+new int \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_security_exception_ada5f00c3d47c51e7d7a8f7ba7b141d93}{Get\+App\+Error\+Code} ()
+\begin{DoxyCompactList}\small\item\em Gets the App\+Error\+Code for the Exception. App error codes correspond to the error which specific to the service. This error code can help App developers to take decisions and take action when a particular error occurs for a service \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Security Exception thrown when the A\+P\+I-\/\+K\+E\+Y, S\+E\+C\+R\+E\+T-\/\+K\+E\+Y, Signature is incorrect or the client is not authorized to make the call. This maps to the 401 Http error code. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_security_exception_ada5f00c3d47c51e7d7a8f7ba7b141d93}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::\+App42\+Security\+Exception@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::\+App42\+Security\+Exception}!Get\+App\+Error\+Code@{Get\+App\+Error\+Code}}
+\index{Get\+App\+Error\+Code@{Get\+App\+Error\+Code}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::\+App42\+Security\+Exception@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::\+App42\+Security\+Exception}}
+\subsubsection[{Get\+App\+Error\+Code}]{\setlength{\rightskip}{0pt plus 5cm}new int com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+App42\+Security\+Exception.\+Get\+App\+Error\+Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_security_exception_ada5f00c3d47c51e7d7a8f7ba7b141d93}
+
+
+Gets the App\+Error\+Code for the Exception. App error codes correspond to the error which specific to the service. This error code can help App developers to take decisions and take action when a particular error occurs for a service 
+
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_security_exception_a85ed4d7736cb56dc3c945b3ad674fd3b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::\+App42\+Security\+Exception@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::\+App42\+Security\+Exception}!Get\+Http\+Error\+Code@{Get\+Http\+Error\+Code}}
+\index{Get\+Http\+Error\+Code@{Get\+Http\+Error\+Code}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::\+App42\+Security\+Exception@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::\+App42\+Security\+Exception}}
+\subsubsection[{Get\+Http\+Error\+Code}]{\setlength{\rightskip}{0pt plus 5cm}new int com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+App42\+Security\+Exception.\+Get\+Http\+Error\+Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_security_exception_a85ed4d7736cb56dc3c945b3ad674fd3b}
+
+
+Gets the Http\+Error\+Code for the Exception e.\+g. 404, 500, 401 etc. 
+
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_security_exception_a4cb1a5836476a50c6716e627501f7271}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::\+App42\+Security\+Exception@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::\+App42\+Security\+Exception}!Set\+App\+Error\+Code@{Set\+App\+Error\+Code}}
+\index{Set\+App\+Error\+Code@{Set\+App\+Error\+Code}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::\+App42\+Security\+Exception@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::\+App42\+Security\+Exception}}
+\subsubsection[{Set\+App\+Error\+Code}]{\setlength{\rightskip}{0pt plus 5cm}new void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+App42\+Security\+Exception.\+Set\+App\+Error\+Code (
+\begin{DoxyParamCaption}
+\item[{int}]{app\+Error\+Code}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_security_exception_a4cb1a5836476a50c6716e627501f7271}
+
+
+Sets the App\+Error\+Code for the Exception 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Error\+Code} & App error codes correspond to the error which specific to the service. This error code can help App developers to take decisions and take action when a particular error occurs for a service \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_security_exception_aa640034a9fdf2f99f442210f5bb7d8ed}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::\+App42\+Security\+Exception@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::\+App42\+Security\+Exception}!Set\+Http\+Error\+Code@{Set\+Http\+Error\+Code}}
+\index{Set\+Http\+Error\+Code@{Set\+Http\+Error\+Code}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::\+App42\+Security\+Exception@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::\+App42\+Security\+Exception}}
+\subsubsection[{Set\+Http\+Error\+Code}]{\setlength{\rightskip}{0pt plus 5cm}new void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+App42\+Security\+Exception.\+Set\+Http\+Error\+Code (
+\begin{DoxyParamCaption}
+\item[{int}]{http\+Error\+Code}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_security_exception_aa640034a9fdf2f99f442210f5bb7d8ed}
+
+
+Sets the Http\+Error\+Code for the Exception 
+
+
+\begin{DoxyParams}{Parameters}
+{\em http\+Error\+Code} & http\+Error\+Code The http error code e.\+g. 404, 500, 401 etc.\\
+\hline
+\end{DoxyParams}

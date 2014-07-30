@@ -1,0 +1,755 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service@{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service}}
+}
+
+
+The service is a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} \& Rating manager for any item. The item can be anything which has an id e.\+g. App on a App\+Store/\+Marketplace, items in a catalogue, articles, blogs etc. It manages the comments and its associated rating. It also provides methods to fetch average, highest etc. Reviews. Reviews can be also be muted or unmuted if it has any objectionable content.  
+
+
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_ac26659180ed5a8ae645fe7f8ead366ed}{Review\+Service} (String api\+Key, String secret\+Key)
+\begin{DoxyCompactList}\small\item\em The costructor for the Service \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a941d9c7a9ccc50dfa51211f0d68611f3}{Create\+Review} (String user\+I\+D, String item\+I\+D, String review\+Comment, Double review\+Rating)
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a7b4c0f9f0b2466ce85998525466496c4}{Create\+Review} (String user\+I\+D, String item\+I\+D, String review\+Comment, Double review\+Rating, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a11b73454e19c810bf898e354670e45f8}{Get\+All\+Reviews} ()
+\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_ae4463884f0956752f8dbcf08eb0b1dbd}{void {\bfseries Get\+All\+Reviews} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_ae4463884f0956752f8dbcf08eb0b1dbd}
+
+\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a7baa020fa3e2e872658f9f250a83414b}{Get\+Reviews\+By\+Item} (String item\+Id)
+\begin{DoxyCompactList}\small\item\em Fetches All Reviews based on the item\+Id \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_ac1385a6cb547769bc4f23aacdd4b4d3a}{Get\+Reviews\+By\+Item} (String item\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetches All Reviews based on the item\+Id in async mode \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_ab864c68ad5abbaf798fa730203591f70}{Get\+Reviews\+By\+Item} (String item\+Id, int max, int offset)
+\begin{DoxyCompactList}\small\item\em Fetches All Reviews based on the item\+Id \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a80654b8445080a1f03c7a0e11a91e878}{Get\+Reviews\+By\+Item} (String item\+Id, int max, int offset, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetches All Reviews based on the item\+Id in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a38bebabdbd5fd4f790f1254fc5544830}{Get\+Highest\+Review\+By\+Item} (String item\+Id)
+\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a678d5cde01a4a345893e289c492076de}{void {\bfseries Get\+Highest\+Review\+By\+Item} (String item\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a678d5cde01a4a345893e289c492076de}
+
+\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_aa19716aa84371714b15f4be711af8131}{Get\+Lowest\+Review\+By\+Item} (String item\+Id)
+\begin{DoxyCompactList}\small\item\em Fetches the lowest review for the specified item\+Id \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_acadcc249db1bf1ba028fd0afaa2f522b}{Get\+Lowest\+Review\+By\+Item} (String item\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetches the lowest review for the specified item\+Id in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_abd7c2113e381ee2f487525a582299629}{Get\+Average\+Review\+By\+Item} (String item\+Id)
+\begin{DoxyCompactList}\small\item\em Fetches the average review for the specified item\+Id \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a191e4439aa804d1c55d4e16ba3ebb435}{Get\+Average\+Review\+By\+Item} (String item\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetches the average review for the specified item\+Id in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a53f361b067cfa0e41694c25b96c4d4f2}{Mute} (String review\+Id)
+\begin{DoxyCompactList}\small\item\em Mutes the specified review \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a061f5d2ca651b5c856c1109e8593bf2a}{Mute} (String review\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Mutes the specified review in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a0c2b84115ca738d6dc256d73bd214b73}{Unmute} (String review\+Id)
+\begin{DoxyCompactList}\small\item\em Un\+Mutes the specified review \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a0bdeeb013cc77232196bef097c52ca08}{Unmute} (String review\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Un\+Mutes the specified review in async mode \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a02f11e92bb2220d9d663cf8935a54202}{Get\+All\+Reviews} (int max, int offset)
+\begin{DoxyCompactList}\small\item\em Fetches all reviews for the App by Paging. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_ac992931623a558a52310918202233fd9}{Get\+All\+Reviews} (int max, int offset, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetches all reviews for the App by Paging in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a7ea2414776195d30c98e4fe21e328420}{Get\+All\+Reviews\+Count} ()
+\begin{DoxyCompactList}\small\item\em Fetches count of all reviews for the App \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a39f3a055c823e2eea3376809ea743f15}{Get\+All\+Reviews\+Count} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetches count of all reviews for the App in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_af215c61e7bc4e1e747f0fb9e47864a78}{Get\+Reviews\+Count\+By\+Item} (String item\+Id)
+\begin{DoxyCompactList}\small\item\em Fetches count of All Reviews based on the item\+Id \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a76bf0c8c7d3bf0eddde431dcc6e7adb4}{Get\+Reviews\+Count\+By\+Item} (String item\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetches count of All Reviews based on the item\+Id in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_af8b79f39883883817b844aa6f54df0f7}{Get\+Reviews\+Count\+By\+Item\+And\+Rating} (String item\+Id, double rating)
+\begin{DoxyCompactList}\small\item\em Get Reviews Count\+By Item And Rating \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_adbf158acbf4757c6f630bc3326eef194}{Get\+Reviews\+Count\+By\+Item\+And\+Rating} (String item\+Id, double rating, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Get Reviews Count\+By Item And Rating in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_aeefae3b2f9f1ecd20508461672f5b388}{Add\+Comment} (String user\+I\+D, String item\+I\+D, String comment)
+\begin{DoxyCompactList}\small\item\em Add Comment. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a770163b415957e30bf2a9a2b700c81b9}{Add\+Comment} (String user\+I\+D, String item\+I\+D, String comment, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Add Comment in async mode. \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_ab019892e82955457b8aad387cd9167f7}{Get\+Comments\+By\+Item} (String item\+Id)
+\begin{DoxyCompactList}\small\item\em Get Comments By Item. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a29b50f6e1651ebc43ed2d12b1482b0ce}{Get\+Comments\+By\+Item} (String item\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Get Comments By Item in async mode. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_afafaad7354e3c4b008afdb41b31079bf}{Delete\+Review\+By\+Review\+Id} (String review\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Deletes the review by review identifier. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a1f7259693e568ccc70d2496da05ed79f}{Delete\+Comment\+By\+Comment\+Id} (String comment\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Deletes the comment by comment identifier. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_ad165df7792fe2592f2aff301d437a80b}{Get\+All\+Reviews\+By\+User} (String user\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Gets all reviews by user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The service is a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} \& Rating manager for any item. The item can be anything which has an id e.\+g. App on a App\+Store/\+Marketplace, items in a catalogue, articles, blogs etc. It manages the comments and its associated rating. It also provides methods to fetch average, highest etc. Reviews. Reviews can be also be muted or unmuted if it has any objectionable content. 
+
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service}{Review} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_ac26659180ed5a8ae645fe7f8ead366ed}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Review\+Service@{Review\+Service}}
+\index{Review\+Service@{Review\+Service}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Review\+Service}]{\setlength{\rightskip}{0pt plus 5cm}com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Review\+Service (
+\begin{DoxyParamCaption}
+\item[{String}]{api\+Key, }
+\item[{String}]{secret\+Key}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_ac26659180ed5a8ae645fe7f8ead366ed}
+
+
+The costructor for the Service 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & api\+Key\\
+\hline
+{\em secret\+Key} & secret\+Key\\
+\hline
+\end{DoxyParams}
+summary$>$ Creates review for the specified item on the cloud 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The user who has created the review\\
+\hline
+{\em item\+Id} & The item for which the review has to be created\\
+\hline
+{\em review\+Comment} & The review comment\\
+\hline
+{\em review\+Rating} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} rating in Double\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} object containing the review which has been created
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_aeefae3b2f9f1ecd20508461672f5b388}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Add\+Comment@{Add\+Comment}}
+\index{Add\+Comment@{Add\+Comment}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Add\+Comment}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Review} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Add\+Comment (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+I\+D, }
+\item[{String}]{item\+I\+D, }
+\item[{String}]{comment}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_aeefae3b2f9f1ecd20508461672f5b388}
+
+
+Add Comment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+I\+D} & \\
+\hline
+{\em item\+I\+D} & \\
+\hline
+{\em comment} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+review\+Obj
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a770163b415957e30bf2a9a2b700c81b9}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Add\+Comment@{Add\+Comment}}
+\index{Add\+Comment@{Add\+Comment}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Add\+Comment}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Add\+Comment (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+I\+D, }
+\item[{String}]{item\+I\+D, }
+\item[{String}]{comment, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a770163b415957e30bf2a9a2b700c81b9}
+
+
+Add Comment in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+I\+D} & \\
+\hline
+{\em item\+I\+D} & \\
+\hline
+{\em comment} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a941d9c7a9ccc50dfa51211f0d68611f3}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Create\+Review@{Create\+Review}}
+\index{Create\+Review@{Create\+Review}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Create\+Review}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Review} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Create\+Review (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+I\+D, }
+\item[{String}]{item\+I\+D, }
+\item[{String}]{review\+Comment, }
+\item[{Double}]{review\+Rating}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a941d9c7a9ccc50dfa51211f0d68611f3}
+summary$>$ Creates review for the specified item on the cloud in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The user who has created the review\\
+\hline
+{\em item\+Id} & The item for which the review has to be created\\
+\hline
+{\em review\+Comment} & The review comment\\
+\hline
+{\em review\+Rating} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} rating in Double\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a7b4c0f9f0b2466ce85998525466496c4}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Create\+Review@{Create\+Review}}
+\index{Create\+Review@{Create\+Review}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Create\+Review}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Create\+Review (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+I\+D, }
+\item[{String}]{item\+I\+D, }
+\item[{String}]{review\+Comment, }
+\item[{Double}]{review\+Rating, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a7b4c0f9f0b2466ce85998525466496c4}
+summary$>$ Fetches all reviews for the App /summary$>$ \begin{DoxyReturn}{Returns}
+I\+List of \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} object containing all the reviews for the App
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a1f7259693e568ccc70d2496da05ed79f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Delete\+Comment\+By\+Comment\+Id@{Delete\+Comment\+By\+Comment\+Id}}
+\index{Delete\+Comment\+By\+Comment\+Id@{Delete\+Comment\+By\+Comment\+Id}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Delete\+Comment\+By\+Comment\+Id}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Delete\+Comment\+By\+Comment\+Id (
+\begin{DoxyParamCaption}
+\item[{String}]{comment\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a1f7259693e568ccc70d2496da05ed79f}
+
+
+Deletes the comment by comment identifier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em comment\+Id} & Comment identifier.\\
+\hline
+{\em call\+Back} & Call back.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_afafaad7354e3c4b008afdb41b31079bf}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Delete\+Review\+By\+Review\+Id@{Delete\+Review\+By\+Review\+Id}}
+\index{Delete\+Review\+By\+Review\+Id@{Delete\+Review\+By\+Review\+Id}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Delete\+Review\+By\+Review\+Id}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Delete\+Review\+By\+Review\+Id (
+\begin{DoxyParamCaption}
+\item[{String}]{review\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_afafaad7354e3c4b008afdb41b31079bf}
+
+
+Deletes the review by review identifier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em review\+Id} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} identifier.\\
+\hline
+{\em call\+Back} & Call back.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a11b73454e19c810bf898e354670e45f8}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Get\+All\+Reviews@{Get\+All\+Reviews}}
+\index{Get\+All\+Reviews@{Get\+All\+Reviews}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Get\+All\+Reviews}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Review}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Get\+All\+Reviews (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a11b73454e19c810bf898e354670e45f8}
+summary$>$ Fetches all reviews for the App in async mode /summary$>$ 
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a02f11e92bb2220d9d663cf8935a54202}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Get\+All\+Reviews@{Get\+All\+Reviews}}
+\index{Get\+All\+Reviews@{Get\+All\+Reviews}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Get\+All\+Reviews}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Review}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Get\+All\+Reviews (
+\begin{DoxyParamCaption}
+\item[{int}]{max, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a02f11e92bb2220d9d663cf8935a54202}
+
+
+Fetches all reviews for the App by Paging. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+List of \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} object containing all the reviews for the App
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_ac992931623a558a52310918202233fd9}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Get\+All\+Reviews@{Get\+All\+Reviews}}
+\index{Get\+All\+Reviews@{Get\+All\+Reviews}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Get\+All\+Reviews}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Get\+All\+Reviews (
+\begin{DoxyParamCaption}
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_ac992931623a558a52310918202233fd9}
+
+
+Fetches all reviews for the App by Paging in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_ad165df7792fe2592f2aff301d437a80b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Get\+All\+Reviews\+By\+User@{Get\+All\+Reviews\+By\+User}}
+\index{Get\+All\+Reviews\+By\+User@{Get\+All\+Reviews\+By\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Get\+All\+Reviews\+By\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Get\+All\+Reviews\+By\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_ad165df7792fe2592f2aff301d437a80b}
+
+
+Gets all reviews by user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & User identifier.\\
+\hline
+{\em call\+Back} & Call back.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a7ea2414776195d30c98e4fe21e328420}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Get\+All\+Reviews\+Count@{Get\+All\+Reviews\+Count}}
+\index{Get\+All\+Reviews\+Count@{Get\+All\+Reviews\+Count}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Get\+All\+Reviews\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Get\+All\+Reviews\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a7ea2414776195d30c98e4fe21e328420}
+
+
+Fetches count of all reviews for the App 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} containing count of all the reviews for the App
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a39f3a055c823e2eea3376809ea743f15}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Get\+All\+Reviews\+Count@{Get\+All\+Reviews\+Count}}
+\index{Get\+All\+Reviews\+Count@{Get\+All\+Reviews\+Count}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Get\+All\+Reviews\+Count}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Get\+All\+Reviews\+Count (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a39f3a055c823e2eea3376809ea743f15}
+
+
+Fetches count of all reviews for the App in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_abd7c2113e381ee2f487525a582299629}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Get\+Average\+Review\+By\+Item@{Get\+Average\+Review\+By\+Item}}
+\index{Get\+Average\+Review\+By\+Item@{Get\+Average\+Review\+By\+Item}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Get\+Average\+Review\+By\+Item}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Review} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Get\+Average\+Review\+By\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{item\+Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_abd7c2113e381ee2f487525a582299629}
+
+
+Fetches the average review for the specified item\+Id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & The item for which the average review has to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} object containing the average review for a item
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a191e4439aa804d1c55d4e16ba3ebb435}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Get\+Average\+Review\+By\+Item@{Get\+Average\+Review\+By\+Item}}
+\index{Get\+Average\+Review\+By\+Item@{Get\+Average\+Review\+By\+Item}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Get\+Average\+Review\+By\+Item}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Get\+Average\+Review\+By\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{item\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a191e4439aa804d1c55d4e16ba3ebb435}
+
+
+Fetches the average review for the specified item\+Id in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & The item for which the average review has to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_ab019892e82955457b8aad387cd9167f7}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Get\+Comments\+By\+Item@{Get\+Comments\+By\+Item}}
+\index{Get\+Comments\+By\+Item@{Get\+Comments\+By\+Item}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Get\+Comments\+By\+Item}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Review}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Get\+Comments\+By\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{item\+Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_ab019892e82955457b8aad387cd9167f7}
+
+
+Get Comments By Item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+review\+List
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a29b50f6e1651ebc43ed2d12b1482b0ce}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Get\+Comments\+By\+Item@{Get\+Comments\+By\+Item}}
+\index{Get\+Comments\+By\+Item@{Get\+Comments\+By\+Item}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Get\+Comments\+By\+Item}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Get\+Comments\+By\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{item\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a29b50f6e1651ebc43ed2d12b1482b0ce}
+
+
+Get Comments By Item in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a38bebabdbd5fd4f790f1254fc5544830}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Get\+Highest\+Review\+By\+Item@{Get\+Highest\+Review\+By\+Item}}
+\index{Get\+Highest\+Review\+By\+Item@{Get\+Highest\+Review\+By\+Item}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Get\+Highest\+Review\+By\+Item}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Review} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Get\+Highest\+Review\+By\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{item\+Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a38bebabdbd5fd4f790f1254fc5544830}
+summary$>$ Fetches the highest review for the specified item\+Id in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & The item for which the highest review has to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_aa19716aa84371714b15f4be711af8131}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Get\+Lowest\+Review\+By\+Item@{Get\+Lowest\+Review\+By\+Item}}
+\index{Get\+Lowest\+Review\+By\+Item@{Get\+Lowest\+Review\+By\+Item}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Get\+Lowest\+Review\+By\+Item}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Review} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Get\+Lowest\+Review\+By\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{item\+Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_aa19716aa84371714b15f4be711af8131}
+
+
+Fetches the lowest review for the specified item\+Id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & The item for which the lowest review has to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} object containing the lowest review for a item
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_acadcc249db1bf1ba028fd0afaa2f522b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Get\+Lowest\+Review\+By\+Item@{Get\+Lowest\+Review\+By\+Item}}
+\index{Get\+Lowest\+Review\+By\+Item@{Get\+Lowest\+Review\+By\+Item}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Get\+Lowest\+Review\+By\+Item}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Get\+Lowest\+Review\+By\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{item\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_acadcc249db1bf1ba028fd0afaa2f522b}
+
+
+Fetches the lowest review for the specified item\+Id in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & The item for which the lowest review has to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a7baa020fa3e2e872658f9f250a83414b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Get\+Reviews\+By\+Item@{Get\+Reviews\+By\+Item}}
+\index{Get\+Reviews\+By\+Item@{Get\+Reviews\+By\+Item}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Get\+Reviews\+By\+Item}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Review}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Get\+Reviews\+By\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{item\+Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a7baa020fa3e2e872658f9f250a83414b}
+
+
+Fetches All Reviews based on the item\+Id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & The item for which reviews have to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+List of \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} object containing all the reviews for a item
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_ac1385a6cb547769bc4f23aacdd4b4d3a}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Get\+Reviews\+By\+Item@{Get\+Reviews\+By\+Item}}
+\index{Get\+Reviews\+By\+Item@{Get\+Reviews\+By\+Item}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Get\+Reviews\+By\+Item}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Get\+Reviews\+By\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{item\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_ac1385a6cb547769bc4f23aacdd4b4d3a}
+
+
+Fetches All Reviews based on the item\+Id in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & The item for which reviews have to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_ab864c68ad5abbaf798fa730203591f70}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Get\+Reviews\+By\+Item@{Get\+Reviews\+By\+Item}}
+\index{Get\+Reviews\+By\+Item@{Get\+Reviews\+By\+Item}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Get\+Reviews\+By\+Item}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Review}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Get\+Reviews\+By\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{item\+Id, }
+\item[{int}]{max, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_ab864c68ad5abbaf798fa730203591f70}
+
+
+Fetches All Reviews based on the item\+Id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & The item for which reviews have to be fetched\\
+\hline
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+List of \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} object containing all the reviews for a item
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a80654b8445080a1f03c7a0e11a91e878}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Get\+Reviews\+By\+Item@{Get\+Reviews\+By\+Item}}
+\index{Get\+Reviews\+By\+Item@{Get\+Reviews\+By\+Item}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Get\+Reviews\+By\+Item}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Get\+Reviews\+By\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{item\+Id, }
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a80654b8445080a1f03c7a0e11a91e878}
+
+
+Fetches All Reviews based on the item\+Id in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & The item for which reviews have to be fetched\\
+\hline
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}
+
+summary$>$ Fetches the highest review for the specified item\+Id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & The item for which the highest review has to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review}{Review} object containing the highest review for a item
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_af215c61e7bc4e1e747f0fb9e47864a78}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Get\+Reviews\+Count\+By\+Item@{Get\+Reviews\+Count\+By\+Item}}
+\index{Get\+Reviews\+Count\+By\+Item@{Get\+Reviews\+Count\+By\+Item}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Get\+Reviews\+Count\+By\+Item}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Get\+Reviews\+Count\+By\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{item\+Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_af215c61e7bc4e1e747f0fb9e47864a78}
+
+
+Fetches count of All Reviews based on the item\+Id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & The item for which count of reviews have to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} containing count of all the reviews for a item
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a76bf0c8c7d3bf0eddde431dcc6e7adb4}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Get\+Reviews\+Count\+By\+Item@{Get\+Reviews\+Count\+By\+Item}}
+\index{Get\+Reviews\+Count\+By\+Item@{Get\+Reviews\+Count\+By\+Item}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Get\+Reviews\+Count\+By\+Item}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Get\+Reviews\+Count\+By\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{item\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a76bf0c8c7d3bf0eddde431dcc6e7adb4}
+
+
+Fetches count of All Reviews based on the item\+Id in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & The item for which count of reviews have to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_af8b79f39883883817b844aa6f54df0f7}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Get\+Reviews\+Count\+By\+Item\+And\+Rating@{Get\+Reviews\+Count\+By\+Item\+And\+Rating}}
+\index{Get\+Reviews\+Count\+By\+Item\+And\+Rating@{Get\+Reviews\+Count\+By\+Item\+And\+Rating}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Get\+Reviews\+Count\+By\+Item\+And\+Rating}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Get\+Reviews\+Count\+By\+Item\+And\+Rating (
+\begin{DoxyParamCaption}
+\item[{String}]{item\+Id, }
+\item[{double}]{rating}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_af8b79f39883883817b844aa6f54df0f7}
+
+
+Get Reviews Count\+By Item And Rating 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & \\
+\hline
+{\em rating} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response}
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_adbf158acbf4757c6f630bc3326eef194}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Get\+Reviews\+Count\+By\+Item\+And\+Rating@{Get\+Reviews\+Count\+By\+Item\+And\+Rating}}
+\index{Get\+Reviews\+Count\+By\+Item\+And\+Rating@{Get\+Reviews\+Count\+By\+Item\+And\+Rating}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Get\+Reviews\+Count\+By\+Item\+And\+Rating}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Get\+Reviews\+Count\+By\+Item\+And\+Rating (
+\begin{DoxyParamCaption}
+\item[{String}]{item\+Id, }
+\item[{double}]{rating, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_adbf158acbf4757c6f630bc3326eef194}
+
+
+Get Reviews Count\+By Item And Rating in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & \\
+\hline
+{\em rating} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a53f361b067cfa0e41694c25b96c4d4f2}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Mute@{Mute}}
+\index{Mute@{Mute}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Mute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Mute (
+\begin{DoxyParamCaption}
+\item[{String}]{review\+Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a53f361b067cfa0e41694c25b96c4d4f2}
+
+
+Mutes the specified review 
+
+
+\begin{DoxyParams}{Parameters}
+{\em review\+Id} & The Id of the review which has to be muted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} if muted successfully
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a061f5d2ca651b5c856c1109e8593bf2a}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Mute@{Mute}}
+\index{Mute@{Mute}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Mute}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Mute (
+\begin{DoxyParamCaption}
+\item[{String}]{review\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a061f5d2ca651b5c856c1109e8593bf2a}
+
+
+Mutes the specified review in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em review\+Id} & The Id of the review which has to be muted\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a0c2b84115ca738d6dc256d73bd214b73}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Unmute@{Unmute}}
+\index{Unmute@{Unmute}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Unmute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Unmute (
+\begin{DoxyParamCaption}
+\item[{String}]{review\+Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a0c2b84115ca738d6dc256d73bd214b73}
+
+
+Un\+Mutes the specified review 
+
+
+\begin{DoxyParams}{Parameters}
+{\em review\+Id} & The Id of the review which has to be unmuted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} if unmuted successfully
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a0bdeeb013cc77232196bef097c52ca08}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}!Unmute@{Unmute}}
+\index{Unmute@{Unmute}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::review\+::\+Review\+Service}}
+\subsubsection[{Unmute}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+review.\+Review\+Service.\+Unmute (
+\begin{DoxyParamCaption}
+\item[{String}]{review\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1review_1_1_review_service_a0bdeeb013cc77232196bef097c52ca08}
+
+
+Un\+Mutes the specified review in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em review\+Id} & The Id of the review which has to be unmuted\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}

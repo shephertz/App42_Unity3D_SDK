@@ -1,0 +1,1240 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service@{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service}}
+}
+
+
+Centralize logging for your App. This service allows different levels e.\+g. info, debug, fatal, error etc. to log a message and query the messages based on different parameters. You can fetch logs based on module, level, message, date range etc.  
+
+
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_ac5c24337398ef101c2155ecb6887e142}{Log\+Service} (String api\+Key, String secret\+Key)
+\begin{DoxyCompactList}\small\item\em The costructor for the Service \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a38594cb657ec5f762de76051e38dddc4}{Info} (String msg, String module)
+\begin{DoxyCompactList}\small\item\em Logs the info message \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aefbc3ba29b08f6d0eca79d6000cc015b}{Info} (String msg, String module, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Logs the info message in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aa5c6b747b666620e40f323db520a306a}{Debug} (String msg, String module)
+\begin{DoxyCompactList}\small\item\em Logs the debug message \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a36178ce713f2bafd3344c1f718891759}{Debug} (String msg, String module, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Logs the debug message in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a33a0592af9d97c1daaa8ab0ba2923453}{Fatal} (String msg, String module)
+\begin{DoxyCompactList}\small\item\em Logs the fatal message \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a6e5079412b006dd886d64ba59b238933}{Fatal} (String msg, String module, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Logs the fatal message in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a1ff6a1b16465a3177e13eb43e976f05e}{Error} (String msg, String module)
+\begin{DoxyCompactList}\small\item\em Logs the error message \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a939d32dd61baac16d19a483e1401a7ba}{Error} (String msg, String module, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Logs the error message in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a4829b5d604f88786e95c5970fdddbdc2}{Fetch\+Logs\+By\+Module} (String module\+Name)
+\begin{DoxyCompactList}\small\item\em Fetch the log messages based on the Module \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a4861107d7aba2236112c2b0dcd89aef8}{Fetch\+Logs\+By\+Module} (String module\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch the log messages based on the Module in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a6c0ecdfe9b9f01265d7d3995e27f64ef}{Fetch\+Logs\+By\+Module\+And\+Text} (String module\+Name, String text)
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on the Module and Message Text \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a058d117ad1a2e3727ad467757913e806}{Fetch\+Logs\+By\+Module\+And\+Text} (String module\+Name, String text, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on the Module and Message Text in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aadaff94993abf05fcf7a45fb5beb61b8}{Fetch\+Logs\+By\+Info} ()
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on Info Level \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_ab8b64a93c7f3238f6dccc99158799749}{Fetch\+Logs\+By\+Info} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on Info Level in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a3d8de2652fd08e3c5dcd509718ba8e3c}{Fetch\+Logs\+By\+Debug} ()
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on Debug Level \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a744c464e29b66b8b34b5732c9ea6b845}{Fetch\+Logs\+By\+Debug} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on Debug Level in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a5f86bf7974a6bc9f2a4da3795314113e}{Fetch\+Logs\+By\+Error} ()
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on Error Level \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aa4cca18e66bd70f2d1ca45f864f7873c}{Fetch\+Logs\+By\+Error} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on Error Level in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a412c91a12a6ccec1b70d9fa6d6b7fce0}{Fetch\+Logs\+By\+Fatal} ()
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on Fatal Level \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_af8e08c00d3da95f2c7fd76c3e92bc7c6}{Fetch\+Logs\+By\+Fatal} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on Fatal Level in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a23b9712672b35d88c8e4d399153bf91c}{Fetch\+Log\+By\+Date\+Range} (Date\+Time start\+Date, Date\+Time end\+Date)
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on Date range \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a2cfdc963fc5e155c5e4270238e6a02b3}{Fetch\+Log\+By\+Date\+Range} (Date\+Time start\+Date, Date\+Time end\+Date, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on Date range in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a8f55b3d988bd15f355fb15c0726d2d42}{Fetch\+Logs\+By\+Info} (int max, int offset)
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on Info Level \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_ae2d1fccbcb3d3e8cfbede288fa15bff3}{Fetch\+Logs\+By\+Info} (int max, int offset, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on Info Level in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_af0728ece6315e2dfde3a7955512236be}{Fetch\+Logs\+By\+Debug} (int max, int offset)
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on Debug Level by paging. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a78d3e3ac12ee858a00276216bc1bd156}{Fetch\+Logs\+By\+Debug} (int max, int offset, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on Debug Level by paging in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a4538247790590aa76a3fca7efb3b2ad5}{Fetch\+Logs\+By\+Error} (int max, int offset)
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on Error Level by paging. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aab90aadfe013ac4cdd4e78c81e5a3c7c}{Fetch\+Logs\+By\+Error} (int max, int offset, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on Error Level by paging in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a3b7baf3266ecb6ed98c4802915722b52}{Fetch\+Logs\+By\+Fatal} (int max, int offset)
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on Fatal Level by paging. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_acf2b60582c8e7fe51484996771f9a82e}{Fetch\+Logs\+By\+Fatal} (int max, int offset, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on Fatal Level by paging in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a72faed311df5c6326e43bd1ee2a58561}{Fetch\+Logs\+By\+Module} (String module\+Name, int max, int offset)
+\begin{DoxyCompactList}\small\item\em Fetch the log messages based on the Module by paging. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aafe064a8fcb529eca907ce3ec49b94e5}{Fetch\+Logs\+By\+Module} (String module\+Name, int max, int offset, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch the log messages based on the Module by paging in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aded3871cc031afc0b5eb0b0c5705f2c4}{Fetch\+Logs\+By\+Module\+And\+Text} (String module\+Name, String text, int max, int offset)
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on the Module and Message Text by paging. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_af18f4f42e05e3493b87946b51ff032bf}{Fetch\+Logs\+By\+Module\+And\+Text} (String module\+Name, String text, int max, int offset, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on the Module and Message Text by paging in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a6e9835c36ebdb5b6fed94593fe148d34}{Fetch\+Log\+By\+Date\+Range} (Date\+Time start\+Date, Date\+Time end\+Date, int max, int offset)
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on Date range by paging. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a21623028e3035d29eeb6ebbca4e2e19f}{Fetch\+Log\+By\+Date\+Range} (Date\+Time start\+Date, Date\+Time end\+Date, int max, int offset, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch log messages based on Date range by paging in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a17cda8a76ec3501d11d84f3a2b274334}{Fetch\+Logs\+Count\+By\+Module} (String module\+Name)
+\begin{DoxyCompactList}\small\item\em Fetch the count of log messages based on the Module \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a7156674f2c851d3d4af43155c2fbfa32}{Fetch\+Logs\+Count\+By\+Module} (String module\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch the count of log messages based on the Module in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a4c72700bcea1ea523be794f6d6d75b32}{Fetch\+Logs\+Count\+By\+Module\+And\+Text} (String module\+Name, String text)
+\begin{DoxyCompactList}\small\item\em Fetch count of log messages based on the Module and Message Text \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_abcb991084cde8894e65f22c09dc4750b}{Fetch\+Logs\+Count\+By\+Module\+And\+Text} (String module\+Name, String text, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch count of log messages based on the Module and Message Text in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a9a76f5d62d75b3ae9256699e8d45a239}{Fetch\+Logs\+Count\+By\+Info} ()
+\begin{DoxyCompactList}\small\item\em Fetch count of log messages based on Info Level \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_acacfeb5326bfe47aa96d5babd6103056}{Fetch\+Logs\+Count\+By\+Info} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch count of log messages based on Info Level in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aadd09697253b115d91f7f1d55a574dec}{Fetch\+Logs\+Count\+By\+Debug} ()
+\begin{DoxyCompactList}\small\item\em Fetch count of log messages based on Debug Level \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a6e608c004ec58e8fdec900e5c16fcc45}{Fetch\+Logs\+Count\+By\+Debug} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch count of log messages based on Debug Level in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_ad897f4b763566b432fb15058d5fe6cb5}{Fetch\+Logs\+Count\+By\+Error} ()
+\begin{DoxyCompactList}\small\item\em Fetch count of log messages based on Error Level \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a02fd3c16175c3971d80d47612c09bb17}{Fetch\+Logs\+Count\+By\+Error} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch count of log messages based on Error Level in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a4d1863226a1c0ef97d02e479ea61de18}{Fetch\+Logs\+Count\+By\+Fatal} ()
+\begin{DoxyCompactList}\small\item\em Fetch count of log messages based on Fatal Level \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a02cb88ef3e80164c99fcd6aea827791d}{Fetch\+Logs\+Count\+By\+Fatal} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch count of log messages based on Fatal Level in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a5aa03ccf6c1ec470c460499481e98fda}{Fetch\+Log\+Count\+By\+Date\+Range} (Date\+Time start\+Date, Date\+Time end\+Date)
+\begin{DoxyCompactList}\small\item\em Fetch count of log messages based on Date range \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a326f1afc49cb746524197198c5c8a236}{Fetch\+Log\+Count\+By\+Date\+Range} (Date\+Time start\+Date, Date\+Time end\+Date, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch count of log messages based on Date range in async mode \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a0ec4cb6f7e06a3891fb554d7c76091e3}{Set\+Event} (String module\+Name, String event\+Name)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} event on App42 cloud for analytics purpose \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a6ceaefab6cb0b29458b33a89096e9704}{Set\+Event} (String module\+Name, String event\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} event on App42 cloud for analytics purpose in async mode \end{DoxyCompactList}\item 
+new void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_afbfbf2ca59e964bbe0b36315cfe98180}{Set\+Event} (String event\+Name)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} event on App42 cloud for analytics purpose \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_adeab3abaa6a2e31b837df0f44632480c}{Set\+Event} (String event\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} event on App42 cloud for analytics purpose in async mode \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Centralize logging for your App. This service allows different levels e.\+g. info, debug, fatal, error etc. to log a message and query the messages based on different parameters. You can fetch logs based on module, level, message, date range etc. 
+
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service}{Log} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_ac5c24337398ef101c2155ecb6887e142}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Log\+Service@{Log\+Service}}
+\index{Log\+Service@{Log\+Service}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Log\+Service}]{\setlength{\rightskip}{0pt plus 5cm}com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Log\+Service (
+\begin{DoxyParamCaption}
+\item[{String}]{api\+Key, }
+\item[{String}]{secret\+Key}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_ac5c24337398ef101c2155ecb6887e142}
+
+
+The costructor for the Service 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & api\+Key\\
+\hline
+{\em secret\+Key} & secret\+Key\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aa5c6b747b666620e40f323db520a306a}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Debug@{Debug}}
+\index{Debug@{Debug}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Debug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Log} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Debug (
+\begin{DoxyParamCaption}
+\item[{String}]{msg, }
+\item[{String}]{module}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aa5c6b747b666620e40f323db520a306a}
+
+
+Logs the debug message 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Message to be logged\\
+\hline
+{\em module} & Module name for which the message is getting logged\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} object containing logged message
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a36178ce713f2bafd3344c1f718891759}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Debug@{Debug}}
+\index{Debug@{Debug}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Debug}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Debug (
+\begin{DoxyParamCaption}
+\item[{String}]{msg, }
+\item[{String}]{module, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a36178ce713f2bafd3344c1f718891759}
+
+
+Logs the debug message in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Message to be logged\\
+\hline
+{\em module} & Module name for which the message is getting logged\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a1ff6a1b16465a3177e13eb43e976f05e}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Error@{Error}}
+\index{Error@{Error}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Log} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Error (
+\begin{DoxyParamCaption}
+\item[{String}]{msg, }
+\item[{String}]{module}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a1ff6a1b16465a3177e13eb43e976f05e}
+
+
+Logs the error message 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Message to be logged\\
+\hline
+{\em module} & Module name for which the message is getting logged\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} object containing logged message
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a939d32dd61baac16d19a483e1401a7ba}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Error@{Error}}
+\index{Error@{Error}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Error}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Error (
+\begin{DoxyParamCaption}
+\item[{String}]{msg, }
+\item[{String}]{module, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a939d32dd61baac16d19a483e1401a7ba}
+
+
+Logs the error message in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Message to be logged\\
+\hline
+{\em module} & Module name for which the message is getting logged\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a33a0592af9d97c1daaa8ab0ba2923453}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fatal@{Fatal}}
+\index{Fatal@{Fatal}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fatal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Log} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fatal (
+\begin{DoxyParamCaption}
+\item[{String}]{msg, }
+\item[{String}]{module}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a33a0592af9d97c1daaa8ab0ba2923453}
+
+
+Logs the fatal message 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Message to be logged\\
+\hline
+{\em module} & Module name for which the message is getting logged\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} object containing logged message
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a6e5079412b006dd886d64ba59b238933}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fatal@{Fatal}}
+\index{Fatal@{Fatal}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fatal}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fatal (
+\begin{DoxyParamCaption}
+\item[{String}]{msg, }
+\item[{String}]{module, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a6e5079412b006dd886d64ba59b238933}
+
+
+Logs the fatal message in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Message to be logged\\
+\hline
+{\em module} & Module name for which the message is getting logged\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a23b9712672b35d88c8e4d399153bf91c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Log\+By\+Date\+Range@{Fetch\+Log\+By\+Date\+Range}}
+\index{Fetch\+Log\+By\+Date\+Range@{Fetch\+Log\+By\+Date\+Range}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Log\+By\+Date\+Range}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Log} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Log\+By\+Date\+Range (
+\begin{DoxyParamCaption}
+\item[{Date\+Time}]{start\+Date, }
+\item[{Date\+Time}]{end\+Date}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a23b9712672b35d88c8e4d399153bf91c}
+
+
+Fetch log messages based on Date range 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Date} & Start date from which the log messages have to be fetched\\
+\hline
+{\em end\+Date} & End date upto which the log messages have to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} object containing fetched messages
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a2cfdc963fc5e155c5e4270238e6a02b3}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Log\+By\+Date\+Range@{Fetch\+Log\+By\+Date\+Range}}
+\index{Fetch\+Log\+By\+Date\+Range@{Fetch\+Log\+By\+Date\+Range}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Log\+By\+Date\+Range}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Log\+By\+Date\+Range (
+\begin{DoxyParamCaption}
+\item[{Date\+Time}]{start\+Date, }
+\item[{Date\+Time}]{end\+Date, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a2cfdc963fc5e155c5e4270238e6a02b3}
+
+
+Fetch log messages based on Date range in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Date} & Start date from which the log messages have to be fetched\\
+\hline
+{\em end\+Date} & End date upto which the log messages have to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a6e9835c36ebdb5b6fed94593fe148d34}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Log\+By\+Date\+Range@{Fetch\+Log\+By\+Date\+Range}}
+\index{Fetch\+Log\+By\+Date\+Range@{Fetch\+Log\+By\+Date\+Range}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Log\+By\+Date\+Range}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Log} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Log\+By\+Date\+Range (
+\begin{DoxyParamCaption}
+\item[{Date\+Time}]{start\+Date, }
+\item[{Date\+Time}]{end\+Date, }
+\item[{int}]{max, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a6e9835c36ebdb5b6fed94593fe148d34}
+
+
+Fetch log messages based on Date range by paging. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Date} & Start date from which the log messages have to be fetched\\
+\hline
+{\em end\+Date} & End date upto which the log messages have to be fetched\\
+\hline
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} object containing fetched messages
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a21623028e3035d29eeb6ebbca4e2e19f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Log\+By\+Date\+Range@{Fetch\+Log\+By\+Date\+Range}}
+\index{Fetch\+Log\+By\+Date\+Range@{Fetch\+Log\+By\+Date\+Range}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Log\+By\+Date\+Range}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Log\+By\+Date\+Range (
+\begin{DoxyParamCaption}
+\item[{Date\+Time}]{start\+Date, }
+\item[{Date\+Time}]{end\+Date, }
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a21623028e3035d29eeb6ebbca4e2e19f}
+
+
+Fetch log messages based on Date range by paging in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Date} & Start date from which the log messages have to be fetched\\
+\hline
+{\em end\+Date} & End date upto which the log messages have to be fetched\\
+\hline
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a5aa03ccf6c1ec470c460499481e98fda}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Log\+Count\+By\+Date\+Range@{Fetch\+Log\+Count\+By\+Date\+Range}}
+\index{Fetch\+Log\+Count\+By\+Date\+Range@{Fetch\+Log\+Count\+By\+Date\+Range}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Log\+Count\+By\+Date\+Range}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Log\+Count\+By\+Date\+Range (
+\begin{DoxyParamCaption}
+\item[{Date\+Time}]{start\+Date, }
+\item[{Date\+Time}]{end\+Date}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a5aa03ccf6c1ec470c460499481e98fda}
+
+
+Fetch count of log messages based on Date range 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Date} & Start date from which the count of log messages have to be fetched\\
+\hline
+{\em end\+Date} & End date upto which the count of log messages have to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} object containing count of fetched messages
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a326f1afc49cb746524197198c5c8a236}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Log\+Count\+By\+Date\+Range@{Fetch\+Log\+Count\+By\+Date\+Range}}
+\index{Fetch\+Log\+Count\+By\+Date\+Range@{Fetch\+Log\+Count\+By\+Date\+Range}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Log\+Count\+By\+Date\+Range}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Log\+Count\+By\+Date\+Range (
+\begin{DoxyParamCaption}
+\item[{Date\+Time}]{start\+Date, }
+\item[{Date\+Time}]{end\+Date, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a326f1afc49cb746524197198c5c8a236}
+
+
+Fetch count of log messages based on Date range in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Date} & Start date from which the count of log messages have to be fetched\\
+\hline
+{\em end\+Date} & End date upto which the count of log messages have to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a3d8de2652fd08e3c5dcd509718ba8e3c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Debug@{Fetch\+Logs\+By\+Debug}}
+\index{Fetch\+Logs\+By\+Debug@{Fetch\+Logs\+By\+Debug}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Debug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Log} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Debug (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a3d8de2652fd08e3c5dcd509718ba8e3c}
+
+
+Fetch log messages based on Debug Level 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} object containing fetched debug messages
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a744c464e29b66b8b34b5732c9ea6b845}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Debug@{Fetch\+Logs\+By\+Debug}}
+\index{Fetch\+Logs\+By\+Debug@{Fetch\+Logs\+By\+Debug}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Debug}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Debug (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a744c464e29b66b8b34b5732c9ea6b845}
+
+
+Fetch log messages based on Debug Level in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_af0728ece6315e2dfde3a7955512236be}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Debug@{Fetch\+Logs\+By\+Debug}}
+\index{Fetch\+Logs\+By\+Debug@{Fetch\+Logs\+By\+Debug}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Debug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Log} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Debug (
+\begin{DoxyParamCaption}
+\item[{int}]{max, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_af0728ece6315e2dfde3a7955512236be}
+
+
+Fetch log messages based on Debug Level by paging. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} object containing fetched debug messages
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a78d3e3ac12ee858a00276216bc1bd156}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Debug@{Fetch\+Logs\+By\+Debug}}
+\index{Fetch\+Logs\+By\+Debug@{Fetch\+Logs\+By\+Debug}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Debug}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Debug (
+\begin{DoxyParamCaption}
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a78d3e3ac12ee858a00276216bc1bd156}
+
+
+Fetch log messages based on Debug Level by paging in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a5f86bf7974a6bc9f2a4da3795314113e}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Error@{Fetch\+Logs\+By\+Error}}
+\index{Fetch\+Logs\+By\+Error@{Fetch\+Logs\+By\+Error}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Log} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a5f86bf7974a6bc9f2a4da3795314113e}
+
+
+Fetch log messages based on Error Level 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} object containing fetched error messages
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aa4cca18e66bd70f2d1ca45f864f7873c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Error@{Fetch\+Logs\+By\+Error}}
+\index{Fetch\+Logs\+By\+Error@{Fetch\+Logs\+By\+Error}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Error}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Error (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aa4cca18e66bd70f2d1ca45f864f7873c}
+
+
+Fetch log messages based on Error Level in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a4538247790590aa76a3fca7efb3b2ad5}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Error@{Fetch\+Logs\+By\+Error}}
+\index{Fetch\+Logs\+By\+Error@{Fetch\+Logs\+By\+Error}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Log} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Error (
+\begin{DoxyParamCaption}
+\item[{int}]{max, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a4538247790590aa76a3fca7efb3b2ad5}
+
+
+Fetch log messages based on Error Level by paging. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} object containing fetched error messages
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aab90aadfe013ac4cdd4e78c81e5a3c7c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Error@{Fetch\+Logs\+By\+Error}}
+\index{Fetch\+Logs\+By\+Error@{Fetch\+Logs\+By\+Error}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Error}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Error (
+\begin{DoxyParamCaption}
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aab90aadfe013ac4cdd4e78c81e5a3c7c}
+
+
+Fetch log messages based on Error Level by paging in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a412c91a12a6ccec1b70d9fa6d6b7fce0}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Fatal@{Fetch\+Logs\+By\+Fatal}}
+\index{Fetch\+Logs\+By\+Fatal@{Fetch\+Logs\+By\+Fatal}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Fatal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Log} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Fatal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a412c91a12a6ccec1b70d9fa6d6b7fce0}
+
+
+Fetch log messages based on Fatal Level 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} object containing fetched Fatal messages
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_af8e08c00d3da95f2c7fd76c3e92bc7c6}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Fatal@{Fetch\+Logs\+By\+Fatal}}
+\index{Fetch\+Logs\+By\+Fatal@{Fetch\+Logs\+By\+Fatal}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Fatal}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Fatal (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_af8e08c00d3da95f2c7fd76c3e92bc7c6}
+
+
+Fetch log messages based on Fatal Level in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a3b7baf3266ecb6ed98c4802915722b52}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Fatal@{Fetch\+Logs\+By\+Fatal}}
+\index{Fetch\+Logs\+By\+Fatal@{Fetch\+Logs\+By\+Fatal}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Fatal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Log} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Fatal (
+\begin{DoxyParamCaption}
+\item[{int}]{max, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a3b7baf3266ecb6ed98c4802915722b52}
+
+
+Fetch log messages based on Fatal Level by paging. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} object containing fetched Fatal messages
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_acf2b60582c8e7fe51484996771f9a82e}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Fatal@{Fetch\+Logs\+By\+Fatal}}
+\index{Fetch\+Logs\+By\+Fatal@{Fetch\+Logs\+By\+Fatal}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Fatal}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Fatal (
+\begin{DoxyParamCaption}
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_acf2b60582c8e7fe51484996771f9a82e}
+
+
+Fetch log messages based on Fatal Level by paging in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aadaff94993abf05fcf7a45fb5beb61b8}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Info@{Fetch\+Logs\+By\+Info}}
+\index{Fetch\+Logs\+By\+Info@{Fetch\+Logs\+By\+Info}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Log} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aadaff94993abf05fcf7a45fb5beb61b8}
+
+
+Fetch log messages based on Info Level 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} object containing fetched info messages
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_ab8b64a93c7f3238f6dccc99158799749}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Info@{Fetch\+Logs\+By\+Info}}
+\index{Fetch\+Logs\+By\+Info@{Fetch\+Logs\+By\+Info}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Info}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Info (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_ab8b64a93c7f3238f6dccc99158799749}
+
+
+Fetch log messages based on Info Level in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a8f55b3d988bd15f355fb15c0726d2d42}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Info@{Fetch\+Logs\+By\+Info}}
+\index{Fetch\+Logs\+By\+Info@{Fetch\+Logs\+By\+Info}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Log} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Info (
+\begin{DoxyParamCaption}
+\item[{int}]{max, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a8f55b3d988bd15f355fb15c0726d2d42}
+
+
+Fetch log messages based on Info Level 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} object containing fetched info messages
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_ae2d1fccbcb3d3e8cfbede288fa15bff3}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Info@{Fetch\+Logs\+By\+Info}}
+\index{Fetch\+Logs\+By\+Info@{Fetch\+Logs\+By\+Info}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Info}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Info (
+\begin{DoxyParamCaption}
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_ae2d1fccbcb3d3e8cfbede288fa15bff3}
+
+
+Fetch log messages based on Info Level in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a4829b5d604f88786e95c5970fdddbdc2}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Module@{Fetch\+Logs\+By\+Module}}
+\index{Fetch\+Logs\+By\+Module@{Fetch\+Logs\+By\+Module}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Module}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Log} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Module (
+\begin{DoxyParamCaption}
+\item[{String}]{module\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a4829b5d604f88786e95c5970fdddbdc2}
+
+
+Fetch the log messages based on the Module 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\+Name} & Module name for which the messages has to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} object containing fetched messages
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a4861107d7aba2236112c2b0dcd89aef8}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Module@{Fetch\+Logs\+By\+Module}}
+\index{Fetch\+Logs\+By\+Module@{Fetch\+Logs\+By\+Module}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Module}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Module (
+\begin{DoxyParamCaption}
+\item[{String}]{module\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a4861107d7aba2236112c2b0dcd89aef8}
+
+
+Fetch the log messages based on the Module in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\+Name} & Module name for which the messages has to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a72faed311df5c6326e43bd1ee2a58561}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Module@{Fetch\+Logs\+By\+Module}}
+\index{Fetch\+Logs\+By\+Module@{Fetch\+Logs\+By\+Module}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Module}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Log} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Module (
+\begin{DoxyParamCaption}
+\item[{String}]{module\+Name, }
+\item[{int}]{max, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a72faed311df5c6326e43bd1ee2a58561}
+
+
+Fetch the log messages based on the Module by paging. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\+Name} & for which the messages has to be fetched\\
+\hline
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} object containing fetched messages
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aafe064a8fcb529eca907ce3ec49b94e5}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Module@{Fetch\+Logs\+By\+Module}}
+\index{Fetch\+Logs\+By\+Module@{Fetch\+Logs\+By\+Module}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Module}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Module (
+\begin{DoxyParamCaption}
+\item[{String}]{module\+Name, }
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aafe064a8fcb529eca907ce3ec49b94e5}
+
+
+Fetch the log messages based on the Module by paging in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\+Name} & for which the messages has to be fetched\\
+\hline
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a6c0ecdfe9b9f01265d7d3995e27f64ef}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Module\+And\+Text@{Fetch\+Logs\+By\+Module\+And\+Text}}
+\index{Fetch\+Logs\+By\+Module\+And\+Text@{Fetch\+Logs\+By\+Module\+And\+Text}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Module\+And\+Text}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Log} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Module\+And\+Text (
+\begin{DoxyParamCaption}
+\item[{String}]{module\+Name, }
+\item[{String}]{text}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a6c0ecdfe9b9f01265d7d3995e27f64ef}
+
+
+Fetch log messages based on the Module and Message Text 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\+Name} & Module name for which the messages has to be fetched\\
+\hline
+{\em text} & The log message on which logs have to be searched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} object containing fetched messages
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a058d117ad1a2e3727ad467757913e806}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Module\+And\+Text@{Fetch\+Logs\+By\+Module\+And\+Text}}
+\index{Fetch\+Logs\+By\+Module\+And\+Text@{Fetch\+Logs\+By\+Module\+And\+Text}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Module\+And\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Module\+And\+Text (
+\begin{DoxyParamCaption}
+\item[{String}]{module\+Name, }
+\item[{String}]{text, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a058d117ad1a2e3727ad467757913e806}
+
+
+Fetch log messages based on the Module and Message Text in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\+Name} & Module name for which the messages has to be fetched\\
+\hline
+{\em text} & The log message on which logs have to be searched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aded3871cc031afc0b5eb0b0c5705f2c4}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Module\+And\+Text@{Fetch\+Logs\+By\+Module\+And\+Text}}
+\index{Fetch\+Logs\+By\+Module\+And\+Text@{Fetch\+Logs\+By\+Module\+And\+Text}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Module\+And\+Text}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Log} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Module\+And\+Text (
+\begin{DoxyParamCaption}
+\item[{String}]{module\+Name, }
+\item[{String}]{text, }
+\item[{int}]{max, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aded3871cc031afc0b5eb0b0c5705f2c4}
+
+
+Fetch log messages based on the Module and Message Text by paging. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\+Name} & Module name for which the messages has to be fetched\\
+\hline
+{\em text} & The log message on which logs have to be searched\\
+\hline
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} object containing fetched messages
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_af18f4f42e05e3493b87946b51ff032bf}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+By\+Module\+And\+Text@{Fetch\+Logs\+By\+Module\+And\+Text}}
+\index{Fetch\+Logs\+By\+Module\+And\+Text@{Fetch\+Logs\+By\+Module\+And\+Text}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+By\+Module\+And\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+By\+Module\+And\+Text (
+\begin{DoxyParamCaption}
+\item[{String}]{module\+Name, }
+\item[{String}]{text, }
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_af18f4f42e05e3493b87946b51ff032bf}
+
+
+Fetch log messages based on the Module and Message Text by paging in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\+Name} & Module name for which the messages has to be fetched\\
+\hline
+{\em text} & The log message on which logs have to be searched\\
+\hline
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aadd09697253b115d91f7f1d55a574dec}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+Count\+By\+Debug@{Fetch\+Logs\+Count\+By\+Debug}}
+\index{Fetch\+Logs\+Count\+By\+Debug@{Fetch\+Logs\+Count\+By\+Debug}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+Count\+By\+Debug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+Count\+By\+Debug (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aadd09697253b115d91f7f1d55a574dec}
+
+
+Fetch count of log messages based on Debug Level 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} object containing count of fetched debug messages
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a6e608c004ec58e8fdec900e5c16fcc45}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+Count\+By\+Debug@{Fetch\+Logs\+Count\+By\+Debug}}
+\index{Fetch\+Logs\+Count\+By\+Debug@{Fetch\+Logs\+Count\+By\+Debug}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+Count\+By\+Debug}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+Count\+By\+Debug (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a6e608c004ec58e8fdec900e5c16fcc45}
+
+
+Fetch count of log messages based on Debug Level in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_ad897f4b763566b432fb15058d5fe6cb5}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+Count\+By\+Error@{Fetch\+Logs\+Count\+By\+Error}}
+\index{Fetch\+Logs\+Count\+By\+Error@{Fetch\+Logs\+Count\+By\+Error}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+Count\+By\+Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+Count\+By\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_ad897f4b763566b432fb15058d5fe6cb5}
+
+
+Fetch count of log messages based on Error Level 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} object containing count of fetched error messages
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a02fd3c16175c3971d80d47612c09bb17}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+Count\+By\+Error@{Fetch\+Logs\+Count\+By\+Error}}
+\index{Fetch\+Logs\+Count\+By\+Error@{Fetch\+Logs\+Count\+By\+Error}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+Count\+By\+Error}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+Count\+By\+Error (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a02fd3c16175c3971d80d47612c09bb17}
+
+
+Fetch count of log messages based on Error Level in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a4d1863226a1c0ef97d02e479ea61de18}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+Count\+By\+Fatal@{Fetch\+Logs\+Count\+By\+Fatal}}
+\index{Fetch\+Logs\+Count\+By\+Fatal@{Fetch\+Logs\+Count\+By\+Fatal}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+Count\+By\+Fatal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+Count\+By\+Fatal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a4d1863226a1c0ef97d02e479ea61de18}
+
+
+Fetch count of log messages based on Fatal Level 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} object containing count of fetched Fatal messages
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a02cb88ef3e80164c99fcd6aea827791d}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+Count\+By\+Fatal@{Fetch\+Logs\+Count\+By\+Fatal}}
+\index{Fetch\+Logs\+Count\+By\+Fatal@{Fetch\+Logs\+Count\+By\+Fatal}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+Count\+By\+Fatal}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+Count\+By\+Fatal (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a02cb88ef3e80164c99fcd6aea827791d}
+
+
+Fetch count of log messages based on Fatal Level in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a9a76f5d62d75b3ae9256699e8d45a239}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+Count\+By\+Info@{Fetch\+Logs\+Count\+By\+Info}}
+\index{Fetch\+Logs\+Count\+By\+Info@{Fetch\+Logs\+Count\+By\+Info}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+Count\+By\+Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+Count\+By\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a9a76f5d62d75b3ae9256699e8d45a239}
+
+
+Fetch count of log messages based on Info Level 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} object containing count of fetched info messages
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_acacfeb5326bfe47aa96d5babd6103056}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+Count\+By\+Info@{Fetch\+Logs\+Count\+By\+Info}}
+\index{Fetch\+Logs\+Count\+By\+Info@{Fetch\+Logs\+Count\+By\+Info}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+Count\+By\+Info}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+Count\+By\+Info (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_acacfeb5326bfe47aa96d5babd6103056}
+
+
+Fetch count of log messages based on Info Level in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a17cda8a76ec3501d11d84f3a2b274334}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+Count\+By\+Module@{Fetch\+Logs\+Count\+By\+Module}}
+\index{Fetch\+Logs\+Count\+By\+Module@{Fetch\+Logs\+Count\+By\+Module}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+Count\+By\+Module}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+Count\+By\+Module (
+\begin{DoxyParamCaption}
+\item[{String}]{module\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a17cda8a76ec3501d11d84f3a2b274334}
+
+
+Fetch the count of log messages based on the Module 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\+Name} & Module name for which the count of messages has to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} object containing count of fetched messages
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a7156674f2c851d3d4af43155c2fbfa32}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+Count\+By\+Module@{Fetch\+Logs\+Count\+By\+Module}}
+\index{Fetch\+Logs\+Count\+By\+Module@{Fetch\+Logs\+Count\+By\+Module}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+Count\+By\+Module}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+Count\+By\+Module (
+\begin{DoxyParamCaption}
+\item[{String}]{module\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a7156674f2c851d3d4af43155c2fbfa32}
+
+
+Fetch the count of log messages based on the Module in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\+Name} & Module name for which the count of messages has to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a4c72700bcea1ea523be794f6d6d75b32}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+Count\+By\+Module\+And\+Text@{Fetch\+Logs\+Count\+By\+Module\+And\+Text}}
+\index{Fetch\+Logs\+Count\+By\+Module\+And\+Text@{Fetch\+Logs\+Count\+By\+Module\+And\+Text}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+Count\+By\+Module\+And\+Text}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+Count\+By\+Module\+And\+Text (
+\begin{DoxyParamCaption}
+\item[{String}]{module\+Name, }
+\item[{String}]{text}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a4c72700bcea1ea523be794f6d6d75b32}
+
+
+Fetch count of log messages based on the Module and Message Text 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\+Name} & Module name for which the count of messages has to be fetched\\
+\hline
+{\em text} & The log message on which count of logs have to be searched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} object containing count of fetched messages
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_abcb991084cde8894e65f22c09dc4750b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Fetch\+Logs\+Count\+By\+Module\+And\+Text@{Fetch\+Logs\+Count\+By\+Module\+And\+Text}}
+\index{Fetch\+Logs\+Count\+By\+Module\+And\+Text@{Fetch\+Logs\+Count\+By\+Module\+And\+Text}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Fetch\+Logs\+Count\+By\+Module\+And\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Fetch\+Logs\+Count\+By\+Module\+And\+Text (
+\begin{DoxyParamCaption}
+\item[{String}]{module\+Name, }
+\item[{String}]{text, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_abcb991084cde8894e65f22c09dc4750b}
+
+
+Fetch count of log messages based on the Module and Message Text in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\+Name} & Module name for which the count of messages has to be fetched\\
+\hline
+{\em text} & The log message on which count of logs have to be searched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a38594cb657ec5f762de76051e38dddc4}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Info@{Info}}
+\index{Info@{Info}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Log} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Info (
+\begin{DoxyParamCaption}
+\item[{String}]{msg, }
+\item[{String}]{module}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a38594cb657ec5f762de76051e38dddc4}
+
+
+Logs the info message 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Message to be logged\\
+\hline
+{\em module} & Module name for which the message is getting logged\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} object containing logged message
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aefbc3ba29b08f6d0eca79d6000cc015b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Info@{Info}}
+\index{Info@{Info}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Info}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Info (
+\begin{DoxyParamCaption}
+\item[{String}]{msg, }
+\item[{String}]{module, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_aefbc3ba29b08f6d0eca79d6000cc015b}
+
+
+Logs the info message in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Message to be logged\\
+\hline
+{\em module} & Module name for which the message is getting logged\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a0ec4cb6f7e06a3891fb554d7c76091e3}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Set\+Event@{Set\+Event}}
+\index{Set\+Event@{Set\+Event}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Set\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Set\+Event (
+\begin{DoxyParamCaption}
+\item[{String}]{module\+Name, }
+\item[{String}]{event\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a0ec4cb6f7e06a3891fb554d7c76091e3}
+
+
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} event on App42 cloud for analytics purpose 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\+Name} & \\
+\hline
+{\em event\+Name} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a6ceaefab6cb0b29458b33a89096e9704}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Set\+Event@{Set\+Event}}
+\index{Set\+Event@{Set\+Event}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Set\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Set\+Event (
+\begin{DoxyParamCaption}
+\item[{String}]{module\+Name, }
+\item[{String}]{event\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_a6ceaefab6cb0b29458b33a89096e9704}
+
+
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} event on App42 cloud for analytics purpose in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\+Name} & \\
+\hline
+{\em event\+Name} & \\
+\hline
+{\em call\+Back} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_afbfbf2ca59e964bbe0b36315cfe98180}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Set\+Event@{Set\+Event}}
+\index{Set\+Event@{Set\+Event}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Set\+Event}]{\setlength{\rightskip}{0pt plus 5cm}new void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Set\+Event (
+\begin{DoxyParamCaption}
+\item[{String}]{event\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_afbfbf2ca59e964bbe0b36315cfe98180}
+
+
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} event on App42 cloud for analytics purpose 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Name} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_adeab3abaa6a2e31b837df0f44632480c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}!Set\+Event@{Set\+Event}}
+\index{Set\+Event@{Set\+Event}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::log\+::\+Log\+Service}}
+\subsubsection[{Set\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+log.\+Log\+Service.\+Set\+Event (
+\begin{DoxyParamCaption}
+\item[{String}]{event\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log_service_adeab3abaa6a2e31b837df0f44632480c}
+
+
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1log_1_1_log}{Log} event on App42 cloud for analytics purpose in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Name} & \\
+\hline
+{\em call\+Back} & \\
+\hline
+\end{DoxyParams}

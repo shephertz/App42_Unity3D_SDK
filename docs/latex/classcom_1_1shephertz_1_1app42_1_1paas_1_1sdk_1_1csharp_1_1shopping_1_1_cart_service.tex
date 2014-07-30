@@ -1,0 +1,872 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service@{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service}}
+}
+
+
+This is Cloud Persistent Shopping \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Service. App Developers can use this to create a Shopping \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart}. Add Items and Check Out items. It also maintains the transactions and the corresponding Payment Status. The Payment Gateway interface is not provided by the Platform. It is left to the App developer how he wants to do the Payment Integration. This can be used along with \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_catalogue}{Catalogue} or used independently. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service}{Catalgoue} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service}{Cart} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service}{Item\+Data} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service}{Payment\+Status}  
+
+
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_ae756b1c4cf96224f610c576245f5f782}{Cart\+Service} (String api\+Key, String secret\+Key)
+\begin{DoxyCompactList}\small\item\em Constructor that takes \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a8267edf4fa76e8c868a1ca04895db941}{Create\+Cart} (String user)
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Session for the specified User \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a6e28b51e5c948885ec432381f414992d}{Create\+Cart} (String user, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Session for the specified User in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a246351b145e8081bfcdfc316f2d7de86}{Get\+Cart\+Details} (String cart\+Id)
+\begin{DoxyCompactList}\small\item\em Fetch \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} details. Can be used by the App developer to display \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Details i.\+e. Items in a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart}. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a5764b07a2e1ba9a49bf022dc40f12b3c}{Get\+Cart\+Details} (String cart\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetch \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} details in async mode. Can be used by the App developer to display \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Details i.\+e. Items in a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart}. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_adca488adb320daff8369c1d7eb32c529}{Add\+Item} (String cart\+I\+D, String item\+I\+D, Int64 item\+Quantity, Double price)
+\begin{DoxyCompactList}\small\item\em Adds an Item in the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} with quantity and price. This method does not take currency. Its the bonus of the App developer to maitain the currency. It takes only the price. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_abe86ad6e4a4ddf9656afa8b03a0cf8be}{Add\+Item} (String cart\+I\+D, String item\+I\+D, Int64 item\+Quantity, Double price, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Adds an Item in the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} with quantity and price in async mode. This method does not take currency. Its the bonus of the App developer to maitain the currency. It takes only the price. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a0bf5004e3e9cad7c2dc692e0e4c28f16}{Get\+Items} (String cart\+Id)
+\begin{DoxyCompactList}\small\item\em Fetches the Items from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a9acdad2e9b0f1a8f81d6e87d1d04dfe1}{Get\+Items} (String cart\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetches the Items from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a76c71f83b16bacb5ea60d1f59ee132e8}{Get\+Item} (String cart\+Id, String item\+Id)
+\begin{DoxyCompactList}\small\item\em Fetches the specified Item from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_ae8f26f26aa358fb58fce07d5495c3fd0}{Get\+Item} (String cart\+Id, String item\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetches the specified Item from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_ac4e4b73d62f0d6a64a5f7aaeb75e3570}{Remove\+Item} (String cart\+Id, String item\+Id)
+\begin{DoxyCompactList}\small\item\em Removes the specified item from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart}. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a747afaf9806661b95f0b4127c702b21c}{Remove\+Item} (String cart\+Id, String item\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Removes the specified item from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_ac3c829805feaf45cbd9534ef7c559dc0}{Remove\+All\+Items} (String cart\+Id)
+\begin{DoxyCompactList}\small\item\em Removes all Items from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a824a4c53f39774a49743406d27bbae9e}{Remove\+All\+Items} (String cart\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Removes all Items from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a5385ec0de54daa89c870776d9b6e7cdc}{Is\+Empty} (String cart\+Id)
+\begin{DoxyCompactList}\small\item\em Checks whether the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} is Empty or not. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_af79c37e77ea000178a81f4936030a5f7}{Is\+Empty} (String cart\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Checks whether the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} is Empty or not in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_aba0ca7b216f6e4e84e8777d38e826eeb}{Check\+Out} (String cart\+Id)
+\begin{DoxyCompactList}\small\item\em Checks out the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} and put it in Check\+Out Stage and returns the Transaction Id The transaction id has to be used in future to update the Payment Status. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_adf8f4974e997dfd54f6d8a72b4fa54e7}{Check\+Out} (String cart\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Checks out the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} and put it in Check\+Out Stage and returns the Transaction Id The transaction id has to be used in future to update the Payment Status in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a544e1d2c3b4fa08ebc961c6be3499e1b}{Payment} (String cart\+I\+D, String transaction\+I\+D, String payment\+Status)
+\begin{DoxyCompactList}\small\item\em Update Payment Status of the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart}. When a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} is checkout, it is in Checkout state. The payment status has to be updated based on the Payment Gateway interaction \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a2aa917c44a2ce2a01d212de3052b1bd6}{Payment} (String cart\+I\+D, String transaction\+I\+D, String payment\+Status, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Update Payment Status of the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} in async mode. When a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} is checkout, it is in Checkout state. The payment status has to be updated based on the Payment Gateway interaction \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a200b6c6a3942efc96fca19e13ed42bf8}{Get\+Payments\+By\+User} (String user\+Id)
+\begin{DoxyCompactList}\small\item\em Fetches Payment information for a User. This can be used to display Order and Payment History. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a1fe9453750e6e016941311438f771990}{Get\+Payments\+By\+User} (String user\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetches Payment information for a User in async mode. This can be used to display Order and Payment History. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a84243a38626cd03af0476f5b437427f0}{Get\+Payment\+By\+Cart} (String cart\+Id)
+\begin{DoxyCompactList}\small\item\em Fetches Payment information for the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Id \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_abbbfa358d9966556317ac8760e199f5e}{Get\+Payment\+By\+Cart} (String cart\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetches Payment information for the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Id in async mode \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_af7b1cd76a0267f8d0a53cec657a822d7}{Get\+Payments\+By\+User\+And\+Status} (String user\+Id, String payment\+Status)
+\begin{DoxyCompactList}\small\item\em Fetches Payment information based on User Id and Status \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_aaf0568c8ffa9c15759a4841525c7b436}{Get\+Payments\+By\+User\+And\+Status} (String user\+Id, String payment\+Status, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetches Payment information based on User Id and Status in async mode \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_aa72a88e5b1ee66970b2fc4363175db7b}{Get\+Payments\+By\+Status} (String payment\+Status)
+\begin{DoxyCompactList}\small\item\em Fetches Payment information based on Status \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_ad0ac4c348e543623ddf70326435543e8}{Get\+Payments\+By\+Status} (String payment\+Status, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Fetches Payment information based on Status in async mode \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_afd77d53a3de789e28b9eeabffeca3e83}{Get\+Payment\+History\+By\+User} (String user\+Id)
+\begin{DoxyCompactList}\small\item\em History of Carts and Payments for a User. It gives all the carts which are in A\+U\+T\+H\+O\+R\+I\+Z\+E\+D, D\+E\+C\+L\+I\+N\+E\+D, P\+E\+N\+D\+I\+N\+G state. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a4135f1449967d0c73ea21d872e4aed38}{Get\+Payment\+History\+By\+User} (String user\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em History of Carts and Payments for a User in async mode. It gives all the carts which are in A\+U\+T\+H\+O\+R\+I\+Z\+E\+D, D\+E\+C\+L\+I\+N\+E\+D, P\+E\+N\+D\+I\+N\+G state. \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} $>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_aba4ef89555d7bf9ee85c131066b4f1dd}{Get\+Payment\+History\+All} ()
+\begin{DoxyCompactList}\small\item\em History of all carts. It gives all the carts which are in A\+U\+T\+H\+O\+R\+I\+Z\+E\+D, D\+E\+C\+L\+I\+N\+E\+D, P\+E\+N\+D\+I\+N\+G state. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a187b250a55dfbcdd91b11b9e5ee24505}{Get\+Payment\+History\+All} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em History of all carts in async mode. It gives all the carts which are in A\+U\+T\+H\+O\+R\+I\+Z\+E\+D, D\+E\+C\+L\+I\+N\+E\+D, P\+E\+N\+D\+I\+N\+G state. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a7da92d7648623ac043918772dd74ed66}{Increase\+Quantity} (String cart\+I\+D, String item\+I\+D, int item\+Quantity)
+\begin{DoxyCompactList}\small\item\em Increase the quantity of specified Item to the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_ad08e6b730adbf0e00b08b5308aededf1}{Increase\+Quantity} (String cart\+I\+D, String item\+I\+D, int item\+Quantity, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Increase the quantity of specified Item to the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_acc0d487b2ad166946d408242dc00dabd}{Decrease\+Quantity} (String cart\+I\+D, String item\+I\+D, int item\+Quantity)
+\begin{DoxyCompactList}\small\item\em Decrease the quantity of specified Item from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_ad586e063d6c243af031df7062d1c4a00}{Decrease\+Quantity} (String cart\+I\+D, String item\+I\+D, int item\+Quantity, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Decrease the quantity of specified Item from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} in async mode \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This is Cloud Persistent Shopping \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Service. App Developers can use this to create a Shopping \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart}. Add Items and Check Out items. It also maintains the transactions and the corresponding Payment Status. The Payment Gateway interface is not provided by the Platform. It is left to the App developer how he wants to do the Payment Integration. This can be used along with \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_catalogue}{Catalogue} or used independently. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service}{Catalgoue} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service}{Cart} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service}{Item\+Data} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service}{Payment\+Status} 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_ae756b1c4cf96224f610c576245f5f782}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Cart\+Service@{Cart\+Service}}
+\index{Cart\+Service@{Cart\+Service}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Cart\+Service}]{\setlength{\rightskip}{0pt plus 5cm}com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Cart\+Service (
+\begin{DoxyParamCaption}
+\item[{String}]{api\+Key, }
+\item[{String}]{secret\+Key}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_ae756b1c4cf96224f610c576245f5f782}
+
+
+Constructor that takes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & \\
+\hline
+{\em secret\+Key} & \\
+\hline
+{\em base\+U\+R\+L} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_adca488adb320daff8369c1d7eb32c529}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Add\+Item@{Add\+Item}}
+\index{Add\+Item@{Add\+Item}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Add\+Item}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cart} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Add\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+I\+D, }
+\item[{String}]{item\+I\+D, }
+\item[{Int64}]{item\+Quantity, }
+\item[{Double}]{price}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_adca488adb320daff8369c1d7eb32c529}
+
+
+Adds an Item in the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} with quantity and price. This method does not take currency. Its the bonus of the App developer to maitain the currency. It takes only the price. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+I\+D} & The \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Id into which item has to be added\\
+\hline
+{\em item\+I\+D} & The Item id which has to be added in the cart. If the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_catalogue}{Catalogue} Service is used along with the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Service then the Item ids should be same. \\
+\hline
+{\em item\+Quantity} & Quantity of the Item to be purchased.\\
+\hline
+{\em price} & Price of the item.\\
+\hline
+\end{DoxyParams}
+returns$>$\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} object containing added item.
+
+exception$>$\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_abe86ad6e4a4ddf9656afa8b03a0cf8be}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Add\+Item@{Add\+Item}}
+\index{Add\+Item@{Add\+Item}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Add\+Item}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Add\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+I\+D, }
+\item[{String}]{item\+I\+D, }
+\item[{Int64}]{item\+Quantity, }
+\item[{Double}]{price, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_abe86ad6e4a4ddf9656afa8b03a0cf8be}
+
+
+Adds an Item in the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} with quantity and price in async mode. This method does not take currency. Its the bonus of the App developer to maitain the currency. It takes only the price. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+I\+D} & The \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Id into which item has to be added\\
+\hline
+{\em item\+I\+D} & The Item id which has to be added in the cart. If the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_catalogue}{Catalogue} Service is used along with the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Service then the Item ids should be same. \\
+\hline
+{\em item\+Quantity} & Quantity of the Item to be purchased.\\
+\hline
+{\em price} & Price of the item.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_aba0ca7b216f6e4e84e8777d38e826eeb}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Check\+Out@{Check\+Out}}
+\index{Check\+Out@{Check\+Out}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Check\+Out}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cart} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Check\+Out (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_aba0ca7b216f6e4e84e8777d38e826eeb}
+
+
+Checks out the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} and put it in Check\+Out Stage and returns the Transaction Id The transaction id has to be used in future to update the Payment Status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+Id} & The cart id that has to be checkedout.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} object containing Checked Out \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Information with the Transaction Id.
+\end{DoxyReturn}
+exception$>$\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_adf8f4974e997dfd54f6d8a72b4fa54e7}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Check\+Out@{Check\+Out}}
+\index{Check\+Out@{Check\+Out}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Check\+Out}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Check\+Out (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_adf8f4974e997dfd54f6d8a72b4fa54e7}
+
+
+Checks out the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} and put it in Check\+Out Stage and returns the Transaction Id The transaction id has to be used in future to update the Payment Status in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+Id} & The cart id that has to be checkedout.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a8267edf4fa76e8c868a1ca04895db941}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Create\+Cart@{Create\+Cart}}
+\index{Create\+Cart@{Create\+Cart}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Create\+Cart}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cart} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Create\+Cart (
+\begin{DoxyParamCaption}
+\item[{String}]{user}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a8267edf4fa76e8c868a1ca04895db941}
+
+
+Creates a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Session for the specified User 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User for whom \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Session has to be created\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Id with Creation Time. The id has to be used in subsequent calls for adding and checking out 
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a6e28b51e5c948885ec432381f414992d}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Create\+Cart@{Create\+Cart}}
+\index{Create\+Cart@{Create\+Cart}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Create\+Cart}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Create\+Cart (
+\begin{DoxyParamCaption}
+\item[{String}]{user, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a6e28b51e5c948885ec432381f414992d}
+
+
+Creates a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Session for the specified User in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User for whom \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Session has to be created\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_acc0d487b2ad166946d408242dc00dabd}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Decrease\+Quantity@{Decrease\+Quantity}}
+\index{Decrease\+Quantity@{Decrease\+Quantity}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Decrease\+Quantity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cart} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Decrease\+Quantity (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+I\+D, }
+\item[{String}]{item\+I\+D, }
+\item[{int}]{item\+Quantity}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_acc0d487b2ad166946d408242dc00dabd}
+
+
+Decrease the quantity of specified Item from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+I\+D} & The cart id for which item has to be decreased.\\
+\hline
+{\em item\+I\+D} & The item id that has to be decreased.\\
+\hline
+{\em item\+Quantity} & The quantity of the item that has to be decreased.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} object containing updated item.
+\end{DoxyReturn}
+exception$>$\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_ad586e063d6c243af031df7062d1c4a00}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Decrease\+Quantity@{Decrease\+Quantity}}
+\index{Decrease\+Quantity@{Decrease\+Quantity}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Decrease\+Quantity}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Decrease\+Quantity (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+I\+D, }
+\item[{String}]{item\+I\+D, }
+\item[{int}]{item\+Quantity, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_ad586e063d6c243af031df7062d1c4a00}
+
+
+Decrease the quantity of specified Item from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+I\+D} & The cart id for which item has to be decreased.\\
+\hline
+{\em item\+I\+D} & The item id that has to be decreased.\\
+\hline
+{\em item\+Quantity} & The quantity of the item that has to be decreased.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a246351b145e8081bfcdfc316f2d7de86}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Get\+Cart\+Details@{Get\+Cart\+Details}}
+\index{Get\+Cart\+Details@{Get\+Cart\+Details}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Get\+Cart\+Details}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cart} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Get\+Cart\+Details (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a246351b145e8081bfcdfc316f2d7de86}
+
+
+Fetch \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} details. Can be used by the App developer to display \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Details i.\+e. Items in a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+Id} & The \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Id that has to be fetched.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} object containing cart details with all the items which are in it. It also tells the state of the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart}.
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a5764b07a2e1ba9a49bf022dc40f12b3c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Get\+Cart\+Details@{Get\+Cart\+Details}}
+\index{Get\+Cart\+Details@{Get\+Cart\+Details}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Get\+Cart\+Details}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Get\+Cart\+Details (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a5764b07a2e1ba9a49bf022dc40f12b3c}
+
+
+Fetch \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} details in async mode. Can be used by the App developer to display \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Details i.\+e. Items in a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+Id} & The \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Id that has to be fetched.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a76c71f83b16bacb5ea60d1f59ee132e8}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Get\+Item@{Get\+Item}}
+\index{Get\+Item@{Get\+Item}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Get\+Item}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cart} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Get\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+Id, }
+\item[{String}]{item\+Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a76c71f83b16bacb5ea60d1f59ee132e8}
+
+
+Fetches the specified Item from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+Id} & The cart id from which item has to be fetched.\\
+\hline
+{\em item\+Id} & The item for which the information has to be fetched.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_ae8f26f26aa358fb58fce07d5495c3fd0}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Get\+Item@{Get\+Item}}
+\index{Get\+Item@{Get\+Item}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Get\+Item}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Get\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+Id, }
+\item[{String}]{item\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_ae8f26f26aa358fb58fce07d5495c3fd0}
+
+
+Fetches the specified Item from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+Id} & The cart id from which item has to be fetched.\\
+\hline
+{\em item\+Id} & The item for which the information has to be fetched.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a0bf5004e3e9cad7c2dc692e0e4c28f16}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Get\+Items@{Get\+Items}}
+\index{Get\+Items@{Get\+Items}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Get\+Items}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cart} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Get\+Items (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a0bf5004e3e9cad7c2dc692e0e4c28f16}
+
+
+Fetches the Items from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+Id} & The cart id from which items have to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} object which contains all items in the cart.
+\end{DoxyReturn}
+exception$>$\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a9acdad2e9b0f1a8f81d6e87d1d04dfe1}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Get\+Items@{Get\+Items}}
+\index{Get\+Items@{Get\+Items}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Get\+Items}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Get\+Items (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a9acdad2e9b0f1a8f81d6e87d1d04dfe1}
+
+
+Fetches the Items from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+Id} & The cart id from which items have to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a84243a38626cd03af0476f5b437427f0}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Get\+Payment\+By\+Cart@{Get\+Payment\+By\+Cart}}
+\index{Get\+Payment\+By\+Cart@{Get\+Payment\+By\+Cart}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Get\+Payment\+By\+Cart}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cart} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Get\+Payment\+By\+Cart (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a84243a38626cd03af0476f5b437427f0}
+
+
+Fetches Payment information for the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+Id} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Id for which the payment information has to be fetched.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} object which contains Payment History for the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart}.
+\end{DoxyReturn}
+exception$>$\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_abbbfa358d9966556317ac8760e199f5e}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Get\+Payment\+By\+Cart@{Get\+Payment\+By\+Cart}}
+\index{Get\+Payment\+By\+Cart@{Get\+Payment\+By\+Cart}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Get\+Payment\+By\+Cart}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Get\+Payment\+By\+Cart (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_abbbfa358d9966556317ac8760e199f5e}
+
+
+Fetches Payment information for the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Id in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+Id} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Id for which the payment information has to be fetched.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_aba4ef89555d7bf9ee85c131066b4f1dd}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Get\+Payment\+History\+All@{Get\+Payment\+History\+All}}
+\index{Get\+Payment\+History\+All@{Get\+Payment\+History\+All}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Get\+Payment\+History\+All}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Cart}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Get\+Payment\+History\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_aba4ef89555d7bf9ee85c131066b4f1dd}
+
+
+History of all carts. It gives all the carts which are in A\+U\+T\+H\+O\+R\+I\+Z\+E\+D, D\+E\+C\+L\+I\+N\+E\+D, P\+E\+N\+D\+I\+N\+G state. 
+
+\begin{DoxyReturn}{Returns}
+I\+List containing \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} objects. Payment history can be retrieved from individual \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} object.
+\end{DoxyReturn}
+exception$>$\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a187b250a55dfbcdd91b11b9e5ee24505}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Get\+Payment\+History\+All@{Get\+Payment\+History\+All}}
+\index{Get\+Payment\+History\+All@{Get\+Payment\+History\+All}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Get\+Payment\+History\+All}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Get\+Payment\+History\+All (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a187b250a55dfbcdd91b11b9e5ee24505}
+
+
+History of all carts in async mode. It gives all the carts which are in A\+U\+T\+H\+O\+R\+I\+Z\+E\+D, D\+E\+C\+L\+I\+N\+E\+D, P\+E\+N\+D\+I\+N\+G state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_afd77d53a3de789e28b9eeabffeca3e83}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Get\+Payment\+History\+By\+User@{Get\+Payment\+History\+By\+User}}
+\index{Get\+Payment\+History\+By\+User@{Get\+Payment\+History\+By\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Get\+Payment\+History\+By\+User}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Cart}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Get\+Payment\+History\+By\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_afd77d53a3de789e28b9eeabffeca3e83}
+
+
+History of Carts and Payments for a User. It gives all the carts which are in A\+U\+T\+H\+O\+R\+I\+Z\+E\+D, D\+E\+C\+L\+I\+N\+E\+D, P\+E\+N\+D\+I\+N\+G state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & User Id for whom payment history has to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+List containing \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} objects. Payment history can be retrieved from individual \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} object.
+\end{DoxyReturn}
+exception$>$\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a4135f1449967d0c73ea21d872e4aed38}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Get\+Payment\+History\+By\+User@{Get\+Payment\+History\+By\+User}}
+\index{Get\+Payment\+History\+By\+User@{Get\+Payment\+History\+By\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Get\+Payment\+History\+By\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Get\+Payment\+History\+By\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a4135f1449967d0c73ea21d872e4aed38}
+
+
+History of Carts and Payments for a User in async mode. It gives all the carts which are in A\+U\+T\+H\+O\+R\+I\+Z\+E\+D, D\+E\+C\+L\+I\+N\+E\+D, P\+E\+N\+D\+I\+N\+G state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & User Id for whom payment history has to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_aa72a88e5b1ee66970b2fc4363175db7b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Get\+Payments\+By\+Status@{Get\+Payments\+By\+Status}}
+\index{Get\+Payments\+By\+Status@{Get\+Payments\+By\+Status}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Get\+Payments\+By\+Status}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Cart}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Get\+Payments\+By\+Status (
+\begin{DoxyParamCaption}
+\item[{String}]{payment\+Status}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_aa72a88e5b1ee66970b2fc4363175db7b}
+
+
+Fetches Payment information based on Status 
+
+
+\begin{DoxyParams}{Parameters}
+{\em payment\+Status} & Status of type which payment information has to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+List containing \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} objects. Payment history can be retrieved from individual \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} object.
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_ad0ac4c348e543623ddf70326435543e8}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Get\+Payments\+By\+Status@{Get\+Payments\+By\+Status}}
+\index{Get\+Payments\+By\+Status@{Get\+Payments\+By\+Status}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Get\+Payments\+By\+Status}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Get\+Payments\+By\+Status (
+\begin{DoxyParamCaption}
+\item[{String}]{payment\+Status, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_ad0ac4c348e543623ddf70326435543e8}
+
+
+Fetches Payment information based on Status in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em payment\+Status} & Status of type which payment information has to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a200b6c6a3942efc96fca19e13ed42bf8}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Get\+Payments\+By\+User@{Get\+Payments\+By\+User}}
+\index{Get\+Payments\+By\+User@{Get\+Payments\+By\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Get\+Payments\+By\+User}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Cart}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Get\+Payments\+By\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a200b6c6a3942efc96fca19e13ed42bf8}
+
+
+Fetches Payment information for a User. This can be used to display Order and Payment History. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & User Id for whom payment information has to be fetched.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+List containing \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} objects. Payment history can be retrieved from individual \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} object.
+\end{DoxyReturn}
+exception$>$\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a1fe9453750e6e016941311438f771990}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Get\+Payments\+By\+User@{Get\+Payments\+By\+User}}
+\index{Get\+Payments\+By\+User@{Get\+Payments\+By\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Get\+Payments\+By\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Get\+Payments\+By\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a1fe9453750e6e016941311438f771990}
+
+
+Fetches Payment information for a User in async mode. This can be used to display Order and Payment History. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & User Id for whom payment information has to be fetched.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_af7b1cd76a0267f8d0a53cec657a822d7}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Get\+Payments\+By\+User\+And\+Status@{Get\+Payments\+By\+User\+And\+Status}}
+\index{Get\+Payments\+By\+User\+And\+Status@{Get\+Payments\+By\+User\+And\+Status}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Get\+Payments\+By\+User\+And\+Status}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf Cart}$>$ com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Get\+Payments\+By\+User\+And\+Status (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Id, }
+\item[{String}]{payment\+Status}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_af7b1cd76a0267f8d0a53cec657a822d7}
+
+
+Fetches Payment information based on User Id and Status 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & User Id for whom payment information has to be fetched\\
+\hline
+{\em payment\+Status} & Status of type which payment information has to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+List containing \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} objects. Payment history can be retrieved from individual \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} object.
+\end{DoxyReturn}
+exception$>$\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_aaf0568c8ffa9c15759a4841525c7b436}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Get\+Payments\+By\+User\+And\+Status@{Get\+Payments\+By\+User\+And\+Status}}
+\index{Get\+Payments\+By\+User\+And\+Status@{Get\+Payments\+By\+User\+And\+Status}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Get\+Payments\+By\+User\+And\+Status}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Get\+Payments\+By\+User\+And\+Status (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Id, }
+\item[{String}]{payment\+Status, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_aaf0568c8ffa9c15759a4841525c7b436}
+
+
+Fetches Payment information based on User Id and Status in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & User Id for whom payment information has to be fetched\\
+\hline
+{\em payment\+Status} & Status of type which payment information has to be fetched\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a7da92d7648623ac043918772dd74ed66}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Increase\+Quantity@{Increase\+Quantity}}
+\index{Increase\+Quantity@{Increase\+Quantity}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Increase\+Quantity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cart} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Increase\+Quantity (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+I\+D, }
+\item[{String}]{item\+I\+D, }
+\item[{int}]{item\+Quantity}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a7da92d7648623ac043918772dd74ed66}
+
+
+Increase the quantity of specified Item to the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+I\+D} & The cart id for which item has to be increased.\\
+\hline
+{\em item\+I\+D} & The item id that has to be increased.\\
+\hline
+{\em item\+Quantity} & The quantity of the item that has to be increased.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} object containing updated item.
+\end{DoxyReturn}
+exception$>$\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_ad08e6b730adbf0e00b08b5308aededf1}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Increase\+Quantity@{Increase\+Quantity}}
+\index{Increase\+Quantity@{Increase\+Quantity}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Increase\+Quantity}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Increase\+Quantity (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+I\+D, }
+\item[{String}]{item\+I\+D, }
+\item[{int}]{item\+Quantity, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_ad08e6b730adbf0e00b08b5308aededf1}
+
+
+Increase the quantity of specified Item to the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+I\+D} & The cart id for which item has to be increased.\\
+\hline
+{\em item\+I\+D} & The item id that has to be increased.\\
+\hline
+{\em item\+Quantity} & The quantity of the item that has to be increased.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a5385ec0de54daa89c870776d9b6e7cdc}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Is\+Empty@{Is\+Empty}}
+\index{Is\+Empty@{Is\+Empty}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Is\+Empty}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cart} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Is\+Empty (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a5385ec0de54daa89c870776d9b6e7cdc}
+
+
+Checks whether the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} is Empty or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+Id} & The cart id to check for empty.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} Object
+\end{DoxyReturn}
+exception$>$\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_af79c37e77ea000178a81f4936030a5f7}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Is\+Empty@{Is\+Empty}}
+\index{Is\+Empty@{Is\+Empty}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Is\+Empty}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Is\+Empty (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_af79c37e77ea000178a81f4936030a5f7}
+
+
+Checks whether the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} is Empty or not in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+Id} & The cart id to check for empty.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a544e1d2c3b4fa08ebc961c6be3499e1b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Payment@{Payment}}
+\index{Payment@{Payment}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Payment}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cart} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Payment (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+I\+D, }
+\item[{String}]{transaction\+I\+D, }
+\item[{String}]{payment\+Status}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a544e1d2c3b4fa08ebc961c6be3499e1b}
+
+
+Update Payment Status of the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart}. When a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} is checkout, it is in Checkout state. The payment status has to be updated based on the Payment Gateway interaction 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+I\+D} & The cart id for which the payment status has to be updated.\\
+\hline
+{\em transaction\+I\+D} & Transaction id for which the payment status has to be updated.\\
+\hline
+{\em payment\+Status} & Payment Status to be updated. The probable values are Payment\+Status.\+D\+E\+C\+L\+I\+N\+E\+D, Payment\+Status.\+A\+U\+T\+H\+O\+R\+I\+Z\+E\+D, Payment\+Status.\+P\+E\+N\+D\+I\+N\+G.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} object which contains Payment Status.
+\end{DoxyReturn}
+exception$>$\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a2aa917c44a2ce2a01d212de3052b1bd6}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Payment@{Payment}}
+\index{Payment@{Payment}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Payment}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Payment (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+I\+D, }
+\item[{String}]{transaction\+I\+D, }
+\item[{String}]{payment\+Status, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a2aa917c44a2ce2a01d212de3052b1bd6}
+
+
+Update Payment Status of the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} in async mode. When a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} is checkout, it is in Checkout state. The payment status has to be updated based on the Payment Gateway interaction 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+I\+D} & The cart id for which the payment status has to be updated.\\
+\hline
+{\em transaction\+I\+D} & Transaction id for which the payment status has to be updated.\\
+\hline
+{\em payment\+Status} & Payment Status to be updated. The probable values are Payment\+Status.\+D\+E\+C\+L\+I\+N\+E\+D, Payment\+Status.\+A\+U\+T\+H\+O\+R\+I\+Z\+E\+D, Payment\+Status.\+P\+E\+N\+D\+I\+N\+G.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_ac3c829805feaf45cbd9534ef7c559dc0}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Remove\+All\+Items@{Remove\+All\+Items}}
+\index{Remove\+All\+Items@{Remove\+All\+Items}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Remove\+All\+Items}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Remove\+All\+Items (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_ac3c829805feaf45cbd9534ef7c559dc0}
+
+
+Removes all Items from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+Id} & The cart id from which items have to be removed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} if removed successfully.
+\end{DoxyReturn}
+exception$>$\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a824a4c53f39774a49743406d27bbae9e}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Remove\+All\+Items@{Remove\+All\+Items}}
+\index{Remove\+All\+Items@{Remove\+All\+Items}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Remove\+All\+Items}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Remove\+All\+Items (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a824a4c53f39774a49743406d27bbae9e}
+
+
+Removes all Items from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+Id} & The cart id from which items have to be removed.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_ac4e4b73d62f0d6a64a5f7aaeb75e3570}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Remove\+Item@{Remove\+Item}}
+\index{Remove\+Item@{Remove\+Item}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Remove\+Item}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Remove\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+Id, }
+\item[{String}]{item\+Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_ac4e4b73d62f0d6a64a5f7aaeb75e3570}
+
+
+Removes the specified item from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+Id} & The cart id from which the item has to be removed.\\
+\hline
+{\em item\+Id} & Id of the Item which has to be removed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} if removed successfully.
+\end{DoxyReturn}
+exception$>$\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a747afaf9806661b95f0b4127c702b21c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}!Remove\+Item@{Remove\+Item}}
+\index{Remove\+Item@{Remove\+Item}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::shopping\+::\+Cart\+Service}}
+\subsubsection[{Remove\+Item}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+shopping.\+Cart\+Service.\+Remove\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{cart\+Id, }
+\item[{String}]{item\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart_service_a747afaf9806661b95f0b4127c702b21c}
+
+
+Removes the specified item from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1shopping_1_1_cart}{Cart} in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cart\+Id} & The cart id from which the item has to be removed.\\
+\hline
+{\em item\+Id} & Id of the Item which has to be removed.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}

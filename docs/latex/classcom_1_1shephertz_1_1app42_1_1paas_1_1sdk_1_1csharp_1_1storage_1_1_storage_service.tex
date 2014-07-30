@@ -1,0 +1,1747 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service@{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service}}
+}
+
+
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} service on cloud provides the way to store the J\+S\+O\+N document in No\+S\+Q\+L database running on cloud. One can store the J\+S\+O\+N document, update it , serach it and can apply the map-\/reduce search on stored documents. Example \+: If one will store J\+S\+O\+N doc \{\char`\"{}date\char`\"{}\+:\char`\"{}5\+Feb\char`\"{}\} it will be stored with unique Object Id and stored J\+S\+O\+N object will look like \{ \char`\"{}date\char`\"{} \+: \char`\"{}5\+Feb\char`\"{} , \char`\"{}\+\_\+id\char`\"{} \+: \{ \char`\"{}\$old\char`\"{} \+: \char`\"{}4f423dcce1603b3f0bd560cf\char`\"{}\}\}. This old can further be used to access/search the document.  
+
+
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a5a02bf4be18d6a419aa3e0c7af8e1f28}{Storage\+Service} (String api\+Key, String secret\+Key)
+\begin{DoxyCompactList}\small\item\em This is a constructor that takes \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a3e6d5625da41b2800d58a8730c57e203}{Insert\+J\+S\+O\+N\+Document} (String db\+Name, String collection\+Name, String json)
+\begin{DoxyCompactList}\small\item\em Save the J\+S\+O\+N document in given database name and collection name. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_aa9cdf0c29dd9231e4ad593613bcabfdd}{Insert\+J\+S\+O\+N\+Document} (String db\+Name, String collection\+Name, String json, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Save the J\+S\+O\+N document in given database name and collection name in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_afd892eefd5c52660a5d58edcb2c57225}{Insert\+J\+S\+O\+N\+Document} (String db\+Name, String collection\+Name, \hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_class}{J\+S\+O\+N\+Class} json)
+\begin{DoxyCompactList}\small\item\em Save the J\+S\+O\+N document in given database name and collection name. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a6948dbdd74ad43db61b4e98ea6818271}{Insert\+J\+S\+O\+N\+Document} (String db\+Name, String collection\+Name, \hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_class}{J\+S\+O\+N\+Class} json, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Save the J\+S\+O\+N document in given database name and collection name in async mode. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a6b3f35512c147aace710a652b5dcda36}{Insert\+J\+S\+O\+N\+Document} (String db\+Name, String collection\+Name, Dictionary$<$ String, Object $>$ json, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Save the J\+S\+O\+N document in given database name and collection name. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a24b174b1de5b2c8501b237bcca931272}{Find\+All\+Documents} (String db\+Name, String collection\+Name)
+\begin{DoxyCompactList}\small\item\em Find all documents stored in given database and collection. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_abcc8a2f02528073879fcec1d6d3d5c49}{Find\+All\+Documents} (String db\+Name, String collection\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Find all documents stored in given database and collection in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a58f5e3b5e60a58ca9f9ad477462f613f}{Find\+All\+Collections} (String db\+Name)
+\begin{DoxyCompactList}\small\item\em Find all collections stored in given database. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ae327db258934c13a853704b46c0bdfb9}{Find\+All\+Collections} (String db\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Find all collections stored in given database in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ab06e1b72631abfe2e383852e811e7931}{Find\+Document\+By\+Id} (String db\+Name, String collection\+Name, String doc\+Id)
+\begin{DoxyCompactList}\small\item\em Find target document by given unique object id. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_af152ea2c1ac17c561d8b9a8eb651e7f4}{Find\+Document\+By\+Id} (String db\+Name, String collection\+Name, String doc\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Find target document by given unique object id in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ab3b8b5292ae73df310965011ee4e9bbf}{Find\+Document\+By\+Key\+Value} (String db\+Name, String collection\+Name, String key, String value)
+\begin{DoxyCompactList}\small\item\em Find target document using key value search parameter. This key value pair will be searched in the J\+S\+O\+N doc stored on the cloud and matching Doc will be returned as a result of this method. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_afa1a1a365af47287c6582cf347529943}{Find\+Document\+By\+Key\+Value} (String db\+Name, String collection\+Name, String key, String value, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Find target document using key value search parameter in async mode. This key value pair will be searched in the J\+S\+O\+N doc stored on the cloud and matching Doc will be returned as a result of this method. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a7f34bbea20510c0feec3a71bfdb79fa6}{Update\+Document\+By\+Key\+Value} (String db\+Name, String collection\+Name, String key, String value, String new\+Json\+Doc)
+\begin{DoxyCompactList}\small\item\em Update target document using key value search parameter. This key value pair will be searched in the J\+S\+O\+N doc stored in the cloud and matching Doc will be updated with new value passed. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a142571018a15b0c15c14ad8ff5607e53}{Update\+Document\+By\+Key\+Value} (String db\+Name, String collection\+Name, String key, String value, String new\+Json\+Doc, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Update target document using key value search parameter in async mode. This key value pair will be searched in the J\+S\+O\+N doc stored in the cloud and matching Doc will be updated with new value passed. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ac49e60b281704dd95e4a06ed540caf59}{Update\+Document\+By\+Doc\+Id} (String db\+Name, String collection\+Name, String doc\+Id, String new\+Json\+Doc)
+\begin{DoxyCompactList}\small\item\em Update target document using the document id. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_abb81912a399d8821f70f581757d2fee3}{Update\+Document\+By\+Doc\+Id} (String db\+Name, String collection\+Name, String doc\+Id, String new\+Json\+Doc, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Update target document using the document id in async mode. \end{DoxyCompactList}\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_aec973386c0ac6141f7444a7424edbb1d}{\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_aec973386c0ac6141f7444a7424edbb1d}{Delete\+Document\+By\+Id} (String db\+Name, String collection\+Name, String doc\+Id)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_aec973386c0ac6141f7444a7424edbb1d}
+
+\begin{DoxyCompactList}\small\item\em Delete target document using Object Id from given db and collection. The Object Id will be searched in the J\+S\+O\+N doc stored on the cloud and matching Doc will be deleted. 
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+{\em doc\+Id} & Unique Object Id handler.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} object if deleted successfully.
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\end{DoxyCompactList}\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_abe2a0c5fbe85fe2dbf39fd527a939a4f}{void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_abe2a0c5fbe85fe2dbf39fd527a939a4f}{Delete\+Document\+By\+Id} (String db\+Name, String collection\+Name, String doc\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_abe2a0c5fbe85fe2dbf39fd527a939a4f}
+
+\begin{DoxyCompactList}\small\item\em Delete target document using Object Id from given db and collection in async mode. The Object Id will be searched in the J\+S\+O\+N doc stored on the cloud and matching Doc will be deleted. 
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+{\em doc\+Id} & Unique Object Id handler.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ae1283e347274c9000cef3bacd16cbd56}{Delete\+Documents\+By\+Key\+Value} (String db\+Name, String collection\+Name, String key, Object value)
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ab01ca93bec41a6918e90a897225b7e0c}{Delete\+Documents\+By\+Key\+Value} (String db\+Name, String collection\+Name, String key, Object value, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Delete Documents By Key Value in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ab5e48dbc19387a0eac60946c6b4e2c9e}{Delete\+All\+Documents} (String db\+Name, String collection\+Name)
+\begin{DoxyCompactList}\small\item\em Delete All Documents \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a14a4a7ede492b1b536d21076d25a23ae}{Delete\+All\+Documents} (String db\+Name, String collection\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Delete All Documents in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a432e9997e760ef3be6ba941874f0b07a}{Find\+Document\+By\+Key\+Value} (String db\+Name, String collection\+Name, String key, Object value)
+\begin{DoxyCompactList}\small\item\em Find Document By Key Value \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a536733a12cbdeade7d60c2167911ad8f}{Find\+Document\+By\+Key\+Value} (String db\+Name, String collection\+Name, String key, Object value, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Find Document By Key Value in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a23394da47859d270c648b2b54b8295bc}{Find\+Documents\+By\+Query} (String db\+Name, String collection\+Name, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} query)
+\begin{DoxyCompactList}\small\item\em Find target document using Custom \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query}. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a87f93c3b0db85c513b6766f21f5e78f7}{Find\+Documents\+By\+Query} (String db\+Name, String collection\+Name, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} query, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Find target document using Custom \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a8b676fcf53c0cd5710653f21a204c91b}{Find\+Documents\+By\+Query\+With\+Paging} (String db\+Name, String collection\+Name, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} query, int max, int offset)
+\begin{DoxyCompactList}\small\item\em Find target document using Custom \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} with paging. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a0ba01498ba4104aab41af60f892599d9}{Find\+Documents\+By\+Query\+With\+Paging} (String db\+Name, String collection\+Name, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} query, int max, int offset, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Find target document using Custom \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} with paging in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_acc6ada4ecec3f56f148d109270406252}{Find\+Docs\+With\+Query\+Paging\+Order\+By} (String db\+Name, String collection\+Name, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} query, int max, int offset, String order\+By\+Key, String type)
+\begin{DoxyCompactList}\small\item\em Find target document using Custom \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} with paging and orderby. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ad7cb126897b5cfe304cfaa0e12b5fb1d}{Find\+Docs\+With\+Query\+Paging\+Order\+By} (String db\+Name, String collection\+Name, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} query, int max, int offset, String order\+By\+Key, String type, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Find target document using Custom \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} with paging and orderby in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a73f8bafa03319566ef4f2f8801e62107}{Grant\+Access\+On\+Doc} (String db\+Name, String collection\+Name, String doc\+Id, Hash\+Set$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_a_c_l}{A\+C\+L} $>$ acl\+List)
+\begin{DoxyCompactList}\small\item\em Grant Access On Doc \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a85308841633067c2e26c16d51d6cf931}{Grant\+Access\+On\+Doc} (String db\+Name, String collection\+Name, String doc\+Id, Hash\+Set$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_a_c_l}{A\+C\+L} $>$ acl\+List, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Grant Access On Doc in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a911020eee695751f6eef2227292ab19e}{Revoke\+Access\+On\+Doc} (String db\+Name, String collection\+Name, String doc\+Id, Hash\+Set$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_a_c_l}{A\+C\+L} $>$ acl\+List)
+\begin{DoxyCompactList}\small\item\em Revoke Access On Doc \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a1fd882ac327bd4bcd5d10e90dcbd1989}{Revoke\+Access\+On\+Doc} (String db\+Name, String collection\+Name, String doc\+Id, Hash\+Set$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_a_c_l}{A\+C\+L} $>$ acl\+List, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Revoke Access On Doc in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ae8a1bf2c7441c5a1174f95a542d8ef65}{Find\+Documents\+By\+Location} (String db\+Name, String collection\+Name, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_geo_query}{Geo\+Query} query)
+\begin{DoxyCompactList}\small\item\em Find Documents By Location \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_af0d6b092bc1e891d67d2177d741d5749}{Find\+Documents\+By\+Location} (String db\+Name, String collection\+Name, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_geo_query}{Geo\+Query} query, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Find Documents By Location in async mode \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a554d88546e435098d237e01f3d607537}{Find\+All\+Documents\+Count} (String db\+Name, String collection\+Name)
+\begin{DoxyCompactList}\small\item\em Gets the count of all documents stored in given database and collection. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_aec77ab17330faa10168f7191674ebd7b}{Find\+All\+Documents\+Count} (String db\+Name, String collection\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Gets the count of all documents stored in given database and collection in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a69a77b81a586c07a0a73fcb95627372e}{Insert\+Json\+Doc\+Using\+Map} (String db\+Name, String collection\+Name, Dictionary$<$ String, String $>$ map)
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a9b04d1e6ebb9e2f8b399a2b61bb24364}{Insert\+Json\+Doc\+Using\+Map} (String db\+Name, String collection\+Name, Dictionary$<$ String, String $>$ map, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\item 
+String \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a1757ecae4a825ae4c919d7e8dbdcbb9f}{Map\+Reduce} (String db\+Name, String collection\+Name, String map\+Function, String reduce\+Function)
+\begin{DoxyCompactList}\small\item\em Map reduce function to search the target document. Please see detail information on map-\/reduce \href{http://en.wikipedia.org/wiki/MapReduce}{\tt http\+://en.\+wikipedia.\+org/wiki/\+Map\+Reduce} \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_acc2ec0ea7f0e96c1032657a3084c340c}{Map\+Reduce} (String db\+Name, String collection\+Name, String map\+Function, String reduce\+Function, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Map reduce function to search the target document. Please see detail information on map-\/reduce \href{http://en.wikipedia.org/wiki/MapReduce}{\tt http\+://en.\+wikipedia.\+org/wiki/\+Map\+Reduce} \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a5491c7e616793b443574689b0a7393b1}{Find\+All\+Documents} (String db\+Name, String collection\+Name, int max, int offset)
+\begin{DoxyCompactList}\small\item\em Find all documents stored in given database and collection. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a1ac8b37b2cde5cc32adac2920a123a75}{Find\+All\+Documents} (String db\+Name, String collection\+Name, int max, int offset, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Find all documents stored in given database and collection in async mode. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ab797e20bd1e3db8a7042eac45fcc1afe}{Update\+Document\+By\+Key\+Value} (String db\+Name, String collection\+Name, String key, String value, Dictionary$<$ String, Object $>$ new\+Json\+Doc)
+\begin{DoxyCompactList}\small\item\em Update target document using key value search parameter. This key value pair will be searched in the J\+S\+O\+N doc stored in the cloud and matching Doc will be updated with new value passed. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a6e1e868fb11a2bd20c6008c60326e29a}{Update\+Document\+By\+Key\+Value} (String db\+Name, String collection\+Name, String key, String value, Dictionary$<$ String, Object $>$ new\+Json\+Doc, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Update target document using key value search parameter in async mode. This key value pair will be searched in the J\+S\+O\+N doc stored in the cloud and matching Doc will be updated with new value passed. \end{DoxyCompactList}\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a875ba45cadce0010ff5e9aa2352920f4}{Update\+Document\+By\+Doc\+Id} (String db\+Name, String collection\+Name, String doc\+Id, Dictionary$<$ String, Object $>$ new\+Json\+Doc)
+\begin{DoxyCompactList}\small\item\em Update target document using the document id. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_aadd96c123cf841497fee3ba7b04646ef}{Update\+Document\+By\+Doc\+Id} (String db\+Name, String collection\+Name, String doc\+Id, Dictionary$<$ String, Object $>$ new\+Json\+Doc, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Update target document using the document id in async mode. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ab161aee11909e49ef9508f44e5c453c6}{Save\+Or\+Update\+Document\+By\+Key\+Value} (String db\+Name, String collection\+Name, String key, String value, String new\+Json\+Doc, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Update target document using key value search parameter. This key value pair will be searched in the J\+S\+O\+N doc stored in the cloud and matching Doc will be updated with new value passed. If match document is not found it will insert the json doc with that key value \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a331cf2dc54c862544f4d11d02b1b90c7}{Save\+Or\+Update\+Document\+By\+Key\+Value} (String db\+Name, String collection\+Name, String key, String value, Dictionary$<$ String, Object $>$ new\+Json\+Doc, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Update target document using key value search parameter. This key value pair will be searched in the J\+S\+O\+N doc stored in the cloud and matching Doc will be updated with new value passed. If match document is not found it will insert the json doc with that key value \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a3df2994304188ef7a02768e7ab1160c2}{Update\+Document\+By\+Query} (String db\+Name, String collection\+Name, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} query, String new\+Json\+Doc, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Updates the document by query. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a0fe60d5938ff5bbd291a157d4aecb3ae}{Update\+Document\+By\+Query} (String db\+Name, String collection\+Name, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} query, Dictionary$<$ String, Object $>$ new\+Json\+Doc, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Updates the document by query. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_aa3d2207a0889faaf23bc8955cf02fed3}{Add\+Or\+Update\+Keys} (String db\+Name, String collection\+Name, String doc\+Id, String keys, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Adds the or update keys. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a1b8d0e967f9bd5915f17856a9d74e63f}{Add\+Or\+Update\+Keys} (String db\+Name, String collection\+Name, String doc\+Id, Dictionary$<$ String, Object $>$ keys, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Adds the or update keys. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a0ff4726f6e1dda22434d3c3f5b245b85}{Add\+Attachment\+To\+Docs} (String db\+Name, String collection\+Name, String doc\+Id, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_file}{App42\+File} file, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Adds the attachment to documents. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a8834d1bfcfc8e53e71ec4a90aceb1afa}{Insert\+J\+S\+O\+N\+Document} (String db\+Name, String collection\+Name, String json, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_file}{App42\+File} file, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Inserts the J\+S\+O\+N document. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a5603694f773265d244b1b30d085f6ba6}{Insert\+J\+S\+O\+N\+Document} (String db\+Name, String collection\+Name, Dictionary$<$ String, Object $>$ json, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_file}{App42\+File} file, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Inserts the J\+S\+O\+N document. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a845bfc96016e7388a6b699873a6f9b04}{Get\+Count\+By\+Query} (String db\+Name, String collection\+Name, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} query, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Gets the count by query. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} service on cloud provides the way to store the J\+S\+O\+N document in No\+S\+Q\+L database running on cloud. One can store the J\+S\+O\+N document, update it , serach it and can apply the map-\/reduce search on stored documents. Example \+: If one will store J\+S\+O\+N doc \{\char`\"{}date\char`\"{}\+:\char`\"{}5\+Feb\char`\"{}\} it will be stored with unique Object Id and stored J\+S\+O\+N object will look like \{ \char`\"{}date\char`\"{} \+: \char`\"{}5\+Feb\char`\"{} , \char`\"{}\+\_\+id\char`\"{} \+: \{ \char`\"{}\$old\char`\"{} \+: \char`\"{}4f423dcce1603b3f0bd560cf\char`\"{}\}\}. This old can further be used to access/search the document. 
+
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service}{Storage} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service}{App42\+Response} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a5a02bf4be18d6a419aa3e0c7af8e1f28}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Storage\+Service@{Storage\+Service}}
+\index{Storage\+Service@{Storage\+Service}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Storage\+Service}]{\setlength{\rightskip}{0pt plus 5cm}com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Storage\+Service (
+\begin{DoxyParamCaption}
+\item[{String}]{api\+Key, }
+\item[{String}]{secret\+Key}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a5a02bf4be18d6a419aa3e0c7af8e1f28}
+
+
+This is a constructor that takes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & api\+Key\\
+\hline
+{\em secret\+Key} & secret\+Key \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a0ff4726f6e1dda22434d3c3f5b245b85}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Add\+Attachment\+To\+Docs@{Add\+Attachment\+To\+Docs}}
+\index{Add\+Attachment\+To\+Docs@{Add\+Attachment\+To\+Docs}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Add\+Attachment\+To\+Docs}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Add\+Attachment\+To\+Docs (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{doc\+Id, }
+\item[{{\bf App42\+File}}]{file, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a0ff4726f6e1dda22434d3c3f5b245b85}
+
+
+Adds the attachment to documents. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Db name.\\
+\hline
+{\em collection\+Name} & Collection name.\\
+\hline
+{\em doc\+Id} & Document identifier.\\
+\hline
+{\em file} & File.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_aa3d2207a0889faaf23bc8955cf02fed3}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Add\+Or\+Update\+Keys@{Add\+Or\+Update\+Keys}}
+\index{Add\+Or\+Update\+Keys@{Add\+Or\+Update\+Keys}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Add\+Or\+Update\+Keys}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Add\+Or\+Update\+Keys (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{doc\+Id, }
+\item[{String}]{keys, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_aa3d2207a0889faaf23bc8955cf02fed3}
+
+
+Adds the or update keys. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Db name.\\
+\hline
+{\em collection\+Name} & Collection name.\\
+\hline
+{\em doc\+Id} & Document identifier.\\
+\hline
+{\em keys} & Keys.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a1b8d0e967f9bd5915f17856a9d74e63f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Add\+Or\+Update\+Keys@{Add\+Or\+Update\+Keys}}
+\index{Add\+Or\+Update\+Keys@{Add\+Or\+Update\+Keys}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Add\+Or\+Update\+Keys}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Add\+Or\+Update\+Keys (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{doc\+Id, }
+\item[{Dictionary$<$ String, Object $>$}]{keys, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a1b8d0e967f9bd5915f17856a9d74e63f}
+
+
+Adds the or update keys. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Db name.\\
+\hline
+{\em collection\+Name} & Collection name.\\
+\hline
+{\em doc\+Id} & Document identifier.\\
+\hline
+{\em keys} & Keys.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ab5e48dbc19387a0eac60946c6b4e2c9e}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Delete\+All\+Documents@{Delete\+All\+Documents}}
+\index{Delete\+All\+Documents@{Delete\+All\+Documents}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Delete\+All\+Documents}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Delete\+All\+Documents (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ab5e48dbc19387a0eac60946c6b4e2c9e}
+
+
+Delete All Documents 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & \\
+\hline
+{\em collection\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a14a4a7ede492b1b536d21076d25a23ae}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Delete\+All\+Documents@{Delete\+All\+Documents}}
+\index{Delete\+All\+Documents@{Delete\+All\+Documents}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Delete\+All\+Documents}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Delete\+All\+Documents (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a14a4a7ede492b1b536d21076d25a23ae}
+
+
+Delete All Documents in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ae1283e347274c9000cef3bacd16cbd56}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Delete\+Documents\+By\+Key\+Value@{Delete\+Documents\+By\+Key\+Value}}
+\index{Delete\+Documents\+By\+Key\+Value@{Delete\+Documents\+By\+Key\+Value}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Delete\+Documents\+By\+Key\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Delete\+Documents\+By\+Key\+Value (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{key, }
+\item[{Object}]{value}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ae1283e347274c9000cef3bacd16cbd56}
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & \\
+\hline
+{\em collection\+Name} & \\
+\hline
+{\em key} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ab01ca93bec41a6918e90a897225b7e0c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Delete\+Documents\+By\+Key\+Value@{Delete\+Documents\+By\+Key\+Value}}
+\index{Delete\+Documents\+By\+Key\+Value@{Delete\+Documents\+By\+Key\+Value}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Delete\+Documents\+By\+Key\+Value}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Delete\+Documents\+By\+Key\+Value (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{key, }
+\item[{Object}]{value, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ab01ca93bec41a6918e90a897225b7e0c}
+
+
+Delete Documents By Key Value in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & \\
+\hline
+{\em collection\+Name} & \\
+\hline
+{\em key} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a58f5e3b5e60a58ca9f9ad477462f613f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+All\+Collections@{Find\+All\+Collections}}
+\index{Find\+All\+Collections@{Find\+All\+Collections}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+All\+Collections}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Storage} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+All\+Collections (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a58f5e3b5e60a58ca9f9ad477462f613f}
+
+
+Find all collections stored in given database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ae327db258934c13a853704b46c0bdfb9}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+All\+Collections@{Find\+All\+Collections}}
+\index{Find\+All\+Collections@{Find\+All\+Collections}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+All\+Collections}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+All\+Collections (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ae327db258934c13a853704b46c0bdfb9}
+
+
+Find all collections stored in given database in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a24b174b1de5b2c8501b237bcca931272}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+All\+Documents@{Find\+All\+Documents}}
+\index{Find\+All\+Documents@{Find\+All\+Documents}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+All\+Documents}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Storage} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+All\+Documents (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a24b174b1de5b2c8501b237bcca931272}
+
+
+Find all documents stored in given database and collection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} object.
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_abcc8a2f02528073879fcec1d6d3d5c49}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+All\+Documents@{Find\+All\+Documents}}
+\index{Find\+All\+Documents@{Find\+All\+Documents}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+All\+Documents}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+All\+Documents (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_abcc8a2f02528073879fcec1d6d3d5c49}
+
+
+Find all documents stored in given database and collection in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a5491c7e616793b443574689b0a7393b1}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+All\+Documents@{Find\+All\+Documents}}
+\index{Find\+All\+Documents@{Find\+All\+Documents}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+All\+Documents}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Storage} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+All\+Documents (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{int}]{max, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a5491c7e616793b443574689b0a7393b1}
+
+
+Find all documents stored in given database and collection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+{\em max} & Maximum number of records to be fetched.\\
+\hline
+{\em offset} & From where the records are to be fetched.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}
+
+. \hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a1ac8b37b2cde5cc32adac2920a123a75}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+All\+Documents@{Find\+All\+Documents}}
+\index{Find\+All\+Documents@{Find\+All\+Documents}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+All\+Documents}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+All\+Documents (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a1ac8b37b2cde5cc32adac2920a123a75}
+
+
+Find all documents stored in given database and collection in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+{\em max} & Maximum number of records to be fetched.\\
+\hline
+{\em offset} & From where the records are to be fetched.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a554d88546e435098d237e01f3d607537}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+All\+Documents\+Count@{Find\+All\+Documents\+Count}}
+\index{Find\+All\+Documents\+Count@{Find\+All\+Documents\+Count}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+All\+Documents\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App42\+Response} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+All\+Documents\+Count (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a554d88546e435098d237e01f3d607537}
+
+
+Gets the count of all documents stored in given database and collection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_response}{App42\+Response} object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_aec77ab17330faa10168f7191674ebd7b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+All\+Documents\+Count@{Find\+All\+Documents\+Count}}
+\index{Find\+All\+Documents\+Count@{Find\+All\+Documents\+Count}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+All\+Documents\+Count}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+All\+Documents\+Count (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_aec77ab17330faa10168f7191674ebd7b}
+
+
+Gets the count of all documents stored in given database and collection in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_acc6ada4ecec3f56f148d109270406252}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+Docs\+With\+Query\+Paging\+Order\+By@{Find\+Docs\+With\+Query\+Paging\+Order\+By}}
+\index{Find\+Docs\+With\+Query\+Paging\+Order\+By@{Find\+Docs\+With\+Query\+Paging\+Order\+By}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+Docs\+With\+Query\+Paging\+Order\+By}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Storage} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+Docs\+With\+Query\+Paging\+Order\+By (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{{\bf Query}}]{query, }
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{String}]{order\+By\+Key, }
+\item[{String}]{type}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_acc6ada4ecec3f56f148d109270406252}
+
+
+Find target document using Custom \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} with paging and orderby. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched\\
+\hline
+{\em query} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} Object containing custom query for searching docs\\
+\hline
+{\em max} & Max result parameter\\
+\hline
+{\em offset} & Offset result parameter\\
+\hline
+{\em order\+By\+Key} & \\
+\hline
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ad7cb126897b5cfe304cfaa0e12b5fb1d}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+Docs\+With\+Query\+Paging\+Order\+By@{Find\+Docs\+With\+Query\+Paging\+Order\+By}}
+\index{Find\+Docs\+With\+Query\+Paging\+Order\+By@{Find\+Docs\+With\+Query\+Paging\+Order\+By}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+Docs\+With\+Query\+Paging\+Order\+By}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+Docs\+With\+Query\+Paging\+Order\+By (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{{\bf Query}}]{query, }
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{String}]{order\+By\+Key, }
+\item[{String}]{type, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ad7cb126897b5cfe304cfaa0e12b5fb1d}
+
+
+Find target document using Custom \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} with paging and orderby in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched\\
+\hline
+{\em query} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} Object containing custom query for searching docs\\
+\hline
+{\em max} & Max result parameter\\
+\hline
+{\em offset} & Offset result parameter\\
+\hline
+{\em order\+By\+Key} & \\
+\hline
+{\em type} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ab06e1b72631abfe2e383852e811e7931}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+Document\+By\+Id@{Find\+Document\+By\+Id}}
+\index{Find\+Document\+By\+Id@{Find\+Document\+By\+Id}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+Document\+By\+Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Storage} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+Document\+By\+Id (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{doc\+Id}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ab06e1b72631abfe2e383852e811e7931}
+
+
+Find target document by given unique object id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+{\em doc\+Id} & Unique Object Id handler.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_af152ea2c1ac17c561d8b9a8eb651e7f4}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+Document\+By\+Id@{Find\+Document\+By\+Id}}
+\index{Find\+Document\+By\+Id@{Find\+Document\+By\+Id}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+Document\+By\+Id}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+Document\+By\+Id (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{doc\+Id, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_af152ea2c1ac17c561d8b9a8eb651e7f4}
+
+
+Find target document by given unique object id in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+{\em doc\+Id} & Unique Object Id handler.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ab3b8b5292ae73df310965011ee4e9bbf}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+Document\+By\+Key\+Value@{Find\+Document\+By\+Key\+Value}}
+\index{Find\+Document\+By\+Key\+Value@{Find\+Document\+By\+Key\+Value}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+Document\+By\+Key\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Storage} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+Document\+By\+Key\+Value (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{key, }
+\item[{String}]{value}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ab3b8b5292ae73df310965011ee4e9bbf}
+
+
+Find target document using key value search parameter. This key value pair will be searched in the J\+S\+O\+N doc stored on the cloud and matching Doc will be returned as a result of this method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+{\em key} & Key to be searched for target J\+S\+O\+N doc.\\
+\hline
+\end{DoxyParams}
+$<$param name \char`\"{}value\char`\"{}$>$Value to be searched for target J\+S\+O\+N doc.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_afa1a1a365af47287c6582cf347529943}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+Document\+By\+Key\+Value@{Find\+Document\+By\+Key\+Value}}
+\index{Find\+Document\+By\+Key\+Value@{Find\+Document\+By\+Key\+Value}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+Document\+By\+Key\+Value}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+Document\+By\+Key\+Value (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{key, }
+\item[{String}]{value, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_afa1a1a365af47287c6582cf347529943}
+
+
+Find target document using key value search parameter in async mode. This key value pair will be searched in the J\+S\+O\+N doc stored on the cloud and matching Doc will be returned as a result of this method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+{\em key} & Key to be searched for target J\+S\+O\+N doc.\\
+\hline
+\end{DoxyParams}
+$<$param name \char`\"{}value\char`\"{}$>$Value to be searched for target J\+S\+O\+N doc.
+
+
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a432e9997e760ef3be6ba941874f0b07a}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+Document\+By\+Key\+Value@{Find\+Document\+By\+Key\+Value}}
+\index{Find\+Document\+By\+Key\+Value@{Find\+Document\+By\+Key\+Value}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+Document\+By\+Key\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Storage} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+Document\+By\+Key\+Value (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{key, }
+\item[{Object}]{value}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a432e9997e760ef3be6ba941874f0b07a}
+
+
+Find Document By Key Value 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & \\
+\hline
+{\em collection\+Name} & \\
+\hline
+{\em key} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a536733a12cbdeade7d60c2167911ad8f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+Document\+By\+Key\+Value@{Find\+Document\+By\+Key\+Value}}
+\index{Find\+Document\+By\+Key\+Value@{Find\+Document\+By\+Key\+Value}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+Document\+By\+Key\+Value}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+Document\+By\+Key\+Value (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{key, }
+\item[{Object}]{value, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a536733a12cbdeade7d60c2167911ad8f}
+
+
+Find Document By Key Value in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & \\
+\hline
+{\em collection\+Name} & \\
+\hline
+{\em key} & \\
+\hline
+{\em value} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ae8a1bf2c7441c5a1174f95a542d8ef65}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+Documents\+By\+Location@{Find\+Documents\+By\+Location}}
+\index{Find\+Documents\+By\+Location@{Find\+Documents\+By\+Location}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+Documents\+By\+Location}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Storage} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+Documents\+By\+Location (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{{\bf Geo\+Query}}]{query}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ae8a1bf2c7441c5a1174f95a542d8ef65}
+
+
+Find Documents By Location 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & \\
+\hline
+{\em collection\+Name} & \\
+\hline
+{\em query} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_af0d6b092bc1e891d67d2177d741d5749}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+Documents\+By\+Location@{Find\+Documents\+By\+Location}}
+\index{Find\+Documents\+By\+Location@{Find\+Documents\+By\+Location}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+Documents\+By\+Location}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+Documents\+By\+Location (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{{\bf Geo\+Query}}]{query, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_af0d6b092bc1e891d67d2177d741d5749}
+
+
+Find Documents By Location in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & \\
+\hline
+{\em collection\+Name} & \\
+\hline
+{\em query} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a23394da47859d270c648b2b54b8295bc}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+Documents\+By\+Query@{Find\+Documents\+By\+Query}}
+\index{Find\+Documents\+By\+Query@{Find\+Documents\+By\+Query}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+Documents\+By\+Query}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Storage} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+Documents\+By\+Query (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{{\bf Query}}]{query}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a23394da47859d270c648b2b54b8295bc}
+
+
+Find target document using Custom \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched\\
+\hline
+{\em query} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} Object containing custom query for searching docs\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a87f93c3b0db85c513b6766f21f5e78f7}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+Documents\+By\+Query@{Find\+Documents\+By\+Query}}
+\index{Find\+Documents\+By\+Query@{Find\+Documents\+By\+Query}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+Documents\+By\+Query}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+Documents\+By\+Query (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{{\bf Query}}]{query, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a87f93c3b0db85c513b6766f21f5e78f7}
+
+
+Find target document using Custom \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched\\
+\hline
+{\em query} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} Object containing custom query for searching docs\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a8b676fcf53c0cd5710653f21a204c91b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+Documents\+By\+Query\+With\+Paging@{Find\+Documents\+By\+Query\+With\+Paging}}
+\index{Find\+Documents\+By\+Query\+With\+Paging@{Find\+Documents\+By\+Query\+With\+Paging}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+Documents\+By\+Query\+With\+Paging}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Storage} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+Documents\+By\+Query\+With\+Paging (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{{\bf Query}}]{query, }
+\item[{int}]{max, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a8b676fcf53c0cd5710653f21a204c91b}
+
+
+Find target document using Custom \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} with paging. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched\\
+\hline
+{\em query} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} Object containing custom query for searching docs\\
+\hline
+{\em max} & Max result parameter\\
+\hline
+{\em offset} & Offset result parameter\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a0ba01498ba4104aab41af60f892599d9}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Find\+Documents\+By\+Query\+With\+Paging@{Find\+Documents\+By\+Query\+With\+Paging}}
+\index{Find\+Documents\+By\+Query\+With\+Paging@{Find\+Documents\+By\+Query\+With\+Paging}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Find\+Documents\+By\+Query\+With\+Paging}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Find\+Documents\+By\+Query\+With\+Paging (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{{\bf Query}}]{query, }
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a0ba01498ba4104aab41af60f892599d9}
+
+
+Find target document using Custom \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} with paging in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched\\
+\hline
+{\em query} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query} Object containing custom query for searching docs\\
+\hline
+{\em max} & Max result parameter\\
+\hline
+{\em offset} & Offset result parameter\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a845bfc96016e7388a6b699873a6f9b04}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Get\+Count\+By\+Query@{Get\+Count\+By\+Query}}
+\index{Get\+Count\+By\+Query@{Get\+Count\+By\+Query}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Get\+Count\+By\+Query}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Get\+Count\+By\+Query (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{{\bf Query}}]{query, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a845bfc96016e7388a6b699873a6f9b04}
+
+
+Gets the count by query. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Db name.\\
+\hline
+{\em collection\+Name} & Collection name.\\
+\hline
+{\em query} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query}.\\
+\hline
+{\em call\+Back} & Call back.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a73f8bafa03319566ef4f2f8801e62107}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Grant\+Access\+On\+Doc@{Grant\+Access\+On\+Doc}}
+\index{Grant\+Access\+On\+Doc@{Grant\+Access\+On\+Doc}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Grant\+Access\+On\+Doc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Storage} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Grant\+Access\+On\+Doc (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{doc\+Id, }
+\item[{Hash\+Set$<$ {\bf A\+C\+L} $>$}]{acl\+List}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a73f8bafa03319566ef4f2f8801e62107}
+
+
+Grant Access On Doc 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & \\
+\hline
+{\em collection\+Name} & \\
+\hline
+{\em doc\+Id} & \\
+\hline
+{\em acl\+List} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a85308841633067c2e26c16d51d6cf931}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Grant\+Access\+On\+Doc@{Grant\+Access\+On\+Doc}}
+\index{Grant\+Access\+On\+Doc@{Grant\+Access\+On\+Doc}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Grant\+Access\+On\+Doc}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Grant\+Access\+On\+Doc (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{doc\+Id, }
+\item[{Hash\+Set$<$ {\bf A\+C\+L} $>$}]{acl\+List, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a85308841633067c2e26c16d51d6cf931}
+
+
+Grant Access On Doc in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & \\
+\hline
+{\em collection\+Name} & \\
+\hline
+{\em doc\+Id} & \\
+\hline
+{\em acl\+List} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a3e6d5625da41b2800d58a8730c57e203}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Insert\+J\+S\+O\+N\+Document@{Insert\+J\+S\+O\+N\+Document}}
+\index{Insert\+J\+S\+O\+N\+Document@{Insert\+J\+S\+O\+N\+Document}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Insert\+J\+S\+O\+N\+Document}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Storage} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Insert\+J\+S\+O\+N\+Document (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{json}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a3e6d5625da41b2800d58a8730c57e203}
+
+
+Save the J\+S\+O\+N document in given database name and collection name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc has to be saved.\\
+\hline
+{\em json} & Target J\+S\+O\+N document to be saved.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_aa9cdf0c29dd9231e4ad593613bcabfdd}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Insert\+J\+S\+O\+N\+Document@{Insert\+J\+S\+O\+N\+Document}}
+\index{Insert\+J\+S\+O\+N\+Document@{Insert\+J\+S\+O\+N\+Document}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Insert\+J\+S\+O\+N\+Document}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Insert\+J\+S\+O\+N\+Document (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{json, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_aa9cdf0c29dd9231e4ad593613bcabfdd}
+
+
+Save the J\+S\+O\+N document in given database name and collection name in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc has to be saved.\\
+\hline
+{\em json} & Target J\+S\+O\+N document to be saved.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_afd892eefd5c52660a5d58edcb2c57225}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Insert\+J\+S\+O\+N\+Document@{Insert\+J\+S\+O\+N\+Document}}
+\index{Insert\+J\+S\+O\+N\+Document@{Insert\+J\+S\+O\+N\+Document}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Insert\+J\+S\+O\+N\+Document}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Storage} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Insert\+J\+S\+O\+N\+Document (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{{\bf J\+S\+O\+N\+Class}}]{json}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_afd892eefd5c52660a5d58edcb2c57225}
+
+
+Save the J\+S\+O\+N document in given database name and collection name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc has to be saved.\\
+\hline
+{\em json} & Target J\+S\+O\+N document to be saved.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a6948dbdd74ad43db61b4e98ea6818271}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Insert\+J\+S\+O\+N\+Document@{Insert\+J\+S\+O\+N\+Document}}
+\index{Insert\+J\+S\+O\+N\+Document@{Insert\+J\+S\+O\+N\+Document}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Insert\+J\+S\+O\+N\+Document}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Insert\+J\+S\+O\+N\+Document (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{{\bf J\+S\+O\+N\+Class}}]{json, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a6948dbdd74ad43db61b4e98ea6818271}
+
+
+Save the J\+S\+O\+N document in given database name and collection name in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc has to be saved.\\
+\hline
+{\em json} & Target J\+S\+O\+N document to be saved.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a6b3f35512c147aace710a652b5dcda36}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Insert\+J\+S\+O\+N\+Document@{Insert\+J\+S\+O\+N\+Document}}
+\index{Insert\+J\+S\+O\+N\+Document@{Insert\+J\+S\+O\+N\+Document}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Insert\+J\+S\+O\+N\+Document}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Insert\+J\+S\+O\+N\+Document (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{Dictionary$<$ String, Object $>$}]{json, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a6b3f35512c147aace710a652b5dcda36}
+
+
+Save the J\+S\+O\+N document in given database name and collection name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc has to be saved.\\
+\hline
+{\em json} & Target J\+S\+O\+N document to be saved.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a8834d1bfcfc8e53e71ec4a90aceb1afa}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Insert\+J\+S\+O\+N\+Document@{Insert\+J\+S\+O\+N\+Document}}
+\index{Insert\+J\+S\+O\+N\+Document@{Insert\+J\+S\+O\+N\+Document}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Insert\+J\+S\+O\+N\+Document}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Insert\+J\+S\+O\+N\+Document (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{json, }
+\item[{{\bf App42\+File}}]{file, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a8834d1bfcfc8e53e71ec4a90aceb1afa}
+
+
+Inserts the J\+S\+O\+N document. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Db name.\\
+\hline
+{\em collection\+Name} & Collection name.\\
+\hline
+{\em json} & Json.\\
+\hline
+{\em type} & Type.\\
+\hline
+{\em call\+Back} & Call back.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a5603694f773265d244b1b30d085f6ba6}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Insert\+J\+S\+O\+N\+Document@{Insert\+J\+S\+O\+N\+Document}}
+\index{Insert\+J\+S\+O\+N\+Document@{Insert\+J\+S\+O\+N\+Document}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Insert\+J\+S\+O\+N\+Document}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Insert\+J\+S\+O\+N\+Document (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{Dictionary$<$ String, Object $>$}]{json, }
+\item[{{\bf App42\+File}}]{file, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a5603694f773265d244b1b30d085f6ba6}
+
+
+Inserts the J\+S\+O\+N document. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Db name.\\
+\hline
+{\em collection\+Name} & Collection name.\\
+\hline
+{\em json} & Json.\\
+\hline
+{\em type} & Type.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a69a77b81a586c07a0a73fcb95627372e}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Insert\+Json\+Doc\+Using\+Map@{Insert\+Json\+Doc\+Using\+Map}}
+\index{Insert\+Json\+Doc\+Using\+Map@{Insert\+Json\+Doc\+Using\+Map}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Insert\+Json\+Doc\+Using\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Storage} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Insert\+Json\+Doc\+Using\+Map (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{Dictionary$<$ String, String $>$}]{map}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a69a77b81a586c07a0a73fcb95627372e}
+$<$summmary$>$ Save the J\+S\+O\+N document in given database name and collection name. It accepts the Hash\+Map containing key-\/value and convert it into J\+S\+O\+N.\+Converted J\+S\+O\+N doc further saved on the cloud using given db name and collection name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc has to be saved.\\
+\hline
+{\em map} & Hash\+Map containing key-\/value pairs\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a9b04d1e6ebb9e2f8b399a2b61bb24364}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Insert\+Json\+Doc\+Using\+Map@{Insert\+Json\+Doc\+Using\+Map}}
+\index{Insert\+Json\+Doc\+Using\+Map@{Insert\+Json\+Doc\+Using\+Map}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Insert\+Json\+Doc\+Using\+Map}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Insert\+Json\+Doc\+Using\+Map (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{Dictionary$<$ String, String $>$}]{map, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a9b04d1e6ebb9e2f8b399a2b61bb24364}
+$<$summmary$>$ Save the J\+S\+O\+N document in given database name and collection name in async mode. It accepts the Hash\+Map containing key-\/value and convert it into J\+S\+O\+N.\+Converted J\+S\+O\+N doc further saved on the cloud using given db name and collection name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc has to be saved.\\
+\hline
+{\em map} & Hash\+Map containing key-\/value pairs\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a1757ecae4a825ae4c919d7e8dbdcbb9f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Map\+Reduce@{Map\+Reduce}}
+\index{Map\+Reduce@{Map\+Reduce}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Map\+Reduce}]{\setlength{\rightskip}{0pt plus 5cm}String com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Map\+Reduce (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{map\+Function, }
+\item[{String}]{reduce\+Function}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a1757ecae4a825ae4c919d7e8dbdcbb9f}
+
+
+Map reduce function to search the target document. Please see detail information on map-\/reduce \href{http://en.wikipedia.org/wiki/MapReduce}{\tt http\+://en.\+wikipedia.\+org/wiki/\+Map\+Reduce} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+{\em map\+Function} & Map function to be used to search the document\\
+\hline
+{\em reduce\+Function} & Reduce function to be used to search the document\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The target J\+S\+O\+N document.
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_acc2ec0ea7f0e96c1032657a3084c340c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Map\+Reduce@{Map\+Reduce}}
+\index{Map\+Reduce@{Map\+Reduce}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Map\+Reduce}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Map\+Reduce (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{map\+Function, }
+\item[{String}]{reduce\+Function, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_acc2ec0ea7f0e96c1032657a3084c340c}
+
+
+Map reduce function to search the target document. Please see detail information on map-\/reduce \href{http://en.wikipedia.org/wiki/MapReduce}{\tt http\+://en.\+wikipedia.\+org/wiki/\+Map\+Reduce} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+{\em map\+Function} & Map function to be used to search the document\\
+\hline
+{\em reduce\+Function} & Reduce function to be used to search the document\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a911020eee695751f6eef2227292ab19e}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Revoke\+Access\+On\+Doc@{Revoke\+Access\+On\+Doc}}
+\index{Revoke\+Access\+On\+Doc@{Revoke\+Access\+On\+Doc}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Revoke\+Access\+On\+Doc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Storage} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Revoke\+Access\+On\+Doc (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{doc\+Id, }
+\item[{Hash\+Set$<$ {\bf A\+C\+L} $>$}]{acl\+List}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a911020eee695751f6eef2227292ab19e}
+
+
+Revoke Access On Doc 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & \\
+\hline
+{\em collection\+Name} & \\
+\hline
+{\em doc\+Id} & \\
+\hline
+{\em acl\+List} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a1fd882ac327bd4bcd5d10e90dcbd1989}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Revoke\+Access\+On\+Doc@{Revoke\+Access\+On\+Doc}}
+\index{Revoke\+Access\+On\+Doc@{Revoke\+Access\+On\+Doc}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Revoke\+Access\+On\+Doc}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Revoke\+Access\+On\+Doc (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{doc\+Id, }
+\item[{Hash\+Set$<$ {\bf A\+C\+L} $>$}]{acl\+List, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a1fd882ac327bd4bcd5d10e90dcbd1989}
+
+
+Revoke Access On Doc in async mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & \\
+\hline
+{\em collection\+Name} & \\
+\hline
+{\em doc\+Id} & \\
+\hline
+{\em acl\+List} & \\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ab161aee11909e49ef9508f44e5c453c6}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Save\+Or\+Update\+Document\+By\+Key\+Value@{Save\+Or\+Update\+Document\+By\+Key\+Value}}
+\index{Save\+Or\+Update\+Document\+By\+Key\+Value@{Save\+Or\+Update\+Document\+By\+Key\+Value}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Save\+Or\+Update\+Document\+By\+Key\+Value}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Save\+Or\+Update\+Document\+By\+Key\+Value (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{key, }
+\item[{String}]{value, }
+\item[{String}]{new\+Json\+Doc, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ab161aee11909e49ef9508f44e5c453c6}
+
+
+Update target document using key value search parameter. This key value pair will be searched in the J\+S\+O\+N doc stored in the cloud and matching Doc will be updated with new value passed. If match document is not found it will insert the json doc with that key value 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched\\
+\hline
+{\em key} & Key to be searched for target J\+S\+O\+N doc\\
+\hline
+{\em value} & Value to be searched for target J\+S\+O\+N doc\\
+\hline
+{\em new\+Json\+Doc} & New Json document to be added\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a331cf2dc54c862544f4d11d02b1b90c7}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Save\+Or\+Update\+Document\+By\+Key\+Value@{Save\+Or\+Update\+Document\+By\+Key\+Value}}
+\index{Save\+Or\+Update\+Document\+By\+Key\+Value@{Save\+Or\+Update\+Document\+By\+Key\+Value}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Save\+Or\+Update\+Document\+By\+Key\+Value}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Save\+Or\+Update\+Document\+By\+Key\+Value (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{key, }
+\item[{String}]{value, }
+\item[{Dictionary$<$ String, Object $>$}]{new\+Json\+Doc, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a331cf2dc54c862544f4d11d02b1b90c7}
+
+
+Update target document using key value search parameter. This key value pair will be searched in the J\+S\+O\+N doc stored in the cloud and matching Doc will be updated with new value passed. If match document is not found it will insert the json doc with that key value 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched\\
+\hline
+{\em key} & Key to be searched for target J\+S\+O\+N doc\\
+\hline
+{\em value} & Value to be searched for target J\+S\+O\+N doc\\
+\hline
+{\em new\+Json\+Doc} & New Json\+Object document to be added\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ac49e60b281704dd95e4a06ed540caf59}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Update\+Document\+By\+Doc\+Id@{Update\+Document\+By\+Doc\+Id}}
+\index{Update\+Document\+By\+Doc\+Id@{Update\+Document\+By\+Doc\+Id}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Update\+Document\+By\+Doc\+Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Storage} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Update\+Document\+By\+Doc\+Id (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{doc\+Id, }
+\item[{String}]{new\+Json\+Doc}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ac49e60b281704dd95e4a06ed540caf59}
+
+
+Update target document using the document id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+{\em doc\+Id} & Id of the document to be searched for target J\+S\+O\+N doc.\\
+\hline
+\end{DoxyParams}
+New Json document to be added.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_abb81912a399d8821f70f581757d2fee3}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Update\+Document\+By\+Doc\+Id@{Update\+Document\+By\+Doc\+Id}}
+\index{Update\+Document\+By\+Doc\+Id@{Update\+Document\+By\+Doc\+Id}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Update\+Document\+By\+Doc\+Id}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Update\+Document\+By\+Doc\+Id (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{doc\+Id, }
+\item[{String}]{new\+Json\+Doc, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_abb81912a399d8821f70f581757d2fee3}
+
+
+Update target document using the document id in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+{\em doc\+Id} & Id of the document to be searched for target J\+S\+O\+N doc.\\
+\hline
+\end{DoxyParams}
+New Json document to be added.
+
+
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a875ba45cadce0010ff5e9aa2352920f4}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Update\+Document\+By\+Doc\+Id@{Update\+Document\+By\+Doc\+Id}}
+\index{Update\+Document\+By\+Doc\+Id@{Update\+Document\+By\+Doc\+Id}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Update\+Document\+By\+Doc\+Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Storage} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Update\+Document\+By\+Doc\+Id (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{doc\+Id, }
+\item[{Dictionary$<$ String, Object $>$}]{new\+Json\+Doc}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a875ba45cadce0010ff5e9aa2352920f4}
+
+
+Update target document using the document id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+{\em doc\+Id} & Id of the document to be searched for target J\+S\+O\+N doc.\\
+\hline
+\end{DoxyParams}
+New Json document to be added.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_aadd96c123cf841497fee3ba7b04646ef}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Update\+Document\+By\+Doc\+Id@{Update\+Document\+By\+Doc\+Id}}
+\index{Update\+Document\+By\+Doc\+Id@{Update\+Document\+By\+Doc\+Id}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Update\+Document\+By\+Doc\+Id}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Update\+Document\+By\+Doc\+Id (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{doc\+Id, }
+\item[{Dictionary$<$ String, Object $>$}]{new\+Json\+Doc, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_aadd96c123cf841497fee3ba7b04646ef}
+
+
+Update target document using the document id in async mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+{\em doc\+Id} & Id of the document to be searched for target J\+S\+O\+N doc.\\
+\hline
+{\em new\+Json\+Doc} & New Json document to be added.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a7f34bbea20510c0feec3a71bfdb79fa6}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Update\+Document\+By\+Key\+Value@{Update\+Document\+By\+Key\+Value}}
+\index{Update\+Document\+By\+Key\+Value@{Update\+Document\+By\+Key\+Value}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Update\+Document\+By\+Key\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Storage} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Update\+Document\+By\+Key\+Value (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{key, }
+\item[{String}]{value, }
+\item[{String}]{new\+Json\+Doc}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a7f34bbea20510c0feec3a71bfdb79fa6}
+
+
+Update target document using key value search parameter. This key value pair will be searched in the J\+S\+O\+N doc stored in the cloud and matching Doc will be updated with new value passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+\end{DoxyParams}
+$<$param name = \char`\"{}key\char`\"{} Key to be searched for target J\+S\+O\+N doc.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value to be searched for target J\+S\+O\+N doc.\\
+\hline
+\end{DoxyParams}
+New Json document to be added.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a142571018a15b0c15c14ad8ff5607e53}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Update\+Document\+By\+Key\+Value@{Update\+Document\+By\+Key\+Value}}
+\index{Update\+Document\+By\+Key\+Value@{Update\+Document\+By\+Key\+Value}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Update\+Document\+By\+Key\+Value}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Update\+Document\+By\+Key\+Value (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{key, }
+\item[{String}]{value, }
+\item[{String}]{new\+Json\+Doc, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a142571018a15b0c15c14ad8ff5607e53}
+
+
+Update target document using key value search parameter in async mode. This key value pair will be searched in the J\+S\+O\+N doc stored in the cloud and matching Doc will be updated with new value passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+\end{DoxyParams}
+$<$param name = \char`\"{}key\char`\"{} Key to be searched for target J\+S\+O\+N doc.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value to be searched for target J\+S\+O\+N doc.\\
+\hline
+\end{DoxyParams}
+New Json document to be added.
+
+
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ab797e20bd1e3db8a7042eac45fcc1afe}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Update\+Document\+By\+Key\+Value@{Update\+Document\+By\+Key\+Value}}
+\index{Update\+Document\+By\+Key\+Value@{Update\+Document\+By\+Key\+Value}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Update\+Document\+By\+Key\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Storage} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Update\+Document\+By\+Key\+Value (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{key, }
+\item[{String}]{value, }
+\item[{Dictionary$<$ String, Object $>$}]{new\+Json\+Doc}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_ab797e20bd1e3db8a7042eac45fcc1afe}
+
+
+Update target document using key value search parameter. This key value pair will be searched in the J\+S\+O\+N doc stored in the cloud and matching Doc will be updated with new value passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+\end{DoxyParams}
+$<$param name = \char`\"{}key\char`\"{} Key to be searched for target J\+S\+O\+N doc.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value to be searched for target J\+S\+O\+N doc.\\
+\hline
+\end{DoxyParams}
+New Json document to be added.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage}{Storage} object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a6e1e868fb11a2bd20c6008c60326e29a}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Update\+Document\+By\+Key\+Value@{Update\+Document\+By\+Key\+Value}}
+\index{Update\+Document\+By\+Key\+Value@{Update\+Document\+By\+Key\+Value}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Update\+Document\+By\+Key\+Value}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Update\+Document\+By\+Key\+Value (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{String}]{key, }
+\item[{String}]{value, }
+\item[{Dictionary$<$ String, Object $>$}]{new\+Json\+Doc, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a6e1e868fb11a2bd20c6008c60326e29a}
+
+
+Update target document using key value search parameter in async mode. This key value pair will be searched in the J\+S\+O\+N doc stored in the cloud and matching Doc will be updated with new value passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Unique handler for storage name.\\
+\hline
+{\em collection\+Name} & Name of collection under which J\+S\+O\+N doc needs to be searched.\\
+\hline
+\end{DoxyParams}
+$<$param name = \char`\"{}key\char`\"{} Key to be searched for target J\+S\+O\+N doc.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value to be searched for target J\+S\+O\+N doc.\\
+\hline
+\end{DoxyParams}
+New Json document to be added.
+
+
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a3df2994304188ef7a02768e7ab1160c2}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Update\+Document\+By\+Query@{Update\+Document\+By\+Query}}
+\index{Update\+Document\+By\+Query@{Update\+Document\+By\+Query}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Update\+Document\+By\+Query}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Update\+Document\+By\+Query (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{{\bf Query}}]{query, }
+\item[{String}]{new\+Json\+Doc, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a3df2994304188ef7a02768e7ab1160c2}
+
+
+Updates the document by query. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Db name.\\
+\hline
+{\em collection\+Name} & Collection name.\\
+\hline
+{\em query} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query}.\\
+\hline
+{\em new\+Json\+Doc} & New json document.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a0fe60d5938ff5bbd291a157d4aecb3ae}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}!Update\+Document\+By\+Query@{Update\+Document\+By\+Query}}
+\index{Update\+Document\+By\+Query@{Update\+Document\+By\+Query}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::storage\+::\+Storage\+Service}}
+\subsubsection[{Update\+Document\+By\+Query}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+storage.\+Storage\+Service.\+Update\+Document\+By\+Query (
+\begin{DoxyParamCaption}
+\item[{String}]{db\+Name, }
+\item[{String}]{collection\+Name, }
+\item[{{\bf Query}}]{query, }
+\item[{Dictionary$<$ String, Object $>$}]{new\+Json\+Doc, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_storage_service_a0fe60d5938ff5bbd291a157d4aecb3ae}
+
+
+Updates the document by query. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & Db name.\\
+\hline
+{\em collection\+Name} & Collection name.\\
+\hline
+{\em query} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1storage_1_1_query}{Query}.\\
+\hline
+{\em new\+Json\+Doc} & New json document.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_exception}{App42\+Exception}

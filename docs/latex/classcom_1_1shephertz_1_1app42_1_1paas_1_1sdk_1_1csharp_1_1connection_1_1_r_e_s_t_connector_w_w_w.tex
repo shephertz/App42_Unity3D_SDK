@@ -1,0 +1,394 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+connection.\+R\+E\+S\+T\+Connector\+W\+W\+W Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+connection.\+R\+E\+S\+T\+Connector\+W\+W\+W@{com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+connection.\+R\+E\+S\+T\+Connector\+W\+W\+W}}
+}
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+connection.\+R\+E\+S\+T\+Connector\+W\+W\+W\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_adf9559b7793d5ce6b14e574b5245e406}{On\+Destroy} ()
+\begin{DoxyCompactList}\small\item\em When \hyperlink{namespace_unity}{Unity} quits, it destroys objects in a random order. In principle, a Singleton is only destroyed when application quits. If any script calls Instance after it have been destroyed, it will create a buggy ghost object that will stay on the Editor scene even after stopping playing the Application. Really bad! So, this was made to be sure we're not creating that buggy ghost object. \end{DoxyCompactList}\item 
+String \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_ae8ad93846fa755bad74ffa99568e540d}{Execute\+F\+B\+O\+Auth} (String url, Dictionary$<$ String, String $>$ params\+Dics, Dictionary$<$ String, String $>$ header\+Params, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Executes the F\+B\+O auth. \end{DoxyCompactList}\item 
+I\+Enumerator \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a89be7c24ddb6d8a15315b4dd59f46551}{Wait\+For\+F\+B\+Request} (String uri, byte\mbox{[}$\,$\mbox{]} body, Hashtable headers, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Waits for F\+B request. \end{DoxyCompactList}\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_abbe884a799bb5a11c0e6c2790b058c63}{I\+Enumerator {\bfseries Wait\+For\+Request} (String uri, byte\mbox{[}$\,$\mbox{]} body, Hashtable headers, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_abbe884a799bb5a11c0e6c2790b058c63}
+
+\item 
+String \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a4dea9c166a2f7eef23daadf1f2e4b25e}{Execute\+Get} (String url, Dictionary$<$ String, String $>$ params\+Dics, Dictionary$<$ String, String $>$ header\+Params, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Executes the get. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a1b2a4f43e9c18782a39e1f6f4b7500c2}{Execute\+Post} (String url, Dictionary$<$ String, String $>$ params\+Dics, String body\+Pay\+Load, Dictionary$<$ String, String $>$ header\+Params, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Executes the post. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_ab75d6210d4369786acea2e0c37ba87ce}{Execute\+Multipart} (String name, String file\+Path, Dictionary$<$ String, String $>$ query\+Params, Dictionary$<$ String, String $>$ post\+Params, Dictionary$<$ String, String $>$ header\+Params, String url, String accept, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Executes the multipart. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a020ceb7b8d2c1cce789a0227e02af22b}{Execute\+Multipart} (String name, Stream stream, Dictionary$<$ String, String $>$ query\+Params, Dictionary$<$ String, String $>$ post\+Params, Dictionary$<$ String, String $>$ header\+Params, String url, String accept, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Executes the multipart. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_ab4d251bec526382f8579d289e06cd61b}{Execute\+Put} (String url, Dictionary$<$ String, String $>$ params\+Dics, String body\+Pay\+Load, Dictionary$<$ String, String $>$ header\+Params, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Executes the put. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a57c6fb13736c79338bccdae4e8f9c9db}{Execute\+Delete} (String url, Dictionary$<$ String, String $>$ params\+Dics, Dictionary$<$ String, String $>$ header\+Params, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Executes the delete. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a4cfd472e20c0dc2461cb37d71cb0edc0}{Execute\+Custom\+Code} (String url, Dictionary$<$ String, String $>$ params\+Dics, String body\+Pay\+Load, Dictionary$<$ String, String $>$ header\+Params, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Executes the custom code. \end{DoxyCompactList}\item 
+String \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a57d8c4192580252b5d5c1e625be282a2}{build\+Query\+String} (Dictionary$<$ String, String $>$ query\+Params)
+\begin{DoxyCompactList}\small\item\em Builds the query string. \end{DoxyCompactList}\item 
+I\+Enumerator \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a7f0c17a15c384c256fdd661b034c4548}{Wait\+For\+Multipart} (String uri, byte\mbox{[}$\,$\mbox{]} form\+Data, Hashtable headers, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1_app42_call_back}{App42\+Call\+Back} call\+Back)
+\begin{DoxyCompactList}\small\item\em Waits for multipart. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a0a4205b58f1c05faf5bd322b14af8ce9}{static \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w}{R\+E\+S\+T\+Connector\+W\+W\+W} {\bfseries Get\+Instance} ()}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a0a4205b58f1c05faf5bd322b14af8ce9}
+
+\item 
+static byte\mbox{[}$\,$\mbox{]} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a0e560f2af65fc45d29b7d28930118ad4}{Stream\+To\+Byte\+Array} (Stream input)
+\begin{DoxyCompactList}\small\item\em Converts Stream to byte array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a57d8c4192580252b5d5c1e625be282a2}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}!build\+Query\+String@{build\+Query\+String}}
+\index{build\+Query\+String@{build\+Query\+String}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}}
+\subsubsection[{build\+Query\+String}]{\setlength{\rightskip}{0pt plus 5cm}String com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+connection.\+R\+E\+S\+T\+Connector\+W\+W\+W.\+build\+Query\+String (
+\begin{DoxyParamCaption}
+\item[{Dictionary$<$ String, String $>$}]{query\+Params}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a57d8c4192580252b5d5c1e625be282a2}
+
+
+Builds the query string. 
+
+\begin{DoxyReturn}{Returns}
+The query string.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Params} & Query parameters.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a4cfd472e20c0dc2461cb37d71cb0edc0}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}!Execute\+Custom\+Code@{Execute\+Custom\+Code}}
+\index{Execute\+Custom\+Code@{Execute\+Custom\+Code}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}}
+\subsubsection[{Execute\+Custom\+Code}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+connection.\+R\+E\+S\+T\+Connector\+W\+W\+W.\+Execute\+Custom\+Code (
+\begin{DoxyParamCaption}
+\item[{String}]{url, }
+\item[{Dictionary$<$ String, String $>$}]{params\+Dics, }
+\item[{String}]{body\+Pay\+Load, }
+\item[{Dictionary$<$ String, String $>$}]{header\+Params, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a4cfd472e20c0dc2461cb37d71cb0edc0}
+
+
+Executes the custom code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & U\+R\+L.\\
+\hline
+{\em params\+Dics} & Parameters dics.\\
+\hline
+{\em body\+Pay\+Load} & Body pay load.\\
+\hline
+{\em header\+Params} & Header parameters.\\
+\hline
+{\em call\+Back} & Call back.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a57c6fb13736c79338bccdae4e8f9c9db}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}!Execute\+Delete@{Execute\+Delete}}
+\index{Execute\+Delete@{Execute\+Delete}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}}
+\subsubsection[{Execute\+Delete}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+connection.\+R\+E\+S\+T\+Connector\+W\+W\+W.\+Execute\+Delete (
+\begin{DoxyParamCaption}
+\item[{String}]{url, }
+\item[{Dictionary$<$ String, String $>$}]{params\+Dics, }
+\item[{Dictionary$<$ String, String $>$}]{header\+Params, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a57c6fb13736c79338bccdae4e8f9c9db}
+
+
+Executes the delete. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & U\+R\+L.\\
+\hline
+{\em params\+Dics} & Parameters dics.\\
+\hline
+{\em header\+Params} & Header parameters.\\
+\hline
+{\em call\+Back} & Call back.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_ae8ad93846fa755bad74ffa99568e540d}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}!Execute\+F\+B\+O\+Auth@{Execute\+F\+B\+O\+Auth}}
+\index{Execute\+F\+B\+O\+Auth@{Execute\+F\+B\+O\+Auth}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}}
+\subsubsection[{Execute\+F\+B\+O\+Auth}]{\setlength{\rightskip}{0pt plus 5cm}String com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+connection.\+R\+E\+S\+T\+Connector\+W\+W\+W.\+Execute\+F\+B\+O\+Auth (
+\begin{DoxyParamCaption}
+\item[{String}]{url, }
+\item[{Dictionary$<$ String, String $>$}]{params\+Dics, }
+\item[{Dictionary$<$ String, String $>$}]{header\+Params, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_ae8ad93846fa755bad74ffa99568e540d}
+
+
+Executes the F\+B\+O auth. 
+
+\begin{DoxyReturn}{Returns}
+The F\+B\+O auth.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em url} & U\+R\+L.\\
+\hline
+{\em params\+Dics} & Parameters dics.\\
+\hline
+{\em header\+Params} & Header parameters.\\
+\hline
+{\em call\+Back} & Call back.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a4dea9c166a2f7eef23daadf1f2e4b25e}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}!Execute\+Get@{Execute\+Get}}
+\index{Execute\+Get@{Execute\+Get}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}}
+\subsubsection[{Execute\+Get}]{\setlength{\rightskip}{0pt plus 5cm}String com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+connection.\+R\+E\+S\+T\+Connector\+W\+W\+W.\+Execute\+Get (
+\begin{DoxyParamCaption}
+\item[{String}]{url, }
+\item[{Dictionary$<$ String, String $>$}]{params\+Dics, }
+\item[{Dictionary$<$ String, String $>$}]{header\+Params, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a4dea9c166a2f7eef23daadf1f2e4b25e}
+
+
+Executes the get. 
+
+\begin{DoxyReturn}{Returns}
+The get.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em url} & U\+R\+L.\\
+\hline
+{\em params\+Dics} & Parameters dics.\\
+\hline
+{\em header\+Params} & Header parameters.\\
+\hline
+{\em call\+Back} & Call back.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_ab75d6210d4369786acea2e0c37ba87ce}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}!Execute\+Multipart@{Execute\+Multipart}}
+\index{Execute\+Multipart@{Execute\+Multipart}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}}
+\subsubsection[{Execute\+Multipart}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+connection.\+R\+E\+S\+T\+Connector\+W\+W\+W.\+Execute\+Multipart (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{String}]{file\+Path, }
+\item[{Dictionary$<$ String, String $>$}]{query\+Params, }
+\item[{Dictionary$<$ String, String $>$}]{post\+Params, }
+\item[{Dictionary$<$ String, String $>$}]{header\+Params, }
+\item[{String}]{url, }
+\item[{String}]{accept, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_ab75d6210d4369786acea2e0c37ba87ce}
+
+
+Executes the multipart. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name.\\
+\hline
+{\em file\+Path} & File path.\\
+\hline
+{\em query\+Params} & Query parameters.\\
+\hline
+{\em post\+Params} & Post parameters.\\
+\hline
+{\em header\+Params} & Header parameters.\\
+\hline
+{\em url} & U\+R\+L.\\
+\hline
+{\em accept} & Accept.\\
+\hline
+{\em call\+Back} & Call back.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a020ceb7b8d2c1cce789a0227e02af22b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}!Execute\+Multipart@{Execute\+Multipart}}
+\index{Execute\+Multipart@{Execute\+Multipart}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}}
+\subsubsection[{Execute\+Multipart}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+connection.\+R\+E\+S\+T\+Connector\+W\+W\+W.\+Execute\+Multipart (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{Stream}]{stream, }
+\item[{Dictionary$<$ String, String $>$}]{query\+Params, }
+\item[{Dictionary$<$ String, String $>$}]{post\+Params, }
+\item[{Dictionary$<$ String, String $>$}]{header\+Params, }
+\item[{String}]{url, }
+\item[{String}]{accept, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a020ceb7b8d2c1cce789a0227e02af22b}
+
+
+Executes the multipart. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name.\\
+\hline
+{\em stream} & Stream.\\
+\hline
+{\em query\+Params} & Query parameters.\\
+\hline
+{\em post\+Params} & Post parameters.\\
+\hline
+{\em header\+Params} & Header parameters.\\
+\hline
+{\em url} & U\+R\+L.\\
+\hline
+{\em accept} & Accept.\\
+\hline
+{\em call\+Back} & Call back.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a1b2a4f43e9c18782a39e1f6f4b7500c2}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}!Execute\+Post@{Execute\+Post}}
+\index{Execute\+Post@{Execute\+Post}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}}
+\subsubsection[{Execute\+Post}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+connection.\+R\+E\+S\+T\+Connector\+W\+W\+W.\+Execute\+Post (
+\begin{DoxyParamCaption}
+\item[{String}]{url, }
+\item[{Dictionary$<$ String, String $>$}]{params\+Dics, }
+\item[{String}]{body\+Pay\+Load, }
+\item[{Dictionary$<$ String, String $>$}]{header\+Params, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a1b2a4f43e9c18782a39e1f6f4b7500c2}
+
+
+Executes the post. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & U\+R\+L.\\
+\hline
+{\em params\+Dics} & Parameters dics.\\
+\hline
+{\em body\+Pay\+Load} & Body pay load.\\
+\hline
+{\em header\+Params} & Header parameters.\\
+\hline
+{\em call\+Back} & Call back.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_ab4d251bec526382f8579d289e06cd61b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}!Execute\+Put@{Execute\+Put}}
+\index{Execute\+Put@{Execute\+Put}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}}
+\subsubsection[{Execute\+Put}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+connection.\+R\+E\+S\+T\+Connector\+W\+W\+W.\+Execute\+Put (
+\begin{DoxyParamCaption}
+\item[{String}]{url, }
+\item[{Dictionary$<$ String, String $>$}]{params\+Dics, }
+\item[{String}]{body\+Pay\+Load, }
+\item[{Dictionary$<$ String, String $>$}]{header\+Params, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_ab4d251bec526382f8579d289e06cd61b}
+
+
+Executes the put. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & U\+R\+L.\\
+\hline
+{\em params\+Dics} & Parameters dics.\\
+\hline
+{\em body\+Pay\+Load} & Body pay load.\\
+\hline
+{\em header\+Params} & Header parameters.\\
+\hline
+{\em call\+Back} & Call back.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_adf9559b7793d5ce6b14e574b5245e406}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}!On\+Destroy@{On\+Destroy}}
+\index{On\+Destroy@{On\+Destroy}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}}
+\subsubsection[{On\+Destroy}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+connection.\+R\+E\+S\+T\+Connector\+W\+W\+W.\+On\+Destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_adf9559b7793d5ce6b14e574b5245e406}
+
+
+When \hyperlink{namespace_unity}{Unity} quits, it destroys objects in a random order. In principle, a Singleton is only destroyed when application quits. If any script calls Instance after it have been destroyed, it will create a buggy ghost object that will stay on the Editor scene even after stopping playing the Application. Really bad! So, this was made to be sure we're not creating that buggy ghost object. 
+
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a0e560f2af65fc45d29b7d28930118ad4}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}!Stream\+To\+Byte\+Array@{Stream\+To\+Byte\+Array}}
+\index{Stream\+To\+Byte\+Array@{Stream\+To\+Byte\+Array}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}}
+\subsubsection[{Stream\+To\+Byte\+Array}]{\setlength{\rightskip}{0pt plus 5cm}static byte \mbox{[}$\,$\mbox{]} com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+connection.\+R\+E\+S\+T\+Connector\+W\+W\+W.\+Stream\+To\+Byte\+Array (
+\begin{DoxyParamCaption}
+\item[{Stream}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a0e560f2af65fc45d29b7d28930118ad4}
+
+
+Converts Stream to byte array. 
+
+\begin{DoxyReturn}{Returns}
+The to byte array.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Input.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a89be7c24ddb6d8a15315b4dd59f46551}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}!Wait\+For\+F\+B\+Request@{Wait\+For\+F\+B\+Request}}
+\index{Wait\+For\+F\+B\+Request@{Wait\+For\+F\+B\+Request}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}}
+\subsubsection[{Wait\+For\+F\+B\+Request}]{\setlength{\rightskip}{0pt plus 5cm}I\+Enumerator com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+connection.\+R\+E\+S\+T\+Connector\+W\+W\+W.\+Wait\+For\+F\+B\+Request (
+\begin{DoxyParamCaption}
+\item[{String}]{uri, }
+\item[{byte\mbox{[}$\,$\mbox{]}}]{body, }
+\item[{Hashtable}]{headers, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a89be7c24ddb6d8a15315b4dd59f46551}
+
+
+Waits for F\+B request. 
+
+\begin{DoxyReturn}{Returns}
+The for F\+B request.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em uri} & U\+R\+I.\\
+\hline
+{\em body} & Body.\\
+\hline
+{\em headers} & Headers.\\
+\hline
+{\em call\+Back} & Call back.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a7f0c17a15c384c256fdd661b034c4548}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}!Wait\+For\+Multipart@{Wait\+For\+Multipart}}
+\index{Wait\+For\+Multipart@{Wait\+For\+Multipart}!com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W@{com\+::shephertz\+::app42\+::paas\+::sdk\+::csharp\+::connection\+::\+R\+E\+S\+T\+Connector\+W\+W\+W}}
+\subsubsection[{Wait\+For\+Multipart}]{\setlength{\rightskip}{0pt plus 5cm}I\+Enumerator com.\+shephertz.\+app42.\+paas.\+sdk.\+csharp.\+connection.\+R\+E\+S\+T\+Connector\+W\+W\+W.\+Wait\+For\+Multipart (
+\begin{DoxyParamCaption}
+\item[{String}]{uri, }
+\item[{byte\mbox{[}$\,$\mbox{]}}]{form\+Data, }
+\item[{Hashtable}]{headers, }
+\item[{{\bf App42\+Call\+Back}}]{call\+Back}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1csharp_1_1connection_1_1_r_e_s_t_connector_w_w_w_a7f0c17a15c384c256fdd661b034c4548}
+
+
+Waits for multipart. 
+
+\begin{DoxyReturn}{Returns}
+The for multipart.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em uri} & U\+R\+I.\\
+\hline
+{\em form\+Data} & Form data.\\
+\hline
+{\em headers} & Headers.\\
+\hline
+{\em call\+Back} & Call back.\\
+\hline
+\end{DoxyParams}
