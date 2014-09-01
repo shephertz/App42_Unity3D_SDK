@@ -1,3 +1,4 @@
+* [Release Version 2.9.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-292)
 * [Release Version 2.9.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-291)
 * [Release Version 2.9](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-29)
 * [Release Version 2.8](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-28)
@@ -25,6 +26,18 @@
 * [Release Version 1.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-17)
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
+
+## Version 2.9.2
+
+**Release Date:** 01-09-2014
+
+**Release Version:** 2.9.2
+
+**This release contains the following modification:**
+
+```
+1. Overloaded method for SetBaseUrl added.
+```
 
 ## Version 2.9.1
 
