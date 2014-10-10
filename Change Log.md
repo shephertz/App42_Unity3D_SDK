@@ -1,3 +1,4 @@
+* [Release Version 2.9.4](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-294)
 * [Release Version 2.9.3](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-293)
 * [Release Version 2.9.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-292)
 * [Release Version 2.9.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-291)
@@ -27,6 +28,45 @@
 * [Release Version 1.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-17)
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
+
+## Version 2.9.4
+
+**Release Date:** 10-10-2014
+
+**Release Version:** 2.9.4
+
+
+**The following Services have been pushed to the latest :**
+```
+1. BravoBoard Service.
+```
+
+**The following features have been pushed to the services :**
+
+**BUDDY SERVICE**
+```
+1. DeleteAllMessages.
+2. GetBlockedBuddyList.
+```
+
+**PUSH NOTIFICATION SERVICE**
+```
+1. GetAllDevicesOfUser.
+2. SendPushMessageToAppGroup.
+```
+
+**QUERY BUILDER**
+```
+1. SetCreatedOn
+2. SetUpdatedOn
+3. SetDocumentId
+```
+
+**This release contains the following bug fix:**
+
+```
+1. User SessionId and fbAccessToken Conflict.
+```
 
 ## Version 2.9.3
 
