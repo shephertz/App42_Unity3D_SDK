@@ -1,3 +1,4 @@
+* [Release Version 3.0.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-302)
 * [Release Version 3.0.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-301)
 * [Release Version 3.0](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-30)
 * [Release Version 2.9.4](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-294)
@@ -30,6 +31,17 @@
 * [Release Version 1.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-17)
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
+
+## Version 3.0.2
+
+**Release Date:** 21-11-2014
+
+**Release Version:** 3.0.2
+
+**This release contains the following bug fix:**
+```
+1. JSON bug Fix.
+```
 
 ## Version 3.0.1
 
