@@ -20,4 +20,12 @@ void Start ()
 }
 ```
 
+Third Party binaries and respective licenses used in App42 Unity3D SDK are listed below.
+
+[LitJson] (http://lbv.github.io/litjson/)
+
+- This library and its documentation are dedicated to the public domain. It may be used by anyone, for any purpose, without restrictions.
+
+[SimpleJSON] (http://wiki.unity3d.com/index.php/SimpleJSON)
+
 Visit our [Unity Developer home page](http://api.shephertz.com/app42-dev/unity3d-backend-apis.php) to learn more about App42 Unity SDK and using our App42 SDK.
