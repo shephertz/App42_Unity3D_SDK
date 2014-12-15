@@ -1,3 +1,4 @@
+* [Release Version 3.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-31)
 * [Release Version 3.0.3](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-303)
 * [Release Version 3.0.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-302)
 * [Release Version 3.0.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-301)
@@ -32,6 +33,24 @@
 * [Release Version 1.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-17)
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
+
+## Version 3.1
+
+**Release Date:** 15-12-2014
+
+**Release Version:** 3.1
+
+**The following features have been pushed to the services :**
+
+**ABTest SERVICE**
+```
+1. GetVariantData.
+```
+
+**This release contains the following bug fix:**
+```
+1. None.
+```
 
 ## Version 3.0.3
 
