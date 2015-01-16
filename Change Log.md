@@ -36,6 +36,24 @@
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
 
+## Version 3.1.2
+
+**Release Date:** 16-01-2014
+
+**Release Version:** 3.1.2
+
+**The following features have been pushed to the services :**
+
+**PushNotification SERVICE**
+```
+1. SendPushTileMessageToUser.
+```
+
+**This release contains the following bug fix:**
+```
+1. None.
+```
+
 ## Version 3.1.1
 
 **Release Date:** 06-01-2014
