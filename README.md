@@ -1,7 +1,7 @@
 App42 Unity3D SDK
 =================
 
-[![OverView](http://www.shephertz.com/images/logo/app42_cloud.png)](http://api.shephertz.com/)
+[![OverView](http://api.shephertz.com/images/0.1/logo.png)](http://api.shephertz.com/)
 
 App42 Unity3D SDK can be used to add backend to Unity3D application which can run on different platforms like Android/iOS/Windows phone/Web browser etc. App42 Unity3D SDK consists of seperate dll to be used for building on Windows Phone and is available under __x.x/App42-Unity3D-SDK-WP8__ folder of downloaded zip. However for rest of the platform it is available inside __x.x/App42-Unity3D-SDK__ folder. 
 
@@ -30,3 +30,5 @@ Third Party binaries and respective licenses used in App42 Unity3D SDK are liste
 - From http://wiki.unity3d.com/
 
 Visit our [Unity Developer home page](http://api.shephertz.com/app42-dev/unity3d-backend-apis.php) to learn more about App42 Unity SDK and using our App42 SDK.
+
+__Note:__  App42 Unity SDK is compatible with version Unity 4.x. Unity 5 support is under progress and all related issues can be found [here](https://github.com/shephertz/App42_Unity3D_SDK/issues). Kindly raise a new issue [here](https://github.com/shephertz/App42_Unity3D_SDK/issues/new), if you find any bug using App42 Unity SDK.
