@@ -1,3 +1,4 @@
+* [Release Version 3.2.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-322)
 * [Release Version 3.2.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-321)
 * [Release Version 3.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-32)
 * [Release Version 3.1.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-312)
@@ -37,6 +38,17 @@
 * [Release Version 1.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-17)
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
+
+## Version 3.2.2
+
+**Release Date:** 02-04-2015
+
+**Release Version:** 3.2.2
+
+**This release contains the following bug fix:**
+```
+1. DoFBOAuthAndGetToken Bug Fix.
+```
 
 ## Version 3.2.1
 
