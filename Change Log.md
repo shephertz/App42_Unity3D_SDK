@@ -1,3 +1,4 @@
+* [Release Version 4.0 Beta](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-40-beta)
 * [Release Version 3.2.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-322)
 * [Release Version 3.2.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-321)
 * [Release Version 3.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-32)
@@ -38,6 +39,30 @@
 * [Release Version 1.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-17)
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
+
+## Version 4.0 Beta
+
+**Release Date:** 03-04-2015
+
+**Release Version:** 4.0
+
+**This release contains the following feature:**
+
+```
+Unity Web Player
+Android
+iOS (Mono) & iOS (IL2CPP)
+Desktop Standalone app
+Window Phone
+```
+
+**Platform which is not supported in this release:**
+
+```
+Unity Web Player for Firefox and Safari
+Window Store Apps
+```
+Note: If you have any query, please feel free to reach us at support@shephertz.com or report your bug [here](https://github.com/shephertz/App42_Unity3D_SDK/issues).
 
 ## Version 3.2.2
 
