@@ -1,4 +1,5 @@
 * [Release Version 4.0 Beta](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-40-beta)
+* [Release Version 3.3.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-331)
 * [Release Version 3.3](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-33)
 * [Release Version 3.2.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-322)
 * [Release Version 3.2.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-321)
@@ -64,6 +65,17 @@ Unity Web Player for Firefox and Safari
 Window Store Apps
 ```
 Note: If you have any query, please feel free to reach us at support@shephertz.com or report your bug [here](https://github.com/shephertz/App42_Unity3D_SDK/issues).
+
+## Version 3.3.1
+
+**Release Date:** 20-04-2015
+
+**Release Version:** 3.3.1
+
+**This release contains the following bug fix:**
+```
+1. Push message in JSON string fixed.
+```
 
 ## Version 3.3
 
