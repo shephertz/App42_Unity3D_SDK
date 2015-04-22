@@ -31,4 +31,4 @@ Third Party binaries and respective licenses used in App42 Unity3D SDK are liste
 
 Visit our [Unity Developer home page](http://api.shephertz.com/app42-dev/unity3d-backend-apis.php) to learn more about App42 Unity SDK and using our App42 SDK.
 
-__Note:__  App42 Unity SDK is compatible with version Unity 4.x. Unity 5 support is under progress and all related issues can be found [here](https://github.com/shephertz/App42_Unity3D_SDK/issues). Kindly raise a new issue [here](https://github.com/shephertz/App42_Unity3D_SDK/issues/new), if you find any bug using App42 Unity SDK.
+__Note:__ Kindly raise a new issue [here](https://github.com/shephertz/App42-Issue-Tracker/issues), if you find any bug using App42 Unity SDK.
