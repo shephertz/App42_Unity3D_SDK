@@ -1,5 +1,5 @@
 The Synchronous APIs are removed from the version 4.0 onwards. 
-This version supports WP8.
+
 Unity HTTPS issue is solved in Unity version 5.0.1p1 and onwards.
 
 **Platforms which are supported in this release:**
