@@ -48,7 +48,7 @@
 
 **Release Version:** 4.0
 
-**This release contains the following feature:**
+**Platforms which are supported in this release:**
 
 ```
 Unity Web Player
@@ -58,11 +58,12 @@ Desktop Standalone app
 Window Phone
 ```
 
-**Platform which is not supported in this release:**
+**Platforms which are not supported in this release:**
 
 ```
-Unity Web Player for Firefox and Safari
-Window Store Apps
+Unity Web Player for Firefox and Safari.
+Window Store Apps.
+WebGL
 ```
 Note: If you have any query, please feel free to reach us at support@shephertz.com or report your bug [here](https://github.com/shephertz/App42_Unity3D_SDK/issues).
 
