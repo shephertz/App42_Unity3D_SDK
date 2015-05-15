@@ -58,6 +58,7 @@ iOS (Mono) & iOS (IL2CPP)
 Desktop Standalone app
 Windows Phone
 WebGL
+Windows Store
 ```
 
 ## Version 4.0 Beta
