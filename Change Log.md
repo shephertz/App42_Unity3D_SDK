@@ -45,7 +45,7 @@
 
 ## Version 4.0
 
-**Release Date:** 12-05-2015
+**Release Date:** 15-05-2015
 
 **Release Version:** 4.0
 
