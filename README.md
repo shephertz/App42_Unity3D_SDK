@@ -3,7 +3,7 @@ App42 Unity3D SDK
 
 [![OverView](http://api.shephertz.com/images/0.1/logo.png)](http://api.shephertz.com/)
 
-App42 Unity3D SDK can be used to add backend to Unity3D application which can run on different platforms like Android/iOS/Windows phone/Web player/WebGL etc. App42 Unity3D SDK consists of seperate dll to be used for building on __Windows Store__ and is available under 4.x/App42-Unity3D-SDK-WinRT folder of downloaded zip. However for rest of the platform is available inside 4.x/App42-Unity3D-SDK folder.
+App42 Unity3D SDK can be used to add backend to Unity3D application which can run on different platforms like Android/iOS/Windows phone/Web player/WebGL etc. App42 Unity3D SDK consists of seperate dll to be used for building on __Windows Store__ and is available under __4.x/App42-Unity3D-SDK-WinRT__ folder of downloaded zip. However for rest of the platform is available inside __4.x/App42-Unity3D-SDK__ folder.
 
 ###Integrating App42 Unity3D SDK in your app :
 Import App42-Unity3D-SDK-X.X in your Assets directory or in the Assets/plugins directory.
