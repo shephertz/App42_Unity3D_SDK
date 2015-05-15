@@ -31,7 +31,7 @@ namespace AssemblyCSharp
 				result = game.ToString ();
 				for (int j = 0; j < game.Count; j++) {
 					Debug.Log ("GameName is   : " + game [j].GetName ());
-					Debug.Log ("Description is  : " + game [j].GetDesription ());
+					Debug.Log ("Description is  : " + game [j].GetDescription ());
 				}
 			}
 					
