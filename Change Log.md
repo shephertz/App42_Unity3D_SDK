@@ -1,3 +1,4 @@
+* [Release Version 4.0.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-401)
 * [Release Version 4.0](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-40)
 * [Release Version 4.0 Beta](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-40-beta)
 * [Release Version 3.3.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-331)
@@ -42,6 +43,17 @@
 * [Release Version 1.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-17)
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
+
+## Version 4.0.1
+
+**Release Date:** 15-06-2015
+
+**Release Version:** 4.0.1
+
+**This release contains the following enhancements :**
+```
+Build for universal apps on Windows Store platform.
+```
 
 ## Version 4.0
 
