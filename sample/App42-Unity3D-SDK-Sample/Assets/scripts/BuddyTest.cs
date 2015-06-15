@@ -4,11 +4,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Net;
 using System;
-using System.Net.Security;
 using com.shephertz.app42.paas.sdk.csharp;
 using com.shephertz.app42.paas.sdk.csharp.geo;
 using com.shephertz.app42.paas.sdk.csharp.buddy;
-using System.Security.Cryptography.X509Certificates;
 using AssemblyCSharp;
 
 public class BuddyTest : MonoBehaviour {
@@ -31,15 +29,8 @@ public class BuddyTest : MonoBehaviour {
 	
 	public string success;
 	
-	#if UNITY_EDITOR
-	public static bool Validator (object sender, System.Security.Cryptography.X509Certificates.X509Certificate certificate, System.Security.Cryptography.X509Certificates.X509Chain chain, System.Net.Security.SslPolicyErrors sslPolicyErrors)
-	{return true;}
-	#endif
 	void Start ()
 	{
-		#if UNITY_EDITOR
-		ServicePointManager.ServerCertificateValidationCallback = Validator;
-		#endif
 		sp = new ServiceAPI (cons.apiKey,cons.secretKey);
 	}
 	
