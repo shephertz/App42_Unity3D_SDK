@@ -1,3 +1,4 @@
+* [Release Version 4.1.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-411)
 * [Release Version 4.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-41)
 * [Release Version 4.0.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-401)
 * [Release Version 4.0](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-40)
@@ -44,6 +45,17 @@
 * [Release Version 1.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-17)
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
+
+## Version 4.1.1
+
+**Release Date:** 13-07-2015
+
+**Release Version:** 4.1.1
+
+**This release contains the following bug fix:**
+```
+1. CreateUserWithProfile default dateOFBirth set to null.
+```
 
 ## Version 4.1
 
