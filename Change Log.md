@@ -1,3 +1,4 @@
+* [Release Version 3.4](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-34)
 * [Release Version 4.1.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-411)
 * [Release Version 4.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-41)
 * [Release Version 4.0.1](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-401)
@@ -45,6 +46,18 @@
 * [Release Version 1.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-17)
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
+
+
+## Version 3.4
+
+**Release Date:** 04-08-2015
+
+**Release Version:** 3.4
+
+**This release contains the following enhancements :**
+```
+Supports on Unity version 4.6.x.
+```
 
 ## Version 4.1.1
 
