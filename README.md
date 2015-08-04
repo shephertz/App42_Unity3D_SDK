@@ -53,7 +53,7 @@ __Note:-__ The Synchronous APIs are removed from the SDK version 4.0 onwards.
 
 ##Below Unity version 4.5
 
-If you are using Unity version below 4.5 then you have to use App42 Unity3D SDK version below 4.0 (i.e 3.3.1 and earlier)  which consists of seperate dll to be used for building on Windows Phone and is available under __x.x/App42-Unity3D-SDK-WP8__ folder of downloaded zip. However for rest of the platform it is available inside __x.x/App42-Unity3D-SDK__ folder. 
+If you are using Unity version 4.6.x or below 4.6 then you have to use App42 Unity3D SDK version below 4.0 (i.e 3.x and earlier)  which consists of seperate dll to be used for building on Windows Phone and is available under __x.x/App42-Unity3D-SDK-WP8__ folder of downloaded zip. However for rest of the platform it is available inside __x.x/App42-Unity3D-SDK__ folder. 
 
 If you are building an app for WP8, then you have to use our App42_Unity3D_SDK_WP8_x.x.dll.
 If you want to test your script in UNITY_EDITOR, then use a X509Certificates validator like this :-
