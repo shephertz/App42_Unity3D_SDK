@@ -51,7 +51,7 @@ Your setup for __Windows Store__ is completed. You are ready to build and run yo
 
 __Note:-__ The Synchronous APIs are removed from the SDK version 4.0 onwards. 
 
-##Below Unity version 4.5
+##For Unity version 4.6.x or below 4.6
 
 If you are using Unity version 4.6.x or below 4.6 then you have to use App42 Unity3D SDK version below 4.0 (i.e 3.x and earlier)  which consists of seperate dll to be used for building on Windows Phone and is available under __x.x/App42-Unity3D-SDK-WP8__ folder of downloaded zip. However for rest of the platform it is available inside __x.x/App42-Unity3D-SDK__ folder. 
 
