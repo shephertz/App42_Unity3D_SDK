@@ -1,3 +1,4 @@
+* [Release Version 4.3](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-43)
 * [Release Version 4.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-42)
 * [Release Version 4.1.2](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-412)
 * [Release Version 3.4](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-34)
@@ -48,6 +49,17 @@
 * [Release Version 1.7](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-17)
 * [Release Version 1.6](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-16)
 * [Release Version 1.5](https://github.com/shephertz/App42_Unity3D_SDK/blob/master/Change%20Log.md#version-15)
+
+## Version 4.3
+
+**Release Date:** 04-03-2020
+
+**Release Version:** 4.3
+
+**This release contains the following enhancements :**
+```
+Supports .Net Framework 4.7.2
+```
 
 ## Version 4.2
 
